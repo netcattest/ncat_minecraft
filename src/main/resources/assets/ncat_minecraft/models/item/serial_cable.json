@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ncat_minecraft:item/serial_cable"
+  }
+}

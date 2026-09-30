@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCAT Minecraft</title>
+  <style>
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; }
+    body { display: flex; flex-direction: column; color: #f5f6f8; background: radial-gradient(circle at 50% 45%, #20252d, #11151b 64%, #0b0d11); }
+    .accent { height: 5px; flex: none; background: #cf263a; }
+    main { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(12px, 4vh, 30px); padding: 16px; }
+    .logo { display: block; width: min(560px, 84vw); max-height: 38vh; object-fit: contain; }
+    form { display: flex; align-items: center; width: min(620px, 88vw); min-height: 42px; padding: 4px; border: 1px solid #59616d; border-radius: 28px; background: #20252d; box-shadow: 0 8px 28px #0005; }
+    form:focus-within { border-color: #e13c51; box-shadow: 0 0 0 2px #e13c512b; }
+    input { flex: 1; min-width: 0; height: 32px; padding: 0 14px; border: 0; outline: 0; background: transparent; color: #fff; font: inherit; font-size: clamp(12px, 2.5vw, 16px); }
+    input::placeholder { color: #aeb6c0; }
+    button { min-height: 33px; padding: 0 18px; border: 0; border-radius: 20px; background: #c8293d; color: #fff; font: 700 13px Arial, sans-serif; cursor: pointer; }
+    button:hover, button:focus-visible { background: #e13c51; }
+    footer { flex: none; padding: 0 8px 9px; color: #9098a3; font-size: clamp(9px, 1.6vw, 12px); text-align: center; }
+    @media (max-width: 320px) { main { padding: 8px; } form { min-height: 32px; } input { height: 25px; padding: 0 7px; } button { min-height: 26px; padding: 0 9px; font-size: 10px; } }
+  </style>
+</head>
+<body>
+  <div class="accent"></div>
+  <main>
+    <img class="logo" src="logo.png" alt="NCAT Minecraft">
+    <form id="search" role="search">
+      <input id="query" type="search" maxlength="500" autocomplete="off" spellcheck="false" placeholder="Pesquise no Google" aria-label="Pesquisa">
+      <button id="submit" type="submit">Buscar</button>
+    </form>
+  </main>
+  <footer id="credit">Criado por netcattest</footer>
+  <script>
+    function applyLanguage(code) {
+      const language = code.toLowerCase().startsWith('pt') ? 'pt' : 'en';
+      document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en';
+      document.getElementById('query').placeholder = language === 'pt' ? 'Pesquise no Google' : 'Search Google';
+      document.getElementById('query').setAttribute('aria-label', language === 'pt' ? 'Pesquisa' : 'Search');
+      document.getElementById('submit').textContent = language === 'pt' ? 'Buscar' : 'Search';
+      document.getElementById('credit').textContent = language === 'pt' ? 'Criado por netcattest' : 'Created by netcattest';
+    }
+    document.getElementById('search').addEventListener('submit', event => {
+      event.preventDefault();
+      const text = document.getElementById('query').value.trim();
+      if (text) window.location.assign('https://www.google.com/search?q=' + encodeURIComponent(text));
+    });
+    applyLanguage(navigator.language);
+    if (typeof window.cefQuery === 'function')
+      window.cefQuery({ request: 'NcatMinecraft_Locale{}', onSuccess: applyLanguage, onFailure: () => {} });
+  </script>
+</body>
+</html>

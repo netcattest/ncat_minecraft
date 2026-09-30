@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:block",
+  "pools": [{
+    "rolls": 1,
+    "bonus_rolls": 0,
+    "entries": [{"type": "minecraft:item", "name": "ncat_minecraft:managed_switch"}],
+    "conditions": [{"condition": "minecraft:survives_explosion"}]
+  }]
+}

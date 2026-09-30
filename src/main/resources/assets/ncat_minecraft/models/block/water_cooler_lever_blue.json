@@ -1,0 +1,229 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "jug": "ncat_minecraft:block/cooler/jug",
+    "jug_light": "ncat_minecraft:block/cooler/jug_light",
+    "jug_pale": "ncat_minecraft:block/cooler/jug_pale",
+    "jug_dark": "ncat_minecraft:block/cooler/jug_dark",
+    "tap_red": "ncat_minecraft:block/cooler/tap_red",
+    "tap_blue": "ncat_minecraft:block/cooler/tap_blue",
+    "water": "ncat_minecraft:block/cooler/water",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "eixo da alavanca",
+      "from": [
+        5.7,
+        12.827,
+        3.55
+      ],
+      "to": [
+        6.5,
+        13.652,
+        4.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            5.7,
+            2.348,
+            6.5,
+            3.173
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            5.7,
+            2.348,
+            6.5,
+            3.173
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            3.55,
+            2.348,
+            4.45,
+            3.173
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            3.55,
+            2.348,
+            4.45,
+            3.173
+          ]
+        },
+        "up": {
+          "texture": "#metal",
+          "uv": [
+            5.7,
+            3.55,
+            6.5,
+            4.45
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            5.7,
+            3.55,
+            6.5,
+            4.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "haste da alavanca",
+      "from": [
+        5.8,
+        12.954,
+        2.45
+      ],
+      "to": [
+        6.4,
+        13.5,
+        4.05
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            5.8,
+            2.5,
+            6.4,
+            3.046
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            5.8,
+            2.5,
+            6.4,
+            3.046
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            2.45,
+            2.5,
+            4.05,
+            3.046
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            2.45,
+            2.5,
+            4.05,
+            3.046
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            5.8,
+            2.45,
+            6.4,
+            4.05
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.8,
+            2.45,
+            6.4,
+            4.05
+          ]
+        }
+      }
+    },
+    {
+      "name": "pegador da alavanca",
+      "from": [
+        5.25,
+        12.764,
+        1.55
+      ],
+      "to": [
+        6.95,
+        13.487,
+        2.85
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#tap_blue",
+          "uv": [
+            5.25,
+            2.513,
+            6.95,
+            3.236
+          ]
+        },
+        "south": {
+          "texture": "#tap_blue",
+          "uv": [
+            5.25,
+            2.513,
+            6.95,
+            3.236
+          ]
+        },
+        "west": {
+          "texture": "#tap_blue",
+          "uv": [
+            1.55,
+            2.513,
+            2.85,
+            3.236
+          ]
+        },
+        "east": {
+          "texture": "#tap_blue",
+          "uv": [
+            1.55,
+            2.513,
+            2.85,
+            3.236
+          ]
+        },
+        "up": {
+          "texture": "#tap_blue",
+          "uv": [
+            5.25,
+            1.55,
+            6.95,
+            2.85
+          ]
+        },
+        "down": {
+          "texture": "#tap_blue",
+          "uv": [
+            5.25,
+            1.55,
+            6.95,
+            2.85
+          ]
+        }
+      }
+    }
+  ]
+}

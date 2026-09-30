@@ -1,0 +1,227 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "bowl": "ncat_minecraft:block/toilet/bowl",
+    "bowl_deep": "ncat_minecraft:block/toilet/bowl_deep",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "water": "ncat_minecraft:block/toilet/water",
+    "water_deep": "ncat_minecraft:block/toilet/water_deep",
+    "water_shine": "ncat_minecraft:block/toilet/water_shine",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "agua funda",
+      "from": [
+        4.238,
+        10.878,
+        2.414
+      ],
+      "to": [
+        11.762,
+        11.766,
+        5.948
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#water_deep",
+          "uv": [
+            4.7,
+            8.05,
+            11.3,
+            8.65
+          ]
+        },
+        "south": {
+          "texture": "#water_deep",
+          "uv": [
+            4.7,
+            8.05,
+            11.3,
+            8.65
+          ]
+        },
+        "west": {
+          "texture": "#water_deep",
+          "uv": [
+            3.1,
+            8.05,
+            6.2,
+            8.65
+          ]
+        },
+        "east": {
+          "texture": "#water_deep",
+          "uv": [
+            3.1,
+            8.05,
+            6.2,
+            8.65
+          ]
+        },
+        "up": {
+          "texture": "#water_deep",
+          "uv": [
+            4.7,
+            3.1,
+            11.3,
+            6.2
+          ]
+        },
+        "down": {
+          "texture": "#water_deep",
+          "uv": [
+            4.7,
+            3.1,
+            11.3,
+            6.2
+          ]
+        }
+      }
+    },
+    {
+      "name": "agua",
+      "from": [
+        4.124,
+        11.766,
+        2.3
+      ],
+      "to": [
+        11.876,
+        12.402,
+        6.039
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#water",
+          "uv": [
+            4.6,
+            7.62,
+            11.4,
+            8.05
+          ]
+        },
+        "south": {
+          "texture": "#water",
+          "uv": [
+            4.6,
+            7.62,
+            11.4,
+            8.05
+          ]
+        },
+        "west": {
+          "texture": "#water",
+          "uv": [
+            3.0,
+            7.62,
+            6.28,
+            8.05
+          ]
+        },
+        "east": {
+          "texture": "#water",
+          "uv": [
+            3.0,
+            7.62,
+            6.28,
+            8.05
+          ]
+        },
+        "up": {
+          "texture": "#water",
+          "uv": [
+            4.6,
+            3.0,
+            11.4,
+            6.28
+          ]
+        },
+        "down": {
+          "texture": "#water_deep",
+          "uv": [
+            4.6,
+            3.0,
+            11.4,
+            6.28
+          ]
+        }
+      }
+    },
+    {
+      "name": "brilho",
+      "from": [
+        4.922,
+        12.402,
+        2.699
+      ],
+      "to": [
+        8.456,
+        12.61,
+        4.751
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#water_shine",
+          "uv": [
+            5.3,
+            7.48,
+            8.4,
+            7.62
+          ]
+        },
+        "south": {
+          "texture": "#water_shine",
+          "uv": [
+            5.3,
+            7.48,
+            8.4,
+            7.62
+          ]
+        },
+        "west": {
+          "texture": "#water_shine",
+          "uv": [
+            3.35,
+            7.48,
+            5.15,
+            7.62
+          ]
+        },
+        "east": {
+          "texture": "#water_shine",
+          "uv": [
+            3.35,
+            7.48,
+            5.15,
+            7.62
+          ]
+        },
+        "up": {
+          "texture": "#water_shine",
+          "uv": [
+            5.3,
+            3.35,
+            8.4,
+            5.15
+          ]
+        },
+        "down": {
+          "texture": "#water_shine",
+          "uv": [
+            5.3,
+            3.35,
+            8.4,
+            5.15
+          ]
+        }
+      }
+    }
+  ]
+}

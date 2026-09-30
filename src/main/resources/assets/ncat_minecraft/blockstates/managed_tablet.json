@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "docked=true,facing=north": {
+      "model": "ncat_minecraft:block/managed_tablet",
+      "y": 0
+    },
+    "docked=false,facing=north": {
+      "model": "ncat_minecraft:block/managed_tablet_dock",
+      "y": 0
+    },
+    "docked=true,facing=east": {
+      "model": "ncat_minecraft:block/managed_tablet",
+      "y": 90
+    },
+    "docked=false,facing=east": {
+      "model": "ncat_minecraft:block/managed_tablet_dock",
+      "y": 90
+    },
+    "docked=true,facing=south": {
+      "model": "ncat_minecraft:block/managed_tablet",
+      "y": 180
+    },
+    "docked=false,facing=south": {
+      "model": "ncat_minecraft:block/managed_tablet_dock",
+      "y": 180
+    },
+    "docked=true,facing=west": {
+      "model": "ncat_minecraft:block/managed_tablet",
+      "y": 270
+    },
+    "docked=false,facing=west": {
+      "model": "ncat_minecraft:block/managed_tablet_dock",
+      "y": 270
+    }
+  }
+}

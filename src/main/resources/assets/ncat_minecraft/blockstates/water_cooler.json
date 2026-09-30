@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "facing=north,gallon=false,half=lower": {
+      "model": "ncat_minecraft:block/water_cooler_body",
+      "y": 0
+    },
+    "facing=north,gallon=false,half=upper": {
+      "model": "ncat_minecraft:block/water_cooler_empty",
+      "y": 0
+    },
+    "facing=north,gallon=true,half=lower": {
+      "model": "ncat_minecraft:block/water_cooler_body",
+      "y": 0
+    },
+    "facing=north,gallon=true,half=upper": {
+      "model": "ncat_minecraft:block/water_cooler_gallon",
+      "y": 0
+    },
+    "facing=east,gallon=false,half=lower": {
+      "model": "ncat_minecraft:block/water_cooler_body",
+      "y": 90
+    },
+    "facing=east,gallon=false,half=upper": {
+      "model": "ncat_minecraft:block/water_cooler_empty",
+      "y": 90
+    },
+    "facing=east,gallon=true,half=lower": {
+      "model": "ncat_minecraft:block/water_cooler_body",
+      "y": 90
+    },
+    "facing=east,gallon=true,half=upper": {
+      "model": "ncat_minecraft:block/water_cooler_gallon",
+      "y": 90
+    },
+    "facing=south,gallon=false,half=lower": {
+      "model": "ncat_minecraft:block/water_cooler_body",
+      "y": 180
+    },
+    "facing=south,gallon=false,half=upper": {
+      "model": "ncat_minecraft:block/water_cooler_empty",
+      "y": 180
+    },
+    "facing=south,gallon=true,half=lower": {
+      "model": "ncat_minecraft:block/water_cooler_body",
+      "y": 180
+    },
+    "facing=south,gallon=true,half=upper": {
+      "model": "ncat_minecraft:block/water_cooler_gallon",
+      "y": 180
+    },
+    "facing=west,gallon=false,half=lower": {
+      "model": "ncat_minecraft:block/water_cooler_body",
+      "y": 270
+    },
+    "facing=west,gallon=false,half=upper": {
+      "model": "ncat_minecraft:block/water_cooler_empty",
+      "y": 270
+    },
+    "facing=west,gallon=true,half=lower": {
+      "model": "ncat_minecraft:block/water_cooler_body",
+      "y": 270
+    },
+    "facing=west,gallon=true,half=upper": {
+      "model": "ncat_minecraft:block/water_cooler_gallon",
+      "y": 270
+    }
+  }
+}

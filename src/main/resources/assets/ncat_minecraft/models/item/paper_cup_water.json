@@ -1,0 +1,2732 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "paper": "ncat_minecraft:block/cup/paper",
+    "rim": "ncat_minecraft:block/cup/rim",
+    "inside": "ncat_minecraft:block/cup/inside",
+    "blue_band": "ncat_minecraft:block/cup/blue_band",
+    "water": "ncat_minecraft:block/cooler/water",
+    "particle": "ncat_minecraft:block/cooler/water"
+  },
+  "elements": [
+    {
+      "name": "faixa 0 frente",
+      "from": [
+        5.82,
+        0.35,
+        5.12
+      ],
+      "to": [
+        10.18,
+        1.66,
+        5.54
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 0 tr\u00e1s",
+      "from": [
+        5.82,
+        0.35,
+        10.46
+      ],
+      "to": [
+        10.18,
+        1.66,
+        10.88
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 0 esquerda",
+      "from": [
+        4.9,
+        0.35,
+        6.04
+      ],
+      "to": [
+        5.32,
+        1.66,
+        9.96
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 0 direita",
+      "from": [
+        10.68,
+        0.35,
+        6.04
+      ],
+      "to": [
+        11.1,
+        1.66,
+        9.96
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 0 canto noroeste",
+      "from": [
+        5.257,
+        0.35,
+        5.477
+      ],
+      "to": [
+        5.883,
+        1.66,
+        6.103
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 0 canto nordeste",
+      "from": [
+        10.117,
+        0.35,
+        5.477
+      ],
+      "to": [
+        10.743,
+        1.66,
+        6.103
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 0 canto sudoeste",
+      "from": [
+        5.257,
+        0.35,
+        9.897
+      ],
+      "to": [
+        5.883,
+        1.66,
+        10.523
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 0 canto sudeste",
+      "from": [
+        10.117,
+        0.35,
+        9.897
+      ],
+      "to": [
+        10.743,
+        1.66,
+        10.523
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 1 frente",
+      "from": [
+        5.589,
+        1.6,
+        4.889
+      ],
+      "to": [
+        10.411,
+        2.91,
+        5.309
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 1 tr\u00e1s",
+      "from": [
+        5.589,
+        1.6,
+        10.691
+      ],
+      "to": [
+        10.411,
+        2.91,
+        11.111
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 1 esquerda",
+      "from": [
+        4.669,
+        1.6,
+        5.809
+      ],
+      "to": [
+        5.089,
+        2.91,
+        10.191
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 1 direita",
+      "from": [
+        10.911,
+        1.6,
+        5.809
+      ],
+      "to": [
+        11.331,
+        2.91,
+        10.191
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 1 canto noroeste",
+      "from": [
+        5.026,
+        1.6,
+        5.246
+      ],
+      "to": [
+        5.652,
+        2.91,
+        5.872
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 1 canto nordeste",
+      "from": [
+        10.348,
+        1.6,
+        5.246
+      ],
+      "to": [
+        10.974,
+        2.91,
+        5.872
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 1 canto sudoeste",
+      "from": [
+        5.026,
+        1.6,
+        10.128
+      ],
+      "to": [
+        5.652,
+        2.91,
+        10.754
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 1 canto sudeste",
+      "from": [
+        10.348,
+        1.6,
+        10.128
+      ],
+      "to": [
+        10.974,
+        2.91,
+        10.754
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 2 frente",
+      "from": [
+        5.357,
+        2.85,
+        4.657
+      ],
+      "to": [
+        10.643,
+        4.16,
+        5.077
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 2 tr\u00e1s",
+      "from": [
+        5.357,
+        2.85,
+        10.923
+      ],
+      "to": [
+        10.643,
+        4.16,
+        11.343
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 2 esquerda",
+      "from": [
+        4.438,
+        2.85,
+        5.577
+      ],
+      "to": [
+        4.857,
+        4.16,
+        10.423
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 2 direita",
+      "from": [
+        11.143,
+        2.85,
+        5.577
+      ],
+      "to": [
+        11.562,
+        4.16,
+        10.423
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 2 canto noroeste",
+      "from": [
+        4.795,
+        2.85,
+        5.014
+      ],
+      "to": [
+        5.421,
+        4.16,
+        5.64
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 2 canto nordeste",
+      "from": [
+        10.579,
+        2.85,
+        5.014
+      ],
+      "to": [
+        11.206,
+        4.16,
+        5.64
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 2 canto sudoeste",
+      "from": [
+        4.795,
+        2.85,
+        10.36
+      ],
+      "to": [
+        5.421,
+        4.16,
+        10.986
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 2 canto sudeste",
+      "from": [
+        10.579,
+        2.85,
+        10.36
+      ],
+      "to": [
+        11.206,
+        4.16,
+        10.986
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 3 frente",
+      "from": [
+        5.126,
+        4.1,
+        4.426
+      ],
+      "to": [
+        10.874,
+        5.41,
+        4.846
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 3 tr\u00e1s",
+      "from": [
+        5.126,
+        4.1,
+        11.154
+      ],
+      "to": [
+        10.874,
+        5.41,
+        11.574
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 3 esquerda",
+      "from": [
+        4.206,
+        4.1,
+        5.346
+      ],
+      "to": [
+        4.626,
+        5.41,
+        10.654
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 3 direita",
+      "from": [
+        11.374,
+        4.1,
+        5.346
+      ],
+      "to": [
+        11.794,
+        5.41,
+        10.654
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 3 canto noroeste",
+      "from": [
+        4.563,
+        4.1,
+        4.783
+      ],
+      "to": [
+        5.189,
+        5.41,
+        5.409
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 3 canto nordeste",
+      "from": [
+        10.811,
+        4.1,
+        4.783
+      ],
+      "to": [
+        11.437,
+        5.41,
+        5.409
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 3 canto sudoeste",
+      "from": [
+        4.563,
+        4.1,
+        10.591
+      ],
+      "to": [
+        5.189,
+        5.41,
+        11.217
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 3 canto sudeste",
+      "from": [
+        10.811,
+        4.1,
+        10.591
+      ],
+      "to": [
+        11.437,
+        5.41,
+        11.217
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 4 frente",
+      "from": [
+        4.895,
+        5.35,
+        4.195
+      ],
+      "to": [
+        11.105,
+        6.66,
+        4.615
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 4 tr\u00e1s",
+      "from": [
+        4.895,
+        5.35,
+        11.385
+      ],
+      "to": [
+        11.105,
+        6.66,
+        11.805
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 4 esquerda",
+      "from": [
+        3.975,
+        5.35,
+        5.115
+      ],
+      "to": [
+        4.395,
+        6.66,
+        10.885
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 4 direita",
+      "from": [
+        11.605,
+        5.35,
+        5.115
+      ],
+      "to": [
+        12.025,
+        6.66,
+        10.885
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 4 canto noroeste",
+      "from": [
+        4.332,
+        5.35,
+        4.552
+      ],
+      "to": [
+        4.958,
+        6.66,
+        5.178
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 4 canto nordeste",
+      "from": [
+        11.042,
+        5.35,
+        4.552
+      ],
+      "to": [
+        11.668,
+        6.66,
+        5.178
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 4 canto sudoeste",
+      "from": [
+        4.332,
+        5.35,
+        10.822
+      ],
+      "to": [
+        4.958,
+        6.66,
+        11.448
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 4 canto sudeste",
+      "from": [
+        11.042,
+        5.35,
+        10.822
+      ],
+      "to": [
+        11.668,
+        6.66,
+        11.448
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_band"
+        },
+        "south": {
+          "texture": "#blue_band"
+        },
+        "west": {
+          "texture": "#blue_band"
+        },
+        "east": {
+          "texture": "#blue_band"
+        },
+        "up": {
+          "texture": "#blue_band"
+        },
+        "down": {
+          "texture": "#blue_band"
+        }
+      }
+    },
+    {
+      "name": "faixa 5 frente",
+      "from": [
+        4.664,
+        6.6,
+        3.964
+      ],
+      "to": [
+        11.336,
+        7.91,
+        4.384
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 5 tr\u00e1s",
+      "from": [
+        4.664,
+        6.6,
+        11.616
+      ],
+      "to": [
+        11.336,
+        7.91,
+        12.036
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 5 esquerda",
+      "from": [
+        3.744,
+        6.6,
+        4.884
+      ],
+      "to": [
+        4.164,
+        7.91,
+        11.116
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 5 direita",
+      "from": [
+        11.836,
+        6.6,
+        4.884
+      ],
+      "to": [
+        12.256,
+        7.91,
+        11.116
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 5 canto noroeste",
+      "from": [
+        4.101,
+        6.6,
+        4.321
+      ],
+      "to": [
+        4.727,
+        7.91,
+        4.947
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 5 canto nordeste",
+      "from": [
+        11.273,
+        6.6,
+        4.321
+      ],
+      "to": [
+        11.899,
+        7.91,
+        4.947
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 5 canto sudoeste",
+      "from": [
+        4.101,
+        6.6,
+        11.053
+      ],
+      "to": [
+        4.727,
+        7.91,
+        11.679
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 5 canto sudeste",
+      "from": [
+        11.273,
+        6.6,
+        11.053
+      ],
+      "to": [
+        11.899,
+        7.91,
+        11.679
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 6 frente",
+      "from": [
+        4.433,
+        7.85,
+        3.733
+      ],
+      "to": [
+        11.568,
+        9.16,
+        4.153
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 6 tr\u00e1s",
+      "from": [
+        4.433,
+        7.85,
+        11.848
+      ],
+      "to": [
+        11.568,
+        9.16,
+        12.268
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 6 esquerda",
+      "from": [
+        3.513,
+        7.85,
+        4.653
+      ],
+      "to": [
+        3.933,
+        9.16,
+        11.348
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 6 direita",
+      "from": [
+        12.068,
+        7.85,
+        4.653
+      ],
+      "to": [
+        12.488,
+        9.16,
+        11.348
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 6 canto noroeste",
+      "from": [
+        3.87,
+        7.85,
+        4.09
+      ],
+      "to": [
+        4.495,
+        9.16,
+        4.716
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 6 canto nordeste",
+      "from": [
+        11.505,
+        7.85,
+        4.09
+      ],
+      "to": [
+        12.131,
+        9.16,
+        4.716
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 6 canto sudoeste",
+      "from": [
+        3.87,
+        7.85,
+        11.284
+      ],
+      "to": [
+        4.495,
+        9.16,
+        11.911
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 6 canto sudeste",
+      "from": [
+        11.505,
+        7.85,
+        11.284
+      ],
+      "to": [
+        12.131,
+        9.16,
+        11.911
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 7 frente",
+      "from": [
+        4.201,
+        9.1,
+        3.501
+      ],
+      "to": [
+        11.799,
+        10.41,
+        3.921
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 7 tr\u00e1s",
+      "from": [
+        4.201,
+        9.1,
+        12.079
+      ],
+      "to": [
+        11.799,
+        10.41,
+        12.499
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 7 esquerda",
+      "from": [
+        3.281,
+        9.1,
+        4.421
+      ],
+      "to": [
+        3.701,
+        10.41,
+        11.579
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 7 direita",
+      "from": [
+        12.299,
+        9.1,
+        4.421
+      ],
+      "to": [
+        12.719,
+        10.41,
+        11.579
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 7 canto noroeste",
+      "from": [
+        3.638,
+        9.1,
+        3.858
+      ],
+      "to": [
+        4.264,
+        10.41,
+        4.484
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 7 canto nordeste",
+      "from": [
+        11.736,
+        9.1,
+        3.858
+      ],
+      "to": [
+        12.362,
+        10.41,
+        4.484
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 7 canto sudoeste",
+      "from": [
+        3.638,
+        9.1,
+        11.516
+      ],
+      "to": [
+        4.264,
+        10.41,
+        12.142
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "faixa 7 canto sudeste",
+      "from": [
+        11.736,
+        9.1,
+        11.516
+      ],
+      "to": [
+        12.362,
+        10.41,
+        12.142
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "labio frente",
+      "from": [
+        3.77,
+        10.3,
+        2.99
+      ],
+      "to": [
+        12.23,
+        10.95,
+        3.57
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "labio tr\u00e1s",
+      "from": [
+        3.77,
+        10.3,
+        12.43
+      ],
+      "to": [
+        12.23,
+        10.95,
+        13.01
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "labio esquerda",
+      "from": [
+        2.77,
+        10.3,
+        3.99
+      ],
+      "to": [
+        3.35,
+        10.95,
+        12.01
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "labio direita",
+      "from": [
+        12.65,
+        10.3,
+        3.99
+      ],
+      "to": [
+        13.23,
+        10.95,
+        12.01
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "labio canto noroeste",
+      "from": [
+        3.263,
+        10.3,
+        3.483
+      ],
+      "to": [
+        3.857,
+        10.95,
+        4.077
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "labio canto nordeste",
+      "from": [
+        12.143,
+        10.3,
+        3.483
+      ],
+      "to": [
+        12.737,
+        10.95,
+        4.077
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "labio canto sudoeste",
+      "from": [
+        3.263,
+        10.3,
+        11.923
+      ],
+      "to": [
+        3.857,
+        10.95,
+        12.517
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "labio canto sudeste",
+      "from": [
+        12.143,
+        10.3,
+        11.923
+      ],
+      "to": [
+        12.737,
+        10.95,
+        12.517
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "parede interna frontal",
+      "from": [
+        3.35,
+        8.2,
+        3.62
+      ],
+      "to": [
+        12.65,
+        10.35,
+        3.92
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#inside"
+        },
+        "south": {
+          "texture": "#inside"
+        },
+        "west": {
+          "texture": "#inside"
+        },
+        "east": {
+          "texture": "#inside"
+        },
+        "up": {
+          "texture": "#inside"
+        },
+        "down": {
+          "texture": "#inside"
+        }
+      }
+    },
+    {
+      "name": "parede interna traseira",
+      "from": [
+        3.35,
+        8.2,
+        12.08
+      ],
+      "to": [
+        12.65,
+        10.35,
+        12.38
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#inside"
+        },
+        "south": {
+          "texture": "#inside"
+        },
+        "west": {
+          "texture": "#inside"
+        },
+        "east": {
+          "texture": "#inside"
+        },
+        "up": {
+          "texture": "#inside"
+        },
+        "down": {
+          "texture": "#inside"
+        }
+      }
+    },
+    {
+      "name": "parede interna esquerda",
+      "from": [
+        3.35,
+        8.2,
+        3.92
+      ],
+      "to": [
+        3.65,
+        10.35,
+        12.08
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#inside"
+        },
+        "south": {
+          "texture": "#inside"
+        },
+        "west": {
+          "texture": "#inside"
+        },
+        "east": {
+          "texture": "#inside"
+        },
+        "up": {
+          "texture": "#inside"
+        },
+        "down": {
+          "texture": "#inside"
+        }
+      }
+    },
+    {
+      "name": "parede interna direita",
+      "from": [
+        12.35,
+        8.2,
+        3.92
+      ],
+      "to": [
+        12.65,
+        10.35,
+        12.08
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#inside"
+        },
+        "south": {
+          "texture": "#inside"
+        },
+        "west": {
+          "texture": "#inside"
+        },
+        "east": {
+          "texture": "#inside"
+        },
+        "up": {
+          "texture": "#inside"
+        },
+        "down": {
+          "texture": "#inside"
+        }
+      }
+    },
+    {
+      "name": "fundo",
+      "from": [
+        4.95,
+        0.0,
+        5.15
+      ],
+      "to": [
+        11.05,
+        0.52,
+        10.85
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "down": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "name": "agua",
+      "from": [
+        3.62,
+        9.35,
+        3.88
+      ],
+      "to": [
+        12.38,
+        9.62,
+        12.12
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#water"
+        },
+        "south": {
+          "texture": "#water"
+        },
+        "west": {
+          "texture": "#water"
+        },
+        "east": {
+          "texture": "#water"
+        },
+        "up": {
+          "texture": "#water"
+        },
+        "down": {
+          "texture": "#water"
+        }
+      }
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "fixed": {
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    }
+  }
+}

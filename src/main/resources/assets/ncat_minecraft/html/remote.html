@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCAT Conexão Remota</title>
+  <style>
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; color: #edf5ef; background: #0b0e12; }
+    body { display: flex; flex-direction: column; }
+    header { height: 36px; flex: none; padding: 0 12px; display: flex; align-items: center; justify-content: space-between; gap: 8px; border-top: 4px solid #49cc72; border-bottom: 1px solid #343c39; background: #161c1a; }
+    header strong { font-size: 12px; letter-spacing: .11em; white-space: nowrap; }
+    .tools { display: flex; align-items: center; gap: 5px; }
+    button { min-height: 27px; padding: 4px 9px; border: 0; border-radius: 3px; color: #07110b; background: #49cc72; font: 700 11px Arial, sans-serif; cursor: pointer; }
+    button.secondary { border: 1px solid #5e7066; color: #e5eee8; background: #26332b; }
+    button:disabled { opacity: .45; cursor: default; }
+    .tools button { min-height: 22px; padding: 2px 6px; font-size: 10px; }
+    #viewport { position: relative; flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #070a08; }
+    #rdp { display: none; width: auto; height: auto; max-width: 100%; max-height: 100%; image-rendering: auto; outline: none; }
+    #vnc { display: none; width: 100%; height: 100%; overflow: hidden; }
+    #vnc canvas { outline: none; }
+    #placeholder { color: #789184; font-size: 12px; text-align: center; }
+    #status { min-height: 22px; flex: none; padding: 4px 10px; border-top: 1px solid #343c39; color: #a8b9ad; background: #161c1a; font-size: 11px; }
+    .overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 8px; background: rgba(5, 9, 7, .95); z-index: 2; }
+    .overlay[hidden] { display: none; }
+    .card { width: min(440px, 100%); max-height: 100%; padding: 12px; overflow: auto; border: 1px solid #456451; border-radius: 6px; background: #17201a; }
+    h1 { margin: 0 0 5px; font-size: 17px; }
+    p { margin: 0 0 9px; color: #b2c3b6; font-size: 11px; line-height: 1.35; }
+    label { display: block; margin: 0 0 6px; color: #dce9df; font-size: 11px; }
+    input, select { display: block; width: 100%; height: 27px; margin-top: 2px; padding: 3px 7px; border: 1px solid #53675a; border-radius: 3px; outline: none; color: #f5fff7; background: #0b110d; font: inherit; }
+    input:focus, select:focus { border-color: #49cc72; }
+    .row { display: grid; grid-template-columns: 1fr 76px; gap: 7px; }
+    .credentials { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+    .actions { display: flex; gap: 7px; align-items: center; }
+    #feedback { min-height: 14px; margin: 6px 0 0; color: #ff9d9d; }
+    #fingerprint { color: #fff; overflow-wrap: anywhere; font-family: monospace; }
+    @media (max-width: 350px) { header { padding: 0 5px; } header strong { font-size: 10px; } .tools button { font-size: 9px; } .credentials { grid-template-columns: 1fr; } }
+    @media (max-height: 310px) { .card { padding: 6px; } h1, .intro { display: none; } label { margin-bottom: 3px; } input, select { height: 23px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>NCAT // REMOTO</strong>
+    <div class="tools">
+      <button id="fit" class="secondary" type="button" disabled>Ajustar</button>
+      <button id="fullscreen" class="secondary" type="button" disabled>Tela cheia</button>
+      <button id="reconnect" class="secondary" type="button" disabled>Reconectar</button>
+      <button id="disconnect" type="button" disabled>Sair</button>
+    </div>
+  </header>
+  <div id="viewport">
+    <canvas id="rdp" tabindex="0"></canvas>
+    <div id="vnc"></div>
+    <div id="placeholder">Selecione RDP ou VNC para conectar.</div>
+  </div>
+  <div id="status" role="status" aria-live="polite">Desconectado</div>
+  <div class="overlay" id="login">
+    <form class="card" id="form">
+      <h1 id="login-title">Conexão Remota</h1>
+      <p class="intro" id="login-intro">Conecte diretamente a um computador acessível pela sua rede. A senha permanece neste cliente.</p>
+      <label id="protocol-label">Protocolo<select id="protocol"><option value="rdp">RDP</option><option value="vnc">VNC</option></select></label>
+      <div class="row">
+        <label id="host-label">IP ou domínio<input id="host" type="text" maxlength="253" autocomplete="off" spellcheck="false" required></label>
+        <label id="port-label">Porta<input id="port" type="number" min="1" max="65535" value="3389" required></label>
+      </div>
+      <div class="credentials">
+        <label id="user-label">Usuário<input id="user" type="text" maxlength="128" autocomplete="off" spellcheck="false"></label>
+        <label id="domain-label">Domínio RDP<input id="domain" type="text" maxlength="128" autocomplete="off" spellcheck="false"></label>
+      </div>
+      <label id="password-label">Senha<input id="password" type="password" maxlength="512" autocomplete="off"></label>
+      <div class="actions"><button id="connect" type="submit">Conectar</button></div>
+      <p id="feedback" role="status"></p>
+    </form>
+  </div>
+  <div class="overlay" id="verify" hidden>
+    <div class="card">
+      <h1 id="verify-title">Verificar identidade</h1>
+      <p id="verify-hint">Compare a impressão digital do servidor por um canal confiável antes de continuar.</p>
+      <p id="fingerprint"></p>
+      <div class="actions"><button id="trust" type="button">Confiar e conectar</button><button id="reject" class="secondary" type="button">Cancelar</button></div>
+    </div>
+  </div>
+  <script src="./vendor/novnc/bundle.js"></script>
+  <script>
+    const $ = id => document.getElementById(id);
+    const page = {protocol: null, rfb: null, busy: false, polling: false, connected: false, fit: true, buttons: 0, lastMove: 0, last: null};
+    const canvas = $('rdp');
+    const context = canvas.getContext('2d', {alpha: false});
+    const words = {
+      pt: {
+        fit: 'Ajustar', fullscreen: 'Tela cheia', reconnect: 'Reconectar', leave: 'Sair',
+        placeholder: 'Selecione RDP ou VNC para conectar.', disconnected: 'Desconectado',
+        loginTitle: 'Conexão Remota',
+        loginIntro: 'Conecte diretamente a um computador acessível pela sua rede. A senha permanece neste cliente.',
+        protocol: 'Protocolo', host: 'IP ou domínio', port: 'Porta', user: 'Usuário',
+        domain: 'Domínio RDP', password: 'Senha', connect: 'Conectar',
+        verifyTitle: 'Verificar identidade',
+        verifyHint: 'Compare a impressão digital do servidor por um canal confiável antes de continuar.',
+        verifySha: 'Compare a impressão digital SHA-256 do servidor por um canal confiável antes de continuar.',
+        verifyKey: 'Compare a chave pública completa por um canal confiável antes de continuar.',
+        trust: 'Confiar e conectar', reject: 'Cancelar',
+        invalidConnection: 'Confira o endereço, a porta e os dados da conexão.',
+        invalidData: 'Os dados informados são inválidos.',
+        connectFailed: 'Não foi possível abrir a conexão remota.',
+        notConnected: 'A sessão remota não está conectada.',
+        certificateChanged: 'O certificado RDP mudou. A conexão foi bloqueada.',
+        frameFailed: 'Não foi possível mostrar a imagem RDP.',
+        vncTunnelUnavailable: 'Não foi possível abrir a ponte VNC local.',
+        integration: 'Integração com o Minecraft indisponível.',
+        requestFailed: 'Falha na conexão.',
+        keyUnreadable: 'Não foi possível ler a chave pública do servidor. Cancele a conexão.',
+        keyUnavailable: 'Chave pública VNC indisponível',
+        keyHex: 'Chave pública VNC (hex): ',
+        checkFields: 'Confira servidor, porta e usuário.',
+        vncLibrary: 'Biblioteca VNC indisponível.',
+        vncEnded: 'Sessão VNC encerrada.',
+        vncInterrupted: 'Conexão VNC interrompida.',
+        vncSecurity: 'Autenticação ou segurança VNC rejeitada.',
+        cannotConnect: 'Não foi possível conectar.',
+        rdpFailed: 'Falha na conexão RDP.',
+        rdpEnded: 'Sessão RDP encerrada.',
+        frameLost: 'Falha ao receber a tela remota.'
+      },
+      en: {
+        fit: 'Fit', fullscreen: 'Fullscreen', reconnect: 'Reconnect', leave: 'Leave',
+        placeholder: 'Pick RDP or VNC to connect.', disconnected: 'Disconnected',
+        loginTitle: 'Remote Connection',
+        loginIntro: 'Connect straight to a computer reachable on your network. The password stays on this client.',
+        protocol: 'Protocol', host: 'IP or domain', port: 'Port', user: 'Username',
+        domain: 'RDP domain', password: 'Password', connect: 'Connect',
+        verifyTitle: 'Verify identity',
+        verifyHint: 'Compare the server fingerprint over a channel you trust before continuing.',
+        verifySha: 'Compare the server SHA-256 fingerprint over a channel you trust before continuing.',
+        verifyKey: 'Compare the full public key over a channel you trust before continuing.',
+        trust: 'Trust and connect', reject: 'Cancel',
+        invalidConnection: 'Check the address, the port and the connection details.',
+        invalidData: 'The values you entered are not valid.',
+        connectFailed: 'Could not open the remote connection.',
+        notConnected: 'The remote session is not connected.',
+        certificateChanged: 'The RDP certificate changed. The connection was blocked.',
+        frameFailed: 'Could not display the RDP image.',
+        vncTunnelUnavailable: 'Could not open the local VNC bridge.',
+        integration: 'Minecraft integration is unavailable.',
+        requestFailed: 'Connection failed.',
+        keyUnreadable: 'Could not read the server public key. Cancel the connection.',
+        keyUnavailable: 'VNC public key unavailable',
+        keyHex: 'VNC public key (hex): ',
+        checkFields: 'Check the server, the port and the username.',
+        vncLibrary: 'VNC library unavailable.',
+        vncEnded: 'VNC session ended.',
+        vncInterrupted: 'VNC connection interrupted.',
+        vncSecurity: 'VNC authentication or security was rejected.',
+        cannotConnect: 'Could not connect.',
+        rdpFailed: 'RDP connection failed.',
+        rdpEnded: 'RDP session ended.',
+        frameLost: 'Could not receive the remote screen.'
+      }
+    };
+    let language = navigator.language.toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en';
+    function label(key) { return words[language][key] || key; }
+    function locale(code) {
+      language = String(code).toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en';
+      document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en';
+      $('fit').textContent = label('fit');
+      $('fullscreen').textContent = label('fullscreen');
+      $('reconnect').textContent = label('reconnect');
+      $('disconnect').textContent = label('leave');
+      $('placeholder').textContent = label('placeholder');
+      $('login-title').textContent = label('loginTitle');
+      $('login-intro').textContent = label('loginIntro');
+      $('protocol-label').firstChild.nodeValue = label('protocol');
+      $('host-label').firstChild.nodeValue = label('host');
+      $('port-label').firstChild.nodeValue = label('port');
+      $('user-label').firstChild.nodeValue = label('user');
+      $('domain-label').firstChild.nodeValue = label('domain');
+      $('password-label').firstChild.nodeValue = label('password');
+      $('connect').textContent = label('connect');
+      $('verify-title').textContent = label('verifyTitle');
+      $('trust').textContent = label('trust');
+      $('reject').textContent = label('reject');
+      if ($('verify').hidden) $('verify-hint').textContent = label('verifyHint');
+      if (!page.connected && !page.busy) { $('status').textContent = label('disconnected'); $('feedback').textContent = ''; }
+    }
+    const remoteQuery = data => new Promise((resolve, reject) => {
+      if (typeof window.cefQuery !== 'function') { reject(new Error(label('integration'))); return; }
+      window.cefQuery({request: 'NcatMinecraft_Remote' + JSON.stringify(data), onSuccess: resolve, onFailure: (_code, error) => reject(new Error(error || label('requestFailed')))});
+    });
+    function status(message) { $('status').textContent = message; }
+    function error(message) { const description = words[language][message] || message; $('feedback').textContent = description; status(description); }
+    function controls(connected) {
+      page.connected = connected;
+      $('disconnect').disabled = !connected && !page.busy;
+      $('fit').disabled = !connected;
+      $('fullscreen').disabled = !connected;
+      $('reconnect').disabled = !page.last;
+    }
+    function showLogin(message) {
+      $('login').hidden = false;
+      $('verify').hidden = true;
+      $('placeholder').style.display = 'block';
+      if (message) error(message);
+      controls(false);
+    }
+    function setProtocol() {
+      const vnc = $('protocol').value === 'vnc';
+      $('port').value = vnc ? '5900' : '3389';
+      $('domain-label').hidden = vnc;
+      $('user-label').hidden = vnc;
+      $('user').required = !vnc;
+    }
+    $('protocol').addEventListener('change', setProtocol);
+    setProtocol();
+    async function verifyVncServer(event, rfb) {
+      const key = new Uint8Array(event.detail.publickey || []);
+      if (page.rfb !== rfb) return;
+      if (!key.length) {
+        $('verify-hint').textContent = label('keyUnreadable');
+        $('fingerprint').textContent = label('keyUnavailable');
+        $('trust').disabled = true;
+      } else {
+        let digest = null;
+        try {
+          if (globalThis.crypto?.subtle) digest = new Uint8Array(await globalThis.crypto.subtle.digest('SHA-256', key));
+        } catch (_) {}
+        if (page.rfb !== rfb) return;
+        $('trust').disabled = false;
+        if (digest) {
+          $('verify-hint').textContent = label('verifySha');
+          $('fingerprint').textContent = 'VNC SHA-256: ' + Array.from(digest, b => b.toString(16).padStart(2, '0')).join('');
+        } else {
+          $('verify-hint').textContent = label('verifyKey');
+          $('fingerprint').textContent = label('keyHex') + Array.from(key, b => b.toString(16).padStart(2, '0')).join('');
+        }
+      }
+      $('verify').hidden = false;
+    }
+    async function disconnect(show = true) {
+      if (page.rfb) { const old = page.rfb; page.rfb = null; old.disconnect(); }
+      try { await remoteQuery({action: 'disconnect'}); } catch (_) {}
+      page.protocol = null;
+      page.busy = false;
+      page.buttons = 0;
+      canvas.style.display = 'none';
+      $('vnc').style.display = 'none';
+      status('Desconectado');
+      if (show) showLogin();
+      else controls(false);
+    }
+    async function connect(event) {
+      event.preventDefault();
+      if (page.busy) return;
+      const protocol = $('protocol').value;
+      const host = $('host').value.trim();
+      const port = Number($('port').value);
+      const user = $('user').value.trim();
+      const domain = $('domain').value.trim();
+      let password = $('password').value;
+      if (!host || !Number.isInteger(port) || port < 1 || port > 65535 || protocol === 'rdp' && !user) { error('checkFields'); return; }
+      page.busy = true;
+      page.protocol = protocol;
+      $('connect').disabled = true;
+      $('feedback').textContent = '';
+      status('Conectando...');
+      try {
+        await disconnect(false);
+        page.busy = true;
+        page.protocol = protocol;
+        const rect = $('viewport').getBoundingClientRect();
+        const width = Math.max(320, Math.min(1920, Math.floor(rect.width)));
+        const height = Math.max(240, Math.min(1080, Math.floor(rect.height)));
+        page.last = {protocol, host, port, user, domain, password};
+        const response = JSON.parse(await remoteQuery({action: 'connect', protocol, host, port, user, domain, password: protocol === 'rdp' ? password : '', width, height}));
+        $('password').value = '';
+        $('login').hidden = true;
+        $('placeholder').style.display = 'none';
+        if (protocol === 'vnc') {
+          const RFB = window.NcatNoVNC?.default;
+          if (!RFB) throw new Error(label('vncLibrary'));
+          $('vnc').style.display = 'block';
+          let vncPassword = password;
+          const rfb = new RFB($('vnc'), response.url, {credentials: {password: vncPassword}});
+          page.rfb = rfb;
+          controls(false);
+          rfb.scaleViewport = true;
+          rfb.resizeSession = true;
+          rfb.addEventListener('connect', () => { vncPassword = ''; page.busy = false; controls(true); status('VNC conectado'); remoteQuery({action: 'vncStatus', state: 'connected'}).catch(() => {}); });
+          rfb.addEventListener('disconnect', e => { if (page.rfb !== rfb) return; page.rfb = null; remoteQuery({action: 'vncStatus', state: 'disconnected'}).catch(() => {}); showLogin(e.detail.clean ? label('vncEnded') : label('vncInterrupted')); });
+          rfb.addEventListener('securityfailure', () => { disconnect(false).then(() => showLogin(label('vncSecurity'))); });
+          rfb.addEventListener('credentialsrequired', () => rfb.sendCredentials({password: vncPassword}));
+          rfb.addEventListener('serververification', e => { verifyVncServer(e, rfb); });
+        } else {
+          canvas.width = width;
+          canvas.height = height;
+          canvas.style.display = 'block';
+          canvas.focus();
+          controls(false);
+          poll();
+        }
+      } catch (failure) {
+        await disconnect(false);
+        showLogin(failure.message || label('cannotConnect'));
+      } finally {
+        password = '';
+        page.busy = false;
+        $('connect').disabled = false;
+      }
+    }
+    $('form').addEventListener('submit', connect);
+    async function poll() {
+      if (page.protocol !== 'rdp' || page.polling) return;
+      page.polling = true;
+      let nextDelay = 35;
+      try {
+        const response = JSON.parse(await remoteQuery({action: 'poll'}));
+        if (response.type === 'frame') {
+          nextDelay = 0;
+          if (canvas.width !== response.width || canvas.height !== response.height) { canvas.width = response.width; canvas.height = response.height; }
+          const image = new Image();
+          await new Promise((resolve, reject) => { image.onload = resolve; image.onerror = reject; image.src = 'data:image/png;base64,' + response.png; });
+          context.drawImage(image, response.x, response.y);
+        } else if (response.type === 'connected') {
+          controls(true);
+          status('RDP conectado');
+        } else if (response.type === 'certificate') {
+          $('verify-hint').textContent = label('verifyHint');
+          $('fingerprint').textContent = response.fingerprint;
+          $('trust').disabled = false;
+          $('verify').hidden = false;
+          status('Confirme o certificado RDP.');
+        } else if (response.type === 'error') {
+          await disconnect(false);
+          showLogin(response.message || label('rdpFailed'));
+        } else if (response.type === 'disconnected') {
+          await disconnect(false);
+          showLogin(label('rdpEnded'));
+        }
+      } catch (failure) {
+        if (page.protocol === 'rdp') { await disconnect(false); showLogin(failure.message || label('frameLost')); }
+      } finally {
+        page.polling = false;
+        if (page.protocol === 'rdp') setTimeout(poll, nextDelay);
+      }
+    }
+    async function trust(accepted) {
+      $('verify').hidden = true;
+      if (page.protocol === 'vnc') { if (accepted && page.rfb) page.rfb.approveServer(); else await disconnect(); return; }
+      try { await remoteQuery({action: 'trust', accepted}); if (!accepted) await disconnect(); } catch (_) { await disconnect(); }
+    }
+    $('trust').addEventListener('click', () => trust(true));
+    $('reject').addEventListener('click', () => trust(false));
+    $('disconnect').addEventListener('click', () => { page.last = null; disconnect(); });
+    $('reconnect').addEventListener('click', () => {
+      if (!page.last) return;
+      const last = page.last;
+      $('protocol').value = last.protocol;
+      setProtocol();
+      $('host').value = last.host;
+      $('port').value = String(last.port);
+      $('user').value = last.user;
+      $('domain').value = last.domain;
+      $('password').value = last.password;
+      connect({preventDefault() {}});
+    });
+    $('fit').addEventListener('click', () => { page.fit = !page.fit; canvas.style.maxWidth = page.fit ? '100%' : 'none'; canvas.style.maxHeight = page.fit ? '100%' : 'none'; if (page.rfb) page.rfb.scaleViewport = page.fit; });
+    $('fullscreen').addEventListener('click', () => { if (document.fullscreenElement) document.exitFullscreen(); else $('viewport').requestFullscreen?.(); });
+    function mouse(event) {
+      if (page.protocol !== 'rdp' || !page.connected) return;
+      const rect = canvas.getBoundingClientRect();
+      const x = Math.max(0, Math.min(canvas.width - 1, Math.floor((event.clientX - rect.left) * canvas.width / rect.width)));
+      const y = Math.max(0, Math.min(canvas.height - 1, Math.floor((event.clientY - rect.top) * canvas.height / rect.height)));
+      if (event.type === 'mousedown') { page.buttons |= 1 << event.button; canvas.focus(); }
+      if (event.type === 'mouseup') page.buttons &= ~(1 << event.button);
+      if (event.type === 'mousemove' && performance.now() - page.lastMove < 16) return;
+      page.lastMove = performance.now();
+      remoteQuery({action: 'mouse', x, y, buttons: page.buttons}).catch(() => {});
+      event.preventDefault();
+    }
+    for (const type of ['mousedown', 'mousemove']) canvas.addEventListener(type, mouse);
+    window.addEventListener('mouseup', e => { if (page.buttons & (1 << e.button)) mouse(e); });
+    canvas.addEventListener('contextmenu', e => e.preventDefault());
+    canvas.addEventListener('wheel', e => { if (!page.connected) return; remoteQuery({action: 'wheel', delta: Math.sign(e.deltaY)}).catch(() => {}); e.preventDefault(); }, {passive: false});
+    for (const type of ['keydown', 'keyup']) window.addEventListener(type, e => { if (page.protocol !== 'rdp' || !page.connected) return; remoteQuery({action: 'key', code: e.code, key: e.key, down: type === 'keydown', ctrl: e.ctrlKey, alt: e.altKey, meta: e.metaKey}).catch(() => {}); e.preventDefault(); });
+    new ResizeObserver(() => { if (page.protocol !== 'rdp' || !page.connected) return; const rect = $('viewport').getBoundingClientRect(); remoteQuery({action: 'resize', width: Math.max(320, Math.min(1920, Math.floor(rect.width))), height: Math.max(240, Math.min(1080, Math.floor(rect.height)))}).catch(() => {}); }).observe($('viewport'));
+    window.addEventListener('beforeunload', () => { page.last = null; if (page.rfb) page.rfb.disconnect(); remoteQuery({action: 'disconnect'}).catch(() => {}); });
+    locale(language);
+    if (typeof window.cefQuery === 'function')
+      window.cefQuery({request: 'NcatMinecraft_Locale{}', onSuccess: locale, onFailure: () => {}});
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["CRC", " P ", " S "],
+  "key": {
+    "C": {"item": "minecraft:copper_ingot"},
+    "R": {"item": "minecraft:redstone"},
+    "P": {"item": "minecraft:comparator"},
+    "S": {"item": "ncat_minecraft:network_switch"}
+  },
+  "result": {"item": "ncat_minecraft:managed_switch", "count": 1}
+}

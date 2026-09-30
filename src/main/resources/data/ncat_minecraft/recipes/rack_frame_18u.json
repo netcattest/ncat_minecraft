@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IFI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "F": {
+      "item": "ncat_minecraft:rack_frame_12u"
+    }
+  },
+  "result": {
+    "item": "ncat_minecraft:rack_frame_18u",
+    "count": 1
+  }
+}

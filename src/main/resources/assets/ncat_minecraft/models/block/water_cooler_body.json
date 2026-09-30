@@ -1,0 +1,2889 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "jug": "ncat_minecraft:block/cooler/jug",
+    "jug_light": "ncat_minecraft:block/cooler/jug_light",
+    "jug_pale": "ncat_minecraft:block/cooler/jug_pale",
+    "jug_dark": "ncat_minecraft:block/cooler/jug_dark",
+    "tap_red": "ncat_minecraft:block/cooler/tap_red",
+    "tap_blue": "ncat_minecraft:block/cooler/tap_blue",
+    "water": "ncat_minecraft:block/cooler/water",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "pe",
+      "from": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "to": [
+        4.4,
+        1.524,
+        4.4
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            14.476,
+            4.4,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            14.476,
+            4.4,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            14.476,
+            4.4,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            14.476,
+            4.4,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.0,
+            2.0,
+            4.4,
+            4.4
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            2.0,
+            4.4,
+            4.4
+          ]
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        11.6,
+        0.0,
+        2.0
+      ],
+      "to": [
+        14.0,
+        1.524,
+        4.4
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            14.476,
+            14.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            14.476,
+            14.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            14.476,
+            4.4,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            14.476,
+            4.4,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.6,
+            2.0,
+            14.0,
+            4.4
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            2.0,
+            14.0,
+            4.4
+          ]
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        2.0,
+        0.0,
+        11.6
+      ],
+      "to": [
+        4.4,
+        1.524,
+        14.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            14.476,
+            4.4,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            14.476,
+            4.4,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            14.476,
+            14.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            14.476,
+            14.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.0,
+            11.6,
+            4.4,
+            14.0
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            2.0,
+            11.6,
+            4.4,
+            14.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        11.6,
+        0.0,
+        11.6
+      ],
+      "to": [
+        14.0,
+        1.524,
+        14.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            14.476,
+            14.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            14.476,
+            14.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            14.476,
+            14.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            14.476,
+            14.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.6,
+            11.6,
+            14.0,
+            14.0
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            11.6,
+            11.6,
+            14.0,
+            14.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "saia miolo",
+      "from": [
+        2.25,
+        1.079,
+        1.55
+      ],
+      "to": [
+        13.75,
+        2.985,
+        14.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            2.25,
+            13.015,
+            13.75,
+            14.921
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            2.25,
+            13.015,
+            13.75,
+            14.921
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            1.55,
+            13.015,
+            14.45,
+            14.921
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            1.55,
+            13.015,
+            14.45,
+            14.921
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.25,
+            1.55,
+            13.75,
+            14.45
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            2.25,
+            1.55,
+            13.75,
+            14.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "saia oeste",
+      "from": [
+        1.55,
+        1.079,
+        2.25
+      ],
+      "to": [
+        2.26,
+        2.985,
+        13.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            1.55,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            1.55,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            2.25,
+            13.015,
+            13.75,
+            14.921
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            2.25,
+            13.015,
+            13.75,
+            14.921
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.55,
+            2.25,
+            2.26,
+            13.75
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            1.55,
+            2.25,
+            2.26,
+            13.75
+          ]
+        }
+      }
+    },
+    {
+      "name": "saia leste",
+      "from": [
+        13.74,
+        1.079,
+        2.25
+      ],
+      "to": [
+        14.45,
+        2.985,
+        13.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.45,
+            14.921
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.45,
+            14.921
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            2.25,
+            13.015,
+            13.75,
+            14.921
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            2.25,
+            13.015,
+            13.75,
+            14.921
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.74,
+            2.25,
+            14.45,
+            13.75
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            2.25,
+            14.45,
+            13.75
+          ]
+        }
+      }
+    },
+    {
+      "name": "saia canto 0",
+      "from": [
+        1.844,
+        1.079,
+        1.844
+      ],
+      "to": [
+        2.26,
+        2.985,
+        2.26
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.844,
+            1.844,
+            2.26,
+            2.26
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            1.844,
+            2.26,
+            2.26
+          ]
+        }
+      }
+    },
+    {
+      "name": "saia canto 1",
+      "from": [
+        13.74,
+        1.079,
+        1.844
+      ],
+      "to": [
+        14.156,
+        2.985,
+        2.26
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.156,
+            14.921
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.156,
+            14.921
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.74,
+            1.844,
+            14.156,
+            2.26
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            1.844,
+            14.156,
+            2.26
+          ]
+        }
+      }
+    },
+    {
+      "name": "saia canto 2",
+      "from": [
+        1.844,
+        1.079,
+        13.74
+      ],
+      "to": [
+        2.26,
+        2.985,
+        14.156
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            13.015,
+            2.26,
+            14.921
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.156,
+            14.921
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.156,
+            14.921
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.844,
+            13.74,
+            2.26,
+            14.156
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            1.844,
+            13.74,
+            2.26,
+            14.156
+          ]
+        }
+      }
+    },
+    {
+      "name": "saia canto 3",
+      "from": [
+        13.74,
+        1.079,
+        13.74
+      ],
+      "to": [
+        14.156,
+        2.985,
+        14.156
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.156,
+            14.921
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.156,
+            14.921
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.156,
+            14.921
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.015,
+            14.156,
+            14.921
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.74,
+            13.74,
+            14.156,
+            14.156
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            13.74,
+            13.74,
+            14.156,
+            14.156
+          ]
+        }
+      }
+    },
+    {
+      "name": "painel traseiro",
+      "from": [
+        1.9,
+        2.73,
+        5.0
+      ],
+      "to": [
+        14.1,
+        16,
+        14.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            0,
+            14.1,
+            13.27
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            0,
+            14.1,
+            13.27
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.0,
+            0,
+            14.15,
+            13.27
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.0,
+            0,
+            14.15,
+            13.27
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.9,
+            5.0,
+            14.1,
+            14.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.9,
+            5.0,
+            14.1,
+            14.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "lateral esquerda",
+      "from": [
+        1.9,
+        2.73,
+        2.55
+      ],
+      "to": [
+        3.7,
+        16,
+        14.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            0,
+            3.7,
+            13.27
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            0,
+            3.7,
+            13.27
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.55,
+            0,
+            14.15,
+            13.27
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.55,
+            0,
+            14.15,
+            13.27
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.9,
+            2.55,
+            3.7,
+            14.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.9,
+            2.55,
+            3.7,
+            14.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "lateral direita",
+      "from": [
+        12.3,
+        2.73,
+        2.55
+      ],
+      "to": [
+        14.1,
+        16,
+        14.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.3,
+            0,
+            14.1,
+            13.27
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.3,
+            0,
+            14.1,
+            13.27
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.55,
+            0,
+            14.15,
+            13.27
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.55,
+            0,
+            14.15,
+            13.27
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.3,
+            2.55,
+            14.1,
+            14.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.3,
+            2.55,
+            14.1,
+            14.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "frente inferior",
+      "from": [
+        3.7,
+        2.73,
+        1.75
+      ],
+      "to": [
+        12.3,
+        5.524,
+        14.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            10.476,
+            12.3,
+            13.27
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            10.476,
+            12.3,
+            13.27
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.75,
+            10.476,
+            14.15,
+            13.27
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.75,
+            10.476,
+            14.15,
+            13.27
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.7,
+            1.75,
+            12.3,
+            14.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.7,
+            1.75,
+            12.3,
+            14.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "frente superior",
+      "from": [
+        3.7,
+        14.669,
+        1.75
+      ],
+      "to": [
+        12.3,
+        16,
+        14.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            0,
+            12.3,
+            1.331
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            0,
+            12.3,
+            1.331
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.75,
+            0,
+            14.15,
+            1.331
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.75,
+            0,
+            14.15,
+            1.331
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.7,
+            1.75,
+            12.3,
+            14.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.7,
+            1.75,
+            12.3,
+            14.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "moldura esquerda",
+      "from": [
+        1.6,
+        2.73,
+        1.4
+      ],
+      "to": [
+        3.7,
+        16,
+        3.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.6,
+            0,
+            3.7,
+            13.27
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.6,
+            0,
+            3.7,
+            13.27
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            0,
+            3.0,
+            13.27
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            0,
+            3.0,
+            13.27
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.6,
+            1.4,
+            3.7,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.6,
+            1.4,
+            3.7,
+            3.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "moldura direita",
+      "from": [
+        12.3,
+        2.73,
+        1.4
+      ],
+      "to": [
+        14.4,
+        16,
+        3.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.3,
+            0,
+            14.4,
+            13.27
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.3,
+            0,
+            14.4,
+            13.27
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            0,
+            3.0,
+            13.27
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            0,
+            3.0,
+            13.27
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.3,
+            1.4,
+            14.4,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.3,
+            1.4,
+            14.4,
+            3.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "moldura topo",
+      "from": [
+        3.7,
+        14.669,
+        1.4
+      ],
+      "to": [
+        12.3,
+        15.367,
+        3.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            0.633,
+            12.3,
+            1.331
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            0.633,
+            12.3,
+            1.331
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            0.633,
+            3.0,
+            1.331
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            0.633,
+            3.0,
+            1.331
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.7,
+            1.4,
+            12.3,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.7,
+            1.4,
+            12.3,
+            3.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "moldura base",
+      "from": [
+        3.7,
+        5.017,
+        1.4
+      ],
+      "to": [
+        12.3,
+        5.524,
+        3.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            10.476,
+            12.3,
+            10.983
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            10.476,
+            12.3,
+            10.983
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            10.476,
+            3.0,
+            10.983
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            10.476,
+            3.0,
+            10.983
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.7,
+            1.4,
+            12.3,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.7,
+            1.4,
+            12.3,
+            3.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "fundo do nicho",
+      "from": [
+        3.55,
+        5.334,
+        4.75
+      ],
+      "to": [
+        12.45,
+        14.859,
+        5.05
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.55,
+            1.141,
+            12.45,
+            10.666
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.55,
+            1.141,
+            12.45,
+            10.666
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.75,
+            1.141,
+            5.05,
+            10.666
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.75,
+            1.141,
+            5.05,
+            10.666
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.55,
+            4.75,
+            12.45,
+            5.05
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.55,
+            4.75,
+            12.45,
+            5.05
+          ]
+        }
+      }
+    },
+    {
+      "name": "bandeja",
+      "from": [
+        3.95,
+        5.524,
+        1.5
+      ],
+      "to": [
+        12.05,
+        5.969,
+        5.1
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            3.95,
+            10.031,
+            12.05,
+            10.476
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            3.95,
+            10.031,
+            12.05,
+            10.476
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            1.5,
+            10.031,
+            5.1,
+            10.476
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            1.5,
+            10.031,
+            5.1,
+            10.476
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.95,
+            1.5,
+            12.05,
+            5.1
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            3.95,
+            1.5,
+            12.05,
+            5.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "ranhura bandeja 0",
+      "from": [
+        4.6,
+        5.982,
+        1.8
+      ],
+      "to": [
+        4.95,
+        6.096,
+        4.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.6,
+            9.904,
+            4.95,
+            10.018
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.6,
+            9.904,
+            4.95,
+            10.018
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.6,
+            1.8,
+            4.95,
+            4.75
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.6,
+            1.8,
+            4.95,
+            4.75
+          ]
+        }
+      }
+    },
+    {
+      "name": "ranhura bandeja 1",
+      "from": [
+        5.9,
+        5.982,
+        1.8
+      ],
+      "to": [
+        6.25,
+        6.096,
+        4.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.9,
+            9.904,
+            6.25,
+            10.018
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.9,
+            9.904,
+            6.25,
+            10.018
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.9,
+            1.8,
+            6.25,
+            4.75
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.9,
+            1.8,
+            6.25,
+            4.75
+          ]
+        }
+      }
+    },
+    {
+      "name": "ranhura bandeja 2",
+      "from": [
+        7.2,
+        5.982,
+        1.8
+      ],
+      "to": [
+        7.55,
+        6.096,
+        4.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            7.2,
+            9.904,
+            7.55,
+            10.018
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            7.2,
+            9.904,
+            7.55,
+            10.018
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            7.2,
+            1.8,
+            7.55,
+            4.75
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            7.2,
+            1.8,
+            7.55,
+            4.75
+          ]
+        }
+      }
+    },
+    {
+      "name": "ranhura bandeja 3",
+      "from": [
+        8.5,
+        5.982,
+        1.8
+      ],
+      "to": [
+        8.85,
+        6.096,
+        4.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            8.5,
+            9.904,
+            8.85,
+            10.018
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            8.5,
+            9.904,
+            8.85,
+            10.018
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            8.5,
+            1.8,
+            8.85,
+            4.75
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            8.5,
+            1.8,
+            8.85,
+            4.75
+          ]
+        }
+      }
+    },
+    {
+      "name": "ranhura bandeja 4",
+      "from": [
+        9.8,
+        5.982,
+        1.8
+      ],
+      "to": [
+        10.15,
+        6.096,
+        4.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.8,
+            9.904,
+            10.15,
+            10.018
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.8,
+            9.904,
+            10.15,
+            10.018
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.8,
+            1.8,
+            10.15,
+            4.75
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.8,
+            1.8,
+            10.15,
+            4.75
+          ]
+        }
+      }
+    },
+    {
+      "name": "ranhura bandeja 5",
+      "from": [
+        11.1,
+        5.982,
+        1.8
+      ],
+      "to": [
+        11.45,
+        6.096,
+        4.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.1,
+            9.904,
+            11.45,
+            10.018
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.1,
+            9.904,
+            11.45,
+            10.018
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.8,
+            9.904,
+            4.75,
+            10.018
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.1,
+            1.8,
+            11.45,
+            4.75
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.1,
+            1.8,
+            11.45,
+            4.75
+          ]
+        }
+      }
+    },
+    {
+      "name": "torneira azul",
+      "from": [
+        4.95,
+        10.224,
+        3.75
+      ],
+      "to": [
+        7.25,
+        12.891,
+        5.35
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            4.95,
+            3.109,
+            7.25,
+            5.776
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            4.95,
+            3.109,
+            7.25,
+            5.776
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            3.75,
+            3.109,
+            5.35,
+            5.776
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            3.75,
+            3.109,
+            5.35,
+            5.776
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.95,
+            3.75,
+            7.25,
+            5.35
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            4.95,
+            3.75,
+            7.25,
+            5.35
+          ]
+        }
+      }
+    },
+    {
+      "name": "bico azul",
+      "from": [
+        5.4,
+        9.081,
+        2.85
+      ],
+      "to": [
+        6.8,
+        10.414,
+        3.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            5.4,
+            5.586,
+            6.8,
+            6.919
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            5.4,
+            5.586,
+            6.8,
+            6.919
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            2.85,
+            5.586,
+            3.95,
+            6.919
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            2.85,
+            5.586,
+            3.95,
+            6.919
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            2.85,
+            6.8,
+            3.95
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            5.4,
+            2.85,
+            6.8,
+            3.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "aro torneira azul",
+      "from": [
+        5.15,
+        12.636,
+        4.05
+      ],
+      "to": [
+        7.05,
+        13.018,
+        5.25
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#tap_blue",
+          "uv": [
+            5.15,
+            2.982,
+            7.05,
+            3.364
+          ]
+        },
+        "south": {
+          "texture": "#tap_blue",
+          "uv": [
+            5.15,
+            2.982,
+            7.05,
+            3.364
+          ]
+        },
+        "west": {
+          "texture": "#tap_blue",
+          "uv": [
+            4.05,
+            2.982,
+            5.25,
+            3.364
+          ]
+        },
+        "east": {
+          "texture": "#tap_blue",
+          "uv": [
+            4.05,
+            2.982,
+            5.25,
+            3.364
+          ]
+        },
+        "up": {
+          "texture": "#tap_blue",
+          "uv": [
+            5.15,
+            4.05,
+            7.05,
+            5.25
+          ]
+        },
+        "down": {
+          "texture": "#tap_blue",
+          "uv": [
+            5.15,
+            4.05,
+            7.05,
+            5.25
+          ]
+        }
+      }
+    },
+    {
+      "name": "torneira vermelha",
+      "from": [
+        8.75,
+        10.224,
+        3.75
+      ],
+      "to": [
+        11.05,
+        12.891,
+        5.35
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            8.75,
+            3.109,
+            11.05,
+            5.776
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            8.75,
+            3.109,
+            11.05,
+            5.776
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            3.75,
+            3.109,
+            5.35,
+            5.776
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            3.75,
+            3.109,
+            5.35,
+            5.776
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            8.75,
+            3.75,
+            11.05,
+            5.35
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            8.75,
+            3.75,
+            11.05,
+            5.35
+          ]
+        }
+      }
+    },
+    {
+      "name": "bico vermelha",
+      "from": [
+        9.2,
+        9.081,
+        2.85
+      ],
+      "to": [
+        10.6,
+        10.414,
+        3.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            9.2,
+            5.586,
+            10.6,
+            6.919
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            9.2,
+            5.586,
+            10.6,
+            6.919
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            2.85,
+            5.586,
+            3.95,
+            6.919
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            2.85,
+            5.586,
+            3.95,
+            6.919
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.2,
+            2.85,
+            10.6,
+            3.95
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            9.2,
+            2.85,
+            10.6,
+            3.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "aro torneira vermelha",
+      "from": [
+        8.95,
+        12.636,
+        4.05
+      ],
+      "to": [
+        10.85,
+        13.018,
+        5.25
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#tap_red",
+          "uv": [
+            8.95,
+            2.982,
+            10.85,
+            3.364
+          ]
+        },
+        "south": {
+          "texture": "#tap_red",
+          "uv": [
+            8.95,
+            2.982,
+            10.85,
+            3.364
+          ]
+        },
+        "west": {
+          "texture": "#tap_red",
+          "uv": [
+            4.05,
+            2.982,
+            5.25,
+            3.364
+          ]
+        },
+        "east": {
+          "texture": "#tap_red",
+          "uv": [
+            4.05,
+            2.982,
+            5.25,
+            3.364
+          ]
+        },
+        "up": {
+          "texture": "#tap_red",
+          "uv": [
+            8.95,
+            4.05,
+            10.85,
+            5.25
+          ]
+        },
+        "down": {
+          "texture": "#tap_red",
+          "uv": [
+            8.95,
+            4.05,
+            10.85,
+            5.25
+          ]
+        }
+      }
+    },
+    {
+      "name": "vent 0",
+      "from": [
+        1.35,
+        7.239,
+        5.4
+      ],
+      "to": [
+        2.05,
+        8.128,
+        10.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            7.872,
+            2.05,
+            8.761
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            7.872,
+            2.05,
+            8.761
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            7.872,
+            10.6,
+            8.761
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            7.872,
+            10.6,
+            8.761
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            5.4,
+            2.05,
+            10.6
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            5.4,
+            2.05,
+            10.6
+          ]
+        }
+      }
+    },
+    {
+      "name": "vent direita 0",
+      "from": [
+        13.95,
+        7.239,
+        5.4
+      ],
+      "to": [
+        14.55,
+        8.128,
+        10.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            7.872,
+            14.55,
+            8.761
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            7.872,
+            14.55,
+            8.761
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            7.872,
+            10.6,
+            8.761
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            7.872,
+            10.6,
+            8.761
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            5.4,
+            14.55,
+            10.6
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            5.4,
+            14.55,
+            10.6
+          ]
+        }
+      }
+    },
+    {
+      "name": "vent 1",
+      "from": [
+        1.35,
+        9.081,
+        5.4
+      ],
+      "to": [
+        2.05,
+        9.97,
+        10.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            6.03,
+            2.05,
+            6.919
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            6.03,
+            2.05,
+            6.919
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            6.03,
+            10.6,
+            6.919
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            6.03,
+            10.6,
+            6.919
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            5.4,
+            2.05,
+            10.6
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            5.4,
+            2.05,
+            10.6
+          ]
+        }
+      }
+    },
+    {
+      "name": "vent direita 1",
+      "from": [
+        13.95,
+        9.081,
+        5.4
+      ],
+      "to": [
+        14.55,
+        9.97,
+        10.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            6.03,
+            14.55,
+            6.919
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            6.03,
+            14.55,
+            6.919
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            6.03,
+            10.6,
+            6.919
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            6.03,
+            10.6,
+            6.919
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            5.4,
+            14.55,
+            10.6
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            5.4,
+            14.55,
+            10.6
+          ]
+        }
+      }
+    },
+    {
+      "name": "vent 2",
+      "from": [
+        1.35,
+        10.922,
+        5.4
+      ],
+      "to": [
+        2.05,
+        11.811,
+        10.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            4.189,
+            2.05,
+            5.078
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            4.189,
+            2.05,
+            5.078
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            4.189,
+            10.6,
+            5.078
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            4.189,
+            10.6,
+            5.078
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            5.4,
+            2.05,
+            10.6
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            5.4,
+            2.05,
+            10.6
+          ]
+        }
+      }
+    },
+    {
+      "name": "vent direita 2",
+      "from": [
+        13.95,
+        10.922,
+        5.4
+      ],
+      "to": [
+        14.55,
+        11.811,
+        10.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            4.189,
+            14.55,
+            5.078
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            4.189,
+            14.55,
+            5.078
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            4.189,
+            10.6,
+            5.078
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.4,
+            4.189,
+            10.6,
+            5.078
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            5.4,
+            14.55,
+            10.6
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.95,
+            5.4,
+            14.55,
+            10.6
+          ]
+        }
+      }
+    },
+    {
+      "name": "faixa superior",
+      "from": [
+        3.8,
+        15.684,
+        1.63
+      ],
+      "to": [
+        12.2,
+        16,
+        1.8
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            3.8,
+            0,
+            12.2,
+            0.316
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            3.8,
+            0,
+            12.2,
+            0.316
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            1.63,
+            0,
+            1.8,
+            0.316
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            1.63,
+            0,
+            1.8,
+            0.316
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.8,
+            1.63,
+            12.2,
+            1.8
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            3.8,
+            1.63,
+            12.2,
+            1.8
+          ]
+        }
+      }
+    }
+  ]
+}

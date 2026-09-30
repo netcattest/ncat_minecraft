@@ -1,0 +1,9 @@
+{
+  "parent": "ncat_minecraft:item/sftp_screen",
+  "textures": {
+    "body": "minecraft:block/black_concrete",
+    "accent": "minecraft:block/light_blue_concrete",
+    "panel": "minecraft:block/gray_concrete",
+    "particle": "minecraft:block/light_blue_concrete"
+  }
+}

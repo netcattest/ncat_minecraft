@@ -1,0 +1,9 @@
+{
+  "parent": "ncat_minecraft:item/cable_adjuster",
+  "textures": {
+    "metal": "minecraft:block/iron_block",
+    "grip": "minecraft:block/gray_concrete",
+    "accent": "minecraft:block/blue_concrete",
+    "particle": "minecraft:block/iron_block"
+  }
+}

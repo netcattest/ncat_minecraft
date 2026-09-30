@@ -1,0 +1,437 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "bowl": "ncat_minecraft:block/toilet/bowl",
+    "bowl_deep": "ncat_minecraft:block/toilet/bowl_deep",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "water": "ncat_minecraft:block/toilet/water",
+    "water_deep": "ncat_minecraft:block/toilet/water_deep",
+    "water_shine": "ncat_minecraft:block/toilet/water_shine",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "painel plano",
+      "from": [
+        2.357,
+        13.69,
+        7.373
+      ],
+      "to": [
+        13.643,
+        16,
+        8.41
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.05,
+            5.189,
+            12.95,
+            6.75
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.05,
+            5.189,
+            12.95,
+            6.75
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.45,
+            5.189,
+            8.36,
+            6.75
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.45,
+            5.189,
+            8.36,
+            6.75
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.05,
+            7.45,
+            12.95,
+            8.36
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.05,
+            7.45,
+            12.95,
+            8.36
+          ]
+        }
+      }
+    },
+    {
+      "name": "borda esquerda",
+      "from": [
+        1.901,
+        14.504,
+        7.487
+      ],
+      "to": [
+        2.357,
+        16,
+        8.319
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            5.189,
+            3.05,
+            6.2
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            5.189,
+            3.05,
+            6.2
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.55,
+            5.189,
+            8.28,
+            6.2
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.55,
+            5.189,
+            8.28,
+            6.2
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.65,
+            7.55,
+            3.05,
+            8.28
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.65,
+            7.55,
+            3.05,
+            8.28
+          ]
+        }
+      }
+    },
+    {
+      "name": "borda direita",
+      "from": [
+        13.643,
+        14.504,
+        7.487
+      ],
+      "to": [
+        14.099,
+        16,
+        8.319
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.95,
+            5.189,
+            13.35,
+            6.2
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.95,
+            5.189,
+            13.35,
+            6.2
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.55,
+            5.189,
+            8.28,
+            6.2
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.55,
+            5.189,
+            8.28,
+            6.2
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.95,
+            7.55,
+            13.35,
+            8.28
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.95,
+            7.55,
+            13.35,
+            8.28
+          ]
+        }
+      }
+    },
+    {
+      "name": "linha interna",
+      "from": [
+        2.87,
+        14.356,
+        7.259
+      ],
+      "to": [
+        13.13,
+        14.8,
+        7.43
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.5,
+            6.0,
+            12.5,
+            6.3
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.5,
+            6.0,
+            12.5,
+            6.3
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            7.35,
+            6.0,
+            7.5,
+            6.3
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            7.35,
+            6.0,
+            7.5,
+            6.3
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.5,
+            7.35,
+            12.5,
+            7.5
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.5,
+            7.35,
+            12.5,
+            7.5
+          ]
+        }
+      }
+    },
+    {
+      "name": "batente esquerdo",
+      "from": [
+        3.497,
+        13.69,
+        7.031
+      ],
+      "to": [
+        4.409,
+        14.652,
+        7.43
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            4.05,
+            6.1,
+            4.85,
+            6.75
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            4.05,
+            6.1,
+            4.85,
+            6.75
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            7.15,
+            6.1,
+            7.5,
+            6.75
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            7.15,
+            6.1,
+            7.5,
+            6.75
+          ]
+        },
+        "up": {
+          "texture": "#metal",
+          "uv": [
+            4.05,
+            7.15,
+            4.85,
+            7.5
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            4.05,
+            7.15,
+            4.85,
+            7.5
+          ]
+        }
+      }
+    },
+    {
+      "name": "batente direito",
+      "from": [
+        11.591,
+        13.69,
+        7.031
+      ],
+      "to": [
+        12.503,
+        14.652,
+        7.43
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            11.15,
+            6.1,
+            11.95,
+            6.75
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            11.15,
+            6.1,
+            11.95,
+            6.75
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            7.15,
+            6.1,
+            7.5,
+            6.75
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            7.15,
+            6.1,
+            7.5,
+            6.75
+          ]
+        },
+        "up": {
+          "texture": "#metal",
+          "uv": [
+            11.15,
+            7.15,
+            11.95,
+            7.5
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            11.15,
+            7.15,
+            11.95,
+            7.5
+          ]
+        }
+      }
+    }
+  ]
+}

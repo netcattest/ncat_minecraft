@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ncat_minecraft:block/terminal_kb_right"
+    },
+    "facing=east": {
+      "model": "ncat_minecraft:block/terminal_kb_right",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ncat_minecraft:block/terminal_kb_right",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ncat_minecraft:block/terminal_kb_right",
+      "y": 270
+    }
+  }
+}

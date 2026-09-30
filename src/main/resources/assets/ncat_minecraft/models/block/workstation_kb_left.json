@@ -1,0 +1,12 @@
+{
+  "parent": "ncat_minecraft:block/sftp_kb_left",
+  "textures": {
+    "body": "minecraft:block/black_concrete",
+    "deck": "minecraft:block/blue_terracotta",
+    "key": "minecraft:block/white_concrete",
+    "dark": "minecraft:block/black_concrete",
+    "accent": "minecraft:block/blue_concrete",
+    "led": "minecraft:block/lime_concrete",
+    "particle": "minecraft:block/black_concrete"
+  }
+}

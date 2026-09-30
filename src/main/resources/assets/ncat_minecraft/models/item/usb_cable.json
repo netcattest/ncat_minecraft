@@ -1,0 +1,10 @@
+{
+  "parent": "ncat_minecraft:item/data_cable",
+  "textures": {
+    "cable": "minecraft:block/gray_concrete",
+    "accent": "minecraft:block/blue_concrete",
+    "metal": "minecraft:block/iron_block",
+    "contact": "minecraft:block/copper_block",
+    "particle": "minecraft:block/gray_concrete"
+  }
+}

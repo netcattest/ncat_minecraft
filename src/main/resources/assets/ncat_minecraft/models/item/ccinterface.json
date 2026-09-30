@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "ncat_minecraft:block/cci_topbot",
+    "front": "ncat_minecraft:block/cci_front",
+    "side": "ncat_minecraft:block/cci_side"
+  }
+}

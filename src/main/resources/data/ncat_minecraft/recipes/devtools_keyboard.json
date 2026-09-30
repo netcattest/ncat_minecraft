@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["III", "PPP", "DRD"],
+  "key": {
+    "I": {"item": "minecraft:iron_ingot"},
+    "P": {"item": "minecraft:stone_pressure_plate"},
+    "D": {"item": "minecraft:purple_dye"},
+    "R": {"item": "minecraft:redstone"}
+  },
+  "result": {"item": "ncat_minecraft:devtools_keyboard"}
+}

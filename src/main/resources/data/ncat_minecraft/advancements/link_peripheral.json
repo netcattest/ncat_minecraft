@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": { "item": "ncat_minecraft:linker" },
+    "title": { "translate": "advancements.ncat_minecraft.linkperipheral.title" },
+    "description": { "translate": "advancements.ncat_minecraft.linkperipheral.description" },
+    "frame": "task"
+  },
+  "parent": "ncat_minecraft:screen",
+  "criteria": {
+    "link_peripheral": {
+      "trigger": "ncat_minecraft:link_peripheral"
+    }
+  }
+}

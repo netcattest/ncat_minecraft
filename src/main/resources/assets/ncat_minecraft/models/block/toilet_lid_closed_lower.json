@@ -1,0 +1,577 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "bowl": "ncat_minecraft:block/toilet/bowl",
+    "bowl_deep": "ncat_minecraft:block/toilet/bowl_deep",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "water": "ncat_minecraft:block/toilet/water",
+    "water_deep": "ncat_minecraft:block/toilet/water_deep",
+    "water_shine": "ncat_minecraft:block/toilet/water_shine",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "tampa plana miolo",
+      "from": [
+        2.129,
+        13.66,
+        0.134
+      ],
+      "to": [
+        13.871,
+        14.741,
+        7.658
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.85,
+            6.04,
+            13.15,
+            6.77
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.85,
+            6.04,
+            13.15,
+            6.77
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.1,
+            6.04,
+            7.7,
+            6.77
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.1,
+            6.04,
+            7.7,
+            6.77
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.85,
+            1.1,
+            13.15,
+            7.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.85,
+            1.1,
+            13.15,
+            7.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa plana oeste",
+      "from": [
+        1.217,
+        13.66,
+        1.046
+      ],
+      "to": [
+        2.186,
+        14.741,
+        6.746
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.05,
+            6.04,
+            2.9,
+            6.77
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.05,
+            6.04,
+            2.9,
+            6.77
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            6.04,
+            6.9,
+            6.77
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            6.04,
+            6.9,
+            6.77
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.05,
+            1.9,
+            2.9,
+            6.9
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.05,
+            1.9,
+            2.9,
+            6.9
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa plana leste",
+      "from": [
+        13.814,
+        13.66,
+        1.046
+      ],
+      "to": [
+        14.783,
+        14.741,
+        6.746
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.1,
+            6.04,
+            13.95,
+            6.77
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.1,
+            6.04,
+            13.95,
+            6.77
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            6.04,
+            6.9,
+            6.77
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            6.04,
+            6.9,
+            6.77
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.1,
+            1.9,
+            13.95,
+            6.9
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.1,
+            1.9,
+            13.95,
+            6.9
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa plana canto 0",
+      "from": [
+        1.6,
+        13.66,
+        0.517
+      ],
+      "to": [
+        2.186,
+        14.741,
+        1.103
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.386,
+            6.04,
+            2.9,
+            6.77
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.386,
+            6.04,
+            2.9,
+            6.77
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.436,
+            6.04,
+            1.95,
+            6.77
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.436,
+            6.04,
+            1.95,
+            6.77
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.386,
+            1.436,
+            2.9,
+            1.95
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.386,
+            1.436,
+            2.9,
+            1.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa plana canto 1",
+      "from": [
+        13.814,
+        13.66,
+        0.517
+      ],
+      "to": [
+        14.4,
+        14.741,
+        1.103
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.1,
+            6.04,
+            13.614,
+            6.77
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.1,
+            6.04,
+            13.614,
+            6.77
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.436,
+            6.04,
+            1.95,
+            6.77
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.436,
+            6.04,
+            1.95,
+            6.77
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.1,
+            1.436,
+            13.614,
+            1.95
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.1,
+            1.436,
+            13.614,
+            1.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa plana canto 2",
+      "from": [
+        1.6,
+        13.66,
+        6.689
+      ],
+      "to": [
+        2.186,
+        14.741,
+        7.275
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.386,
+            6.04,
+            2.9,
+            6.77
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.386,
+            6.04,
+            2.9,
+            6.77
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            6.85,
+            6.04,
+            7.364,
+            6.77
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            6.85,
+            6.04,
+            7.364,
+            6.77
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.386,
+            6.85,
+            2.9,
+            7.364
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.386,
+            6.85,
+            2.9,
+            7.364
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa plana canto 3",
+      "from": [
+        13.814,
+        13.66,
+        6.689
+      ],
+      "to": [
+        14.4,
+        14.741,
+        7.275
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.1,
+            6.04,
+            13.614,
+            6.77
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.1,
+            6.04,
+            13.614,
+            6.77
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            6.85,
+            6.04,
+            7.364,
+            6.77
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            6.85,
+            6.04,
+            7.364,
+            6.77
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.1,
+            6.85,
+            13.614,
+            7.364
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.1,
+            6.85,
+            13.614,
+            7.364
+          ]
+        }
+      }
+    },
+    {
+      "name": "borda frontal",
+      "from": [
+        2.357,
+        13.616,
+        0.02
+      ],
+      "to": [
+        13.643,
+        14.445,
+        0.305
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.05,
+            6.24,
+            12.95,
+            6.8
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.05,
+            6.24,
+            12.95,
+            6.8
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.0,
+            6.24,
+            1.25,
+            6.8
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.0,
+            6.24,
+            1.25,
+            6.8
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.05,
+            1.0,
+            12.95,
+            1.25
+          ]
+        },
+        "down": {
+          "texture": "#porcelain",
+          "uv": [
+            3.05,
+            1.0,
+            12.95,
+            1.25
+          ]
+        }
+      }
+    }
+  ]
+}

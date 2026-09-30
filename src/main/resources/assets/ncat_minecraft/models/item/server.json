@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "ncat_minecraft:block/server",
+    "down": "ncat_minecraft:block/server2",
+    "up": "ncat_minecraft:block/server2",
+    "north": "ncat_minecraft:block/server",
+    "east": "ncat_minecraft:block/server",
+    "south": "ncat_minecraft:block/server",
+    "west": "ncat_minecraft:block/server"
+  }
+}

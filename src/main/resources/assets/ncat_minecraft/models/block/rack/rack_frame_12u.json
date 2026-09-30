@@ -1,0 +1,1948 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "cabinet_steel": "ncat_minecraft:block/rack/cabinet_steel",
+    "cabinet_edge": "ncat_minecraft:block/rack/cabinet_edge",
+    "vent": "ncat_minecraft:block/rack/vent",
+    "mesh": "ncat_minecraft:block/rack/mesh",
+    "cabinet_steel_dark": "ncat_minecraft:block/rack/cabinet_steel_dark",
+    "rail": "ncat_minecraft:block/rack/rail",
+    "rubber": "ncat_minecraft:block/rack/rubber",
+    "badge": "ncat_minecraft:block/rack/badge",
+    "particle": "ncat_minecraft:block/rack/cabinet_steel"
+  },
+  "elements": [
+    {
+      "name": "montante frontal",
+      "from": [
+        0.55,
+        1.1,
+        1.55
+      ],
+      "to": [
+        2.05,
+        16.0,
+        2.85
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.95,
+            0.0,
+            15.45,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            0.0,
+            2.05,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            1.55,
+            0.0,
+            2.85,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "east": {
+          "uv": [
+            13.15,
+            0.0,
+            14.45,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            1.55,
+            2.05,
+            2.85
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            13.15,
+            2.05,
+            14.45
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "montante traseiro",
+      "from": [
+        0.55,
+        1.1,
+        13.1
+      ],
+      "to": [
+        2.05,
+        16.0,
+        14.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.95,
+            0.0,
+            15.45,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            0.0,
+            2.05,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            13.1,
+            0.0,
+            14.4,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "east": {
+          "uv": [
+            1.6,
+            0.0,
+            2.9,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            13.1,
+            2.05,
+            14.4
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            1.6,
+            2.05,
+            2.9
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "montante frontal",
+      "from": [
+        13.95,
+        1.1,
+        1.55
+      ],
+      "to": [
+        15.45,
+        16.0,
+        2.85
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            0.0,
+            2.05,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            13.95,
+            0.0,
+            15.45,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            1.55,
+            0.0,
+            2.85,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "east": {
+          "uv": [
+            13.15,
+            0.0,
+            14.45,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "up": {
+          "uv": [
+            13.95,
+            1.55,
+            15.45,
+            2.85
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            13.95,
+            13.15,
+            15.45,
+            14.45
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "montante traseiro",
+      "from": [
+        13.95,
+        1.1,
+        13.1
+      ],
+      "to": [
+        15.45,
+        16.0,
+        14.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            0.0,
+            2.05,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            13.95,
+            0.0,
+            15.45,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            13.1,
+            0.0,
+            14.4,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "east": {
+          "uv": [
+            1.6,
+            0.0,
+            2.9,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "up": {
+          "uv": [
+            13.95,
+            13.1,
+            15.45,
+            14.4
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            13.95,
+            1.6,
+            15.45,
+            2.9
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "lateral",
+      "from": [
+        0.3,
+        1.1,
+        2.55
+      ],
+      "to": [
+        0.9,
+        16.0,
+        13.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            15.1,
+            0.0,
+            15.7,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            0.3,
+            0.0,
+            0.9,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            2.55,
+            0.0,
+            13.4,
+            14.9
+          ],
+          "texture": "#vent"
+        },
+        "east": {
+          "uv": [
+            2.6,
+            0.0,
+            13.45,
+            14.9
+          ],
+          "texture": "#vent"
+        },
+        "up": {
+          "uv": [
+            0.3,
+            2.55,
+            0.9,
+            13.4
+          ],
+          "texture": "#vent"
+        },
+        "down": {
+          "uv": [
+            0.3,
+            2.6,
+            0.9,
+            13.45
+          ],
+          "texture": "#vent"
+        }
+      }
+    },
+    {
+      "name": "lateral",
+      "from": [
+        15.1,
+        1.1,
+        2.55
+      ],
+      "to": [
+        15.7,
+        16.0,
+        13.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.3,
+            0.0,
+            0.9,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            15.1,
+            0.0,
+            15.7,
+            14.9
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            2.55,
+            0.0,
+            13.4,
+            14.9
+          ],
+          "texture": "#vent"
+        },
+        "east": {
+          "uv": [
+            2.6,
+            0.0,
+            13.45,
+            14.9
+          ],
+          "texture": "#vent"
+        },
+        "up": {
+          "uv": [
+            15.1,
+            2.55,
+            15.7,
+            13.4
+          ],
+          "texture": "#vent"
+        },
+        "down": {
+          "uv": [
+            15.1,
+            2.6,
+            15.7,
+            13.45
+          ],
+          "texture": "#vent"
+        }
+      }
+    },
+    {
+      "name": "fundo",
+      "from": [
+        0.85,
+        1.1,
+        14.35
+      ],
+      "to": [
+        15.15,
+        16.0,
+        15.3
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.85,
+            0.0,
+            15.15,
+            14.9
+          ],
+          "texture": "#mesh"
+        },
+        "south": {
+          "uv": [
+            0.85,
+            0.0,
+            15.15,
+            14.9
+          ],
+          "texture": "#mesh"
+        },
+        "west": {
+          "uv": [
+            14.35,
+            0.0,
+            15.3,
+            14.9
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "east": {
+          "uv": [
+            0.7,
+            0.0,
+            1.65,
+            14.9
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "up": {
+          "uv": [
+            0.85,
+            14.35,
+            15.15,
+            15.3
+          ],
+          "texture": "#mesh"
+        },
+        "down": {
+          "uv": [
+            0.85,
+            0.7,
+            15.15,
+            1.65
+          ],
+          "texture": "#mesh"
+        }
+      }
+    },
+    {
+      "name": "aro da porta",
+      "from": [
+        0.55,
+        1.1,
+        0.35
+      ],
+      "to": [
+        15.45,
+        1.85,
+        1.55
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            14.15,
+            15.45,
+            14.9
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            14.15,
+            15.45,
+            14.9
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "west": {
+          "uv": [
+            0.35,
+            14.15,
+            1.55,
+            14.9
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "east": {
+          "uv": [
+            14.45,
+            14.15,
+            15.65,
+            14.9
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            0.35,
+            15.45,
+            1.55
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            14.45,
+            15.45,
+            15.65
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "aro da porta",
+      "from": [
+        0.55,
+        15.25,
+        0.35
+      ],
+      "to": [
+        15.45,
+        16.0,
+        1.55
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            0.0,
+            15.45,
+            0.75
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            0.0,
+            15.45,
+            0.75
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "west": {
+          "uv": [
+            0.35,
+            0.0,
+            1.55,
+            0.75
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "east": {
+          "uv": [
+            14.45,
+            0.0,
+            15.65,
+            0.75
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            0.35,
+            15.45,
+            1.55
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            14.45,
+            15.45,
+            15.65
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "piso",
+      "from": [
+        0.55,
+        1.1,
+        0.35
+      ],
+      "to": [
+        15.45,
+        1.6,
+        15.3
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            14.4,
+            15.45,
+            14.9
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            14.4,
+            15.45,
+            14.9
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "west": {
+          "uv": [
+            0.35,
+            14.4,
+            15.3,
+            14.9
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "east": {
+          "uv": [
+            0.7,
+            14.4,
+            15.65,
+            14.9
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            0.35,
+            15.45,
+            15.3
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            0.7,
+            15.45,
+            15.65
+          ],
+          "texture": "#cabinet_steel_dark"
+        }
+      }
+    },
+    {
+      "name": "trilho 19",
+      "from": [
+        2.45,
+        1.7,
+        2.0
+      ],
+      "to": [
+        3.45,
+        15.4,
+        2.8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#rail"
+        },
+        "south": {
+          "uv": [
+            2.45,
+            0.6,
+            3.45,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "west": {
+          "uv": [
+            2.0,
+            0.6,
+            2.8,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "east": {
+          "uv": [
+            13.2,
+            0.6,
+            14.0,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "up": {
+          "uv": [
+            2.45,
+            2.0,
+            3.45,
+            2.8
+          ],
+          "texture": "#rail"
+        },
+        "down": {
+          "uv": [
+            2.45,
+            13.2,
+            3.45,
+            14.0
+          ],
+          "texture": "#rail"
+        }
+      }
+    },
+    {
+      "name": "trilho traseiro",
+      "from": [
+        2.45,
+        1.7,
+        12.2
+      ],
+      "to": [
+        3.45,
+        15.4,
+        13.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#rail"
+        },
+        "south": {
+          "uv": [
+            2.45,
+            0.6,
+            3.45,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "west": {
+          "uv": [
+            12.2,
+            0.6,
+            13.0,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "east": {
+          "uv": [
+            3.0,
+            0.6,
+            3.8,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "up": {
+          "uv": [
+            2.45,
+            12.2,
+            3.45,
+            13.0
+          ],
+          "texture": "#rail"
+        },
+        "down": {
+          "uv": [
+            2.45,
+            3.0,
+            3.45,
+            3.8
+          ],
+          "texture": "#rail"
+        }
+      }
+    },
+    {
+      "name": "trilho 19",
+      "from": [
+        12.55,
+        1.7,
+        2.0
+      ],
+      "to": [
+        13.55,
+        15.4,
+        2.8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#rail"
+        },
+        "south": {
+          "uv": [
+            12.55,
+            0.6,
+            13.55,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "west": {
+          "uv": [
+            2.0,
+            0.6,
+            2.8,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "east": {
+          "uv": [
+            13.2,
+            0.6,
+            14.0,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "up": {
+          "uv": [
+            12.55,
+            2.0,
+            13.55,
+            2.8
+          ],
+          "texture": "#rail"
+        },
+        "down": {
+          "uv": [
+            12.55,
+            13.2,
+            13.55,
+            14.0
+          ],
+          "texture": "#rail"
+        }
+      }
+    },
+    {
+      "name": "trilho traseiro",
+      "from": [
+        12.55,
+        1.7,
+        12.2
+      ],
+      "to": [
+        13.55,
+        15.4,
+        13.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#rail"
+        },
+        "south": {
+          "uv": [
+            12.55,
+            0.6,
+            13.55,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "west": {
+          "uv": [
+            12.2,
+            0.6,
+            13.0,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "east": {
+          "uv": [
+            3.0,
+            0.6,
+            3.8,
+            14.3
+          ],
+          "texture": "#rail"
+        },
+        "up": {
+          "uv": [
+            12.55,
+            12.2,
+            13.55,
+            13.0
+          ],
+          "texture": "#rail"
+        },
+        "down": {
+          "uv": [
+            12.55,
+            3.0,
+            13.55,
+            3.8
+          ],
+          "texture": "#rail"
+        }
+      }
+    },
+    {
+      "name": "rodape",
+      "from": [
+        0.75,
+        0.0,
+        0.55
+      ],
+      "to": [
+        15.25,
+        1.1,
+        15.1
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.75,
+            14.9,
+            15.25,
+            16.0
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "south": {
+          "uv": [
+            0.75,
+            14.9,
+            15.25,
+            16.0
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "west": {
+          "uv": [
+            0.55,
+            14.9,
+            15.1,
+            16.0
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "east": {
+          "uv": [
+            0.9,
+            14.9,
+            15.45,
+            16.0
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "up": {
+          "uv": [
+            0.75,
+            0.55,
+            15.25,
+            15.1
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.75,
+            0.9,
+            15.25,
+            15.45
+          ],
+          "texture": "#cabinet_steel_dark"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador",
+      "from": [
+        2.072,
+        0.0,
+        2.18
+      ],
+      "to": [
+        3.128,
+        0.55,
+        2.62
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12.872,
+            15.45,
+            13.928,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            2.072,
+            15.45,
+            3.128,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            2.18,
+            15.45,
+            2.62,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            13.38,
+            15.45,
+            13.82,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            2.072,
+            2.18,
+            3.128,
+            2.62
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            2.072,
+            13.38,
+            3.128,
+            13.82
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador b",
+      "from": [
+        2.38,
+        0.01,
+        1.872
+      ],
+      "to": [
+        2.82,
+        0.54,
+        2.928
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.18,
+            15.46,
+            13.62,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            2.38,
+            15.46,
+            2.82,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            1.872,
+            15.46,
+            2.928,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            13.072,
+            15.46,
+            14.128,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            2.38,
+            1.872,
+            2.82,
+            2.928
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            2.38,
+            13.072,
+            2.82,
+            14.128
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador c",
+      "from": [
+        2.1958,
+        0.02,
+        1.9957
+      ],
+      "to": [
+        3.0042,
+        0.53,
+        2.8042
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12.9958,
+            15.47,
+            13.8042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            2.1958,
+            15.47,
+            3.0042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            1.9957,
+            15.47,
+            2.8042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            13.1958,
+            15.47,
+            14.0043,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            2.1958,
+            1.9957,
+            3.0042,
+            2.8042
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            2.1958,
+            13.1958,
+            3.0042,
+            14.0043
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador",
+      "from": [
+        2.072,
+        0.0,
+        13.18
+      ],
+      "to": [
+        3.128,
+        0.55,
+        13.62
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12.872,
+            15.45,
+            13.928,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            2.072,
+            15.45,
+            3.128,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            13.18,
+            15.45,
+            13.62,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            2.38,
+            15.45,
+            2.82,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            2.072,
+            13.18,
+            3.128,
+            13.62
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            2.072,
+            2.38,
+            3.128,
+            2.82
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador b",
+      "from": [
+        2.38,
+        0.01,
+        12.872
+      ],
+      "to": [
+        2.82,
+        0.54,
+        13.928
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.18,
+            15.46,
+            13.62,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            2.38,
+            15.46,
+            2.82,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            12.872,
+            15.46,
+            13.928,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            2.072,
+            15.46,
+            3.128,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            2.38,
+            12.872,
+            2.82,
+            13.928
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            2.38,
+            2.072,
+            2.82,
+            3.128
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador c",
+      "from": [
+        2.1958,
+        0.02,
+        12.9958
+      ],
+      "to": [
+        3.0042,
+        0.53,
+        13.8042
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12.9958,
+            15.47,
+            13.8042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            2.1958,
+            15.47,
+            3.0042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            12.9958,
+            15.47,
+            13.8042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            2.1958,
+            15.47,
+            3.0042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            2.1958,
+            12.9958,
+            3.0042,
+            13.8042
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            2.1958,
+            2.1958,
+            3.0042,
+            3.0042
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador",
+      "from": [
+        12.872,
+        0.0,
+        2.18
+      ],
+      "to": [
+        13.928,
+        0.55,
+        2.62
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.072,
+            15.45,
+            3.128,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            12.872,
+            15.45,
+            13.928,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            2.18,
+            15.45,
+            2.62,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            13.38,
+            15.45,
+            13.82,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            12.872,
+            2.18,
+            13.928,
+            2.62
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            12.872,
+            13.38,
+            13.928,
+            13.82
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador b",
+      "from": [
+        13.18,
+        0.01,
+        1.872
+      ],
+      "to": [
+        13.62,
+        0.54,
+        2.928
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.38,
+            15.46,
+            2.82,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            13.18,
+            15.46,
+            13.62,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            1.872,
+            15.46,
+            2.928,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            13.072,
+            15.46,
+            14.128,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            13.18,
+            1.872,
+            13.62,
+            2.928
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            13.18,
+            13.072,
+            13.62,
+            14.128
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador c",
+      "from": [
+        12.9958,
+        0.02,
+        1.9957
+      ],
+      "to": [
+        13.8042,
+        0.53,
+        2.8042
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.1958,
+            15.47,
+            3.0042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            12.9958,
+            15.47,
+            13.8042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            1.9957,
+            15.47,
+            2.8042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            13.1958,
+            15.47,
+            14.0043,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            12.9958,
+            1.9957,
+            13.8042,
+            2.8042
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            12.9958,
+            13.1958,
+            13.8042,
+            14.0043
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador",
+      "from": [
+        12.872,
+        0.0,
+        13.18
+      ],
+      "to": [
+        13.928,
+        0.55,
+        13.62
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.072,
+            15.45,
+            3.128,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            12.872,
+            15.45,
+            13.928,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            13.18,
+            15.45,
+            13.62,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            2.38,
+            15.45,
+            2.82,
+            16.0
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            12.872,
+            13.18,
+            13.928,
+            13.62
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            12.872,
+            2.38,
+            13.928,
+            2.82
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador b",
+      "from": [
+        13.18,
+        0.01,
+        12.872
+      ],
+      "to": [
+        13.62,
+        0.54,
+        13.928
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.38,
+            15.46,
+            2.82,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            13.18,
+            15.46,
+            13.62,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            12.872,
+            15.46,
+            13.928,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            2.072,
+            15.46,
+            3.128,
+            15.99
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            13.18,
+            12.872,
+            13.62,
+            13.928
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            13.18,
+            2.072,
+            13.62,
+            3.128
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "pe nivelador c",
+      "from": [
+        12.9958,
+        0.02,
+        12.9958
+      ],
+      "to": [
+        13.8042,
+        0.53,
+        13.8042
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.1958,
+            15.47,
+            3.0042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "south": {
+          "uv": [
+            12.9958,
+            15.47,
+            13.8042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "west": {
+          "uv": [
+            12.9958,
+            15.47,
+            13.8042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "east": {
+          "uv": [
+            2.1958,
+            15.47,
+            3.0042,
+            15.98
+          ],
+          "texture": "#rubber"
+        },
+        "up": {
+          "uv": [
+            12.9958,
+            12.9958,
+            13.8042,
+            13.8042
+          ],
+          "texture": "#rubber"
+        },
+        "down": {
+          "uv": [
+            12.9958,
+            2.1958,
+            13.8042,
+            3.0042
+          ],
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "etiqueta",
+      "from": [
+        5.2,
+        1.5,
+        1.43
+      ],
+      "to": [
+        10.8,
+        2.6,
+        1.53
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#badge"
+        },
+        "south": {
+          "uv": [
+            5.2,
+            13.4,
+            10.8,
+            14.5
+          ],
+          "texture": "#badge"
+        },
+        "west": {
+          "uv": [
+            1.43,
+            13.4,
+            1.53,
+            14.5
+          ],
+          "texture": "#badge"
+        },
+        "east": {
+          "uv": [
+            14.47,
+            13.4,
+            14.57,
+            14.5
+          ],
+          "texture": "#badge"
+        },
+        "up": {
+          "uv": [
+            5.2,
+            1.43,
+            10.8,
+            1.53
+          ],
+          "texture": "#badge"
+        },
+        "down": {
+          "uv": [
+            5.2,
+            14.47,
+            10.8,
+            14.57
+          ],
+          "texture": "#badge"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+</head>
+<body>
+	<h1 id="title">Acesso bloqueado</h1>
+	<p>
+		<span id="description">Este site foi bloqueado por você ou pelo responsável pelo servidor.</span>
+	</p>
+	<script>
+		function applyLanguage(code) {
+			const portuguese = code.toLowerCase().startsWith('pt');
+			document.documentElement.lang = portuguese ? 'pt-BR' : 'en';
+			document.getElementById('title').textContent = portuguese ? 'Acesso bloqueado' : 'Access blocked';
+			document.getElementById('description').textContent = portuguese ?
+				'Este site foi bloqueado por você ou pelo responsável pelo servidor.' :
+				'This website was blocked by you or the server owner.';
+		}
+		applyLanguage(navigator.language);
+		if (typeof window.cefQuery === 'function')
+			window.cefQuery({ request: 'NcatMinecraft_Locale{}', onSuccess: applyLanguage, onFailure: () => {} });
+	</script>
+</body>
+</html>

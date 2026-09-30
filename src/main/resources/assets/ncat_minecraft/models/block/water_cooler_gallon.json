@@ -1,0 +1,5339 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "jug": "ncat_minecraft:block/cooler/jug",
+    "jug_light": "ncat_minecraft:block/cooler/jug_light",
+    "jug_pale": "ncat_minecraft:block/cooler/jug_pale",
+    "jug_dark": "ncat_minecraft:block/cooler/jug_dark",
+    "tap_red": "ncat_minecraft:block/cooler/tap_red",
+    "tap_blue": "ncat_minecraft:block/cooler/tap_blue",
+    "water": "ncat_minecraft:block/cooler/water",
+    "particle": "ncat_minecraft:block/cooler/jug"
+  },
+  "elements": [
+    {
+      "name": "painel traseiro",
+      "from": [
+        1.9,
+        0,
+        5.0
+      ],
+      "to": [
+        14.1,
+        2.86,
+        14.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            13.14,
+            14.1,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            13.14,
+            14.1,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.0,
+            13.14,
+            14.15,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.0,
+            13.14,
+            14.15,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.9,
+            5.0,
+            14.1,
+            14.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.9,
+            5.0,
+            14.1,
+            14.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "lateral esquerda",
+      "from": [
+        1.9,
+        0,
+        2.55
+      ],
+      "to": [
+        3.7,
+        2.86,
+        14.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            13.14,
+            3.7,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            13.14,
+            3.7,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.55,
+            13.14,
+            14.15,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.55,
+            13.14,
+            14.15,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.9,
+            2.55,
+            3.7,
+            14.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.9,
+            2.55,
+            3.7,
+            14.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "lateral direita",
+      "from": [
+        12.3,
+        0,
+        2.55
+      ],
+      "to": [
+        14.1,
+        2.86,
+        14.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.3,
+            13.14,
+            14.1,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.3,
+            13.14,
+            14.1,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.55,
+            13.14,
+            14.15,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.55,
+            13.14,
+            14.15,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.3,
+            2.55,
+            14.1,
+            14.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.3,
+            2.55,
+            14.1,
+            14.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "frente superior",
+      "from": [
+        3.7,
+        0,
+        1.75
+      ],
+      "to": [
+        12.3,
+        2.86,
+        14.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            13.14,
+            12.3,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.7,
+            13.14,
+            12.3,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.75,
+            13.14,
+            14.15,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.75,
+            13.14,
+            14.15,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.7,
+            1.75,
+            12.3,
+            14.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.7,
+            1.75,
+            12.3,
+            14.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "moldura esquerda",
+      "from": [
+        1.6,
+        0,
+        1.4
+      ],
+      "to": [
+        3.7,
+        2.986,
+        3.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.6,
+            13.014,
+            3.7,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.6,
+            13.014,
+            3.7,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            13.014,
+            3.0,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            13.014,
+            3.0,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.6,
+            1.4,
+            3.7,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.6,
+            1.4,
+            3.7,
+            3.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "moldura direita",
+      "from": [
+        12.3,
+        0,
+        1.4
+      ],
+      "to": [
+        14.4,
+        2.986,
+        3.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.3,
+            13.014,
+            14.4,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.3,
+            13.014,
+            14.4,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            13.014,
+            3.0,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.4,
+            13.014,
+            3.0,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.3,
+            1.4,
+            14.4,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.3,
+            1.4,
+            14.4,
+            3.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "faixa superior",
+      "from": [
+        3.8,
+        0,
+        1.63
+      ],
+      "to": [
+        12.2,
+        0.192,
+        1.8
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            3.8,
+            15.808,
+            12.2,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            3.8,
+            15.808,
+            12.2,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            1.63,
+            15.808,
+            1.8,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            1.63,
+            15.808,
+            1.8,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.8,
+            1.63,
+            12.2,
+            1.8
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            3.8,
+            1.63,
+            12.2,
+            1.8
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa miolo",
+      "from": [
+        2.0,
+        2.669,
+        1.45
+      ],
+      "to": [
+        14.0,
+        4.13,
+        14.55
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.0,
+            11.87,
+            14.0,
+            13.331
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.0,
+            11.87,
+            14.0,
+            13.331
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.45,
+            11.87,
+            14.55,
+            13.331
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.45,
+            11.87,
+            14.55,
+            13.331
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.0,
+            1.45,
+            14.0,
+            14.55
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.0,
+            1.45,
+            14.0,
+            14.55
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa oeste",
+      "from": [
+        1.45,
+        2.669,
+        2.0
+      ],
+      "to": [
+        2.01,
+        4.13,
+        14.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.45,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.45,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.0,
+            11.87,
+            14.0,
+            13.331
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.0,
+            11.87,
+            14.0,
+            13.331
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.45,
+            2.0,
+            2.01,
+            14.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.45,
+            2.0,
+            2.01,
+            14.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa leste",
+      "from": [
+        13.99,
+        2.669,
+        2.0
+      ],
+      "to": [
+        14.55,
+        4.13,
+        14.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.55,
+            13.331
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.55,
+            13.331
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.0,
+            11.87,
+            14.0,
+            13.331
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.0,
+            11.87,
+            14.0,
+            13.331
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.99,
+            2.0,
+            14.55,
+            14.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.99,
+            2.0,
+            14.55,
+            14.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa canto 0",
+      "from": [
+        1.681,
+        2.669,
+        1.681
+      ],
+      "to": [
+        2.01,
+        4.13,
+        2.01
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.681,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.681,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.681,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.681,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.681,
+            1.681,
+            2.01,
+            2.01
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.681,
+            1.681,
+            2.01,
+            2.01
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa canto 1",
+      "from": [
+        13.99,
+        2.669,
+        1.681
+      ],
+      "to": [
+        14.319,
+        4.13,
+        2.01
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.319,
+            13.331
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.319,
+            13.331
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.681,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.681,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.99,
+            1.681,
+            14.319,
+            2.01
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.99,
+            1.681,
+            14.319,
+            2.01
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa canto 2",
+      "from": [
+        1.681,
+        2.669,
+        13.99
+      ],
+      "to": [
+        2.01,
+        4.13,
+        14.319
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.681,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.681,
+            11.87,
+            2.01,
+            13.331
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.319,
+            13.331
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.319,
+            13.331
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.681,
+            13.99,
+            2.01,
+            14.319
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.681,
+            13.99,
+            2.01,
+            14.319
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa canto 3",
+      "from": [
+        13.99,
+        2.669,
+        13.99
+      ],
+      "to": [
+        14.319,
+        4.13,
+        14.319
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.319,
+            13.331
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.319,
+            13.331
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.319,
+            13.331
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            13.99,
+            11.87,
+            14.319,
+            13.331
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.99,
+            13.99,
+            14.319,
+            14.319
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.99,
+            13.99,
+            14.319,
+            14.319
+          ]
+        }
+      }
+    },
+    {
+      "name": "colar",
+      "from": [
+        5.9,
+        3.748,
+        5.9
+      ],
+      "to": [
+        10.1,
+        4.32,
+        10.1
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            5.9,
+            11.68,
+            10.1,
+            12.252
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            5.9,
+            11.68,
+            10.1,
+            12.252
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            5.9,
+            11.68,
+            10.1,
+            12.252
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            5.9,
+            11.68,
+            10.1,
+            12.252
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.9,
+            5.9,
+            10.1,
+            10.1
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            5.9,
+            5.9,
+            10.1,
+            10.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "gargalo",
+      "from": [
+        6.15,
+        4.15,
+        6.15
+      ],
+      "to": [
+        9.85,
+        5.827,
+        9.85
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_dark",
+          "uv": [
+            6.15,
+            10.173,
+            9.85,
+            11.85
+          ]
+        },
+        "south": {
+          "texture": "#jug_dark",
+          "uv": [
+            6.15,
+            10.173,
+            9.85,
+            11.85
+          ]
+        },
+        "west": {
+          "texture": "#jug_dark",
+          "uv": [
+            6.15,
+            10.173,
+            9.85,
+            11.85
+          ]
+        },
+        "east": {
+          "texture": "#jug_dark",
+          "uv": [
+            6.15,
+            10.173,
+            9.85,
+            11.85
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            6.15,
+            6.15,
+            9.85,
+            9.85
+          ]
+        },
+        "down": {
+          "texture": "#jug_dark",
+          "uv": [
+            6.15,
+            6.15,
+            9.85,
+            9.85
+          ]
+        }
+      }
+    },
+    {
+      "name": "anel do gargalo miolo",
+      "from": [
+        6.15,
+        5.437,
+        5.7
+      ],
+      "to": [
+        9.85,
+        5.983,
+        10.3
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            6.15,
+            10.017,
+            9.85,
+            10.563
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            6.15,
+            10.017,
+            9.85,
+            10.563
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.7,
+            10.017,
+            10.3,
+            10.563
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.7,
+            10.017,
+            10.3,
+            10.563
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            6.15,
+            5.7,
+            9.85,
+            10.3
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            6.15,
+            5.7,
+            9.85,
+            10.3
+          ]
+        }
+      }
+    },
+    {
+      "name": "anel do gargalo oeste",
+      "from": [
+        5.7,
+        5.437,
+        6.15
+      ],
+      "to": [
+        6.16,
+        5.983,
+        9.85
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.7,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.7,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            6.15,
+            10.017,
+            9.85,
+            10.563
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            6.15,
+            10.017,
+            9.85,
+            10.563
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            5.7,
+            6.15,
+            6.16,
+            9.85
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            5.7,
+            6.15,
+            6.16,
+            9.85
+          ]
+        }
+      }
+    },
+    {
+      "name": "anel do gargalo leste",
+      "from": [
+        9.84,
+        5.437,
+        6.15
+      ],
+      "to": [
+        10.3,
+        5.983,
+        9.85
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.3,
+            10.563
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.3,
+            10.563
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            6.15,
+            10.017,
+            9.85,
+            10.563
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            6.15,
+            10.017,
+            9.85,
+            10.563
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            9.84,
+            6.15,
+            10.3,
+            9.85
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            9.84,
+            6.15,
+            10.3,
+            9.85
+          ]
+        }
+      }
+    },
+    {
+      "name": "anel do gargalo canto 0",
+      "from": [
+        5.889,
+        5.437,
+        5.889
+      ],
+      "to": [
+        6.16,
+        5.983,
+        6.16
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.889,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.889,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.889,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.889,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            5.889,
+            5.889,
+            6.16,
+            6.16
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            5.889,
+            5.889,
+            6.16,
+            6.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "anel do gargalo canto 1",
+      "from": [
+        9.84,
+        5.437,
+        5.889
+      ],
+      "to": [
+        10.111,
+        5.983,
+        6.16
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.111,
+            10.563
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.111,
+            10.563
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.889,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.889,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            9.84,
+            5.889,
+            10.111,
+            6.16
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            9.84,
+            5.889,
+            10.111,
+            6.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "anel do gargalo canto 2",
+      "from": [
+        5.889,
+        5.437,
+        9.84
+      ],
+      "to": [
+        6.16,
+        5.983,
+        10.111
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.889,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.889,
+            10.017,
+            6.16,
+            10.563
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.111,
+            10.563
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.111,
+            10.563
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            5.889,
+            9.84,
+            6.16,
+            10.111
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            5.889,
+            9.84,
+            6.16,
+            10.111
+          ]
+        }
+      }
+    },
+    {
+      "name": "anel do gargalo canto 3",
+      "from": [
+        9.84,
+        5.437,
+        9.84
+      ],
+      "to": [
+        10.111,
+        5.983,
+        10.111
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.111,
+            10.563
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.111,
+            10.563
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.111,
+            10.563
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            9.84,
+            10.017,
+            10.111,
+            10.563
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            9.84,
+            9.84,
+            10.111,
+            10.111
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            9.84,
+            9.84,
+            10.111,
+            10.111
+          ]
+        }
+      }
+    },
+    {
+      "name": "reservatorio tras",
+      "from": [
+        3.55,
+        5.866,
+        11.75
+      ],
+      "to": [
+        12.45,
+        14.017,
+        12.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            11.75,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            11.75,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            11.75,
+            12.45,
+            12.45
+          ]
+        },
+        "down": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            11.75,
+            12.45,
+            12.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "reservatorio oeste",
+      "from": [
+        3.55,
+        5.866,
+        3.55
+      ],
+      "to": [
+        4.25,
+        14.017,
+        12.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            4.25,
+            10.134
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            4.25,
+            10.134
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            3.55,
+            4.25,
+            12.45
+          ]
+        },
+        "down": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            3.55,
+            4.25,
+            12.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "reservatorio leste",
+      "from": [
+        11.75,
+        5.866,
+        3.55
+      ],
+      "to": [
+        12.45,
+        14.017,
+        12.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            11.75,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            11.75,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            11.75,
+            3.55,
+            12.45,
+            12.45
+          ]
+        },
+        "down": {
+          "texture": "#jug_light",
+          "uv": [
+            11.75,
+            3.55,
+            12.45,
+            12.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "reservatorio frente e",
+      "from": [
+        3.55,
+        5.866,
+        3.55
+      ],
+      "to": [
+        7.0,
+        14.017,
+        4.25
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            7.0,
+            10.134
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            7.0,
+            10.134
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            4.25,
+            10.134
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            4.25,
+            10.134
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            3.55,
+            7.0,
+            4.25
+          ]
+        },
+        "down": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            3.55,
+            7.0,
+            4.25
+          ]
+        }
+      }
+    },
+    {
+      "name": "reservatorio frente d",
+      "from": [
+        9.0,
+        5.866,
+        3.55
+      ],
+      "to": [
+        12.45,
+        14.017,
+        4.25
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            9.0,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            9.0,
+            1.983,
+            12.45,
+            10.134
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            4.25,
+            10.134
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            3.55,
+            1.983,
+            4.25,
+            10.134
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            9.0,
+            3.55,
+            12.45,
+            4.25
+          ]
+        },
+        "down": {
+          "texture": "#jug_light",
+          "uv": [
+            9.0,
+            3.55,
+            12.45,
+            4.25
+          ]
+        }
+      }
+    },
+    {
+      "name": "reservatorio visor",
+      "from": [
+        7.0,
+        5.866,
+        3.865
+      ],
+      "to": [
+        9.0,
+        14.017,
+        4.25
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            1.983,
+            9.0,
+            10.134
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            1.983,
+            9.0,
+            10.134
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.865,
+            1.983,
+            4.25,
+            10.134
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.865,
+            1.983,
+            4.25,
+            10.134
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.865,
+            9.0,
+            4.25
+          ]
+        },
+        "down": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.865,
+            9.0,
+            4.25
+          ]
+        }
+      }
+    },
+    {
+      "name": "fundo translucido",
+      "from": [
+        7.0,
+        5.944,
+        10.8
+      ],
+      "to": [
+        9.0,
+        13.9,
+        11.25
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            2.1,
+            9.0,
+            10.056
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            2.1,
+            9.0,
+            10.056
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.8,
+            2.1,
+            11.25,
+            10.056
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.8,
+            2.1,
+            11.25,
+            10.056
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            10.8,
+            9.0,
+            11.25
+          ]
+        },
+        "down": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            10.8,
+            9.0,
+            11.25
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 0 tras",
+      "from": [
+        3.46,
+        6.607,
+        11.82
+      ],
+      "to": [
+        12.54,
+        6.903,
+        12.54
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            11.82,
+            12.54,
+            12.54
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            11.82,
+            12.54,
+            12.54
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 0 oeste",
+      "from": [
+        3.46,
+        6.607,
+        3.46
+      ],
+      "to": [
+        4.18,
+        6.903,
+        12.54
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            4.18,
+            9.393
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            4.18,
+            9.393
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            3.46,
+            4.18,
+            12.54
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            3.46,
+            4.18,
+            12.54
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 0 leste",
+      "from": [
+        11.82,
+        6.607,
+        3.46
+      ],
+      "to": [
+        12.54,
+        6.903,
+        12.54
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            3.46,
+            12.54,
+            12.54
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            3.46,
+            12.54,
+            12.54
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 0 frente e",
+      "from": [
+        3.46,
+        6.607,
+        3.46
+      ],
+      "to": [
+        7.0,
+        6.903,
+        4.18
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            7.0,
+            9.393
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            7.0,
+            9.393
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            4.18,
+            9.393
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            4.18,
+            9.393
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            3.46,
+            7.0,
+            4.18
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            3.46,
+            7.0,
+            4.18
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 0 frente d",
+      "from": [
+        9.0,
+        6.607,
+        3.46
+      ],
+      "to": [
+        12.54,
+        6.903,
+        4.18
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            9.097,
+            12.54,
+            9.393
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            4.18,
+            9.393
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            9.097,
+            4.18,
+            9.393
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.46,
+            12.54,
+            4.18
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.46,
+            12.54,
+            4.18
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 0 visor",
+      "from": [
+        7.0,
+        6.607,
+        3.784
+      ],
+      "to": [
+        9.0,
+        6.903,
+        4.18
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            9.097,
+            9.0,
+            9.393
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            9.097,
+            9.0,
+            9.393
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.784,
+            9.097,
+            4.18,
+            9.393
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.784,
+            9.097,
+            4.18,
+            9.393
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.784,
+            9.0,
+            4.18
+          ]
+        },
+        "down": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.784,
+            9.0,
+            4.18
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 1 tras",
+      "from": [
+        3.34,
+        8.323,
+        11.94
+      ],
+      "to": [
+        12.66,
+        8.619,
+        12.66
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            11.94,
+            12.66,
+            12.66
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            11.94,
+            12.66,
+            12.66
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 1 oeste",
+      "from": [
+        3.34,
+        8.323,
+        3.34
+      ],
+      "to": [
+        4.06,
+        8.619,
+        12.66
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            4.06,
+            7.677
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            4.06,
+            7.677
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            4.06,
+            12.66
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            4.06,
+            12.66
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 1 leste",
+      "from": [
+        11.94,
+        8.323,
+        3.34
+      ],
+      "to": [
+        12.66,
+        8.619,
+        12.66
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.34,
+            12.66,
+            12.66
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.34,
+            12.66,
+            12.66
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 1 frente e",
+      "from": [
+        3.34,
+        8.323,
+        3.34
+      ],
+      "to": [
+        7.0,
+        8.619,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            7.0,
+            7.677
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            7.0,
+            7.677
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            4.06,
+            7.677
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            4.06,
+            7.677
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            7.0,
+            4.06
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            7.0,
+            4.06
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 1 frente d",
+      "from": [
+        9.0,
+        8.323,
+        3.34
+      ],
+      "to": [
+        12.66,
+        8.619,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            7.381,
+            12.66,
+            7.677
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            4.06,
+            7.677
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            7.381,
+            4.06,
+            7.677
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.34,
+            12.66,
+            4.06
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.34,
+            12.66,
+            4.06
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 1 visor",
+      "from": [
+        7.0,
+        8.323,
+        3.664
+      ],
+      "to": [
+        9.0,
+        8.619,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            7.381,
+            9.0,
+            7.677
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            7.381,
+            9.0,
+            7.677
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.664,
+            7.381,
+            4.06,
+            7.677
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.664,
+            7.381,
+            4.06,
+            7.677
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.664,
+            9.0,
+            4.06
+          ]
+        },
+        "down": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.664,
+            9.0,
+            4.06
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 2 tras",
+      "from": [
+        3.34,
+        10.039,
+        11.94
+      ],
+      "to": [
+        12.66,
+        10.335,
+        12.66
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            11.94,
+            12.66,
+            12.66
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            11.94,
+            12.66,
+            12.66
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 2 oeste",
+      "from": [
+        3.34,
+        10.039,
+        3.34
+      ],
+      "to": [
+        4.06,
+        10.335,
+        12.66
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            4.06,
+            5.961
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            4.06,
+            5.961
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            4.06,
+            12.66
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            4.06,
+            12.66
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 2 leste",
+      "from": [
+        11.94,
+        10.039,
+        3.34
+      ],
+      "to": [
+        12.66,
+        10.335,
+        12.66
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.34,
+            12.66,
+            12.66
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.34,
+            12.66,
+            12.66
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 2 frente e",
+      "from": [
+        3.34,
+        10.039,
+        3.34
+      ],
+      "to": [
+        7.0,
+        10.335,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            7.0,
+            5.961
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            7.0,
+            5.961
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            4.06,
+            5.961
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            4.06,
+            5.961
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            7.0,
+            4.06
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            7.0,
+            4.06
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 2 frente d",
+      "from": [
+        9.0,
+        10.039,
+        3.34
+      ],
+      "to": [
+        12.66,
+        10.335,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            5.665,
+            12.66,
+            5.961
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            4.06,
+            5.961
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            5.665,
+            4.06,
+            5.961
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.34,
+            12.66,
+            4.06
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.34,
+            12.66,
+            4.06
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 2 visor",
+      "from": [
+        7.0,
+        10.039,
+        3.664
+      ],
+      "to": [
+        9.0,
+        10.335,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            5.665,
+            9.0,
+            5.961
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            5.665,
+            9.0,
+            5.961
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.664,
+            5.665,
+            4.06,
+            5.961
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.664,
+            5.665,
+            4.06,
+            5.961
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.664,
+            9.0,
+            4.06
+          ]
+        },
+        "down": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.664,
+            9.0,
+            4.06
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 3 tras",
+      "from": [
+        3.34,
+        11.755,
+        11.94
+      ],
+      "to": [
+        12.66,
+        12.051,
+        12.66
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            11.94,
+            12.66,
+            12.66
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            11.94,
+            12.66,
+            12.66
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 3 oeste",
+      "from": [
+        3.34,
+        11.755,
+        3.34
+      ],
+      "to": [
+        4.06,
+        12.051,
+        12.66
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            4.06,
+            4.245
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            4.06,
+            4.245
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            4.06,
+            12.66
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            4.06,
+            12.66
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 3 leste",
+      "from": [
+        11.94,
+        11.755,
+        3.34
+      ],
+      "to": [
+        12.66,
+        12.051,
+        12.66
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.34,
+            12.66,
+            12.66
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            11.94,
+            3.34,
+            12.66,
+            12.66
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 3 frente e",
+      "from": [
+        3.34,
+        11.755,
+        3.34
+      ],
+      "to": [
+        7.0,
+        12.051,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            7.0,
+            4.245
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            7.0,
+            4.245
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            4.06,
+            4.245
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            4.06,
+            4.245
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            7.0,
+            4.06
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.34,
+            7.0,
+            4.06
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 3 frente d",
+      "from": [
+        9.0,
+        11.755,
+        3.34
+      ],
+      "to": [
+        12.66,
+        12.051,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.949,
+            12.66,
+            4.245
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            4.06,
+            4.245
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.34,
+            3.949,
+            4.06,
+            4.245
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.34,
+            12.66,
+            4.06
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.34,
+            12.66,
+            4.06
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 3 visor",
+      "from": [
+        7.0,
+        11.755,
+        3.664
+      ],
+      "to": [
+        9.0,
+        12.051,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.949,
+            9.0,
+            4.245
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.949,
+            9.0,
+            4.245
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.664,
+            3.949,
+            4.06,
+            4.245
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.664,
+            3.949,
+            4.06,
+            4.245
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.664,
+            9.0,
+            4.06
+          ]
+        },
+        "down": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.664,
+            9.0,
+            4.06
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 4 tras",
+      "from": [
+        3.46,
+        13.315,
+        11.82
+      ],
+      "to": [
+        12.54,
+        13.611,
+        12.54
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            11.82,
+            12.54,
+            12.54
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            11.82,
+            12.54,
+            12.54
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 4 oeste",
+      "from": [
+        3.46,
+        13.315,
+        3.46
+      ],
+      "to": [
+        4.18,
+        13.611,
+        12.54
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            4.18,
+            2.685
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            4.18,
+            2.685
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            3.46,
+            4.18,
+            12.54
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            3.46,
+            4.18,
+            12.54
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 4 leste",
+      "from": [
+        11.82,
+        13.315,
+        3.46
+      ],
+      "to": [
+        12.54,
+        13.611,
+        12.54
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            3.46,
+            12.54,
+            12.54
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            11.82,
+            3.46,
+            12.54,
+            12.54
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 4 frente e",
+      "from": [
+        3.46,
+        13.315,
+        3.46
+      ],
+      "to": [
+        7.0,
+        13.611,
+        4.18
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            7.0,
+            2.685
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            7.0,
+            2.685
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            4.18,
+            2.685
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            4.18,
+            2.685
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            3.46,
+            7.0,
+            4.18
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            3.46,
+            7.0,
+            4.18
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 4 frente d",
+      "from": [
+        9.0,
+        13.315,
+        3.46
+      ],
+      "to": [
+        12.54,
+        13.611,
+        4.18
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "south": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            2.389,
+            12.54,
+            2.685
+          ]
+        },
+        "west": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            4.18,
+            2.685
+          ]
+        },
+        "east": {
+          "texture": "#jug",
+          "uv": [
+            3.46,
+            2.389,
+            4.18,
+            2.685
+          ]
+        },
+        "up": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.46,
+            12.54,
+            4.18
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            9.0,
+            3.46,
+            12.54,
+            4.18
+          ]
+        }
+      }
+    },
+    {
+      "name": "nervura 4 visor",
+      "from": [
+        7.0,
+        13.315,
+        3.784
+      ],
+      "to": [
+        9.0,
+        13.611,
+        4.18
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            2.389,
+            9.0,
+            2.685
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            2.389,
+            9.0,
+            2.685
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.784,
+            2.389,
+            4.18,
+            2.685
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.784,
+            2.389,
+            4.18,
+            2.685
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.784,
+            9.0,
+            4.18
+          ]
+        },
+        "down": {
+          "texture": "#jug_pale",
+          "uv": [
+            7.0,
+            3.784,
+            9.0,
+            4.18
+          ]
+        }
+      }
+    },
+    {
+      "name": "ombros miolo",
+      "from": [
+        4.9,
+        13.939,
+        4.0
+      ],
+      "to": [
+        11.1,
+        15.031,
+        12.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            4.9,
+            0.969,
+            11.1,
+            2.061
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            4.9,
+            0.969,
+            11.1,
+            2.061
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            4.0,
+            0.969,
+            12.0,
+            2.061
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            4.0,
+            0.969,
+            12.0,
+            2.061
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            4.9,
+            4.0,
+            11.1,
+            12.0
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            4.9,
+            4.0,
+            11.1,
+            12.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "ombros oeste",
+      "from": [
+        4.0,
+        13.939,
+        4.9
+      ],
+      "to": [
+        4.91,
+        15.031,
+        11.1
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            4.0,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            4.0,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            4.9,
+            0.969,
+            11.1,
+            2.061
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            4.9,
+            0.969,
+            11.1,
+            2.061
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            4.0,
+            4.9,
+            4.91,
+            11.1
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            4.0,
+            4.9,
+            4.91,
+            11.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "ombros leste",
+      "from": [
+        11.09,
+        13.939,
+        4.9
+      ],
+      "to": [
+        12.0,
+        15.031,
+        11.1
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            12.0,
+            2.061
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            12.0,
+            2.061
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            4.9,
+            0.969,
+            11.1,
+            2.061
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            4.9,
+            0.969,
+            11.1,
+            2.061
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            11.09,
+            4.9,
+            12.0,
+            11.1
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            11.09,
+            4.9,
+            12.0,
+            11.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "ombros canto 0",
+      "from": [
+        4.378,
+        13.939,
+        4.378
+      ],
+      "to": [
+        4.91,
+        15.031,
+        4.91
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            4.378,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            4.378,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            4.378,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            4.378,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            4.378,
+            4.378,
+            4.91,
+            4.91
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            4.378,
+            4.378,
+            4.91,
+            4.91
+          ]
+        }
+      }
+    },
+    {
+      "name": "ombros canto 1",
+      "from": [
+        11.09,
+        13.939,
+        4.378
+      ],
+      "to": [
+        11.622,
+        15.031,
+        4.91
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            11.622,
+            2.061
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            11.622,
+            2.061
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            4.378,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            4.378,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            11.09,
+            4.378,
+            11.622,
+            4.91
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            11.09,
+            4.378,
+            11.622,
+            4.91
+          ]
+        }
+      }
+    },
+    {
+      "name": "ombros canto 2",
+      "from": [
+        4.378,
+        13.939,
+        11.09
+      ],
+      "to": [
+        4.91,
+        15.031,
+        11.622
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            4.378,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            4.378,
+            0.969,
+            4.91,
+            2.061
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            11.622,
+            2.061
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            11.622,
+            2.061
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            4.378,
+            11.09,
+            4.91,
+            11.622
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            4.378,
+            11.09,
+            4.91,
+            11.622
+          ]
+        }
+      }
+    },
+    {
+      "name": "ombros canto 3",
+      "from": [
+        11.09,
+        13.939,
+        11.09
+      ],
+      "to": [
+        11.622,
+        15.031,
+        11.622
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            11.622,
+            2.061
+          ]
+        },
+        "south": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            11.622,
+            2.061
+          ]
+        },
+        "west": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            11.622,
+            2.061
+          ]
+        },
+        "east": {
+          "texture": "#jug_light",
+          "uv": [
+            11.09,
+            0.969,
+            11.622,
+            2.061
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            11.09,
+            11.09,
+            11.622,
+            11.622
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            11.09,
+            11.09,
+            11.622,
+            11.622
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa superior miolo",
+      "from": [
+        5.95,
+        14.914,
+        5.25
+      ],
+      "to": [
+        10.05,
+        15.85,
+        10.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.95,
+            0.15,
+            10.05,
+            1.086
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.95,
+            0.15,
+            10.05,
+            1.086
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.25,
+            0.15,
+            10.75,
+            1.086
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.25,
+            0.15,
+            10.75,
+            1.086
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            5.95,
+            5.25,
+            10.05,
+            10.75
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            5.95,
+            5.25,
+            10.05,
+            10.75
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa superior oeste",
+      "from": [
+        5.25,
+        14.914,
+        5.95
+      ],
+      "to": [
+        5.96,
+        15.85,
+        10.05
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.25,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.25,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.95,
+            0.15,
+            10.05,
+            1.086
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.95,
+            0.15,
+            10.05,
+            1.086
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            5.25,
+            5.95,
+            5.96,
+            10.05
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            5.25,
+            5.95,
+            5.96,
+            10.05
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa superior leste",
+      "from": [
+        10.04,
+        14.914,
+        5.95
+      ],
+      "to": [
+        10.75,
+        15.85,
+        10.05
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.75,
+            1.086
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.75,
+            1.086
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.95,
+            0.15,
+            10.05,
+            1.086
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.95,
+            0.15,
+            10.05,
+            1.086
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            10.04,
+            5.95,
+            10.75,
+            10.05
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            10.04,
+            5.95,
+            10.75,
+            10.05
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa superior canto 0",
+      "from": [
+        5.544,
+        14.914,
+        5.544
+      ],
+      "to": [
+        5.96,
+        15.85,
+        5.96
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.544,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.544,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.544,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.544,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            5.544,
+            5.544,
+            5.96,
+            5.96
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            5.544,
+            5.544,
+            5.96,
+            5.96
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa superior canto 1",
+      "from": [
+        10.04,
+        14.914,
+        5.544
+      ],
+      "to": [
+        10.456,
+        15.85,
+        5.96
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.456,
+            1.086
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.456,
+            1.086
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.544,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.544,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            10.04,
+            5.544,
+            10.456,
+            5.96
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            10.04,
+            5.544,
+            10.456,
+            5.96
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa superior canto 2",
+      "from": [
+        5.544,
+        14.914,
+        10.04
+      ],
+      "to": [
+        5.96,
+        15.85,
+        10.456
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.544,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            5.544,
+            0.15,
+            5.96,
+            1.086
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.456,
+            1.086
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.456,
+            1.086
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            5.544,
+            10.04,
+            5.96,
+            10.456
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            5.544,
+            10.04,
+            5.96,
+            10.456
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa superior canto 3",
+      "from": [
+        10.04,
+        14.914,
+        10.04
+      ],
+      "to": [
+        10.456,
+        15.85,
+        10.456
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.456,
+            1.086
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.456,
+            1.086
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.456,
+            1.086
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            10.04,
+            0.15,
+            10.456,
+            1.086
+          ]
+        },
+        "up": {
+          "texture": "#jug_light",
+          "uv": [
+            10.04,
+            10.04,
+            10.456,
+            10.456
+          ]
+        },
+        "down": {
+          "texture": "#jug",
+          "uv": [
+            10.04,
+            10.04,
+            10.456,
+            10.456
+          ]
+        }
+      }
+    },
+    {
+      "name": "reflexo esquerdo",
+      "from": [
+        4.05,
+        7.27,
+        3.38
+      ],
+      "to": [
+        4.5,
+        12.652,
+        3.48
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            4.05,
+            3.348,
+            4.5,
+            8.73
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            4.05,
+            3.348,
+            4.5,
+            8.73
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.38,
+            3.348,
+            3.48,
+            8.73
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.38,
+            3.348,
+            3.48,
+            8.73
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            4.05,
+            3.38,
+            4.5,
+            3.48
+          ]
+        },
+        "down": {
+          "texture": "#jug_pale",
+          "uv": [
+            4.05,
+            3.38,
+            4.5,
+            3.48
+          ]
+        }
+      }
+    },
+    {
+      "name": "reflexo direito",
+      "from": [
+        11.5,
+        7.27,
+        3.38
+      ],
+      "to": [
+        11.9,
+        12.652,
+        3.48
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#jug_pale",
+          "uv": [
+            11.5,
+            3.348,
+            11.9,
+            8.73
+          ]
+        },
+        "south": {
+          "texture": "#jug_pale",
+          "uv": [
+            11.5,
+            3.348,
+            11.9,
+            8.73
+          ]
+        },
+        "west": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.38,
+            3.348,
+            3.48,
+            8.73
+          ]
+        },
+        "east": {
+          "texture": "#jug_pale",
+          "uv": [
+            3.38,
+            3.348,
+            3.48,
+            8.73
+          ]
+        },
+        "up": {
+          "texture": "#jug_pale",
+          "uv": [
+            11.5,
+            3.38,
+            11.9,
+            3.48
+          ]
+        },
+        "down": {
+          "texture": "#jug_pale",
+          "uv": [
+            11.5,
+            3.38,
+            11.9,
+            3.48
+          ]
+        }
+      }
+    }
+  ]
+}

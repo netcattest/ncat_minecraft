@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": { "item": "ncat_minecraft:screen" },
+    "title": { "translate": "advancements.ncat_minecraft.screen.title" },
+    "description": { "translate": "advancements.ncat_minecraft.screen.description" },
+    "frame": "task"
+  },
+  "parent": "ncat_minecraft:root",
+  "criteria": {
+    "has_screen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ncat_minecraft:screen",
+              "ncat_minecraft:ssh_screen"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "ncat_minecraft:linker",
+      "ncat_minecraft:screencfg",
+      "ncat_minecraft:keyboard",
+      "ncat_minecraft:ssh_keyboard",
+      "ncat_minecraft:laserpointer"
+    ]
+  }
+}

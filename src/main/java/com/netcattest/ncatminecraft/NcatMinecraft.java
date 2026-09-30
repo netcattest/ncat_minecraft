@@ -1,0 +1,404 @@
+/*
+ * Copyright (C) 2019 BARBOTIN Nicolas
+ */
+
+package com.netcattest.ncatminecraft;
+
+import com.google.gson.Gson;
+import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraftforge.client.event.ClientChatEvent;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.event.ServerChatEvent;
+import net.minecraftforge.event.entity.item.ItemTossEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.level.LevelEvent;
+import net.minecraftforge.event.server.ServerStoppingEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLEnvironment;
+import net.minecraftforge.network.PacketDistributor;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import com.netcattest.ncatminecraft.client.ClientProxy;
+import com.netcattest.ncatminecraft.client.gui.camera.KeyboardCamera;
+import com.netcattest.ncatminecraft.config.ClientConfig;
+import com.netcattest.ncatminecraft.config.CommonConfig;
+import com.netcattest.ncatminecraft.controls.ScreenControlRegistry;
+import com.netcattest.ncatminecraft.core.*;
+import com.netcattest.ncatminecraft.miniserv.server.Server;
+import com.netcattest.ncatminecraft.net.WDNetworkRegistry;
+import com.netcattest.ncatminecraft.net.client_bound.S2CMessageServerInfo;
+import com.netcattest.ncatminecraft.registry.BlockRegistry;
+import com.netcattest.ncatminecraft.registry.ItemRegistry;
+import com.netcattest.ncatminecraft.registry.TileRegistry;
+import com.netcattest.ncatminecraft.recipe.GallonRecipe;
+import com.netcattest.ncatminecraft.registry.FurnitureEntityRegistry;
+import com.netcattest.ncatminecraft.registry.WDTabs;
+import com.netcattest.ncatminecraft.utilities.DistSafety;
+import com.netcattest.ncatminecraft.utilities.DataCableService;
+import com.netcattest.ncatminecraft.utilities.Log;
+import com.netcattest.ncatminecraft.utilities.serialization.Util;
+
+import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Objects;
+import java.util.UUID;
+
+@Mod("ncat_minecraft")
+public class NcatMinecraft {
+    public static NcatMinecraft INSTANCE;
+
+    public static SharedProxy PROXY = null;
+    
+    public static final ResourceLocation ADV_PAD_BREAK = new ResourceLocation("ncat_minecraft", "pad_break");
+    public static final String BLACKLIST_URL = "mod://ncat_minecraft/blacklisted.html";
+    public static final Gson GSON = new Gson();
+    public static final ResourceLocation CAPABILITY = new ResourceLocation("ncat_minecraft", "customdatacap");
+
+    public SoundEvent soundTyping;
+    public SoundEvent soundUpgradeAdd;
+    public SoundEvent soundUpgradeDel;
+    public SoundEvent soundScreenCfg;
+    public SoundEvent soundServer;
+    public SoundEvent soundIronic;
+    public SoundEvent soundDuckSqueak;
+
+    public Criterion criterionPadBreak;
+    public Criterion criterionUpgradeScreen;
+    public Criterion criterionLinkPeripheral;
+    public Criterion criterionKeyboardCat;
+
+    public static final double PAD_RATIO = 59.0 / 30.0;
+    public double padResX;
+    public double padResY;
+    private int lastPadId = 0;
+    public double unloadDistance2;
+    public double loadDistance2;
+    public int miniservPort;
+    public long miniservQuota;
+    public float ytVolume;
+    public float avDist100;
+    public float avDist0;
+    
+    private boolean hasOC;
+    private boolean hasCC;
+
+    public NcatMinecraft() {
+        INSTANCE = this;
+        if(FMLEnvironment.dist.isClient()) {
+            PROXY = DistSafety.createProxy();
+        } else {
+            PROXY = new SharedProxy();
+        }
+    
+        if (FMLEnvironment.dist.isClient()) {
+            FMLJavaModLoadingContext.get().getModEventBus().addListener(ClientProxy::onKeybindRegistry);
+            MinecraftForge.EVENT_BUS.addListener(ClientProxy::onDrawSelection);
+            MinecraftForge.EVENT_BUS.addListener(KeyboardCamera::updateCamera);
+            MinecraftForge.EVENT_BUS.addListener(KeyboardCamera::gameTick);
+            ClientConfig.init();
+        }
+        
+        CommonConfig.init();
+        
+        criterionPadBreak = new Criterion("pad_break");
+        criterionUpgradeScreen = new Criterion("upgrade_screen");
+        criterionLinkPeripheral = new Criterion("link_peripheral");
+        criterionKeyboardCat = new Criterion("keyboard_cat");
+        registerTrigger(criterionPadBreak, criterionUpgradeScreen, criterionLinkPeripheral, criterionKeyboardCat);
+
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        WDNetworkRegistry.init();
+        SOUNDS.register(bus);
+        onRegisterSounds();
+        WDTabs.init(bus);
+        BlockRegistry.init(bus);
+        ItemRegistry.init(bus);
+        TileRegistry.init(bus);
+        FurnitureEntityRegistry.init(bus);
+        GallonRecipe.init(bus);
+        
+        PROXY.preInit();
+        
+        MinecraftForge.EVENT_BUS.register(this);
+
+        PROXY.init();
+
+        PROXY.postInit();
+        hasOC = ModList.get().isLoaded("opencomputers");
+        hasCC = ModList.get().isLoaded("computercraft");
+
+        
+        if (!FMLEnvironment.production) {
+            ScreenControlRegistry.init();
+        }
+    }
+
+    @SubscribeEvent
+    public static void onAttachPlayerCap(AttachCapabilitiesEvent<Entity> event) {
+        if (event.getObject() instanceof Player && !event.getObject().getCapability(WDDCapability.Provider.cap).isPresent()) {
+            event.addCapability(new ResourceLocation("ncat_minecraft", "wddcapability"), new WDDCapability.Provider());
+        }
+    }
+
+    public void onRegisterSounds() {
+        soundTyping = registerSound("keyboard_type");
+        soundUpgradeAdd = registerSound("upgrade_add");
+        soundUpgradeDel = registerSound("upgrade_del");
+        soundScreenCfg = registerSound("screencfg_open");
+        soundServer = registerSound("server");
+        soundIronic = registerSound("ironic");
+        soundDuckSqueak = registerSound("duck_squeak");
+    }
+
+    ArrayList<ResourceKey<Level>> serverStartedDimensions = new ArrayList<>();
+
+    @SubscribeEvent
+    public void onServerLevelTick(TickEvent.LevelTickEvent event) {
+        if (event.phase == TickEvent.Phase.END && !event.level.isClientSide)
+            DataCableService.processPendingRemovals(event.level);
+    }
+
+    @SubscribeEvent
+    public void onWorldLoad(LevelEvent.Load ev) {
+        if (ev.getLevel() instanceof Level level) {
+            if (ev.getLevel().isClientSide() || level.dimension() != Level.OVERWORLD)
+                return;
+
+            File worldDir = Objects.requireNonNull(ev.getLevel().getServer()).getServerDirectory();
+            File f = new File(worldDir, "wd_next.txt");
+
+            if (f.exists()) {
+                try {
+                    BufferedReader br = new BufferedReader(new FileReader(f));
+                    String idx = br.readLine();
+                    Util.silentClose(br);
+
+                    if (idx == null)
+                        throw new RuntimeException("Seems like the file is empty (1)");
+
+                    idx = idx.trim();
+                    if (idx.isEmpty())
+                        throw new RuntimeException("Seems like the file is empty (2)");
+
+                    lastPadId = Integer.parseInt(idx);
+                } catch (Throwable t) {
+                    Log.warningEx("Could not read last minePad ID from %s. I'm afraid this might break all minePads.", t, f.getAbsolutePath());
+                }
+            }
+
+            if (miniservPort != 0) {
+                Server sv = Server.getInstance();
+
+                if(!serverStartedDimensions.contains(level.dimension())) {
+                    sv.setPort(miniservPort);
+                    sv.setDirectory(new File(worldDir, "wd_filehost"));
+                    sv.start();
+                    serverStartedDimensions.add(level.dimension());
+                }
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public void onWorldLeave(LevelEvent.Unload ev) throws IOException {
+        if(ev.getLevel() instanceof Level level) {
+            if (ev.getLevel().isClientSide() || level.dimension() != Level.OVERWORLD)
+                return;
+            Server sw = Server.getInstance();
+            sw.stopServer();
+            serverStartedDimensions.remove(level.dimension());
+        }
+    }
+
+    @SubscribeEvent
+    public void onWorldSave(LevelEvent.Save ev) {
+        if(ev.getLevel() instanceof Level level) {
+            if (ev.getLevel().isClientSide() || level.dimension() != Level.OVERWORLD)
+                return;
+            File f = new File(Objects.requireNonNull(ev.getLevel().getServer()).getServerDirectory(), "wd_next.txt");
+
+            try {
+                BufferedWriter bw = new BufferedWriter(new FileWriter(f));
+                bw.write("" + lastPadId + "\n");
+                Util.silentClose(bw);
+            } catch (Throwable t) {
+                Log.warningEx("Could not save last minePad ID (%d) to %s. I'm afraid this might break all minePads.", t, lastPadId, f.getAbsolutePath());
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public void onToss(ItemTossEvent ev) {
+        if(!ev.getEntity().level().isClientSide) {
+            ItemStack is = ev.getEntity().getItem();
+
+            if(is.getItem() == ItemRegistry.MINEPAD.get()) {
+                CompoundTag tag = is.getTag();
+
+                if(tag == null) {
+                    tag = new CompoundTag();
+                    is.setTag(tag);
+                }
+
+                UUID thrower = ev.getPlayer().getGameProfile().getId();
+                tag.putLong("ThrowerMSB", thrower.getMostSignificantBits());
+                tag.putLong("ThrowerLSB", thrower.getLeastSignificantBits());
+                tag.putDouble("ThrowHeight", ev.getPlayer().getY() + ev.getPlayer().getEyeHeight());
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public void onPlayerCraft(PlayerEvent.ItemCraftedEvent ev) {
+        if(CommonConfig.hardRecipes && ItemRegistry.isCompCraftItem(ev.getCrafting().getItem()) && (CraftComponent.EXTCARD.makeItemStack().is(ev.getCrafting().getItem()))) {
+            if((ev.getEntity() instanceof ServerPlayer && !hasPlayerAdvancement((ServerPlayer) ev.getEntity(), ADV_PAD_BREAK)) || PROXY.hasClientPlayerAdvancement(ADV_PAD_BREAK) != HasAdvancement.YES) {
+                ev.getCrafting().setDamageValue(CraftComponent.BADEXTCARD.ordinal());
+
+                if(!ev.getEntity().level().isClientSide)
+                    ev.getEntity().level().playSound(null, ev.getEntity().getX(), ev.getEntity().getY(), ev.getEntity().getZ(), SoundEvents.ITEM_BREAK, SoundSource.MASTER, 1.0f, 1.0f);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onServerStop(ServerStoppingEvent ev) throws IOException {
+        Server.getInstance().stopServer();
+    }
+
+    @SubscribeEvent
+    public void onLogIn(PlayerEvent.PlayerLoggedInEvent ev) {
+        if(!ev.getEntity().level().isClientSide && ev.getEntity() instanceof ServerPlayer) {
+            IWDDCapability cap = ev.getEntity().getCapability(WDDCapability.Provider.cap, null).orElseThrow(RuntimeException::new);
+
+            if(cap.isFirstRun())
+                cap.clearFirstRun();
+
+            PacketDistributor.PacketTarget packetDistrutor = PacketDistributor.PLAYER.with(
+                    () -> (ServerPlayer) ev.getEntity()
+            );
+
+            S2CMessageServerInfo message = new S2CMessageServerInfo(miniservPort);
+
+            WDNetworkRegistry.INSTANCE.send(packetDistrutor, message);
+        }
+    }
+
+    @SubscribeEvent
+    public void onLogOut(PlayerEvent.PlayerLoggedOutEvent ev) {
+        if(!ev.getEntity().level().isClientSide)
+            Server.getInstance().getClientManager().revokeClientKey(ev.getEntity().getGameProfile().getId());
+    }
+
+    @SubscribeEvent
+    public void attachEntityCaps(AttachCapabilitiesEvent<Entity> ev) {
+        if(ev.getObject() instanceof Player)
+            ev.addCapability(CAPABILITY, new WDDCapability.Provider());
+    }
+
+    @SubscribeEvent
+    public void onPlayerClone(PlayerEvent.Clone ev) {
+        IWDDCapability src =  ev.getOriginal().getCapability(WDDCapability.Provider.cap, null).orElse(new WDDCapability.Factory().call());
+        IWDDCapability dst =  ev.getEntity().getCapability(WDDCapability.Provider.cap, null).orElse(new WDDCapability.Factory().call());
+
+        if(src == null) {
+            Log.error("src is null");
+            return;
+        }
+
+        if(dst == null) {
+            Log.error("dst is null");
+            return;
+        }
+
+        src.cloneTo(dst);
+    }
+
+    @SubscribeEvent
+    public void onServerChat(ServerChatEvent ev) {
+        String msg = ev.getMessage().getString().replaceAll("\\s+", " ").toLowerCase();
+        StringBuilder sb = new StringBuilder(msg.length());
+        for(int i = 0; i < msg.length(); i++) {
+            char chr = msg.charAt(i);
+
+            if(chr != '.' && chr != ',' && chr != ';' && chr != '!' && chr != '?' && chr != ':' && chr != '\'' && chr != '\"' && chr != '`')
+                sb.append(chr);
+        }
+
+        if(sb.toString().equals("ironic he could save others from death but not himself")) {
+            Player ply = ev.getPlayer();
+            ply.level().playSound(null, ply.getX(), ply.getY(), ply.getZ(), soundIronic, SoundSource.PLAYERS, 1.0f, 1.0f);
+        }
+    }
+
+    @SubscribeEvent
+    public void onClientChat(ClientChatEvent ev) {
+        if(ev.getMessage().equals("!WD render recipes"))
+            PROXY.renderRecipes();
+    }
+
+    private boolean hasPlayerAdvancement(ServerPlayer ply, ResourceLocation rl) {
+        MinecraftServer server = PROXY.getServer();
+        if(server == null)
+            return false;
+
+        Advancement adv = server.getAdvancements().getAdvancement(rl);
+        return adv != null && ply.getAdvancements().getOrStartProgress(adv).isDone();
+    }
+
+    public static int getNextAvailablePadID() {
+        return new NcatMinecraft().lastPadId++;
+    }
+
+    public static DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, "ncat_minecraft");
+
+    private static SoundEvent registerSound(String resName) {
+        ResourceLocation resLoc = new ResourceLocation("ncat_minecraft", resName);
+        SoundEvent ret = SoundEvent.createVariableRangeEvent(resLoc);
+
+        SOUNDS.register(resName, () -> ret);
+        return ret;
+    }
+
+    private static void registerTrigger(Criterion ... criteria) {
+        for(Criterion c: criteria)
+            CriteriaTriggers.register(c);
+    }
+
+
+
+    public static boolean isSiteBlacklisted(String url) {
+        try {
+            URL url2 = new URL(Util.addProtocol(url));
+            for (String str : CommonConfig.Browser.blacklist)
+                if (str.equalsIgnoreCase(url2.getHost())) return true;
+            return false;
+        } catch(MalformedURLException ex) {
+            return false;
+        }
+    }
+
+    public static String applyBlacklist(String url) {
+        return isSiteBlacklisted(url) ? BLACKLIST_URL : url;
+    }
+}

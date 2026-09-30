@@ -1,0 +1,417 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "casing": "ncat_minecraft:block/managed_tablet/casing",
+    "rim": "ncat_minecraft:block/managed_tablet/rim",
+    "edge": "ncat_minecraft:block/managed_tablet/edge",
+    "rubber": "ncat_minecraft:block/managed_tablet/rubber",
+    "screen": "ncat_minecraft:block/managed_tablet/screen",
+    "serial": "ncat_minecraft:block/managed_switch/serial",
+    "pin": "ncat_minecraft:block/network_switch/pin",
+    "particle": "ncat_minecraft:block/managed_tablet/casing"
+  },
+  "elements": [
+    {
+      "name": "tablet back",
+      "from": [
+        1.75,
+        5.6,
+        1.7
+      ],
+      "to": [
+        14.25,
+        6.05,
+        14.3
+      ],
+      "faces": {
+        "north": {
+          "texture": "#casing"
+        },
+        "south": {
+          "texture": "#casing"
+        },
+        "east": {
+          "texture": "#casing"
+        },
+        "west": {
+          "texture": "#casing"
+        },
+        "up": {
+          "texture": "#casing"
+        },
+        "down": {
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "name": "tablet chassis",
+      "from": [
+        1.45,
+        5.95,
+        1.4
+      ],
+      "to": [
+        14.55,
+        6.45,
+        14.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#edge"
+        },
+        "south": {
+          "texture": "#edge"
+        },
+        "east": {
+          "texture": "#edge"
+        },
+        "west": {
+          "texture": "#edge"
+        },
+        "up": {
+          "texture": "#edge"
+        },
+        "down": {
+          "texture": "#edge"
+        }
+      }
+    },
+    {
+      "name": "tablet rim",
+      "from": [
+        1.62,
+        6.42,
+        1.58
+      ],
+      "to": [
+        14.38,
+        6.62,
+        14.42
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "glass bezel",
+      "from": [
+        1.95,
+        6.58,
+        1.95
+      ],
+      "to": [
+        14.05,
+        6.74,
+        14.05
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rubber"
+        },
+        "south": {
+          "texture": "#rubber"
+        },
+        "east": {
+          "texture": "#rubber"
+        },
+        "west": {
+          "texture": "#rubber"
+        },
+        "up": {
+          "texture": "#rubber"
+        },
+        "down": {
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "active display",
+      "from": [
+        2.3,
+        6.72,
+        2.45
+      ],
+      "to": [
+        13.7,
+        6.8,
+        13.55
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rubber"
+        },
+        "south": {
+          "texture": "#rubber"
+        },
+        "east": {
+          "texture": "#rubber"
+        },
+        "west": {
+          "texture": "#rubber"
+        },
+        "up": {
+          "texture": "#screen",
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "camera",
+      "from": [
+        7.55,
+        6.72,
+        2.02
+      ],
+      "to": [
+        8.45,
+        6.82,
+        2.38
+      ],
+      "faces": {
+        "north": {
+          "texture": "#serial"
+        },
+        "south": {
+          "texture": "#serial"
+        },
+        "east": {
+          "texture": "#serial"
+        },
+        "west": {
+          "texture": "#serial"
+        },
+        "up": {
+          "texture": "#serial"
+        },
+        "down": {
+          "texture": "#serial"
+        }
+      }
+    },
+    {
+      "name": "speaker",
+      "from": [
+        6.2,
+        6.72,
+        13.62
+      ],
+      "to": [
+        9.8,
+        6.8,
+        13.88
+      ],
+      "faces": {
+        "north": {
+          "texture": "#edge"
+        },
+        "south": {
+          "texture": "#edge"
+        },
+        "east": {
+          "texture": "#edge"
+        },
+        "west": {
+          "texture": "#edge"
+        },
+        "up": {
+          "texture": "#edge"
+        },
+        "down": {
+          "texture": "#edge"
+        }
+      }
+    },
+    {
+      "name": "power button",
+      "from": [
+        11.1,
+        6.02,
+        1.28
+      ],
+      "to": [
+        12.6,
+        6.38,
+        1.48
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "volume button",
+      "from": [
+        3.4,
+        6.02,
+        1.28
+      ],
+      "to": [
+        5.6,
+        6.38,
+        1.48
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "brand plate",
+      "from": [
+        6.4,
+        5.46,
+        6.6
+      ],
+      "to": [
+        9.6,
+        5.6,
+        9.4
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "camera bump",
+      "from": [
+        10.6,
+        5.3,
+        2.4
+      ],
+      "to": [
+        12.8,
+        5.62,
+        4.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#edge"
+        },
+        "south": {
+          "texture": "#edge"
+        },
+        "east": {
+          "texture": "#edge"
+        },
+        "west": {
+          "texture": "#edge"
+        },
+        "up": {
+          "texture": "#edge"
+        },
+        "down": {
+          "texture": "#edge"
+        }
+      }
+    },
+    {
+      "name": "camera lens",
+      "from": [
+        11.2,
+        5.16,
+        3.0
+      ],
+      "to": [
+        12.2,
+        5.34,
+        4.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#serial"
+        },
+        "south": {
+          "texture": "#serial"
+        },
+        "east": {
+          "texture": "#serial"
+        },
+        "west": {
+          "texture": "#serial"
+        },
+        "up": {
+          "texture": "#serial"
+        },
+        "down": {
+          "texture": "#serial"
+        }
+      }
+    }
+  ]
+}

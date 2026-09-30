@@ -1,0 +1,6457 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "bowl": "ncat_minecraft:block/toilet/bowl",
+    "bowl_deep": "ncat_minecraft:block/toilet/bowl_deep",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "water": "ncat_minecraft:block/toilet/water",
+    "water_deep": "ncat_minecraft:block/toilet/water_deep",
+    "water_shine": "ncat_minecraft:block/toilet/water_shine",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "pedestal 0 miolo",
+      "from": [
+        4.352,
+        0.0,
+        2.642
+      ],
+      "to": [
+        11.648,
+        1.554,
+        12.218
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.8,
+            14.95,
+            11.2,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.8,
+            14.95,
+            11.2,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            3.3,
+            14.95,
+            11.7,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            3.3,
+            14.95,
+            11.7,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            4.8,
+            3.3,
+            11.2,
+            11.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.8,
+            3.3,
+            11.2,
+            11.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 0 oeste",
+      "from": [
+        2.186,
+        0.0,
+        4.808
+      ],
+      "to": [
+        4.409,
+        1.554,
+        10.052
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.9,
+            14.95,
+            4.85,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.9,
+            14.95,
+            4.85,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.2,
+            14.95,
+            9.8,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.2,
+            14.95,
+            9.8,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.9,
+            5.2,
+            4.85,
+            9.8
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.9,
+            5.2,
+            4.85,
+            9.8
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 0 leste",
+      "from": [
+        11.591,
+        0.0,
+        4.808
+      ],
+      "to": [
+        13.814,
+        1.554,
+        10.052
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            11.15,
+            14.95,
+            13.1,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            11.15,
+            14.95,
+            13.1,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.2,
+            14.95,
+            9.8,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.2,
+            14.95,
+            9.8,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            11.15,
+            5.2,
+            13.1,
+            9.8
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.15,
+            5.2,
+            13.1,
+            9.8
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 0 canto 0",
+      "from": [
+        3.096,
+        0.0,
+        3.552
+      ],
+      "to": [
+        4.409,
+        1.554,
+        4.865
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.698,
+            14.95,
+            4.85,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.698,
+            14.95,
+            4.85,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            4.098,
+            14.95,
+            5.25,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            4.098,
+            14.95,
+            5.25,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.698,
+            4.098,
+            4.85,
+            5.25
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.698,
+            4.098,
+            4.85,
+            5.25
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 0 canto 1",
+      "from": [
+        11.591,
+        0.0,
+        3.552
+      ],
+      "to": [
+        12.904,
+        1.554,
+        4.865
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            11.15,
+            14.95,
+            12.302,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            11.15,
+            14.95,
+            12.302,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            4.098,
+            14.95,
+            5.25,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            4.098,
+            14.95,
+            5.25,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            11.15,
+            4.098,
+            12.302,
+            5.25
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.15,
+            4.098,
+            12.302,
+            5.25
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 0 canto 2",
+      "from": [
+        3.096,
+        0.0,
+        9.995
+      ],
+      "to": [
+        4.409,
+        1.554,
+        11.308
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.698,
+            14.95,
+            4.85,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.698,
+            14.95,
+            4.85,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            14.95,
+            10.902,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            14.95,
+            10.902,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.698,
+            9.75,
+            4.85,
+            10.902
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.698,
+            9.75,
+            4.85,
+            10.902
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 0 canto 3",
+      "from": [
+        11.591,
+        0.0,
+        9.995
+      ],
+      "to": [
+        12.904,
+        1.554,
+        11.308
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            11.15,
+            14.95,
+            12.302,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            11.15,
+            14.95,
+            12.302,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            14.95,
+            10.902,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            14.95,
+            10.902,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            11.15,
+            9.75,
+            12.302,
+            10.902
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.15,
+            9.75,
+            12.302,
+            10.902
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 1 miolo",
+      "from": [
+        4.922,
+        1.406,
+        3.326
+      ],
+      "to": [
+        11.078,
+        3.256,
+        11.534
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            5.3,
+            13.8,
+            10.7,
+            15.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            5.3,
+            13.8,
+            10.7,
+            15.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            3.9,
+            13.8,
+            11.1,
+            15.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            3.9,
+            13.8,
+            11.1,
+            15.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            5.3,
+            3.9,
+            10.7,
+            11.1
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.3,
+            3.9,
+            10.7,
+            11.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 1 oeste",
+      "from": [
+        2.984,
+        1.406,
+        5.264
+      ],
+      "to": [
+        4.979,
+        3.256,
+        9.596
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.6,
+            13.8,
+            5.35,
+            15.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.6,
+            13.8,
+            5.35,
+            15.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.6,
+            13.8,
+            9.4,
+            15.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.6,
+            13.8,
+            9.4,
+            15.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            3.6,
+            5.6,
+            5.35,
+            9.4
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.6,
+            5.6,
+            5.35,
+            9.4
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 1 leste",
+      "from": [
+        11.021,
+        1.406,
+        5.264
+      ],
+      "to": [
+        13.016,
+        3.256,
+        9.596
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            10.65,
+            13.8,
+            12.4,
+            15.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            10.65,
+            13.8,
+            12.4,
+            15.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.6,
+            13.8,
+            9.4,
+            15.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.6,
+            13.8,
+            9.4,
+            15.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            10.65,
+            5.6,
+            12.4,
+            9.4
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            10.65,
+            5.6,
+            12.4,
+            9.4
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 1 canto 0",
+      "from": [
+        3.798,
+        1.406,
+        4.14
+      ],
+      "to": [
+        4.979,
+        3.256,
+        5.321
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.314,
+            13.8,
+            5.35,
+            15.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.314,
+            13.8,
+            5.35,
+            15.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            4.614,
+            13.8,
+            5.65,
+            15.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            4.614,
+            13.8,
+            5.65,
+            15.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            4.314,
+            4.614,
+            5.35,
+            5.65
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.314,
+            4.614,
+            5.35,
+            5.65
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 1 canto 1",
+      "from": [
+        11.021,
+        1.406,
+        4.14
+      ],
+      "to": [
+        12.202,
+        3.256,
+        5.321
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            10.65,
+            13.8,
+            11.686,
+            15.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            10.65,
+            13.8,
+            11.686,
+            15.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            4.614,
+            13.8,
+            5.65,
+            15.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            4.614,
+            13.8,
+            5.65,
+            15.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            10.65,
+            4.614,
+            11.686,
+            5.65
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            10.65,
+            4.614,
+            11.686,
+            5.65
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 1 canto 2",
+      "from": [
+        3.798,
+        1.406,
+        9.539
+      ],
+      "to": [
+        4.979,
+        3.256,
+        10.72
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.314,
+            13.8,
+            5.35,
+            15.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.314,
+            13.8,
+            5.35,
+            15.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.35,
+            13.8,
+            10.386,
+            15.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.35,
+            13.8,
+            10.386,
+            15.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            4.314,
+            9.35,
+            5.35,
+            10.386
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.314,
+            9.35,
+            5.35,
+            10.386
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 1 canto 3",
+      "from": [
+        11.021,
+        1.406,
+        9.539
+      ],
+      "to": [
+        12.202,
+        3.256,
+        10.72
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            10.65,
+            13.8,
+            11.686,
+            15.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            10.65,
+            13.8,
+            11.686,
+            15.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.35,
+            13.8,
+            10.386,
+            15.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.35,
+            13.8,
+            10.386,
+            15.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            10.65,
+            9.35,
+            11.686,
+            10.386
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            10.65,
+            9.35,
+            11.686,
+            10.386
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 2 miolo",
+      "from": [
+        5.948,
+        3.108,
+        4.067
+      ],
+      "to": [
+        10.052,
+        7.252,
+        10.679
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            6.2,
+            11.1,
+            9.8,
+            13.9
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            6.2,
+            11.1,
+            9.8,
+            13.9
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            4.55,
+            11.1,
+            10.35,
+            13.9
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            4.55,
+            11.1,
+            10.35,
+            13.9
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            6.2,
+            4.55,
+            9.8,
+            10.35
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            6.2,
+            4.55,
+            9.8,
+            10.35
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 2 oeste",
+      "from": [
+        4.238,
+        3.108,
+        5.777
+      ],
+      "to": [
+        6.005,
+        7.252,
+        8.969
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.7,
+            11.1,
+            6.25,
+            13.9
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.7,
+            11.1,
+            6.25,
+            13.9
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            6.05,
+            11.1,
+            8.85,
+            13.9
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            6.05,
+            11.1,
+            8.85,
+            13.9
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            4.7,
+            6.05,
+            6.25,
+            8.85
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.7,
+            6.05,
+            6.25,
+            8.85
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 2 leste",
+      "from": [
+        9.995,
+        3.108,
+        5.777
+      ],
+      "to": [
+        11.762,
+        7.252,
+        8.969
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            11.1,
+            11.3,
+            13.9
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            11.1,
+            11.3,
+            13.9
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            6.05,
+            11.1,
+            8.85,
+            13.9
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            6.05,
+            11.1,
+            8.85,
+            13.9
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            6.05,
+            11.3,
+            8.85
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.75,
+            6.05,
+            11.3,
+            8.85
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 2 canto 0",
+      "from": [
+        4.956,
+        3.108,
+        4.785
+      ],
+      "to": [
+        6.005,
+        7.252,
+        5.834
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            5.33,
+            11.1,
+            6.25,
+            13.9
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            5.33,
+            11.1,
+            6.25,
+            13.9
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.18,
+            11.1,
+            6.1,
+            13.9
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.18,
+            11.1,
+            6.1,
+            13.9
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            5.33,
+            5.18,
+            6.25,
+            6.1
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.33,
+            5.18,
+            6.25,
+            6.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 2 canto 1",
+      "from": [
+        9.995,
+        3.108,
+        4.785
+      ],
+      "to": [
+        11.044,
+        7.252,
+        5.834
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            11.1,
+            10.67,
+            13.9
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            11.1,
+            10.67,
+            13.9
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.18,
+            11.1,
+            6.1,
+            13.9
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.18,
+            11.1,
+            6.1,
+            13.9
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            5.18,
+            10.67,
+            6.1
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.75,
+            5.18,
+            10.67,
+            6.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 2 canto 2",
+      "from": [
+        4.956,
+        3.108,
+        8.912
+      ],
+      "to": [
+        6.005,
+        7.252,
+        9.961
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            5.33,
+            11.1,
+            6.25,
+            13.9
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            5.33,
+            11.1,
+            6.25,
+            13.9
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            8.8,
+            11.1,
+            9.72,
+            13.9
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            8.8,
+            11.1,
+            9.72,
+            13.9
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            5.33,
+            8.8,
+            6.25,
+            9.72
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.33,
+            8.8,
+            6.25,
+            9.72
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 2 canto 3",
+      "from": [
+        9.995,
+        3.108,
+        8.912
+      ],
+      "to": [
+        11.044,
+        7.252,
+        9.961
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            11.1,
+            10.67,
+            13.9
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            11.1,
+            10.67,
+            13.9
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            8.8,
+            11.1,
+            9.72,
+            13.9
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            8.8,
+            11.1,
+            9.72,
+            13.9
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            8.8,
+            10.67,
+            9.72
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.75,
+            8.8,
+            10.67,
+            9.72
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 3 miolo",
+      "from": [
+        5.378,
+        7.03,
+        3.212
+      ],
+      "to": [
+        10.622,
+        9.102,
+        11.078
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            5.7,
+            9.85,
+            10.3,
+            11.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            5.7,
+            9.85,
+            10.3,
+            11.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            3.8,
+            9.85,
+            10.7,
+            11.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            3.8,
+            9.85,
+            10.7,
+            11.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            5.7,
+            3.8,
+            10.3,
+            10.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            5.7,
+            3.8,
+            10.3,
+            10.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 3 oeste",
+      "from": [
+        3.554,
+        7.03,
+        5.036
+      ],
+      "to": [
+        5.435,
+        9.102,
+        9.254
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.1,
+            9.85,
+            5.75,
+            11.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.1,
+            9.85,
+            5.75,
+            11.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.4,
+            9.85,
+            9.1,
+            11.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.4,
+            9.85,
+            9.1,
+            11.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            4.1,
+            5.4,
+            5.75,
+            9.1
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.1,
+            5.4,
+            5.75,
+            9.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 3 leste",
+      "from": [
+        10.565,
+        7.03,
+        5.036
+      ],
+      "to": [
+        12.446,
+        9.102,
+        9.254
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            10.25,
+            9.85,
+            11.9,
+            11.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            10.25,
+            9.85,
+            11.9,
+            11.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            5.4,
+            9.85,
+            9.1,
+            11.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            5.4,
+            9.85,
+            9.1,
+            11.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            10.25,
+            5.4,
+            11.9,
+            9.1
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            10.25,
+            5.4,
+            11.9,
+            9.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 3 canto 0",
+      "from": [
+        4.32,
+        7.03,
+        3.978
+      ],
+      "to": [
+        5.435,
+        9.102,
+        5.093
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.772,
+            9.85,
+            5.75,
+            11.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.772,
+            9.85,
+            5.75,
+            11.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            4.472,
+            9.85,
+            5.45,
+            11.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            4.472,
+            9.85,
+            5.45,
+            11.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            4.772,
+            4.472,
+            5.75,
+            5.45
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.772,
+            4.472,
+            5.75,
+            5.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 3 canto 1",
+      "from": [
+        10.565,
+        7.03,
+        3.978
+      ],
+      "to": [
+        11.68,
+        9.102,
+        5.093
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            10.25,
+            9.85,
+            11.228,
+            11.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            10.25,
+            9.85,
+            11.228,
+            11.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            4.472,
+            9.85,
+            5.45,
+            11.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            4.472,
+            9.85,
+            5.45,
+            11.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            10.25,
+            4.472,
+            11.228,
+            5.45
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            10.25,
+            4.472,
+            11.228,
+            5.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 3 canto 2",
+      "from": [
+        4.32,
+        7.03,
+        9.197
+      ],
+      "to": [
+        5.435,
+        9.102,
+        10.312
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.772,
+            9.85,
+            5.75,
+            11.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.772,
+            9.85,
+            5.75,
+            11.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.05,
+            9.85,
+            10.028,
+            11.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.05,
+            9.85,
+            10.028,
+            11.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            4.772,
+            9.05,
+            5.75,
+            10.028
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.772,
+            9.05,
+            5.75,
+            10.028
+          ]
+        }
+      }
+    },
+    {
+      "name": "pedestal 3 canto 3",
+      "from": [
+        10.565,
+        7.03,
+        9.197
+      ],
+      "to": [
+        11.68,
+        9.102,
+        10.312
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            10.25,
+            9.85,
+            11.228,
+            11.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            10.25,
+            9.85,
+            11.228,
+            11.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.05,
+            9.85,
+            10.028,
+            11.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.05,
+            9.85,
+            10.028,
+            11.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            10.25,
+            9.05,
+            11.228,
+            10.028
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            10.25,
+            9.05,
+            11.228,
+            10.028
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 0 frente",
+      "from": [
+        4.067,
+        8.806,
+        1.958
+      ],
+      "to": [
+        11.933,
+        9.99,
+        4.181
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.55,
+            9.25,
+            11.45,
+            10.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.55,
+            9.25,
+            11.45,
+            10.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.7,
+            9.25,
+            4.65,
+            10.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.7,
+            9.25,
+            4.65,
+            10.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            4.55,
+            2.7,
+            11.45,
+            4.65
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.55,
+            2.7,
+            11.45,
+            4.65
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 0 tras",
+      "from": [
+        4.067,
+        8.806,
+        8.171
+      ],
+      "to": [
+        11.933,
+        9.99,
+        10.622
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.55,
+            9.25,
+            11.45,
+            10.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.55,
+            9.25,
+            11.45,
+            10.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            8.15,
+            9.25,
+            10.3,
+            10.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            8.15,
+            9.25,
+            10.3,
+            10.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            4.55,
+            8.15,
+            11.45,
+            10.3
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.55,
+            8.15,
+            11.45,
+            10.3
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 0 oeste",
+      "from": [
+        3.212,
+        8.806,
+        2.813
+      ],
+      "to": [
+        6.005,
+        9.99,
+        9.767
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.8,
+            9.25,
+            6.25,
+            10.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.8,
+            9.25,
+            6.25,
+            10.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            3.45,
+            9.25,
+            9.55,
+            10.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            3.45,
+            9.25,
+            9.55,
+            10.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.8,
+            3.45,
+            6.25,
+            9.55
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.8,
+            3.45,
+            6.25,
+            9.55
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 0 leste",
+      "from": [
+        9.995,
+        8.806,
+        2.813
+      ],
+      "to": [
+        12.788,
+        9.99,
+        9.767
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            9.25,
+            12.2,
+            10.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            9.75,
+            9.25,
+            12.2,
+            10.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            3.45,
+            9.25,
+            9.55,
+            10.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            3.45,
+            9.25,
+            9.55,
+            10.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            9.75,
+            3.45,
+            12.2,
+            9.55
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.75,
+            3.45,
+            12.2,
+            9.55
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 0 canto 0",
+      "from": [
+        3.571,
+        8.806,
+        2.317
+      ],
+      "to": [
+        4.124,
+        9.99,
+        2.87
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.115,
+            9.25,
+            4.6,
+            10.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.115,
+            9.25,
+            4.6,
+            10.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            3.015,
+            9.25,
+            3.5,
+            10.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            3.015,
+            9.25,
+            3.5,
+            10.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            4.115,
+            3.015,
+            4.6,
+            3.5
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.115,
+            3.015,
+            4.6,
+            3.5
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 0 canto 1",
+      "from": [
+        11.876,
+        8.806,
+        2.317
+      ],
+      "to": [
+        12.429,
+        9.99,
+        2.87
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            11.4,
+            9.25,
+            11.885,
+            10.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            11.4,
+            9.25,
+            11.885,
+            10.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            3.015,
+            9.25,
+            3.5,
+            10.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            3.015,
+            9.25,
+            3.5,
+            10.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            11.4,
+            3.015,
+            11.885,
+            3.5
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.4,
+            3.015,
+            11.885,
+            3.5
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 0 canto 2",
+      "from": [
+        3.571,
+        8.806,
+        9.71
+      ],
+      "to": [
+        4.124,
+        9.99,
+        10.263
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            4.115,
+            9.25,
+            4.6,
+            10.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            4.115,
+            9.25,
+            4.6,
+            10.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.5,
+            9.25,
+            9.985,
+            10.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.5,
+            9.25,
+            9.985,
+            10.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            4.115,
+            9.5,
+            4.6,
+            9.985
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            4.115,
+            9.5,
+            4.6,
+            9.985
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 0 canto 3",
+      "from": [
+        11.876,
+        8.806,
+        9.71
+      ],
+      "to": [
+        12.429,
+        9.99,
+        10.263
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            11.4,
+            9.25,
+            11.885,
+            10.05
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            11.4,
+            9.25,
+            11.885,
+            10.05
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.5,
+            9.25,
+            9.985,
+            10.05
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.5,
+            9.25,
+            9.985,
+            10.05
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            11.4,
+            9.5,
+            11.885,
+            9.985
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.4,
+            9.5,
+            11.885,
+            9.985
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 1 frente",
+      "from": [
+        2.756,
+        9.99,
+        0.818
+      ],
+      "to": [
+        13.244,
+        11.1,
+        3.269
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.4,
+            8.5,
+            12.6,
+            9.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.4,
+            8.5,
+            12.6,
+            9.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.7,
+            8.5,
+            3.85,
+            9.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.7,
+            8.5,
+            3.85,
+            9.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.4,
+            1.7,
+            12.6,
+            3.85
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.4,
+            1.7,
+            12.6,
+            3.85
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 1 tras",
+      "from": [
+        2.756,
+        9.99,
+        8.342
+      ],
+      "to": [
+        13.244,
+        11.1,
+        10.907
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.4,
+            8.5,
+            12.6,
+            9.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.4,
+            8.5,
+            12.6,
+            9.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            8.3,
+            8.5,
+            10.55,
+            9.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            8.3,
+            8.5,
+            10.55,
+            9.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.4,
+            8.3,
+            12.6,
+            10.55
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.4,
+            8.3,
+            12.6,
+            10.55
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 1 oeste",
+      "from": [
+        1.73,
+        9.99,
+        1.844
+      ],
+      "to": [
+        5.321,
+        11.1,
+        9.881
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.5,
+            8.5,
+            5.65,
+            9.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.5,
+            8.5,
+            5.65,
+            9.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.6,
+            8.5,
+            9.65,
+            9.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.6,
+            8.5,
+            9.65,
+            9.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.5,
+            2.6,
+            5.65,
+            9.65
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.5,
+            2.6,
+            5.65,
+            9.65
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 1 leste",
+      "from": [
+        10.679,
+        9.99,
+        1.844
+      ],
+      "to": [
+        14.27,
+        11.1,
+        9.881
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            10.35,
+            8.5,
+            13.5,
+            9.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            10.35,
+            8.5,
+            13.5,
+            9.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.6,
+            8.5,
+            9.65,
+            9.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.6,
+            8.5,
+            9.65,
+            9.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            10.35,
+            2.6,
+            13.5,
+            9.65
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            10.35,
+            2.6,
+            13.5,
+            9.65
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 1 canto 0",
+      "from": [
+        2.161,
+        9.99,
+        1.249
+      ],
+      "to": [
+        2.813,
+        11.1,
+        1.901
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.878,
+            8.5,
+            3.45,
+            9.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.878,
+            8.5,
+            3.45,
+            9.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.078,
+            8.5,
+            2.65,
+            9.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.078,
+            8.5,
+            2.65,
+            9.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.878,
+            2.078,
+            3.45,
+            2.65
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.878,
+            2.078,
+            3.45,
+            2.65
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 1 canto 1",
+      "from": [
+        13.187,
+        9.99,
+        1.249
+      ],
+      "to": [
+        13.839,
+        11.1,
+        1.901
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.55,
+            8.5,
+            13.122,
+            9.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.55,
+            8.5,
+            13.122,
+            9.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.078,
+            8.5,
+            2.65,
+            9.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.078,
+            8.5,
+            2.65,
+            9.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.55,
+            2.078,
+            13.122,
+            2.65
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.55,
+            2.078,
+            13.122,
+            2.65
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 1 canto 2",
+      "from": [
+        2.161,
+        9.99,
+        9.824
+      ],
+      "to": [
+        2.813,
+        11.1,
+        10.476
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.878,
+            8.5,
+            3.45,
+            9.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.878,
+            8.5,
+            3.45,
+            9.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.6,
+            8.5,
+            10.172,
+            9.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.6,
+            8.5,
+            10.172,
+            9.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.878,
+            9.6,
+            3.45,
+            10.172
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.878,
+            9.6,
+            3.45,
+            10.172
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 1 canto 3",
+      "from": [
+        13.187,
+        9.99,
+        9.824
+      ],
+      "to": [
+        13.839,
+        11.1,
+        10.476
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.55,
+            8.5,
+            13.122,
+            9.25
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.55,
+            8.5,
+            13.122,
+            9.25
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.6,
+            8.5,
+            10.172,
+            9.25
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.6,
+            8.5,
+            10.172,
+            9.25
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.55,
+            9.6,
+            13.122,
+            10.172
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.55,
+            9.6,
+            13.122,
+            10.172
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 2 frente",
+      "from": [
+        1.958,
+        11.1,
+        0.077
+      ],
+      "to": [
+        14.042,
+        12.21,
+        2.528
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.7,
+            7.75,
+            13.3,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.7,
+            7.75,
+            13.3,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.05,
+            7.75,
+            3.2,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.05,
+            7.75,
+            3.2,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.7,
+            1.05,
+            13.3,
+            3.2
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.7,
+            1.05,
+            13.3,
+            3.2
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 2 tras",
+      "from": [
+        1.958,
+        11.1,
+        8.399
+      ],
+      "to": [
+        14.042,
+        12.21,
+        11.078
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.7,
+            7.75,
+            13.3,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.7,
+            7.75,
+            13.3,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            8.35,
+            7.75,
+            10.7,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            8.35,
+            7.75,
+            10.7,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.7,
+            8.35,
+            13.3,
+            10.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.7,
+            8.35,
+            13.3,
+            10.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 2 oeste",
+      "from": [
+        0.818,
+        11.1,
+        1.217
+      ],
+      "to": [
+        4.637,
+        12.21,
+        9.938
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.7,
+            7.75,
+            5.05,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.7,
+            7.75,
+            5.05,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.05,
+            7.75,
+            9.7,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.05,
+            7.75,
+            9.7,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.7,
+            2.05,
+            5.05,
+            9.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.7,
+            2.05,
+            5.05,
+            9.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 2 leste",
+      "from": [
+        11.363,
+        11.1,
+        1.217
+      ],
+      "to": [
+        15.182,
+        12.21,
+        9.938
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            10.95,
+            7.75,
+            14.3,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            10.95,
+            7.75,
+            14.3,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            2.05,
+            7.75,
+            9.7,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            2.05,
+            7.75,
+            9.7,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            10.95,
+            2.05,
+            14.3,
+            9.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            10.95,
+            2.05,
+            14.3,
+            9.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 2 canto 0",
+      "from": [
+        1.297,
+        11.1,
+        0.556
+      ],
+      "to": [
+        2.015,
+        12.21,
+        1.274
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.12,
+            7.75,
+            2.75,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.12,
+            7.75,
+            2.75,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.47,
+            7.75,
+            2.1,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.47,
+            7.75,
+            2.1,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.12,
+            1.47,
+            2.75,
+            2.1
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.12,
+            1.47,
+            2.75,
+            2.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 2 canto 1",
+      "from": [
+        13.985,
+        11.1,
+        0.556
+      ],
+      "to": [
+        14.703,
+        12.21,
+        1.274
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.25,
+            7.75,
+            13.88,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.25,
+            7.75,
+            13.88,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.47,
+            7.75,
+            2.1,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.47,
+            7.75,
+            2.1,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.25,
+            1.47,
+            13.88,
+            2.1
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.25,
+            1.47,
+            13.88,
+            2.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 2 canto 2",
+      "from": [
+        1.297,
+        11.1,
+        9.881
+      ],
+      "to": [
+        2.015,
+        12.21,
+        10.599
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.12,
+            7.75,
+            2.75,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.12,
+            7.75,
+            2.75,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.65,
+            7.75,
+            10.28,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.65,
+            7.75,
+            10.28,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.12,
+            9.65,
+            2.75,
+            10.28
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.12,
+            9.65,
+            2.75,
+            10.28
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 2 canto 3",
+      "from": [
+        13.985,
+        11.1,
+        9.881
+      ],
+      "to": [
+        14.703,
+        12.21,
+        10.599
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.25,
+            7.75,
+            13.88,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.25,
+            7.75,
+            13.88,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.65,
+            7.75,
+            10.28,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.65,
+            7.75,
+            10.28,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.25,
+            9.65,
+            13.88,
+            10.28
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.25,
+            9.65,
+            13.88,
+            10.28
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 3 frente",
+      "from": [
+        1.616,
+        12.21,
+        -0.265
+      ],
+      "to": [
+        14.384,
+        12.994,
+        1.388
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.4,
+            7.22,
+            13.6,
+            7.75
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.4,
+            7.22,
+            13.6,
+            7.75
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            0.75,
+            7.22,
+            2.2,
+            7.75
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            0.75,
+            7.22,
+            2.2,
+            7.75
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.4,
+            0.75,
+            13.6,
+            2.2
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.4,
+            0.75,
+            13.6,
+            2.2
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 3 tras",
+      "from": [
+        1.616,
+        12.21,
+        7.43
+      ],
+      "to": [
+        14.384,
+        12.994,
+        10.907
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.4,
+            7.22,
+            13.6,
+            7.75
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.4,
+            7.22,
+            13.6,
+            7.75
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.5,
+            7.22,
+            10.55,
+            7.75
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.5,
+            7.22,
+            10.55,
+            7.75
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.4,
+            7.5,
+            13.6,
+            10.55
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.4,
+            7.5,
+            13.6,
+            10.55
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 3 oeste",
+      "from": [
+        0.419,
+        12.21,
+        0.932
+      ],
+      "to": [
+        3.155,
+        12.994,
+        9.71
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.35,
+            7.22,
+            3.75,
+            7.75
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.35,
+            7.22,
+            3.75,
+            7.75
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.8,
+            7.22,
+            9.5,
+            7.75
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.8,
+            7.22,
+            9.5,
+            7.75
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.35,
+            1.8,
+            3.75,
+            9.5
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.35,
+            1.8,
+            3.75,
+            9.5
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 3 leste",
+      "from": [
+        12.845,
+        12.21,
+        0.932
+      ],
+      "to": [
+        15.581,
+        12.994,
+        9.71
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.25,
+            7.22,
+            14.65,
+            7.75
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.25,
+            7.22,
+            14.65,
+            7.75
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.8,
+            7.22,
+            9.5,
+            7.75
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.8,
+            7.22,
+            9.5,
+            7.75
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.25,
+            1.8,
+            14.65,
+            9.5
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.25,
+            1.8,
+            14.65,
+            9.5
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 3 canto 0",
+      "from": [
+        0.922,
+        12.21,
+        0.238
+      ],
+      "to": [
+        1.673,
+        12.994,
+        0.989
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.791,
+            7.22,
+            2.45,
+            7.75
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.791,
+            7.22,
+            2.45,
+            7.75
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.191,
+            7.22,
+            1.85,
+            7.75
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.191,
+            7.22,
+            1.85,
+            7.75
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.791,
+            1.191,
+            2.45,
+            1.85
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.791,
+            1.191,
+            2.45,
+            1.85
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 3 canto 1",
+      "from": [
+        14.327,
+        12.21,
+        0.238
+      ],
+      "to": [
+        15.078,
+        12.994,
+        0.989
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.55,
+            7.22,
+            14.209,
+            7.75
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.55,
+            7.22,
+            14.209,
+            7.75
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.191,
+            7.22,
+            1.85,
+            7.75
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.191,
+            7.22,
+            1.85,
+            7.75
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.55,
+            1.191,
+            14.209,
+            1.85
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.55,
+            1.191,
+            14.209,
+            1.85
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 3 canto 2",
+      "from": [
+        0.922,
+        12.21,
+        9.653
+      ],
+      "to": [
+        1.673,
+        12.994,
+        10.404
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.791,
+            7.22,
+            2.45,
+            7.75
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.791,
+            7.22,
+            2.45,
+            7.75
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.45,
+            7.22,
+            10.109,
+            7.75
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.45,
+            7.22,
+            10.109,
+            7.75
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.791,
+            9.45,
+            2.45,
+            10.109
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.791,
+            9.45,
+            2.45,
+            10.109
+          ]
+        }
+      }
+    },
+    {
+      "name": "bacia 3 canto 3",
+      "from": [
+        14.327,
+        12.21,
+        9.653
+      ],
+      "to": [
+        15.078,
+        12.994,
+        10.404
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.55,
+            7.22,
+            14.209,
+            7.75
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.55,
+            7.22,
+            14.209,
+            7.75
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.45,
+            7.22,
+            10.109,
+            7.75
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.45,
+            7.22,
+            10.109,
+            7.75
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.55,
+            9.45,
+            14.209,
+            10.109
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.55,
+            9.45,
+            14.209,
+            10.109
+          ]
+        }
+      }
+    },
+    {
+      "name": "friso frontal da bacia",
+      "from": [
+        1.274,
+        11.278,
+        0.02
+      ],
+      "to": [
+        14.726,
+        12.136,
+        1.16
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.1,
+            7.8,
+            13.9,
+            8.38
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.1,
+            7.8,
+            13.9,
+            8.38
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.0,
+            7.8,
+            2.0,
+            8.38
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.0,
+            7.8,
+            2.0,
+            8.38
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.1,
+            1.0,
+            13.9,
+            2.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain",
+          "uv": [
+            2.1,
+            1.0,
+            13.9,
+            2.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "assento frente",
+      "from": [
+        1.73,
+        12.876,
+        -0.151
+      ],
+      "to": [
+        14.27,
+        13.882,
+        1.616
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.5,
+            6.62,
+            13.5,
+            7.3
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.5,
+            6.62,
+            13.5,
+            7.3
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            0.85,
+            6.62,
+            2.4,
+            7.3
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            0.85,
+            6.62,
+            2.4,
+            7.3
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.5,
+            0.85,
+            13.5,
+            2.4
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.5,
+            0.85,
+            13.5,
+            2.4
+          ]
+        }
+      }
+    },
+    {
+      "name": "assento tras",
+      "from": [
+        1.73,
+        12.876,
+        6.632
+      ],
+      "to": [
+        14.27,
+        13.882,
+        8.171
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.5,
+            6.62,
+            13.5,
+            7.3
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.5,
+            6.62,
+            13.5,
+            7.3
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            6.8,
+            6.62,
+            8.15,
+            7.3
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            6.8,
+            6.62,
+            8.15,
+            7.3
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.5,
+            6.8,
+            13.5,
+            8.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.5,
+            6.8,
+            13.5,
+            8.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "assento oeste",
+      "from": [
+        0.533,
+        12.876,
+        1.046
+      ],
+      "to": [
+        3.326,
+        13.882,
+        6.974
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.45,
+            6.62,
+            3.9,
+            7.3
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.45,
+            6.62,
+            3.9,
+            7.3
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            6.62,
+            7.1,
+            7.3
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            6.62,
+            7.1,
+            7.3
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.45,
+            1.9,
+            3.9,
+            7.1
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.45,
+            1.9,
+            3.9,
+            7.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "assento leste",
+      "from": [
+        12.674,
+        12.876,
+        1.046
+      ],
+      "to": [
+        15.467,
+        13.882,
+        6.974
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.1,
+            6.62,
+            14.55,
+            7.3
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.1,
+            6.62,
+            14.55,
+            7.3
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            6.62,
+            7.1,
+            7.3
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            6.62,
+            7.1,
+            7.3
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.1,
+            1.9,
+            14.55,
+            7.1
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.1,
+            1.9,
+            14.55,
+            7.1
+          ]
+        }
+      }
+    },
+    {
+      "name": "assento canto 0",
+      "from": [
+        1.036,
+        12.876,
+        0.352
+      ],
+      "to": [
+        1.787,
+        13.882,
+        1.103
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.891,
+            6.62,
+            2.55,
+            7.3
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.891,
+            6.62,
+            2.55,
+            7.3
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.291,
+            6.62,
+            1.95,
+            7.3
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.291,
+            6.62,
+            1.95,
+            7.3
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.891,
+            1.291,
+            2.55,
+            1.95
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.891,
+            1.291,
+            2.55,
+            1.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "assento canto 1",
+      "from": [
+        14.213,
+        12.876,
+        0.352
+      ],
+      "to": [
+        14.964,
+        13.882,
+        1.103
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.45,
+            6.62,
+            14.109,
+            7.3
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.45,
+            6.62,
+            14.109,
+            7.3
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            1.291,
+            6.62,
+            1.95,
+            7.3
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            1.291,
+            6.62,
+            1.95,
+            7.3
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.45,
+            1.291,
+            14.109,
+            1.95
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.45,
+            1.291,
+            14.109,
+            1.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "assento canto 2",
+      "from": [
+        1.036,
+        12.876,
+        6.917
+      ],
+      "to": [
+        1.787,
+        13.882,
+        7.668
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.891,
+            6.62,
+            2.55,
+            7.3
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.891,
+            6.62,
+            2.55,
+            7.3
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.05,
+            6.62,
+            7.709,
+            7.3
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.05,
+            6.62,
+            7.709,
+            7.3
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.891,
+            7.05,
+            2.55,
+            7.709
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.891,
+            7.05,
+            2.55,
+            7.709
+          ]
+        }
+      }
+    },
+    {
+      "name": "assento canto 3",
+      "from": [
+        14.213,
+        12.876,
+        6.917
+      ],
+      "to": [
+        14.964,
+        13.882,
+        7.668
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.45,
+            6.62,
+            14.109,
+            7.3
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.45,
+            6.62,
+            14.109,
+            7.3
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.05,
+            6.62,
+            7.709,
+            7.3
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.05,
+            6.62,
+            7.709,
+            7.3
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.45,
+            7.05,
+            14.109,
+            7.709
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.45,
+            7.05,
+            14.109,
+            7.709
+          ]
+        }
+      }
+    },
+    {
+      "name": "garganta frente",
+      "from": [
+        2.927,
+        11.396,
+        1.217
+      ],
+      "to": [
+        13.073,
+        13.468,
+        2.3
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl",
+          "uv": [
+            3.55,
+            6.9,
+            12.45,
+            8.3
+          ]
+        },
+        "south": {
+          "texture": "#bowl",
+          "uv": [
+            3.55,
+            6.9,
+            12.45,
+            8.3
+          ]
+        },
+        "west": {
+          "texture": "#bowl",
+          "uv": [
+            2.05,
+            6.9,
+            3.0,
+            8.3
+          ]
+        },
+        "east": {
+          "texture": "#bowl",
+          "uv": [
+            2.05,
+            6.9,
+            3.0,
+            8.3
+          ]
+        },
+        "up": {
+          "texture": "#bowl",
+          "uv": [
+            3.55,
+            2.05,
+            12.45,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            3.55,
+            2.05,
+            12.45,
+            3.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "garganta tras",
+      "from": [
+        2.927,
+        11.396,
+        6.062
+      ],
+      "to": [
+        13.073,
+        13.468,
+        7.031
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl",
+          "uv": [
+            3.55,
+            6.9,
+            12.45,
+            8.3
+          ]
+        },
+        "south": {
+          "texture": "#bowl",
+          "uv": [
+            3.55,
+            6.9,
+            12.45,
+            8.3
+          ]
+        },
+        "west": {
+          "texture": "#bowl",
+          "uv": [
+            6.3,
+            6.9,
+            7.15,
+            8.3
+          ]
+        },
+        "east": {
+          "texture": "#bowl",
+          "uv": [
+            6.3,
+            6.9,
+            7.15,
+            8.3
+          ]
+        },
+        "up": {
+          "texture": "#bowl",
+          "uv": [
+            3.55,
+            6.3,
+            12.45,
+            7.15
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            3.55,
+            6.3,
+            12.45,
+            7.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "garganta oeste",
+      "from": [
+        2.927,
+        11.396,
+        2.243
+      ],
+      "to": [
+        4.124,
+        13.468,
+        6.119
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl",
+          "uv": [
+            3.55,
+            6.9,
+            4.6,
+            8.3
+          ]
+        },
+        "south": {
+          "texture": "#bowl",
+          "uv": [
+            3.55,
+            6.9,
+            4.6,
+            8.3
+          ]
+        },
+        "west": {
+          "texture": "#bowl",
+          "uv": [
+            2.95,
+            6.9,
+            6.35,
+            8.3
+          ]
+        },
+        "east": {
+          "texture": "#bowl",
+          "uv": [
+            2.95,
+            6.9,
+            6.35,
+            8.3
+          ]
+        },
+        "up": {
+          "texture": "#bowl",
+          "uv": [
+            3.55,
+            2.95,
+            4.6,
+            6.35
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            3.55,
+            2.95,
+            4.6,
+            6.35
+          ]
+        }
+      }
+    },
+    {
+      "name": "garganta leste",
+      "from": [
+        11.876,
+        11.396,
+        2.243
+      ],
+      "to": [
+        13.073,
+        13.468,
+        6.119
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl",
+          "uv": [
+            11.4,
+            6.9,
+            12.45,
+            8.3
+          ]
+        },
+        "south": {
+          "texture": "#bowl",
+          "uv": [
+            11.4,
+            6.9,
+            12.45,
+            8.3
+          ]
+        },
+        "west": {
+          "texture": "#bowl",
+          "uv": [
+            2.95,
+            6.9,
+            6.35,
+            8.3
+          ]
+        },
+        "east": {
+          "texture": "#bowl",
+          "uv": [
+            2.95,
+            6.9,
+            6.35,
+            8.3
+          ]
+        },
+        "up": {
+          "texture": "#bowl",
+          "uv": [
+            11.4,
+            2.95,
+            12.45,
+            6.35
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            11.4,
+            2.95,
+            12.45,
+            6.35
+          ]
+        }
+      }
+    },
+    {
+      "name": "parede media frente",
+      "from": [
+        4.01,
+        10.73,
+        2.186
+      ],
+      "to": [
+        11.99,
+        11.544,
+        2.87
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl",
+          "uv": [
+            4.5,
+            8.2,
+            11.5,
+            8.75
+          ]
+        },
+        "south": {
+          "texture": "#bowl",
+          "uv": [
+            4.5,
+            8.2,
+            11.5,
+            8.75
+          ]
+        },
+        "west": {
+          "texture": "#bowl",
+          "uv": [
+            2.9,
+            8.2,
+            3.5,
+            8.75
+          ]
+        },
+        "east": {
+          "texture": "#bowl",
+          "uv": [
+            2.9,
+            8.2,
+            3.5,
+            8.75
+          ]
+        },
+        "up": {
+          "texture": "#bowl",
+          "uv": [
+            4.5,
+            2.9,
+            11.5,
+            3.5
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            4.5,
+            2.9,
+            11.5,
+            3.5
+          ]
+        }
+      }
+    },
+    {
+      "name": "parede media tras",
+      "from": [
+        4.01,
+        10.73,
+        5.606
+      ],
+      "to": [
+        11.99,
+        11.544,
+        6.176
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl",
+          "uv": [
+            4.5,
+            8.2,
+            11.5,
+            8.75
+          ]
+        },
+        "south": {
+          "texture": "#bowl",
+          "uv": [
+            4.5,
+            8.2,
+            11.5,
+            8.75
+          ]
+        },
+        "west": {
+          "texture": "#bowl",
+          "uv": [
+            5.9,
+            8.2,
+            6.4,
+            8.75
+          ]
+        },
+        "east": {
+          "texture": "#bowl",
+          "uv": [
+            5.9,
+            8.2,
+            6.4,
+            8.75
+          ]
+        },
+        "up": {
+          "texture": "#bowl",
+          "uv": [
+            4.5,
+            5.9,
+            11.5,
+            6.4
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            4.5,
+            5.9,
+            11.5,
+            6.4
+          ]
+        }
+      }
+    },
+    {
+      "name": "parede media oeste",
+      "from": [
+        4.01,
+        10.73,
+        2.813
+      ],
+      "to": [
+        4.808,
+        11.544,
+        5.663
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl",
+          "uv": [
+            4.5,
+            8.2,
+            5.2,
+            8.75
+          ]
+        },
+        "south": {
+          "texture": "#bowl",
+          "uv": [
+            4.5,
+            8.2,
+            5.2,
+            8.75
+          ]
+        },
+        "west": {
+          "texture": "#bowl",
+          "uv": [
+            3.45,
+            8.2,
+            5.95,
+            8.75
+          ]
+        },
+        "east": {
+          "texture": "#bowl",
+          "uv": [
+            3.45,
+            8.2,
+            5.95,
+            8.75
+          ]
+        },
+        "up": {
+          "texture": "#bowl",
+          "uv": [
+            4.5,
+            3.45,
+            5.2,
+            5.95
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            4.5,
+            3.45,
+            5.2,
+            5.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "parede media leste",
+      "from": [
+        11.192,
+        10.73,
+        2.813
+      ],
+      "to": [
+        11.99,
+        11.544,
+        5.663
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl",
+          "uv": [
+            10.8,
+            8.2,
+            11.5,
+            8.75
+          ]
+        },
+        "south": {
+          "texture": "#bowl",
+          "uv": [
+            10.8,
+            8.2,
+            11.5,
+            8.75
+          ]
+        },
+        "west": {
+          "texture": "#bowl",
+          "uv": [
+            3.45,
+            8.2,
+            5.95,
+            8.75
+          ]
+        },
+        "east": {
+          "texture": "#bowl",
+          "uv": [
+            3.45,
+            8.2,
+            5.95,
+            8.75
+          ]
+        },
+        "up": {
+          "texture": "#bowl",
+          "uv": [
+            10.8,
+            3.45,
+            11.5,
+            5.95
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            10.8,
+            3.45,
+            11.5,
+            5.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "fundo da bacia",
+      "from": [
+        4.637,
+        10.434,
+        2.756
+      ],
+      "to": [
+        11.363,
+        10.982,
+        5.777
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl_deep",
+          "uv": [
+            5.05,
+            8.58,
+            10.95,
+            8.95
+          ]
+        },
+        "south": {
+          "texture": "#bowl_deep",
+          "uv": [
+            5.05,
+            8.58,
+            10.95,
+            8.95
+          ]
+        },
+        "west": {
+          "texture": "#bowl_deep",
+          "uv": [
+            3.4,
+            8.58,
+            6.05,
+            8.95
+          ]
+        },
+        "east": {
+          "texture": "#bowl_deep",
+          "uv": [
+            3.4,
+            8.58,
+            6.05,
+            8.95
+          ]
+        },
+        "up": {
+          "texture": "#bowl",
+          "uv": [
+            5.05,
+            3.4,
+            10.95,
+            6.05
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            5.05,
+            3.4,
+            10.95,
+            6.05
+          ]
+        }
+      }
+    },
+    {
+      "name": "ralo",
+      "from": [
+        7.373,
+        10.36,
+        3.953
+      ],
+      "to": [
+        8.627,
+        11.618,
+        5.036
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl_deep",
+          "uv": [
+            7.45,
+            8.15,
+            8.55,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#bowl_deep",
+          "uv": [
+            7.45,
+            8.15,
+            8.55,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#bowl_deep",
+          "uv": [
+            4.45,
+            8.15,
+            5.4,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#bowl_deep",
+          "uv": [
+            4.45,
+            8.15,
+            5.4,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#bowl_deep",
+          "uv": [
+            7.45,
+            4.45,
+            8.55,
+            5.4
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            7.45,
+            4.45,
+            8.55,
+            5.4
+          ]
+        }
+      }
+    },
+    {
+      "name": "ralo interno",
+      "from": [
+        7.658,
+        10.286,
+        4.238
+      ],
+      "to": [
+        8.342,
+        11.174,
+        4.751
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#bowl_deep",
+          "uv": [
+            7.7,
+            8.45,
+            8.3,
+            9.05
+          ]
+        },
+        "south": {
+          "texture": "#bowl_deep",
+          "uv": [
+            7.7,
+            8.45,
+            8.3,
+            9.05
+          ]
+        },
+        "west": {
+          "texture": "#bowl_deep",
+          "uv": [
+            4.7,
+            8.45,
+            5.15,
+            9.05
+          ]
+        },
+        "east": {
+          "texture": "#bowl_deep",
+          "uv": [
+            4.7,
+            8.45,
+            5.15,
+            9.05
+          ]
+        },
+        "up": {
+          "texture": "#bowl_deep",
+          "uv": [
+            7.7,
+            4.7,
+            8.3,
+            5.15
+          ]
+        },
+        "down": {
+          "texture": "#bowl_deep",
+          "uv": [
+            7.7,
+            4.7,
+            8.3,
+            5.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "ligacao",
+      "from": [
+        3.212,
+        9.62,
+        7.544
+      ],
+      "to": [
+        12.788,
+        13.542,
+        10.736
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.8,
+            6.85,
+            12.2,
+            9.5
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.8,
+            6.85,
+            12.2,
+            9.5
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.6,
+            6.85,
+            10.4,
+            9.5
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.6,
+            6.85,
+            10.4,
+            9.5
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            3.8,
+            7.6,
+            12.2,
+            10.4
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.8,
+            7.6,
+            12.2,
+            10.4
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa miolo",
+      "from": [
+        1.901,
+        10.582,
+        9.539
+      ],
+      "to": [
+        14.099,
+        16,
+        16.493
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            5.189,
+            13.35,
+            8.85
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            5.189,
+            13.35,
+            8.85
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.35,
+            5.189,
+            15.45,
+            8.85
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.35,
+            5.189,
+            15.45,
+            8.85
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            9.35,
+            13.35,
+            15.45
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.65,
+            9.35,
+            13.35,
+            15.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa oeste",
+      "from": [
+        1.046,
+        10.582,
+        10.394
+      ],
+      "to": [
+        1.958,
+        16,
+        15.638
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            5.189,
+            2.7,
+            8.85
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            5.189,
+            2.7,
+            8.85
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            10.1,
+            5.189,
+            14.7,
+            8.85
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            10.1,
+            5.189,
+            14.7,
+            8.85
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            10.1,
+            2.7,
+            14.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.9,
+            10.1,
+            2.7,
+            14.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa leste",
+      "from": [
+        14.042,
+        10.582,
+        10.394
+      ],
+      "to": [
+        14.954,
+        16,
+        15.638
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            5.189,
+            14.1,
+            8.85
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            5.189,
+            14.1,
+            8.85
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            10.1,
+            5.189,
+            14.7,
+            8.85
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            10.1,
+            5.189,
+            14.7,
+            8.85
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            10.1,
+            14.1,
+            14.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.3,
+            10.1,
+            14.1,
+            14.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa canto 0",
+      "from": [
+        1.405,
+        10.582,
+        9.898
+      ],
+      "to": [
+        1.958,
+        16,
+        10.451
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            5.189,
+            2.7,
+            8.85
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            5.189,
+            2.7,
+            8.85
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.665,
+            5.189,
+            10.15,
+            8.85
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.665,
+            5.189,
+            10.15,
+            8.85
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            9.665,
+            2.7,
+            10.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.215,
+            9.665,
+            2.7,
+            10.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa canto 1",
+      "from": [
+        14.042,
+        10.582,
+        9.898
+      ],
+      "to": [
+        14.595,
+        16,
+        10.451
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            5.189,
+            13.785,
+            8.85
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            5.189,
+            13.785,
+            8.85
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.665,
+            5.189,
+            10.15,
+            8.85
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.665,
+            5.189,
+            10.15,
+            8.85
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            9.665,
+            13.785,
+            10.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.3,
+            9.665,
+            13.785,
+            10.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa canto 2",
+      "from": [
+        1.405,
+        10.582,
+        15.581
+      ],
+      "to": [
+        1.958,
+        16,
+        16.134
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            5.189,
+            2.7,
+            8.85
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            5.189,
+            2.7,
+            8.85
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            14.65,
+            5.189,
+            15.135,
+            8.85
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            14.65,
+            5.189,
+            15.135,
+            8.85
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            14.65,
+            2.7,
+            15.135
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.215,
+            14.65,
+            2.7,
+            15.135
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa canto 3",
+      "from": [
+        14.042,
+        10.582,
+        15.581
+      ],
+      "to": [
+        14.595,
+        16,
+        16.134
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            5.189,
+            13.785,
+            8.85
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            5.189,
+            13.785,
+            8.85
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            14.65,
+            5.189,
+            15.135,
+            8.85
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            14.65,
+            5.189,
+            15.135,
+            8.85
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            14.65,
+            13.785,
+            15.135
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.3,
+            14.65,
+            13.785,
+            15.135
+          ]
+        }
+      }
+    },
+    {
+      "name": "dobradica esquerda",
+      "from": [
+        0.647,
+        13.246,
+        7.031
+      ],
+      "to": [
+        2.813,
+        15.614,
+        9.197
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            1.55,
+            5.45,
+            3.45,
+            7.05
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            1.55,
+            5.45,
+            3.45,
+            7.05
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            7.15,
+            5.45,
+            9.05,
+            7.05
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            7.15,
+            5.45,
+            9.05,
+            7.05
+          ]
+        },
+        "up": {
+          "texture": "#metal",
+          "uv": [
+            1.55,
+            7.15,
+            3.45,
+            9.05
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            1.55,
+            7.15,
+            3.45,
+            9.05
+          ]
+        }
+      }
+    },
+    {
+      "name": "dobradica direita",
+      "from": [
+        13.187,
+        13.246,
+        7.031
+      ],
+      "to": [
+        15.353,
+        15.614,
+        9.197
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            12.55,
+            5.45,
+            14.45,
+            7.05
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            12.55,
+            5.45,
+            14.45,
+            7.05
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            7.15,
+            5.45,
+            9.05,
+            7.05
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            7.15,
+            5.45,
+            9.05,
+            7.05
+          ]
+        },
+        "up": {
+          "texture": "#metal",
+          "uv": [
+            12.55,
+            7.15,
+            14.45,
+            9.05
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            12.55,
+            7.15,
+            14.45,
+            9.05
+          ]
+        }
+      }
+    },
+    {
+      "name": "eixo",
+      "from": [
+        2.642,
+        13.986,
+        8.171
+      ],
+      "to": [
+        13.358,
+        14.874,
+        9.083
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            3.3,
+            5.95,
+            12.7,
+            6.55
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            3.3,
+            5.95,
+            12.7,
+            6.55
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            8.15,
+            5.95,
+            8.95,
+            6.55
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            8.15,
+            5.95,
+            8.95,
+            6.55
+          ]
+        },
+        "up": {
+          "texture": "#metal",
+          "uv": [
+            3.3,
+            8.15,
+            12.7,
+            8.95
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            3.3,
+            8.15,
+            12.7,
+            8.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "base da alavanca",
+      "from": [
+        -0.151,
+        15.836,
+        12.047
+      ],
+      "to": [
+        1.331,
+        16,
+        14.213
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            0.85,
+            5.189,
+            2.15,
+            5.3
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            0.85,
+            5.189,
+            2.15,
+            5.3
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            11.55,
+            5.189,
+            13.45,
+            5.3
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            11.55,
+            5.189,
+            13.45,
+            5.3
+          ]
+        },
+        "up": {
+          "texture": "#metal",
+          "uv": [
+            0.85,
+            11.55,
+            2.15,
+            13.45
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            0.85,
+            11.55,
+            2.15,
+            13.45
+          ]
+        }
+      }
+    }
+  ]
+}

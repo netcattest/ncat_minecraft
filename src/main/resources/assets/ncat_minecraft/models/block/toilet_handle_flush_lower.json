@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "bowl": "ncat_minecraft:block/toilet/bowl",
+    "bowl_deep": "ncat_minecraft:block/toilet/bowl_deep",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "water": "ncat_minecraft:block/toilet/water",
+    "water_deep": "ncat_minecraft:block/toilet/water_deep",
+    "water_shine": "ncat_minecraft:block/toilet/water_shine",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "vazio",
+      "from": [
+        7.8,
+        0,
+        7.8
+      ],
+      "to": [
+        8.2,
+        0.15,
+        8.2
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain"
+        },
+        "south": {
+          "texture": "#porcelain"
+        },
+        "east": {
+          "texture": "#porcelain"
+        },
+        "west": {
+          "texture": "#porcelain"
+        },
+        "up": {
+          "texture": "#porcelain"
+        },
+        "down": {
+          "texture": "#porcelain"
+        }
+      }
+    }
+  ]
+}

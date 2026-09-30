@@ -1,0 +1,1820 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "leather_black": "ncat_minecraft:block/chair/leather_black",
+    "leather_dark": "ncat_minecraft:block/chair/leather_dark",
+    "leather_seat": "ncat_minecraft:block/chair/leather_seat",
+    "blue_trim": "ncat_minecraft:block/chair/blue_trim",
+    "blue_bright": "ncat_minecraft:block/chair/blue_bright",
+    "metal": "ncat_minecraft:block/chair/metal",
+    "wheel": "ncat_minecraft:block/chair/wheel",
+    "cyan": "ncat_minecraft:block/chair/cyan",
+    "white": "ncat_minecraft:block/chair/white",
+    "pink": "ncat_minecraft:block/chair/pink",
+    "particle": "ncat_minecraft:block/chair/leather_black"
+  },
+  "elements": [
+    {
+      "name": "base transversal",
+      "from": [
+        1,
+        1.6,
+        7.1
+      ],
+      "to": [
+        15,
+        2.6,
+        8.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal"
+        },
+        "east": {
+          "texture": "#metal"
+        },
+        "south": {
+          "texture": "#metal"
+        },
+        "west": {
+          "texture": "#metal"
+        },
+        "up": {
+          "texture": "#metal"
+        },
+        "down": {
+          "texture": "#metal"
+        }
+      }
+    },
+    {
+      "name": "base longitudinal",
+      "from": [
+        7.1,
+        1.6,
+        1
+      ],
+      "to": [
+        8.9,
+        2.6,
+        15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal"
+        },
+        "east": {
+          "texture": "#metal"
+        },
+        "south": {
+          "texture": "#metal"
+        },
+        "west": {
+          "texture": "#metal"
+        },
+        "up": {
+          "texture": "#metal"
+        },
+        "down": {
+          "texture": "#metal"
+        }
+      }
+    },
+    {
+      "name": "quinta haste",
+      "from": [
+        10,
+        1.6,
+        3
+      ],
+      "to": [
+        12.3,
+        2.6,
+        8
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal"
+        },
+        "east": {
+          "texture": "#metal"
+        },
+        "south": {
+          "texture": "#metal"
+        },
+        "west": {
+          "texture": "#metal"
+        },
+        "up": {
+          "texture": "#metal"
+        },
+        "down": {
+          "texture": "#metal"
+        }
+      }
+    },
+    {
+      "name": "rodízio esquerda",
+      "from": [
+        0.29999999999999993,
+        0.2,
+        7.35
+      ],
+      "to": [
+        2.1,
+        1.8,
+        8.65
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#wheel"
+        },
+        "east": {
+          "texture": "#wheel"
+        },
+        "south": {
+          "texture": "#wheel"
+        },
+        "west": {
+          "texture": "#wheel"
+        },
+        "up": {
+          "texture": "#wheel"
+        },
+        "down": {
+          "texture": "#wheel"
+        }
+      }
+    },
+    {
+      "name": "centro azul rodízio esquerda",
+      "from": [
+        0.75,
+        0.45,
+        7.3
+      ],
+      "to": [
+        1.65,
+        1.35,
+        7.42
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "rodízio direita",
+      "from": [
+        12.9,
+        0.2,
+        7.35
+      ],
+      "to": [
+        14.700000000000001,
+        1.8,
+        8.65
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#wheel"
+        },
+        "east": {
+          "texture": "#wheel"
+        },
+        "south": {
+          "texture": "#wheel"
+        },
+        "west": {
+          "texture": "#wheel"
+        },
+        "up": {
+          "texture": "#wheel"
+        },
+        "down": {
+          "texture": "#wheel"
+        }
+      }
+    },
+    {
+      "name": "centro azul rodízio direita",
+      "from": [
+        13.350000000000001,
+        0.45,
+        7.3
+      ],
+      "to": [
+        14.25,
+        1.35,
+        7.42
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "rodízio frente",
+      "from": [
+        7.1,
+        0.2,
+        0.5499999999999999
+      ],
+      "to": [
+        8.9,
+        1.8,
+        1.85
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#wheel"
+        },
+        "east": {
+          "texture": "#wheel"
+        },
+        "south": {
+          "texture": "#wheel"
+        },
+        "west": {
+          "texture": "#wheel"
+        },
+        "up": {
+          "texture": "#wheel"
+        },
+        "down": {
+          "texture": "#wheel"
+        }
+      }
+    },
+    {
+      "name": "centro azul rodízio frente",
+      "from": [
+        7.55,
+        0.45,
+        0.5
+      ],
+      "to": [
+        8.45,
+        1.35,
+        0.62
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "rodízio traseira",
+      "from": [
+        7.1,
+        0.2,
+        13.15
+      ],
+      "to": [
+        8.9,
+        1.8,
+        14.450000000000001
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#wheel"
+        },
+        "east": {
+          "texture": "#wheel"
+        },
+        "south": {
+          "texture": "#wheel"
+        },
+        "west": {
+          "texture": "#wheel"
+        },
+        "up": {
+          "texture": "#wheel"
+        },
+        "down": {
+          "texture": "#wheel"
+        }
+      }
+    },
+    {
+      "name": "centro azul rodízio traseira",
+      "from": [
+        7.55,
+        0.45,
+        13.100000000000001
+      ],
+      "to": [
+        8.45,
+        1.35,
+        13.22
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "rodízio diagonal",
+      "from": [
+        10.799999999999999,
+        0.2,
+        2.5500000000000003
+      ],
+      "to": [
+        12.6,
+        1.8,
+        3.85
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#wheel"
+        },
+        "east": {
+          "texture": "#wheel"
+        },
+        "south": {
+          "texture": "#wheel"
+        },
+        "west": {
+          "texture": "#wheel"
+        },
+        "up": {
+          "texture": "#wheel"
+        },
+        "down": {
+          "texture": "#wheel"
+        }
+      }
+    },
+    {
+      "name": "centro azul rodízio diagonal",
+      "from": [
+        11.25,
+        0.45,
+        2.5
+      ],
+      "to": [
+        12.149999999999999,
+        1.35,
+        2.62
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "marca azul base",
+      "from": [
+        1.8800000000000001,
+        2.61,
+        7.68
+      ],
+      "to": [
+        2.52,
+        2.73,
+        8.32
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "marca azul base",
+      "from": [
+        13.48,
+        2.61,
+        7.68
+      ],
+      "to": [
+        14.120000000000001,
+        2.73,
+        8.32
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "marca azul base",
+      "from": [
+        7.68,
+        2.61,
+        1.8800000000000001
+      ],
+      "to": [
+        8.32,
+        2.73,
+        2.52
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "marca azul base",
+      "from": [
+        7.68,
+        2.61,
+        13.48
+      ],
+      "to": [
+        8.32,
+        2.73,
+        14.120000000000001
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "marca azul base",
+      "from": [
+        11.18,
+        2.61,
+        3.08
+      ],
+      "to": [
+        11.82,
+        2.73,
+        3.7199999999999998
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "coluna de elevação",
+      "from": [
+        6.8,
+        2.6,
+        6.8
+      ],
+      "to": [
+        9.2,
+        7.2,
+        9.2
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal"
+        },
+        "east": {
+          "texture": "#metal"
+        },
+        "south": {
+          "texture": "#metal"
+        },
+        "west": {
+          "texture": "#metal"
+        },
+        "up": {
+          "texture": "#metal"
+        },
+        "down": {
+          "texture": "#metal"
+        }
+      }
+    },
+    {
+      "name": "pistão",
+      "from": [
+        7.2,
+        4.1,
+        7.2
+      ],
+      "to": [
+        8.8,
+        8,
+        8.8
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_dark"
+        },
+        "east": {
+          "texture": "#leather_dark"
+        },
+        "south": {
+          "texture": "#leather_dark"
+        },
+        "west": {
+          "texture": "#leather_dark"
+        },
+        "up": {
+          "texture": "#leather_dark"
+        },
+        "down": {
+          "texture": "#leather_dark"
+        }
+      }
+    },
+    {
+      "name": "carcaça inferior",
+      "from": [
+        3,
+        7.5,
+        2.4
+      ],
+      "to": [
+        13,
+        9.2,
+        13.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal"
+        },
+        "east": {
+          "texture": "#metal"
+        },
+        "south": {
+          "texture": "#metal"
+        },
+        "west": {
+          "texture": "#metal"
+        },
+        "up": {
+          "texture": "#metal"
+        },
+        "down": {
+          "texture": "#metal"
+        }
+      }
+    },
+    {
+      "name": "friso inferior",
+      "from": [
+        2.8,
+        8.3,
+        2.2
+      ],
+      "to": [
+        13.2,
+        9.1,
+        13.8
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "assento estofado",
+      "from": [
+        2.3,
+        9.1,
+        2.1
+      ],
+      "to": [
+        13.7,
+        11.4,
+        13.5
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_seat"
+        },
+        "east": {
+          "texture": "#leather_seat"
+        },
+        "south": {
+          "texture": "#leather_seat"
+        },
+        "west": {
+          "texture": "#leather_seat"
+        },
+        "up": {
+          "texture": "#leather_seat"
+        },
+        "down": {
+          "texture": "#leather_seat"
+        }
+      }
+    },
+    {
+      "name": "superfície do assento",
+      "from": [
+        2.7,
+        11.4,
+        2.6
+      ],
+      "to": [
+        13.3,
+        11.75,
+        13.1
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_dark"
+        },
+        "east": {
+          "texture": "#leather_dark"
+        },
+        "south": {
+          "texture": "#leather_dark"
+        },
+        "west": {
+          "texture": "#leather_dark"
+        },
+        "up": {
+          "texture": "#leather_dark"
+        },
+        "down": {
+          "texture": "#leather_dark"
+        }
+      }
+    },
+    {
+      "name": "borda frontal",
+      "from": [
+        2.2,
+        9.4,
+        1.85
+      ],
+      "to": [
+        13.8,
+        11.4,
+        2.35
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_black"
+        },
+        "east": {
+          "texture": "#leather_black"
+        },
+        "south": {
+          "texture": "#leather_black"
+        },
+        "west": {
+          "texture": "#leather_black"
+        },
+        "up": {
+          "texture": "#leather_black"
+        },
+        "down": {
+          "texture": "#leather_black"
+        }
+      }
+    },
+    {
+      "name": "lateral azul assento esquerdo",
+      "from": [
+        2.4,
+        9.5,
+        2.05
+      ],
+      "to": [
+        3.1,
+        11.45,
+        12.8
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "costura azul assento esquerdo",
+      "from": [
+        2.4,
+        11.76,
+        2.55
+      ],
+      "to": [
+        3.1,
+        11.84,
+        11.4
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "lateral azul assento direito",
+      "from": [
+        12.9,
+        9.5,
+        2.05
+      ],
+      "to": [
+        13.6,
+        11.45,
+        12.8
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "costura azul assento direito",
+      "from": [
+        12.9,
+        11.76,
+        2.55
+      ],
+      "to": [
+        13.6,
+        11.84,
+        11.4
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "bordado esquerdo",
+      "from": [
+        4.25,
+        11.76,
+        3.15
+      ],
+      "to": [
+        4.85,
+        11.85,
+        5
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "bordado direito",
+      "from": [
+        11.15,
+        11.76,
+        3.15
+      ],
+      "to": [
+        11.75,
+        11.85,
+        5
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "haste apoio esquerdo",
+      "from": [
+        0.9,
+        9,
+        8.8
+      ],
+      "to": [
+        2.25,
+        14,
+        10.3
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal"
+        },
+        "east": {
+          "texture": "#metal"
+        },
+        "south": {
+          "texture": "#metal"
+        },
+        "west": {
+          "texture": "#metal"
+        },
+        "up": {
+          "texture": "#metal"
+        },
+        "down": {
+          "texture": "#metal"
+        }
+      }
+    },
+    {
+      "name": "apoio de braço esquerdo",
+      "from": [
+        0.45,
+        13.1,
+        3.6
+      ],
+      "to": [
+        2.7,
+        14.55,
+        11.2
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_black"
+        },
+        "east": {
+          "texture": "#leather_black"
+        },
+        "south": {
+          "texture": "#leather_black"
+        },
+        "west": {
+          "texture": "#leather_black"
+        },
+        "up": {
+          "texture": "#leather_black"
+        },
+        "down": {
+          "texture": "#leather_black"
+        }
+      }
+    },
+    {
+      "name": "superfície apoio esquerdo",
+      "from": [
+        0.5700000000000001,
+        14.55,
+        3.8
+      ],
+      "to": [
+        2.58,
+        14.72,
+        10.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_dark"
+        },
+        "east": {
+          "texture": "#leather_dark"
+        },
+        "south": {
+          "texture": "#leather_dark"
+        },
+        "west": {
+          "texture": "#leather_dark"
+        },
+        "up": {
+          "texture": "#leather_dark"
+        },
+        "down": {
+          "texture": "#leather_dark"
+        }
+      }
+    },
+    {
+      "name": "friso azul apoio esquerdo",
+      "from": [
+        0.6,
+        14.73,
+        3.85
+      ],
+      "to": [
+        2.5500000000000003,
+        14.82,
+        4.5
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "conector esquerdo",
+      "from": [
+        1.0,
+        9,
+        10.3
+      ],
+      "to": [
+        2.4000000000000004,
+        11.5,
+        13.8
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal"
+        },
+        "east": {
+          "texture": "#metal"
+        },
+        "south": {
+          "texture": "#metal"
+        },
+        "west": {
+          "texture": "#metal"
+        },
+        "up": {
+          "texture": "#metal"
+        },
+        "down": {
+          "texture": "#metal"
+        }
+      }
+    },
+    {
+      "name": "haste apoio direito",
+      "from": [
+        13.75,
+        9,
+        8.8
+      ],
+      "to": [
+        15.100000000000001,
+        14,
+        10.3
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal"
+        },
+        "east": {
+          "texture": "#metal"
+        },
+        "south": {
+          "texture": "#metal"
+        },
+        "west": {
+          "texture": "#metal"
+        },
+        "up": {
+          "texture": "#metal"
+        },
+        "down": {
+          "texture": "#metal"
+        }
+      }
+    },
+    {
+      "name": "apoio de braço direito",
+      "from": [
+        13.3,
+        13.1,
+        3.6
+      ],
+      "to": [
+        15.55,
+        14.55,
+        11.2
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_black"
+        },
+        "east": {
+          "texture": "#leather_black"
+        },
+        "south": {
+          "texture": "#leather_black"
+        },
+        "west": {
+          "texture": "#leather_black"
+        },
+        "up": {
+          "texture": "#leather_black"
+        },
+        "down": {
+          "texture": "#leather_black"
+        }
+      }
+    },
+    {
+      "name": "superfície apoio direito",
+      "from": [
+        13.42,
+        14.55,
+        3.8
+      ],
+      "to": [
+        15.430000000000001,
+        14.72,
+        10.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_dark"
+        },
+        "east": {
+          "texture": "#leather_dark"
+        },
+        "south": {
+          "texture": "#leather_dark"
+        },
+        "west": {
+          "texture": "#leather_dark"
+        },
+        "up": {
+          "texture": "#leather_dark"
+        },
+        "down": {
+          "texture": "#leather_dark"
+        }
+      }
+    },
+    {
+      "name": "friso azul apoio direito",
+      "from": [
+        13.450000000000001,
+        14.73,
+        3.85
+      ],
+      "to": [
+        15.4,
+        14.82,
+        4.5
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "conector direito",
+      "from": [
+        13.850000000000001,
+        9,
+        10.3
+      ],
+      "to": [
+        15.25,
+        11.5,
+        13.8
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal"
+        },
+        "east": {
+          "texture": "#metal"
+        },
+        "south": {
+          "texture": "#metal"
+        },
+        "west": {
+          "texture": "#metal"
+        },
+        "up": {
+          "texture": "#metal"
+        },
+        "down": {
+          "texture": "#metal"
+        }
+      }
+    },
+    {
+      "name": "estrutura inferior encosto",
+      "from": [
+        2.1,
+        10,
+        12.5
+      ],
+      "to": [
+        13.9,
+        16,
+        15.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_black"
+        },
+        "east": {
+          "texture": "#leather_black"
+        },
+        "south": {
+          "texture": "#leather_black"
+        },
+        "west": {
+          "texture": "#leather_black"
+        },
+        "up": {
+          "texture": "#leather_black"
+        },
+        "down": {
+          "texture": "#leather_black"
+        }
+      }
+    },
+    {
+      "name": "espuma inferior encosto",
+      "from": [
+        3.1,
+        11,
+        11.65
+      ],
+      "to": [
+        12.9,
+        16,
+        12.65
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#leather_dark"
+        },
+        "east": {
+          "texture": "#leather_dark"
+        },
+        "south": {
+          "texture": "#leather_dark"
+        },
+        "west": {
+          "texture": "#leather_dark"
+        },
+        "up": {
+          "texture": "#leather_dark"
+        },
+        "down": {
+          "texture": "#leather_dark"
+        }
+      }
+    },
+    {
+      "name": "lateral esquerda inferior",
+      "from": [
+        1.55,
+        10.2,
+        11.6
+      ],
+      "to": [
+        3.05,
+        16,
+        15.35
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "lateral direita inferior",
+      "from": [
+        12.95,
+        10.2,
+        11.6
+      ],
+      "to": [
+        14.45,
+        16,
+        15.35
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#blue_trim"
+        },
+        "east": {
+          "texture": "#blue_trim"
+        },
+        "south": {
+          "texture": "#blue_trim"
+        },
+        "west": {
+          "texture": "#blue_trim"
+        },
+        "up": {
+          "texture": "#blue_trim"
+        },
+        "down": {
+          "texture": "#blue_trim"
+        }
+      }
+    },
+    {
+      "name": "selo pata esquerda",
+      "from": [
+        1.4,
+        10.8,
+        12.75
+      ],
+      "to": [
+        1.55,
+        11.65,
+        13.75
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "dedo pata esquerda 12.55",
+      "from": [
+        1.4,
+        11.8,
+        12.55
+      ],
+      "to": [
+        1.55,
+        12.2,
+        12.850000000000001
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#cyan"
+        },
+        "east": {
+          "texture": "#cyan"
+        },
+        "south": {
+          "texture": "#cyan"
+        },
+        "west": {
+          "texture": "#cyan"
+        },
+        "up": {
+          "texture": "#cyan"
+        },
+        "down": {
+          "texture": "#cyan"
+        }
+      }
+    },
+    {
+      "name": "dedo pata esquerda 13.15",
+      "from": [
+        1.4,
+        11.8,
+        13.15
+      ],
+      "to": [
+        1.55,
+        12.2,
+        13.450000000000001
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#cyan"
+        },
+        "east": {
+          "texture": "#cyan"
+        },
+        "south": {
+          "texture": "#cyan"
+        },
+        "west": {
+          "texture": "#cyan"
+        },
+        "up": {
+          "texture": "#cyan"
+        },
+        "down": {
+          "texture": "#cyan"
+        }
+      }
+    },
+    {
+      "name": "dedo pata esquerda 13.75",
+      "from": [
+        1.4,
+        11.8,
+        13.75
+      ],
+      "to": [
+        1.55,
+        12.2,
+        14.05
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#cyan"
+        },
+        "east": {
+          "texture": "#cyan"
+        },
+        "south": {
+          "texture": "#cyan"
+        },
+        "west": {
+          "texture": "#cyan"
+        },
+        "up": {
+          "texture": "#cyan"
+        },
+        "down": {
+          "texture": "#cyan"
+        }
+      }
+    },
+    {
+      "name": "selo pata direita",
+      "from": [
+        14.45,
+        10.8,
+        12.75
+      ],
+      "to": [
+        14.6,
+        11.65,
+        13.75
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#blue_bright"
+        },
+        "east": {
+          "texture": "#blue_bright"
+        },
+        "south": {
+          "texture": "#blue_bright"
+        },
+        "west": {
+          "texture": "#blue_bright"
+        },
+        "up": {
+          "texture": "#blue_bright"
+        },
+        "down": {
+          "texture": "#blue_bright"
+        }
+      }
+    },
+    {
+      "name": "dedo pata direita 12.55",
+      "from": [
+        14.45,
+        11.8,
+        12.55
+      ],
+      "to": [
+        14.6,
+        12.2,
+        12.850000000000001
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#cyan"
+        },
+        "east": {
+          "texture": "#cyan"
+        },
+        "south": {
+          "texture": "#cyan"
+        },
+        "west": {
+          "texture": "#cyan"
+        },
+        "up": {
+          "texture": "#cyan"
+        },
+        "down": {
+          "texture": "#cyan"
+        }
+      }
+    },
+    {
+      "name": "dedo pata direita 13.15",
+      "from": [
+        14.45,
+        11.8,
+        13.15
+      ],
+      "to": [
+        14.6,
+        12.2,
+        13.450000000000001
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#cyan"
+        },
+        "east": {
+          "texture": "#cyan"
+        },
+        "south": {
+          "texture": "#cyan"
+        },
+        "west": {
+          "texture": "#cyan"
+        },
+        "up": {
+          "texture": "#cyan"
+        },
+        "down": {
+          "texture": "#cyan"
+        }
+      }
+    },
+    {
+      "name": "dedo pata direita 13.75",
+      "from": [
+        14.45,
+        11.8,
+        13.75
+      ],
+      "to": [
+        14.6,
+        12.2,
+        14.05
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#cyan"
+        },
+        "east": {
+          "texture": "#cyan"
+        },
+        "south": {
+          "texture": "#cyan"
+        },
+        "west": {
+          "texture": "#cyan"
+        },
+        "up": {
+          "texture": "#cyan"
+        },
+        "down": {
+          "texture": "#cyan"
+        }
+      }
+    }
+  ]
+}

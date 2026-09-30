@@ -1,0 +1,49 @@
+{
+  "keyboard_type": {
+    "category": "block",
+    "sounds": [
+      "ncat_minecraft:keyboard1",
+      "ncat_minecraft:keyboard2",
+      "ncat_minecraft:keyboard3",
+      "ncat_minecraft:keyboard4",
+      "ncat_minecraft:keyboard5",
+      "ncat_minecraft:keyboard6",
+      "ncat_minecraft:keyboard7",
+      "ncat_minecraft:keyboard8"
+    ]
+  },
+  "upgrade_add": {
+    "category": "block",
+    "sounds": [
+      "ncat_minecraft:upgrade_add"
+    ]
+  },
+  "upgrade_del": {
+    "category": "block",
+    "sounds": [
+      "ncat_minecraft:upgrade_del"
+    ]
+  },
+  "screencfg_open": {
+    "category": "master",
+    "sounds": [
+      "ncat_minecraft:screencfg_open"
+    ]
+  },
+  "server": {
+    "category": "master",
+    "sounds": [
+      "ncat_minecraft:server"
+    ]
+  },
+  "duck_squeak": {
+    "category": "block",
+    "sounds": ["ncat_minecraft:duck_squeak"]
+  },
+  "ironic": {
+    "category": "player",
+    "sounds": [
+      "ncat_minecraft:ironic"
+    ]
+  }
+}

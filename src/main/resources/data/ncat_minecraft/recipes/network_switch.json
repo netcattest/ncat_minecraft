@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "key": {
+    "P": { "item": "ncat_minecraft:data_port" },
+    "C": { "item": "minecraft:comparator" }
+  },
+  "result": {
+    "item": "ncat_minecraft:network_switch",
+    "count": 1
+  }
+}

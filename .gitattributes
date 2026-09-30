@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+gradlew text eol=lf
+*.sh text eol=lf
+
+*.png binary
+*.jpg binary
+*.ogg binary
+*.jar binary
+*.zip binary
+*.dll binary
+*.so binary
+*.nbt binary
+*.piskel binary

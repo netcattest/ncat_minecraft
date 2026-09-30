@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCAT Log</title>
+  <style>
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #101419; color: #eef2f5; }
+    body { display: flex; flex-direction: column; }
+    header { flex: none; min-height: 36px; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 5px 10px; border-top: 4px solid #ee8b24; border-bottom: 1px solid #39434d; background: #1a2027; }
+    header strong { white-space: nowrap; font-size: clamp(10px, 2vw, 14px); letter-spacing: .12em; }
+    #summary { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #bac4cd; font-size: clamp(9px, 1.6vw, 11px); text-align: right; }
+    #entries { flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden; scrollbar-color: #ee8b24 #1b2229; }
+    .entry { padding: 6px 10px; border-bottom: 1px solid #28313a; cursor: pointer; }
+    .entry:hover { background: #313045; }
+    .entry:nth-child(even) { background: #151c23; }
+    .meta { display: flex; align-items: center; gap: 7px; font: 11px Consolas, monospace; }
+    .method { min-width: 47px; color: #ffb05c; font-weight: 700; }
+    .status { min-width: 30px; color: #a6d6b2; }
+    .status.error { color: #ff8e98; }
+    .size { margin-left: auto; color: #aeb8c2; }
+    .time { color: #8f9ba7; }
+    .url { margin-top: 3px; color: #e5ebef; font: clamp(10px, 1.9vw, 12px) Consolas, monospace; overflow-wrap: anywhere; }
+    #empty { padding: 20px 12px; color: #aeb8c2; text-align: center; font-size: clamp(10px, 1.8vw, 13px); line-height: 1.4; }
+    footer { flex: none; padding: 4px 10px; border-top: 1px solid #39434d; color: #9ba8b4; background: #1a2027; font-size: 10px; }
+    @media (max-width: 280px) { header { padding: 4px 6px; } .entry { padding: 4px 6px; } .meta { gap: 3px; font-size: 9px; } .method { min-width: 38px; } }
+  </style>
+</head>
+<body>
+  <header><strong>NCAT // LOG</strong><span id="summary">Aguardando tela vinculada</span></header>
+  <div id="entries" role="log" aria-live="off"><div id="empty">Vincule esta tela a uma tela NCAT Navegador com a ferramenta de vínculo.</div></div>
+  <footer id="footer">Use o inspetor de log em uma requisição para criar um tablet de detalhes.</footer>
+  <script>
+    const words = {
+      pt: { waiting: 'Aguardando tela vinculada', empty: 'Vincule esta tela a uma tela NCAT Navegador com a ferramenta de vínculo.', ready: 'Nenhuma requisição capturada', count: 'requisições', footer: 'Use o inspetor de log em uma requisição para criar um tablet de detalhes.', failed: 'Não foi possível ler os registros.' },
+      en: { waiting: 'Waiting for a linked screen', empty: 'Link this screen to an NCAT Browser screen with the linking tool.', ready: 'No requests captured yet', count: 'requests', footer: 'Use the log inspector on a request to create a detail tablet.', failed: 'Could not read request logs.' }
+    };
+    let language = navigator.language.toLowerCase().startsWith('pt') ? 'pt' : 'en';
+    let source = 0;
+    let cursor = 0;
+    let count = 0;
+    let linked = false;
+    const list = document.getElementById('entries');
+    const summary = document.getElementById('summary');
+
+    function text(key) { return words[language][key]; }
+    function placeholder(message) {
+      list.replaceChildren();
+      const node = document.createElement('div');
+      node.id = 'empty';
+      node.textContent = message;
+      list.appendChild(node);
+    }
+    function applyLanguage(code) {
+      language = code.toLowerCase().startsWith('pt') ? 'pt' : 'en';
+      document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en';
+      document.getElementById('footer').textContent = text('footer');
+      if (!linked) { summary.textContent = text('waiting'); placeholder(text('empty')); }
+      else if (!count) { summary.textContent = '0 ' + text('count'); placeholder(text('ready')); }
+      else summary.textContent = count + ' ' + text('count');
+    }
+    function query(name, data) {
+      return new Promise((resolve, reject) => {
+        if (typeof window.cefQuery !== 'function') { reject(new Error('integration')); return; }
+        window.cefQuery({ request: 'NcatMinecraft_' + name + JSON.stringify(data), onSuccess: resolve, onFailure: (code, message) => reject(new Error(message)) });
+      });
+    }
+    function size(bytes) {
+      if (bytes < 1024) return bytes + ' B';
+      if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+      return (bytes / 1048576).toFixed(1) + ' MB';
+    }
+    function append(entry) {
+      const empty = document.getElementById('empty');
+      if (empty) empty.remove();
+      const item = document.createElement('div');
+      item.className = 'entry';
+      item.title = language === 'pt' ? 'Inspecionar requisição' : 'Inspect request';
+      item.addEventListener('click', () => query('LogInspect', { id: entry.id }).catch(() => {}));
+      const meta = document.createElement('div');
+      meta.className = 'meta';
+      const method = document.createElement('span');
+      method.className = 'method';
+      method.textContent = entry.method;
+      const status = document.createElement('span');
+      status.className = 'status' + (entry.status >= 400 || entry.status === 0 ? ' error' : '');
+      status.textContent = entry.status || '—';
+      const time = document.createElement('span');
+      time.className = 'time';
+      time.textContent = new Date(entry.time).toLocaleTimeString(language === 'pt' ? 'pt-BR' : 'en-US');
+      const amount = document.createElement('span');
+      amount.className = 'size';
+      amount.textContent = size(entry.bytes);
+      meta.append(method, status, time, amount);
+      const destination = document.createElement('div');
+      destination.className = 'url';
+      destination.textContent = entry.url;
+      item.append(meta, destination);
+      const nearBottom = list.scrollHeight - list.scrollTop - list.clientHeight < 50;
+      list.appendChild(item);
+      if (list.children.length > 300) list.firstElementChild.remove();
+      if (nearBottom) list.scrollTop = list.scrollHeight;
+    }
+    async function poll() {
+      try {
+        const result = JSON.parse(await query('LogPoll', { after: cursor }));
+        linked = result.linked;
+        if (source !== result.source) {
+          source = result.source;
+          cursor = 0;
+          count = 0;
+          placeholder(linked ? text('ready') : text('empty'));
+          if (linked) { setTimeout(poll, 0); return; }
+        }
+        if (!linked) summary.textContent = text('waiting');
+        else {
+          for (const entry of result.entries) { append(entry); cursor = entry.id; count++; }
+          summary.textContent = count + ' ' + text('count');
+        }
+      } catch (error) {
+        summary.textContent = text('failed');
+      }
+      setTimeout(poll, 500);
+    }
+    applyLanguage(language);
+    query('Locale', {}).then(applyLanguage).catch(() => {});
+    poll();
+  </script>
+</body>
+</html>

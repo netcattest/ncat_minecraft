@@ -1,0 +1,227 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "bowl": "ncat_minecraft:block/toilet/bowl",
+    "bowl_deep": "ncat_minecraft:block/toilet/bowl_deep",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "water": "ncat_minecraft:block/toilet/water",
+    "water_deep": "ncat_minecraft:block/toilet/water_deep",
+    "water_shine": "ncat_minecraft:block/toilet/water_shine",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "painel plano",
+      "from": [
+        2.357,
+        0,
+        7.373
+      ],
+      "to": [
+        13.643,
+        6.466,
+        8.41
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            3.05,
+            0.82,
+            12.95,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            3.05,
+            0.82,
+            12.95,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.45,
+            0.82,
+            8.36,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.45,
+            0.82,
+            8.36,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            3.05,
+            7.45,
+            12.95,
+            8.36
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            3.05,
+            7.45,
+            12.95,
+            8.36
+          ]
+        }
+      }
+    },
+    {
+      "name": "borda esquerda",
+      "from": [
+        1.901,
+        0,
+        7.487
+      ],
+      "to": [
+        2.357,
+        5.756,
+        8.319
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            1.3,
+            3.05,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            1.3,
+            3.05,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.55,
+            1.3,
+            8.28,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.55,
+            1.3,
+            8.28,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.65,
+            7.55,
+            3.05,
+            8.28
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.65,
+            7.55,
+            3.05,
+            8.28
+          ]
+        }
+      }
+    },
+    {
+      "name": "borda direita",
+      "from": [
+        13.643,
+        0,
+        7.487
+      ],
+      "to": [
+        14.099,
+        5.756,
+        8.319
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            12.95,
+            1.3,
+            13.35,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            12.95,
+            1.3,
+            13.35,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            7.55,
+            1.3,
+            8.28,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            7.55,
+            1.3,
+            8.28,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            12.95,
+            7.55,
+            13.35,
+            8.28
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            12.95,
+            7.55,
+            13.35,
+            8.28
+          ]
+        }
+      }
+    }
+  ]
+}

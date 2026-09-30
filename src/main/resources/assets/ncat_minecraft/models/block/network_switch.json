@@ -1,0 +1,5058 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "chassis_dark": "ncat_minecraft:block/network_switch/chassis_dark",
+    "foot": "ncat_minecraft:block/network_switch/foot",
+    "chassis": "ncat_minecraft:block/network_switch/chassis",
+    "vent": "ncat_minecraft:block/network_switch/vent",
+    "cover": "ncat_minecraft:block/network_switch/cover",
+    "top": "ncat_minecraft:block/network_switch/top",
+    "silk": "ncat_minecraft:block/network_switch/silk",
+    "numbers": "ncat_minecraft:block/network_switch/numbers",
+    "bezel": "ncat_minecraft:block/network_switch/bezel",
+    "black": "ncat_minecraft:block/network_switch/black",
+    "pin": "ncat_minecraft:block/network_switch/pin",
+    "socket": "ncat_minecraft:block/network_switch/socket",
+    "button": "ncat_minecraft:block/network_switch/button",
+    "particle": "ncat_minecraft:block/network_switch/chassis"
+  },
+  "elements": [
+    {
+      "name": "base",
+      "from": [
+        0.55,
+        0.35,
+        3.25
+      ],
+      "to": [
+        15.45,
+        0.7,
+        12.9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            15.3,
+            15.45,
+            15.65
+          ],
+          "texture": "#chassis_dark"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            15.3,
+            15.45,
+            15.65
+          ],
+          "texture": "#chassis_dark"
+        },
+        "west": {
+          "uv": [
+            3.25,
+            15.3,
+            12.9,
+            15.65
+          ],
+          "texture": "#chassis_dark"
+        },
+        "east": {
+          "uv": [
+            3.1,
+            15.3,
+            12.75,
+            15.65
+          ],
+          "texture": "#chassis_dark"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            3.25,
+            15.45,
+            12.9
+          ],
+          "texture": "#chassis_dark"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            3.1,
+            15.45,
+            12.75
+          ],
+          "texture": "#chassis_dark"
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        1.3,
+        0.0,
+        3.6
+      ],
+      "to": [
+        3.1,
+        0.35,
+        5.2
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12.9,
+            15.65,
+            14.7,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "south": {
+          "uv": [
+            1.3,
+            15.65,
+            3.1,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "west": {
+          "uv": [
+            3.6,
+            15.65,
+            5.2,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "east": {
+          "uv": [
+            10.8,
+            15.65,
+            12.4,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "up": {
+          "uv": [
+            1.3,
+            3.6,
+            3.1,
+            5.2
+          ],
+          "texture": "#foot"
+        },
+        "down": {
+          "uv": [
+            1.3,
+            10.8,
+            3.1,
+            12.4
+          ],
+          "texture": "#foot"
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        1.3,
+        0.0,
+        10.8
+      ],
+      "to": [
+        3.1,
+        0.35,
+        12.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12.9,
+            15.65,
+            14.7,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "south": {
+          "uv": [
+            1.3,
+            15.65,
+            3.1,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "west": {
+          "uv": [
+            10.8,
+            15.65,
+            12.4,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "east": {
+          "uv": [
+            3.6,
+            15.65,
+            5.2,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "up": {
+          "uv": [
+            1.3,
+            10.8,
+            3.1,
+            12.4
+          ],
+          "texture": "#foot"
+        },
+        "down": {
+          "uv": [
+            1.3,
+            3.6,
+            3.1,
+            5.2
+          ],
+          "texture": "#foot"
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        12.9,
+        0.0,
+        3.6
+      ],
+      "to": [
+        14.7,
+        0.35,
+        5.2
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1.3,
+            15.65,
+            3.1,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "south": {
+          "uv": [
+            12.9,
+            15.65,
+            14.7,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "west": {
+          "uv": [
+            3.6,
+            15.65,
+            5.2,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "east": {
+          "uv": [
+            10.8,
+            15.65,
+            12.4,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "up": {
+          "uv": [
+            12.9,
+            3.6,
+            14.7,
+            5.2
+          ],
+          "texture": "#foot"
+        },
+        "down": {
+          "uv": [
+            12.9,
+            10.8,
+            14.7,
+            12.4
+          ],
+          "texture": "#foot"
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        12.9,
+        0.0,
+        10.8
+      ],
+      "to": [
+        14.7,
+        0.35,
+        12.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1.3,
+            15.65,
+            3.1,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "south": {
+          "uv": [
+            12.9,
+            15.65,
+            14.7,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "west": {
+          "uv": [
+            10.8,
+            15.65,
+            12.4,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "east": {
+          "uv": [
+            3.6,
+            15.65,
+            5.2,
+            16.0
+          ],
+          "texture": "#foot"
+        },
+        "up": {
+          "uv": [
+            12.9,
+            10.8,
+            14.7,
+            12.4
+          ],
+          "texture": "#foot"
+        },
+        "down": {
+          "uv": [
+            12.9,
+            3.6,
+            14.7,
+            5.2
+          ],
+          "texture": "#foot"
+        }
+      }
+    },
+    {
+      "name": "carcaca",
+      "from": [
+        0.5,
+        0.35,
+        2.95
+      ],
+      "to": [
+        15.5,
+        5.6,
+        12.9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.5,
+            10.4,
+            15.5,
+            15.65
+          ],
+          "texture": "#chassis"
+        },
+        "south": {
+          "uv": [
+            0.5,
+            10.4,
+            15.5,
+            15.65
+          ],
+          "texture": "#chassis"
+        },
+        "west": {
+          "uv": [
+            2.95,
+            10.4,
+            12.9,
+            15.65
+          ],
+          "texture": "#vent"
+        },
+        "east": {
+          "uv": [
+            3.1,
+            10.4,
+            13.05,
+            15.65
+          ],
+          "texture": "#vent"
+        },
+        "up": {
+          "uv": [
+            0.5,
+            2.95,
+            15.5,
+            12.9
+          ],
+          "texture": "#chassis"
+        },
+        "down": {
+          "uv": [
+            0.5,
+            3.1,
+            15.5,
+            13.05
+          ],
+          "texture": "#chassis"
+        }
+      }
+    },
+    {
+      "name": "tampa",
+      "from": [
+        0.4,
+        5.6,
+        2.85
+      ],
+      "to": [
+        15.6,
+        6.2,
+        13.05
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.4,
+            9.8,
+            15.6,
+            10.4
+          ],
+          "texture": "#cover"
+        },
+        "south": {
+          "uv": [
+            0.4,
+            9.8,
+            15.6,
+            10.4
+          ],
+          "texture": "#cover"
+        },
+        "west": {
+          "uv": [
+            2.85,
+            9.8,
+            13.05,
+            10.4
+          ],
+          "texture": "#cover"
+        },
+        "east": {
+          "uv": [
+            2.95,
+            9.8,
+            13.15,
+            10.4
+          ],
+          "texture": "#cover"
+        },
+        "up": {
+          "uv": [
+            16.0,
+            16.0,
+            0.0,
+            0.0
+          ],
+          "texture": "#top"
+        },
+        "down": {
+          "uv": [
+            0.4,
+            2.95,
+            15.6,
+            13.15
+          ],
+          "texture": "#cover"
+        }
+      }
+    },
+    {
+      "name": "aba da tampa",
+      "from": [
+        2.3,
+        5.48,
+        2.81
+      ],
+      "to": [
+        4.1,
+        6.2,
+        3.05
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            11.9,
+            9.8,
+            13.7,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "south": {
+          "uv": [
+            2.3,
+            9.8,
+            4.1,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "west": {
+          "uv": [
+            2.81,
+            9.8,
+            3.05,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "east": {
+          "uv": [
+            12.95,
+            9.8,
+            13.19,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "up": {
+          "uv": [
+            2.3,
+            2.81,
+            4.1,
+            3.05
+          ],
+          "texture": "#chassis_dark"
+        },
+        "down": {
+          "uv": [
+            2.3,
+            12.95,
+            4.1,
+            13.19
+          ],
+          "texture": "#chassis_dark"
+        }
+      }
+    },
+    {
+      "name": "aba da tampa",
+      "from": [
+        7.1,
+        5.48,
+        2.81
+      ],
+      "to": [
+        8.9,
+        6.2,
+        3.05
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.1,
+            9.8,
+            8.9,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "south": {
+          "uv": [
+            7.1,
+            9.8,
+            8.9,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "west": {
+          "uv": [
+            2.81,
+            9.8,
+            3.05,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "east": {
+          "uv": [
+            12.95,
+            9.8,
+            13.19,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "up": {
+          "uv": [
+            7.1,
+            2.81,
+            8.9,
+            3.05
+          ],
+          "texture": "#chassis_dark"
+        },
+        "down": {
+          "uv": [
+            7.1,
+            12.95,
+            8.9,
+            13.19
+          ],
+          "texture": "#chassis_dark"
+        }
+      }
+    },
+    {
+      "name": "aba da tampa",
+      "from": [
+        11.9,
+        5.48,
+        2.81
+      ],
+      "to": [
+        13.7,
+        6.2,
+        3.05
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.3,
+            9.8,
+            4.1,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "south": {
+          "uv": [
+            11.9,
+            9.8,
+            13.7,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "west": {
+          "uv": [
+            2.81,
+            9.8,
+            3.05,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "east": {
+          "uv": [
+            12.95,
+            9.8,
+            13.19,
+            10.52
+          ],
+          "texture": "#chassis_dark"
+        },
+        "up": {
+          "uv": [
+            11.9,
+            2.81,
+            13.7,
+            3.05
+          ],
+          "texture": "#chassis_dark"
+        },
+        "down": {
+          "uv": [
+            11.9,
+            12.95,
+            13.7,
+            13.19
+          ],
+          "texture": "#chassis_dark"
+        }
+      }
+    },
+    {
+      "name": "faixa serigrafada",
+      "from": [
+        0.5,
+        3.95,
+        2.89
+      ],
+      "to": [
+        15.5,
+        5.35,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#silk"
+        },
+        "south": {
+          "uv": [
+            0.5,
+            10.65,
+            15.5,
+            12.05
+          ],
+          "texture": "#silk"
+        },
+        "west": {
+          "uv": [
+            2.89,
+            10.65,
+            2.97,
+            12.05
+          ],
+          "texture": "#silk"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            10.65,
+            13.11,
+            12.05
+          ],
+          "texture": "#silk"
+        },
+        "up": {
+          "uv": [
+            0.5,
+            2.89,
+            15.5,
+            2.97
+          ],
+          "texture": "#silk"
+        },
+        "down": {
+          "uv": [
+            0.5,
+            13.03,
+            15.5,
+            13.11
+          ],
+          "texture": "#silk"
+        }
+      }
+    },
+    {
+      "name": "faixa numerica",
+      "from": [
+        0.5,
+        0.8,
+        2.89
+      ],
+      "to": [
+        15.5,
+        1.42,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#numbers"
+        },
+        "south": {
+          "uv": [
+            0.5,
+            14.58,
+            15.5,
+            15.2
+          ],
+          "texture": "#numbers"
+        },
+        "west": {
+          "uv": [
+            2.89,
+            14.58,
+            2.97,
+            15.2
+          ],
+          "texture": "#numbers"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            14.58,
+            13.11,
+            15.2
+          ],
+          "texture": "#numbers"
+        },
+        "up": {
+          "uv": [
+            0.5,
+            2.89,
+            15.5,
+            2.97
+          ],
+          "texture": "#numbers"
+        },
+        "down": {
+          "uv": [
+            0.5,
+            13.03,
+            15.5,
+            13.11
+          ],
+          "texture": "#numbers"
+        }
+      }
+    },
+    {
+      "name": "moldura das portas",
+      "from": [
+        1.2,
+        1.34,
+        2.87
+      ],
+      "to": [
+        13.78,
+        3.86,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.22,
+            12.14,
+            14.8,
+            14.66
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            1.2,
+            12.14,
+            13.78,
+            14.66
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.14,
+            2.97,
+            14.66
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.14,
+            13.13,
+            14.66
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            1.2,
+            2.87,
+            13.78,
+            2.97
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            1.2,
+            13.03,
+            13.78,
+            13.13
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "aba inferior",
+      "from": [
+        0.5,
+        0.65,
+        2.83
+      ],
+      "to": [
+        15.5,
+        0.82,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.5,
+            15.18,
+            15.5,
+            15.35
+          ],
+          "texture": "#chassis_dark"
+        },
+        "south": {
+          "uv": [
+            0.5,
+            15.18,
+            15.5,
+            15.35
+          ],
+          "texture": "#chassis_dark"
+        },
+        "west": {
+          "uv": [
+            2.83,
+            15.18,
+            2.97,
+            15.35
+          ],
+          "texture": "#chassis_dark"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            15.18,
+            13.17,
+            15.35
+          ],
+          "texture": "#chassis_dark"
+        },
+        "up": {
+          "uv": [
+            0.5,
+            2.83,
+            15.5,
+            2.97
+          ],
+          "texture": "#chassis_dark"
+        },
+        "down": {
+          "uv": [
+            0.5,
+            13.03,
+            15.5,
+            13.17
+          ],
+          "texture": "#chassis_dark"
+        }
+      }
+    },
+    {
+      "name": "traseira",
+      "from": [
+        0.6,
+        0.55,
+        12.65
+      ],
+      "to": [
+        15.4,
+        5.45,
+        13.1
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.6,
+            10.55,
+            15.4,
+            15.45
+          ],
+          "texture": "#chassis_dark"
+        },
+        "south": {
+          "uv": [
+            0.6,
+            10.55,
+            15.4,
+            15.45
+          ],
+          "texture": "#vent"
+        },
+        "west": {
+          "uv": [
+            12.65,
+            10.55,
+            13.1,
+            15.45
+          ],
+          "texture": "#chassis_dark"
+        },
+        "east": {
+          "uv": [
+            2.9,
+            10.55,
+            3.35,
+            15.45
+          ],
+          "texture": "#chassis_dark"
+        },
+        "up": {
+          "uv": [
+            0.6,
+            12.65,
+            15.4,
+            13.1
+          ],
+          "texture": "#chassis_dark"
+        },
+        "down": {
+          "uv": [
+            0.6,
+            2.9,
+            15.4,
+            3.35
+          ],
+          "texture": "#chassis_dark"
+        }
+      }
+    },
+    {
+      "name": "tomada",
+      "from": [
+        2.6,
+        1.4,
+        13.0
+      ],
+      "to": [
+        5.4,
+        3.9,
+        13.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10.6,
+            12.1,
+            13.4,
+            14.6
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            2.6,
+            12.1,
+            5.4,
+            14.6
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            13.0,
+            12.1,
+            13.35,
+            14.6
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            2.65,
+            12.1,
+            3.0,
+            14.6
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            2.6,
+            13.0,
+            5.4,
+            13.35
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            2.6,
+            2.65,
+            5.4,
+            3.0
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "terra",
+      "from": [
+        6.1,
+        1.6,
+        13.0
+      ],
+      "to": [
+        7.2,
+        2.6,
+        13.25
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8.8,
+            13.4,
+            9.9,
+            14.4
+          ],
+          "texture": "#pin"
+        },
+        "south": {
+          "uv": [
+            6.1,
+            13.4,
+            7.2,
+            14.4
+          ],
+          "texture": "#pin"
+        },
+        "west": {
+          "uv": [
+            13.0,
+            13.4,
+            13.25,
+            14.4
+          ],
+          "texture": "#pin"
+        },
+        "east": {
+          "uv": [
+            2.75,
+            13.4,
+            3.0,
+            14.4
+          ],
+          "texture": "#pin"
+        },
+        "up": {
+          "uv": [
+            6.1,
+            13.0,
+            7.2,
+            13.25
+          ],
+          "texture": "#pin"
+        },
+        "down": {
+          "uv": [
+            6.1,
+            2.75,
+            7.2,
+            3.0
+          ],
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "blindagem",
+      "from": [
+        12.2,
+        1.5,
+        2.77
+      ],
+      "to": [
+        13.6,
+        3.3,
+        3.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.4,
+            12.7,
+            3.8,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            12.2,
+            12.7,
+            13.6,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.77,
+            12.7,
+            3.35,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            12.65,
+            12.7,
+            13.23,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            12.2,
+            2.77,
+            13.6,
+            3.35
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            12.2,
+            12.65,
+            13.6,
+            13.23
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "alojamento",
+      "from": [
+        12.36,
+        1.68,
+        2.67
+      ],
+      "to": [
+        13.44,
+        3.1,
+        3.17
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.56,
+            12.9,
+            3.64,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "south": {
+          "uv": [
+            12.36,
+            12.9,
+            13.44,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "west": {
+          "uv": [
+            2.67,
+            12.9,
+            3.17,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "east": {
+          "uv": [
+            12.83,
+            12.9,
+            13.33,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "up": {
+          "uv": [
+            12.36,
+            2.67,
+            13.44,
+            3.17
+          ],
+          "texture": "#socket"
+        },
+        "down": {
+          "uv": [
+            12.36,
+            12.83,
+            13.44,
+            13.33
+          ],
+          "texture": "#socket"
+        }
+      }
+    },
+    {
+      "name": "trava",
+      "from": [
+        12.68,
+        1.7,
+        2.61
+      ],
+      "to": [
+        13.12,
+        2.02,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.88,
+            13.98,
+            3.32,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            12.68,
+            13.98,
+            13.12,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.98,
+            2.83,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.98,
+            13.39,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            12.68,
+            2.61,
+            13.12,
+            2.83
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            12.68,
+            13.17,
+            13.12,
+            13.39
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "contatos",
+      "from": [
+        12.5,
+        2.56,
+        2.61
+      ],
+      "to": [
+        13.3,
+        2.88,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.7,
+            13.12,
+            3.5,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "south": {
+          "uv": [
+            12.5,
+            13.12,
+            13.3,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.12,
+            2.83,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.12,
+            13.39,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "up": {
+          "uv": [
+            12.5,
+            2.61,
+            13.3,
+            2.83
+          ],
+          "texture": "#pin"
+        },
+        "down": {
+          "uv": [
+            12.5,
+            13.17,
+            13.3,
+            13.39
+          ],
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "blindagem",
+      "from": [
+        10.655,
+        1.5,
+        2.77
+      ],
+      "to": [
+        12.055,
+        3.3,
+        3.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3.945,
+            12.7,
+            5.345,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            10.655,
+            12.7,
+            12.055,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.77,
+            12.7,
+            3.35,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            12.65,
+            12.7,
+            13.23,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            10.655,
+            2.77,
+            12.055,
+            3.35
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            10.655,
+            12.65,
+            12.055,
+            13.23
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "alojamento",
+      "from": [
+        10.815,
+        1.68,
+        2.67
+      ],
+      "to": [
+        11.895,
+        3.1,
+        3.17
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4.105,
+            12.9,
+            5.185,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "south": {
+          "uv": [
+            10.815,
+            12.9,
+            11.895,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "west": {
+          "uv": [
+            2.67,
+            12.9,
+            3.17,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "east": {
+          "uv": [
+            12.83,
+            12.9,
+            13.33,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "up": {
+          "uv": [
+            10.815,
+            2.67,
+            11.895,
+            3.17
+          ],
+          "texture": "#socket"
+        },
+        "down": {
+          "uv": [
+            10.815,
+            12.83,
+            11.895,
+            13.33
+          ],
+          "texture": "#socket"
+        }
+      }
+    },
+    {
+      "name": "trava",
+      "from": [
+        11.135,
+        1.7,
+        2.61
+      ],
+      "to": [
+        11.575,
+        2.02,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4.425,
+            13.98,
+            4.865,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            11.135,
+            13.98,
+            11.575,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.98,
+            2.83,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.98,
+            13.39,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            11.135,
+            2.61,
+            11.575,
+            2.83
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            11.135,
+            13.17,
+            11.575,
+            13.39
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "contatos",
+      "from": [
+        10.955,
+        2.56,
+        2.61
+      ],
+      "to": [
+        11.755,
+        2.88,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4.245,
+            13.12,
+            5.045,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "south": {
+          "uv": [
+            10.955,
+            13.12,
+            11.755,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.12,
+            2.83,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.12,
+            13.39,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "up": {
+          "uv": [
+            10.955,
+            2.61,
+            11.755,
+            2.83
+          ],
+          "texture": "#pin"
+        },
+        "down": {
+          "uv": [
+            10.955,
+            13.17,
+            11.755,
+            13.39
+          ],
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "blindagem",
+      "from": [
+        9.11,
+        1.5,
+        2.77
+      ],
+      "to": [
+        10.51,
+        3.3,
+        3.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.49,
+            12.7,
+            6.89,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            9.11,
+            12.7,
+            10.51,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.77,
+            12.7,
+            3.35,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            12.65,
+            12.7,
+            13.23,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            9.11,
+            2.77,
+            10.51,
+            3.35
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            9.11,
+            12.65,
+            10.51,
+            13.23
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "alojamento",
+      "from": [
+        9.27,
+        1.68,
+        2.67
+      ],
+      "to": [
+        10.35,
+        3.1,
+        3.17
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.65,
+            12.9,
+            6.73,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "south": {
+          "uv": [
+            9.27,
+            12.9,
+            10.35,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "west": {
+          "uv": [
+            2.67,
+            12.9,
+            3.17,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "east": {
+          "uv": [
+            12.83,
+            12.9,
+            13.33,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "up": {
+          "uv": [
+            9.27,
+            2.67,
+            10.35,
+            3.17
+          ],
+          "texture": "#socket"
+        },
+        "down": {
+          "uv": [
+            9.27,
+            12.83,
+            10.35,
+            13.33
+          ],
+          "texture": "#socket"
+        }
+      }
+    },
+    {
+      "name": "trava",
+      "from": [
+        9.59,
+        1.7,
+        2.61
+      ],
+      "to": [
+        10.03,
+        2.02,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.97,
+            13.98,
+            6.41,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            9.59,
+            13.98,
+            10.03,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.98,
+            2.83,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.98,
+            13.39,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            9.59,
+            2.61,
+            10.03,
+            2.83
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            9.59,
+            13.17,
+            10.03,
+            13.39
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "contatos",
+      "from": [
+        9.41,
+        2.56,
+        2.61
+      ],
+      "to": [
+        10.21,
+        2.88,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.79,
+            13.12,
+            6.59,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "south": {
+          "uv": [
+            9.41,
+            13.12,
+            10.21,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.12,
+            2.83,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.12,
+            13.39,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "up": {
+          "uv": [
+            9.41,
+            2.61,
+            10.21,
+            2.83
+          ],
+          "texture": "#pin"
+        },
+        "down": {
+          "uv": [
+            9.41,
+            13.17,
+            10.21,
+            13.39
+          ],
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "blindagem",
+      "from": [
+        7.565,
+        1.5,
+        2.77
+      ],
+      "to": [
+        8.965,
+        3.3,
+        3.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.035,
+            12.7,
+            8.435,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            7.565,
+            12.7,
+            8.965,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.77,
+            12.7,
+            3.35,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            12.65,
+            12.7,
+            13.23,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            7.565,
+            2.77,
+            8.965,
+            3.35
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            7.565,
+            12.65,
+            8.965,
+            13.23
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "alojamento",
+      "from": [
+        7.725,
+        1.68,
+        2.67
+      ],
+      "to": [
+        8.805,
+        3.1,
+        3.17
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.195,
+            12.9,
+            8.275,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "south": {
+          "uv": [
+            7.725,
+            12.9,
+            8.805,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "west": {
+          "uv": [
+            2.67,
+            12.9,
+            3.17,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "east": {
+          "uv": [
+            12.83,
+            12.9,
+            13.33,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "up": {
+          "uv": [
+            7.725,
+            2.67,
+            8.805,
+            3.17
+          ],
+          "texture": "#socket"
+        },
+        "down": {
+          "uv": [
+            7.725,
+            12.83,
+            8.805,
+            13.33
+          ],
+          "texture": "#socket"
+        }
+      }
+    },
+    {
+      "name": "trava",
+      "from": [
+        8.045,
+        1.7,
+        2.61
+      ],
+      "to": [
+        8.485,
+        2.02,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.515,
+            13.98,
+            7.955,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            8.045,
+            13.98,
+            8.485,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.98,
+            2.83,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.98,
+            13.39,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            8.045,
+            2.61,
+            8.485,
+            2.83
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            8.045,
+            13.17,
+            8.485,
+            13.39
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "contatos",
+      "from": [
+        7.865,
+        2.56,
+        2.61
+      ],
+      "to": [
+        8.665,
+        2.88,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.335,
+            13.12,
+            8.135,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "south": {
+          "uv": [
+            7.865,
+            13.12,
+            8.665,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.12,
+            2.83,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.12,
+            13.39,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "up": {
+          "uv": [
+            7.865,
+            2.61,
+            8.665,
+            2.83
+          ],
+          "texture": "#pin"
+        },
+        "down": {
+          "uv": [
+            7.865,
+            13.17,
+            8.665,
+            13.39
+          ],
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "blindagem",
+      "from": [
+        6.02,
+        1.5,
+        2.77
+      ],
+      "to": [
+        7.42,
+        3.3,
+        3.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8.58,
+            12.7,
+            9.98,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            6.02,
+            12.7,
+            7.42,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.77,
+            12.7,
+            3.35,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            12.65,
+            12.7,
+            13.23,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            6.02,
+            2.77,
+            7.42,
+            3.35
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            6.02,
+            12.65,
+            7.42,
+            13.23
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "alojamento",
+      "from": [
+        6.18,
+        1.68,
+        2.67
+      ],
+      "to": [
+        7.26,
+        3.1,
+        3.17
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8.74,
+            12.9,
+            9.82,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "south": {
+          "uv": [
+            6.18,
+            12.9,
+            7.26,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "west": {
+          "uv": [
+            2.67,
+            12.9,
+            3.17,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "east": {
+          "uv": [
+            12.83,
+            12.9,
+            13.33,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "up": {
+          "uv": [
+            6.18,
+            2.67,
+            7.26,
+            3.17
+          ],
+          "texture": "#socket"
+        },
+        "down": {
+          "uv": [
+            6.18,
+            12.83,
+            7.26,
+            13.33
+          ],
+          "texture": "#socket"
+        }
+      }
+    },
+    {
+      "name": "trava",
+      "from": [
+        6.5,
+        1.7,
+        2.61
+      ],
+      "to": [
+        6.94,
+        2.02,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9.06,
+            13.98,
+            9.5,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            6.5,
+            13.98,
+            6.94,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.98,
+            2.83,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.98,
+            13.39,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            6.5,
+            2.61,
+            6.94,
+            2.83
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            6.5,
+            13.17,
+            6.94,
+            13.39
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "contatos",
+      "from": [
+        6.32,
+        2.56,
+        2.61
+      ],
+      "to": [
+        7.12,
+        2.88,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8.88,
+            13.12,
+            9.68,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "south": {
+          "uv": [
+            6.32,
+            13.12,
+            7.12,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.12,
+            2.83,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.12,
+            13.39,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "up": {
+          "uv": [
+            6.32,
+            2.61,
+            7.12,
+            2.83
+          ],
+          "texture": "#pin"
+        },
+        "down": {
+          "uv": [
+            6.32,
+            13.17,
+            7.12,
+            13.39
+          ],
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "blindagem",
+      "from": [
+        4.475,
+        1.5,
+        2.77
+      ],
+      "to": [
+        5.875,
+        3.3,
+        3.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10.125,
+            12.7,
+            11.525,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            4.475,
+            12.7,
+            5.875,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.77,
+            12.7,
+            3.35,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            12.65,
+            12.7,
+            13.23,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            4.475,
+            2.77,
+            5.875,
+            3.35
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            4.475,
+            12.65,
+            5.875,
+            13.23
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "alojamento",
+      "from": [
+        4.635,
+        1.68,
+        2.67
+      ],
+      "to": [
+        5.715,
+        3.1,
+        3.17
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10.285,
+            12.9,
+            11.365,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "south": {
+          "uv": [
+            4.635,
+            12.9,
+            5.715,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "west": {
+          "uv": [
+            2.67,
+            12.9,
+            3.17,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "east": {
+          "uv": [
+            12.83,
+            12.9,
+            13.33,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "up": {
+          "uv": [
+            4.635,
+            2.67,
+            5.715,
+            3.17
+          ],
+          "texture": "#socket"
+        },
+        "down": {
+          "uv": [
+            4.635,
+            12.83,
+            5.715,
+            13.33
+          ],
+          "texture": "#socket"
+        }
+      }
+    },
+    {
+      "name": "trava",
+      "from": [
+        4.955,
+        1.7,
+        2.61
+      ],
+      "to": [
+        5.395,
+        2.02,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10.605,
+            13.98,
+            11.045,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            4.955,
+            13.98,
+            5.395,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.98,
+            2.83,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.98,
+            13.39,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            4.955,
+            2.61,
+            5.395,
+            2.83
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            4.955,
+            13.17,
+            5.395,
+            13.39
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "contatos",
+      "from": [
+        4.775,
+        2.56,
+        2.61
+      ],
+      "to": [
+        5.575,
+        2.88,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10.425,
+            13.12,
+            11.225,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "south": {
+          "uv": [
+            4.775,
+            13.12,
+            5.575,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.12,
+            2.83,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.12,
+            13.39,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "up": {
+          "uv": [
+            4.775,
+            2.61,
+            5.575,
+            2.83
+          ],
+          "texture": "#pin"
+        },
+        "down": {
+          "uv": [
+            4.775,
+            13.17,
+            5.575,
+            13.39
+          ],
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "blindagem",
+      "from": [
+        2.93,
+        1.5,
+        2.77
+      ],
+      "to": [
+        4.33,
+        3.3,
+        3.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            11.67,
+            12.7,
+            13.07,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            2.93,
+            12.7,
+            4.33,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.77,
+            12.7,
+            3.35,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            12.65,
+            12.7,
+            13.23,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            2.93,
+            2.77,
+            4.33,
+            3.35
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            2.93,
+            12.65,
+            4.33,
+            13.23
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "alojamento",
+      "from": [
+        3.09,
+        1.68,
+        2.67
+      ],
+      "to": [
+        4.17,
+        3.1,
+        3.17
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            11.83,
+            12.9,
+            12.91,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "south": {
+          "uv": [
+            3.09,
+            12.9,
+            4.17,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "west": {
+          "uv": [
+            2.67,
+            12.9,
+            3.17,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "east": {
+          "uv": [
+            12.83,
+            12.9,
+            13.33,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "up": {
+          "uv": [
+            3.09,
+            2.67,
+            4.17,
+            3.17
+          ],
+          "texture": "#socket"
+        },
+        "down": {
+          "uv": [
+            3.09,
+            12.83,
+            4.17,
+            13.33
+          ],
+          "texture": "#socket"
+        }
+      }
+    },
+    {
+      "name": "trava",
+      "from": [
+        3.41,
+        1.7,
+        2.61
+      ],
+      "to": [
+        3.85,
+        2.02,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12.15,
+            13.98,
+            12.59,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            3.41,
+            13.98,
+            3.85,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.98,
+            2.83,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.98,
+            13.39,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            3.41,
+            2.61,
+            3.85,
+            2.83
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            3.41,
+            13.17,
+            3.85,
+            13.39
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "contatos",
+      "from": [
+        3.23,
+        2.56,
+        2.61
+      ],
+      "to": [
+        4.03,
+        2.88,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            11.97,
+            13.12,
+            12.77,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "south": {
+          "uv": [
+            3.23,
+            13.12,
+            4.03,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.12,
+            2.83,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.12,
+            13.39,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "up": {
+          "uv": [
+            3.23,
+            2.61,
+            4.03,
+            2.83
+          ],
+          "texture": "#pin"
+        },
+        "down": {
+          "uv": [
+            3.23,
+            13.17,
+            4.03,
+            13.39
+          ],
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "blindagem",
+      "from": [
+        1.385,
+        1.5,
+        2.77
+      ],
+      "to": [
+        2.785,
+        3.3,
+        3.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.215,
+            12.7,
+            14.615,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            1.385,
+            12.7,
+            2.785,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.77,
+            12.7,
+            3.35,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            12.65,
+            12.7,
+            13.23,
+            14.5
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            1.385,
+            2.77,
+            2.785,
+            3.35
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            1.385,
+            12.65,
+            2.785,
+            13.23
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "alojamento",
+      "from": [
+        1.545,
+        1.68,
+        2.67
+      ],
+      "to": [
+        2.625,
+        3.1,
+        3.17
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.375,
+            12.9,
+            14.455,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "south": {
+          "uv": [
+            1.545,
+            12.9,
+            2.625,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "west": {
+          "uv": [
+            2.67,
+            12.9,
+            3.17,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "east": {
+          "uv": [
+            12.83,
+            12.9,
+            13.33,
+            14.32
+          ],
+          "texture": "#socket"
+        },
+        "up": {
+          "uv": [
+            1.545,
+            2.67,
+            2.625,
+            3.17
+          ],
+          "texture": "#socket"
+        },
+        "down": {
+          "uv": [
+            1.545,
+            12.83,
+            2.625,
+            13.33
+          ],
+          "texture": "#socket"
+        }
+      }
+    },
+    {
+      "name": "trava",
+      "from": [
+        1.865,
+        1.7,
+        2.61
+      ],
+      "to": [
+        2.305,
+        2.02,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.695,
+            13.98,
+            14.135,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            1.865,
+            13.98,
+            2.305,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.98,
+            2.83,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.98,
+            13.39,
+            14.3
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            1.865,
+            2.61,
+            2.305,
+            2.83
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            1.865,
+            13.17,
+            2.305,
+            13.39
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "contatos",
+      "from": [
+        1.685,
+        2.56,
+        2.61
+      ],
+      "to": [
+        2.485,
+        2.88,
+        2.83
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.515,
+            13.12,
+            14.315,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "south": {
+          "uv": [
+            1.685,
+            13.12,
+            2.485,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            13.12,
+            2.83,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "east": {
+          "uv": [
+            13.17,
+            13.12,
+            13.39,
+            13.44
+          ],
+          "texture": "#pin"
+        },
+        "up": {
+          "uv": [
+            1.685,
+            2.61,
+            2.485,
+            2.83
+          ],
+          "texture": "#pin"
+        },
+        "down": {
+          "uv": [
+            1.685,
+            13.17,
+            2.485,
+            13.39
+          ],
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "alojamento do botao",
+      "from": [
+        13.65,
+        1.15,
+        2.85
+      ],
+      "to": [
+        15.7,
+        3.35,
+        3.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.3,
+            12.65,
+            2.35,
+            14.85
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            13.65,
+            12.65,
+            15.7,
+            14.85
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.85,
+            12.65,
+            3.35,
+            14.85
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            12.65,
+            12.65,
+            13.15,
+            14.85
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            13.65,
+            2.85,
+            15.7,
+            3.35
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            13.65,
+            12.65,
+            15.7,
+            13.15
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "aro do botao",
+      "from": [
+        13.73,
+        1.23,
+        2.61
+      ],
+      "to": [
+        15.62,
+        3.27,
+        2.91
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.38,
+            12.73,
+            2.27,
+            14.77
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            13.73,
+            12.73,
+            15.62,
+            14.77
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.61,
+            12.73,
+            2.91,
+            14.77
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            13.09,
+            12.73,
+            13.39,
+            14.77
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            13.73,
+            2.61,
+            15.62,
+            2.91
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            13.73,
+            13.09,
+            15.62,
+            13.39
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "botao",
+      "from": [
+        13.95,
+        1.45,
+        2.39
+      ],
+      "to": [
+        15.4,
+        3.05,
+        2.69
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.6,
+            12.95,
+            2.05,
+            14.55
+          ],
+          "texture": "#button"
+        },
+        "south": {
+          "uv": [
+            13.95,
+            12.95,
+            15.4,
+            14.55
+          ],
+          "texture": "#button"
+        },
+        "west": {
+          "uv": [
+            2.39,
+            12.95,
+            2.69,
+            14.55
+          ],
+          "texture": "#button"
+        },
+        "east": {
+          "uv": [
+            13.31,
+            12.95,
+            13.61,
+            14.55
+          ],
+          "texture": "#button"
+        },
+        "up": {
+          "uv": [
+            13.95,
+            2.39,
+            15.4,
+            2.69
+          ],
+          "texture": "#button"
+        },
+        "down": {
+          "uv": [
+            13.95,
+            13.31,
+            15.4,
+            13.61
+          ],
+          "texture": "#button"
+        }
+      }
+    },
+    {
+      "name": "chanfro do botao",
+      "from": [
+        14.11,
+        1.61,
+        2.29
+      ],
+      "to": [
+        15.24,
+        2.89,
+        2.43
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.76,
+            13.11,
+            1.89,
+            14.39
+          ],
+          "texture": "#button"
+        },
+        "south": {
+          "uv": [
+            14.11,
+            13.11,
+            15.24,
+            14.39
+          ],
+          "texture": "#button"
+        },
+        "west": {
+          "uv": [
+            2.29,
+            13.11,
+            2.43,
+            14.39
+          ],
+          "texture": "#button"
+        },
+        "east": {
+          "uv": [
+            13.57,
+            13.11,
+            13.71,
+            14.39
+          ],
+          "texture": "#button"
+        },
+        "up": {
+          "uv": [
+            14.11,
+            2.29,
+            15.24,
+            2.43
+          ],
+          "texture": "#button"
+        },
+        "down": {
+          "uv": [
+            14.11,
+            13.57,
+            15.24,
+            13.71
+          ],
+          "texture": "#button"
+        }
+      }
+    },
+    {
+      "name": "simbolo anel",
+      "from": [
+        14.255,
+        1.79,
+        2.25
+      ],
+      "to": [
+        15.095,
+        2.59,
+        2.31
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.905,
+            13.41,
+            1.745,
+            14.21
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            14.255,
+            13.41,
+            15.095,
+            14.21
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.25,
+            13.41,
+            2.31,
+            14.21
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            13.69,
+            13.41,
+            13.75,
+            14.21
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            14.255,
+            2.25,
+            15.095,
+            2.31
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            14.255,
+            13.69,
+            15.095,
+            13.75
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "simbolo interno",
+      "from": [
+        14.475,
+        1.97,
+        2.23
+      ],
+      "to": [
+        14.875,
+        2.41,
+        2.29
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1.125,
+            13.59,
+            1.525,
+            14.03
+          ],
+          "texture": "#button"
+        },
+        "south": {
+          "uv": [
+            14.475,
+            13.59,
+            14.875,
+            14.03
+          ],
+          "texture": "#button"
+        },
+        "west": {
+          "uv": [
+            2.23,
+            13.59,
+            2.29,
+            14.03
+          ],
+          "texture": "#button"
+        },
+        "east": {
+          "uv": [
+            13.71,
+            13.59,
+            13.77,
+            14.03
+          ],
+          "texture": "#button"
+        },
+        "up": {
+          "uv": [
+            14.475,
+            2.23,
+            14.875,
+            2.29
+          ],
+          "texture": "#button"
+        },
+        "down": {
+          "uv": [
+            14.475,
+            13.71,
+            14.875,
+            13.77
+          ],
+          "texture": "#button"
+        }
+      }
+    },
+    {
+      "name": "simbolo haste",
+      "from": [
+        14.565,
+        2.19,
+        2.23
+      ],
+      "to": [
+        14.785,
+        2.77,
+        2.31
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1.215,
+            13.23,
+            1.435,
+            13.81
+          ],
+          "texture": "#bezel"
+        },
+        "south": {
+          "uv": [
+            14.565,
+            13.23,
+            14.785,
+            13.81
+          ],
+          "texture": "#bezel"
+        },
+        "west": {
+          "uv": [
+            2.23,
+            13.23,
+            2.31,
+            13.81
+          ],
+          "texture": "#bezel"
+        },
+        "east": {
+          "uv": [
+            13.69,
+            13.23,
+            13.77,
+            13.81
+          ],
+          "texture": "#bezel"
+        },
+        "up": {
+          "uv": [
+            14.565,
+            2.23,
+            14.785,
+            2.31
+          ],
+          "texture": "#bezel"
+        },
+        "down": {
+          "uv": [
+            14.565,
+            13.69,
+            14.785,
+            13.77
+          ],
+          "texture": "#bezel"
+        }
+      }
+    },
+    {
+      "name": "moldura do led de forca",
+      "from": [
+        14.255,
+        3.28,
+        2.85
+      ],
+      "to": [
+        15.095,
+        3.96,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.905,
+            12.04,
+            1.745,
+            12.72
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            14.255,
+            12.04,
+            15.095,
+            12.72
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.85,
+            12.04,
+            2.97,
+            12.72
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.04,
+            13.15,
+            12.72
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            14.255,
+            2.85,
+            15.095,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            14.255,
+            13.03,
+            15.095,
+            13.15
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        12.22,
+        3.36,
+        2.87
+      ],
+      "to": [
+        12.74,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3.26,
+            12.12,
+            3.78,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            12.22,
+            12.12,
+            12.74,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            12.22,
+            2.87,
+            12.74,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            12.22,
+            13.03,
+            12.74,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        13.06,
+        3.36,
+        2.87
+      ],
+      "to": [
+        13.58,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.42,
+            12.12,
+            2.94,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            13.06,
+            12.12,
+            13.58,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            13.06,
+            2.87,
+            13.58,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            13.06,
+            13.03,
+            13.58,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        10.675,
+        3.36,
+        2.87
+      ],
+      "to": [
+        11.195,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4.805,
+            12.12,
+            5.325,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            10.675,
+            12.12,
+            11.195,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            10.675,
+            2.87,
+            11.195,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            10.675,
+            13.03,
+            11.195,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        11.515,
+        3.36,
+        2.87
+      ],
+      "to": [
+        12.035,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3.965,
+            12.12,
+            4.485,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            11.515,
+            12.12,
+            12.035,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            11.515,
+            2.87,
+            12.035,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            11.515,
+            13.03,
+            12.035,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        9.13,
+        3.36,
+        2.87
+      ],
+      "to": [
+        9.65,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.35,
+            12.12,
+            6.87,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            9.13,
+            12.12,
+            9.65,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            9.13,
+            2.87,
+            9.65,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            9.13,
+            13.03,
+            9.65,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        9.97,
+        3.36,
+        2.87
+      ],
+      "to": [
+        10.49,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.51,
+            12.12,
+            6.03,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            9.97,
+            12.12,
+            10.49,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            9.97,
+            2.87,
+            10.49,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            9.97,
+            13.03,
+            10.49,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        7.585,
+        3.36,
+        2.87
+      ],
+      "to": [
+        8.105,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.895,
+            12.12,
+            8.415,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            7.585,
+            12.12,
+            8.105,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            7.585,
+            2.87,
+            8.105,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            7.585,
+            13.03,
+            8.105,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        8.425,
+        3.36,
+        2.87
+      ],
+      "to": [
+        8.945,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.055,
+            12.12,
+            7.575,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            8.425,
+            12.12,
+            8.945,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            8.425,
+            2.87,
+            8.945,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            8.425,
+            13.03,
+            8.945,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        6.04,
+        3.36,
+        2.87
+      ],
+      "to": [
+        6.56,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9.44,
+            12.12,
+            9.96,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            6.04,
+            12.12,
+            6.56,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            6.04,
+            2.87,
+            6.56,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            6.04,
+            13.03,
+            6.56,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        6.88,
+        3.36,
+        2.87
+      ],
+      "to": [
+        7.4,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8.6,
+            12.12,
+            9.12,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            6.88,
+            12.12,
+            7.4,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            6.88,
+            2.87,
+            7.4,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            6.88,
+            13.03,
+            7.4,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        4.495,
+        3.36,
+        2.87
+      ],
+      "to": [
+        5.015,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10.985,
+            12.12,
+            11.505,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            4.495,
+            12.12,
+            5.015,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            4.495,
+            2.87,
+            5.015,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            4.495,
+            13.03,
+            5.015,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        5.335,
+        3.36,
+        2.87
+      ],
+      "to": [
+        5.855,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10.145,
+            12.12,
+            10.665,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            5.335,
+            12.12,
+            5.855,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            5.335,
+            2.87,
+            5.855,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            5.335,
+            13.03,
+            5.855,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        2.95,
+        3.36,
+        2.87
+      ],
+      "to": [
+        3.47,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12.53,
+            12.12,
+            13.05,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            2.95,
+            12.12,
+            3.47,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            2.95,
+            2.87,
+            3.47,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            2.95,
+            13.03,
+            3.47,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        3.79,
+        3.36,
+        2.87
+      ],
+      "to": [
+        4.31,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            11.69,
+            12.12,
+            12.21,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            3.79,
+            12.12,
+            4.31,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            3.79,
+            2.87,
+            4.31,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            3.79,
+            13.03,
+            4.31,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        1.405,
+        3.36,
+        2.87
+      ],
+      "to": [
+        1.925,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            14.075,
+            12.12,
+            14.595,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            1.405,
+            12.12,
+            1.925,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            1.405,
+            2.87,
+            1.925,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            1.405,
+            13.03,
+            1.925,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "moldura do led",
+      "from": [
+        2.245,
+        3.36,
+        2.87
+      ],
+      "to": [
+        2.765,
+        3.88,
+        2.97
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.235,
+            12.12,
+            13.755,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "south": {
+          "uv": [
+            2.245,
+            12.12,
+            2.765,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "west": {
+          "uv": [
+            2.87,
+            12.12,
+            2.97,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "east": {
+          "uv": [
+            13.03,
+            12.12,
+            13.13,
+            12.64
+          ],
+          "texture": "#black"
+        },
+        "up": {
+          "uv": [
+            2.245,
+            2.87,
+            2.765,
+            2.97
+          ],
+          "texture": "#black"
+        },
+        "down": {
+          "uv": [
+            2.245,
+            13.03,
+            2.765,
+            13.13
+          ],
+          "texture": "#black"
+        }
+      }
+    }
+  ]
+}

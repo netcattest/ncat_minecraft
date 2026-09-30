@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCAT Workstation</title>
+  <style>
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+    body { background: radial-gradient(ellipse at 80% 0%, #17344e 0%, #0c1725 42%, #09111c 100%); color: #e9f4ff; }
+    .app { height: 100%; display: flex; flex-direction: column; min-height: 0; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex: none; padding: 8px 11px; border-bottom: 1px solid #33546c; background: #111f30e8; }
+    .identity { min-width: 0; display: flex; align-items: center; gap: 8px; }
+    .mark { flex: none; width: 24px; height: 24px; display: grid; place-items: center; border: 1px solid #58b6e1; border-radius: 5px; background: #235d7c; color: #fff; font: 700 12px Arial, sans-serif; box-shadow: 0 0 13px #2786ad70; }
+    h1 { margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(10px, 2vw, 16px); letter-spacing: .08em; }
+    .sub { color: #8fb5ce; font-size: clamp(8px, 1.3vw, 10px); letter-spacing: .08em; }
+    #signal { flex: none; display: flex; align-items: center; gap: 5px; color: #acc8d8; font-size: clamp(8px, 1.3vw, 11px); }
+    #signal::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #768ea0; box-shadow: 0 0 7px #768ea080; }
+    #signal.online::before { background: #52d5a9; box-shadow: 0 0 9px #52d5a9; }
+    main { flex: 1; min-height: 0; overflow-y: auto; padding: 10px 11px; scrollbar-color: #46738d #111d2b; }
+    .intro { margin: 0 0 8px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .intro strong { font-size: clamp(10px, 1.8vw, 14px); }
+    .count { color: #91b7cc; font-size: clamp(8px, 1.2vw, 11px); white-space: nowrap; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 112px), 1fr)); gap: 7px; }
+    button.device { width: 100%; min-height: 59px; padding: 7px; border: 1px solid #375772; border-radius: 6px; background: linear-gradient(145deg, #1c3449, #142536); color: #e9f4ff; text-align: left; cursor: pointer; transition: border-color .15s, background .15s; }
+    button.device:hover, button.device:focus-visible { border-color: #70c9f3; background: #254961; outline: none; }
+    .device-head { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
+    .badge { display: inline-block; padding: 2px 5px; border-radius: 3px; background: #255b78; color: #bfeaff; font: 700 9px Consolas, monospace; letter-spacing: .04em; }
+    .dot { width: 6px; height: 6px; flex: none; border-radius: 50%; background: #4fdbb1; box-shadow: 0 0 6px #4fdbb1; }
+    .device-name { display: block; margin-top: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10px; font-weight: 700; }
+    .device-location { display: block; margin-top: 2px; color: #91afc1; font: 8px Consolas, monospace; }
+    .empty { padding: 15px 10px; border: 1px dashed #3d6580; border-radius: 6px; background: #14283aab; text-align: center; }
+    .empty strong { display: block; font-size: 12px; }
+    .empty p { margin: 6px 0 0; color: #9ebfd2; font-size: 10px; line-height: 1.4; }
+    .hint { padding: 6px 11px; border-top: 1px solid #2a465e; background: #0f1e2e; color: #a0bfd3; font-size: clamp(8px, 1.3vw, 10px); }
+    @media (max-width: 180px) { header { padding: 3px 5px; } #signal { font-size: 0; } .mark, .sub, .device-location, .hint, .count { display: none; } main { padding: 4px 5px; } .intro { margin-bottom: 4px; } .intro strong { font-size: 9px; } .grid { grid-template-columns: 1fr; gap: 3px; } button.device { min-height: 31px; padding: 4px; } .device-name { margin-top: 2px; font-size: 9px; } .empty { padding: 5px; } .empty strong { font-size: 9px; } .empty p { font-size: 8px; margin-top: 3px; } }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="identity"><div class="mark">N</div><div><h1>NCAT WORKSTATION</h1><div class="sub">CENTRAL DE TELAS</div></div></div>
+      <div id="signal">Aguardando conexão</div>
+    </header>
+    <main>
+      <div class="intro"><strong id="heading">Equipamentos conectados</strong><span id="count" class="count">0 telas</span></div>
+      <div id="grid" class="grid"></div>
+      <div id="empty" class="empty"><strong id="emptyTitle">Nenhuma tela conectada</strong><p id="emptyText">Conecte uma porta de dados à workstation ou ao switch. As telas aparecerão aqui e no rodapé.</p></div>
+    </main>
+    <div id="hint" class="hint">Selecione um equipamento para abrir sua tela. Use o rodapé para alternar.</div>
+  </div>
+  <script>
+    (() => {
+      const $ = id => document.getElementById(id);
+      const labels = {
+        pt: { waiting: 'Aguardando conexão', online: 'Rede ativa', heading: 'Equipamentos conectados', unit: 'telas', emptyTitle: 'Nenhuma tela conectada', emptyText: 'Conecte uma porta de dados à workstation ou ao switch. As telas aparecerão aqui e no rodapé.', hint: 'Selecione um equipamento para abrir sua tela. Use o rodapé para alternar.' },
+        en: { waiting: 'Waiting for connection', online: 'Network active', heading: 'Connected equipment', unit: 'screens', emptyTitle: 'No screens connected', emptyText: 'Connect a data port to the workstation or switch. Screens will appear here and in the footer.', hint: 'Select a device to open its screen. Use the footer to switch.' }
+      };
+      let lang = 'pt';
+      let busy = false;
+      let previous = '';
+      function query(name, data) {
+        return new Promise((resolve, reject) => {
+          if (typeof window.cefQuery !== 'function') { reject(new Error('unavailable')); return; }
+          window.cefQuery({ request: 'NcatMinecraft_' + name + JSON.stringify(data), onSuccess: value => { try { resolve(JSON.parse(value)); } catch { resolve(value); } }, onFailure: (code, message) => reject(new Error(message || 'unavailable')) });
+        });
+      }
+      function translate() {
+        const t = labels[lang];
+        $('heading').textContent = t.heading;
+        $('emptyTitle').textContent = t.emptyTitle;
+        $('emptyText').textContent = t.emptyText;
+        $('hint').textContent = t.hint;
+      }
+      async function refresh() {
+        if (busy) return;
+        busy = true;
+        try {
+          const status = await query('Workstation', { action: 'status' });
+          const signature = JSON.stringify(status.devices);
+          $('signal').textContent = status.count ? labels[lang].online : labels[lang].waiting;
+          $('signal').classList.toggle('online', status.count > 0);
+          $('count').textContent = status.count + ' ' + labels[lang].unit;
+          $('empty').hidden = status.count > 0;
+          if (signature !== previous) {
+            previous = signature;
+            const fragment = document.createDocumentFragment();
+            for (const device of status.devices) {
+              const button = document.createElement('button');
+              button.type = 'button';
+              button.className = 'device';
+              const head = document.createElement('span');
+              head.className = 'device-head';
+              const badge = document.createElement('span');
+              badge.className = 'badge';
+              badge.textContent = device.label;
+              const dot = document.createElement('span');
+              dot.className = 'dot';
+              head.append(badge, dot);
+              const name = document.createElement('span');
+              name.className = 'device-name';
+              name.textContent = device.name;
+              const location = document.createElement('span');
+              location.className = 'device-location';
+              location.textContent = device.position;
+              button.append(head, name, location);
+              button.addEventListener('click', () => query('Workstation', { action: 'select', index: device.index }).catch(() => refresh()));
+              fragment.append(button);
+            }
+            $('grid').replaceChildren(fragment);
+          }
+        } catch { $('signal').classList.remove('online'); $('signal').textContent = labels[lang].waiting; }
+        busy = false;
+      }
+      query('Locale', {}).then(value => { lang = value === 'pt_br' ? 'pt' : 'en'; translate(); refresh(); }).catch(() => { translate(); refresh(); });
+      setInterval(refresh, 1200);
+    })();
+  </script>
+</body>
+</html>

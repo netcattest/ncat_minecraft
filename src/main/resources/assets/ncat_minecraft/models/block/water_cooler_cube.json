@@ -1,0 +1,89 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "jug": "ncat_minecraft:block/cooler/jug",
+    "jug_light": "ncat_minecraft:block/cooler/jug_light",
+    "jug_pale": "ncat_minecraft:block/cooler/jug_pale",
+    "jug_dark": "ncat_minecraft:block/cooler/jug_dark",
+    "tap_red": "ncat_minecraft:block/cooler/tap_red",
+    "tap_blue": "ncat_minecraft:block/cooler/tap_blue",
+    "water": "ncat_minecraft:block/cooler/water",
+    "particle": "ncat_minecraft:block/cooler/water"
+  },
+  "elements": [
+    {
+      "name": "cubo",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#water",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#water",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#water",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#water",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#water",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#water",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,type=default_peripheral_keyboard": {
+      "model": "ncat_minecraft:block/workstation_kb_left"
+    },
+    "facing=north,type=default_peripheral_remotectrl": {
+      "model": "ncat_minecraft:block/workstation_kb_left"
+    },
+    "facing=north,type=default_peripheral_redstonectrl": {
+      "model": "ncat_minecraft:block/workstation_kb_left"
+    },
+    "facing=north,type=default_peripheral_server": {
+      "model": "ncat_minecraft:block/workstation_kb_left"
+    },
+    "facing=east,type=default_peripheral_keyboard": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 90
+    },
+    "facing=east,type=default_peripheral_remotectrl": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 90
+    },
+    "facing=east,type=default_peripheral_redstonectrl": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 90
+    },
+    "facing=east,type=default_peripheral_server": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 90
+    },
+    "facing=south,type=default_peripheral_keyboard": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 180
+    },
+    "facing=south,type=default_peripheral_remotectrl": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 180
+    },
+    "facing=south,type=default_peripheral_redstonectrl": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 180
+    },
+    "facing=south,type=default_peripheral_server": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 180
+    },
+    "facing=west,type=default_peripheral_keyboard": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 270
+    },
+    "facing=west,type=default_peripheral_remotectrl": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 270
+    },
+    "facing=west,type=default_peripheral_redstonectrl": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 270
+    },
+    "facing=west,type=default_peripheral_server": {
+      "model": "ncat_minecraft:block/workstation_kb_left",
+      "y": 270
+    }
+  }
+}

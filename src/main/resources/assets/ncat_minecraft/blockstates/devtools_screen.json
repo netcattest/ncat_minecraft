@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "ncat_minecraft:block/devtools_screen"}
+  }
+}

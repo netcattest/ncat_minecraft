@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ncat_minecraft:block/digital_clock",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "ncat_minecraft:block/digital_clock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ncat_minecraft:block/digital_clock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ncat_minecraft:block/digital_clock",
+      "y": 270
+    }
+  }
+}

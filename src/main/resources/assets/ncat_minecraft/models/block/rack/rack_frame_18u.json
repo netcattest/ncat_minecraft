@@ -1,0 +1,1535 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "cabinet_steel": "ncat_minecraft:block/rack/cabinet_steel",
+    "cabinet_edge": "ncat_minecraft:block/rack/cabinet_edge",
+    "vent": "ncat_minecraft:block/rack/vent",
+    "mesh": "ncat_minecraft:block/rack/mesh",
+    "cabinet_steel_dark": "ncat_minecraft:block/rack/cabinet_steel_dark",
+    "rail": "ncat_minecraft:block/rack/rail",
+    "fan": "ncat_minecraft:block/rack/fan",
+    "interior": "ncat_minecraft:block/rack/interior",
+    "badge": "ncat_minecraft:block/rack/badge",
+    "particle": "ncat_minecraft:block/rack/cabinet_steel"
+  },
+  "elements": [
+    {
+      "name": "montante frontal",
+      "from": [
+        0.55,
+        0.0,
+        1.55
+      ],
+      "to": [
+        2.05,
+        15.0,
+        2.85
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.95,
+            1.0,
+            15.45,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            1.0,
+            2.05,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            1.55,
+            1.0,
+            2.85,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "east": {
+          "uv": [
+            13.15,
+            1.0,
+            14.45,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            1.55,
+            2.05,
+            2.85
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            13.15,
+            2.05,
+            14.45
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "montante traseiro",
+      "from": [
+        0.55,
+        0.0,
+        13.1
+      ],
+      "to": [
+        2.05,
+        15.0,
+        14.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13.95,
+            1.0,
+            15.45,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            1.0,
+            2.05,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            13.1,
+            1.0,
+            14.4,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "east": {
+          "uv": [
+            1.6,
+            1.0,
+            2.9,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            13.1,
+            2.05,
+            14.4
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            1.6,
+            2.05,
+            2.9
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "montante frontal",
+      "from": [
+        13.95,
+        0.0,
+        1.55
+      ],
+      "to": [
+        15.45,
+        15.0,
+        2.85
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            1.0,
+            2.05,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            13.95,
+            1.0,
+            15.45,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            1.55,
+            1.0,
+            2.85,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "east": {
+          "uv": [
+            13.15,
+            1.0,
+            14.45,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "up": {
+          "uv": [
+            13.95,
+            1.55,
+            15.45,
+            2.85
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            13.95,
+            13.15,
+            15.45,
+            14.45
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "montante traseiro",
+      "from": [
+        13.95,
+        0.0,
+        13.1
+      ],
+      "to": [
+        15.45,
+        15.0,
+        14.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            1.0,
+            2.05,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            13.95,
+            1.0,
+            15.45,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            13.1,
+            1.0,
+            14.4,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "east": {
+          "uv": [
+            1.6,
+            1.0,
+            2.9,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "up": {
+          "uv": [
+            13.95,
+            13.1,
+            15.45,
+            14.4
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            13.95,
+            1.6,
+            15.45,
+            2.9
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "lateral",
+      "from": [
+        0.3,
+        0.0,
+        2.55
+      ],
+      "to": [
+        0.9,
+        15.0,
+        13.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            15.1,
+            1.0,
+            15.7,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            0.3,
+            1.0,
+            0.9,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            2.55,
+            1.0,
+            13.4,
+            16.0
+          ],
+          "texture": "#vent"
+        },
+        "east": {
+          "uv": [
+            2.6,
+            1.0,
+            13.45,
+            16.0
+          ],
+          "texture": "#vent"
+        },
+        "up": {
+          "uv": [
+            0.3,
+            2.55,
+            0.9,
+            13.4
+          ],
+          "texture": "#vent"
+        },
+        "down": {
+          "uv": [
+            0.3,
+            2.6,
+            0.9,
+            13.45
+          ],
+          "texture": "#vent"
+        }
+      }
+    },
+    {
+      "name": "lateral",
+      "from": [
+        15.1,
+        0.0,
+        2.55
+      ],
+      "to": [
+        15.7,
+        15.0,
+        13.4
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.3,
+            1.0,
+            0.9,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            15.1,
+            1.0,
+            15.7,
+            16.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            2.55,
+            1.0,
+            13.4,
+            16.0
+          ],
+          "texture": "#vent"
+        },
+        "east": {
+          "uv": [
+            2.6,
+            1.0,
+            13.45,
+            16.0
+          ],
+          "texture": "#vent"
+        },
+        "up": {
+          "uv": [
+            15.1,
+            2.55,
+            15.7,
+            13.4
+          ],
+          "texture": "#vent"
+        },
+        "down": {
+          "uv": [
+            15.1,
+            2.6,
+            15.7,
+            13.45
+          ],
+          "texture": "#vent"
+        }
+      }
+    },
+    {
+      "name": "fundo",
+      "from": [
+        0.85,
+        0.0,
+        14.35
+      ],
+      "to": [
+        15.15,
+        15.0,
+        15.3
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.85,
+            1.0,
+            15.15,
+            16.0
+          ],
+          "texture": "#mesh"
+        },
+        "south": {
+          "uv": [
+            0.85,
+            1.0,
+            15.15,
+            16.0
+          ],
+          "texture": "#mesh"
+        },
+        "west": {
+          "uv": [
+            14.35,
+            1.0,
+            15.3,
+            16.0
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "east": {
+          "uv": [
+            0.7,
+            1.0,
+            1.65,
+            16.0
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "up": {
+          "uv": [
+            0.85,
+            14.35,
+            15.15,
+            15.3
+          ],
+          "texture": "#mesh"
+        },
+        "down": {
+          "uv": [
+            0.85,
+            0.7,
+            15.15,
+            1.65
+          ],
+          "texture": "#mesh"
+        }
+      }
+    },
+    {
+      "name": "aro da porta",
+      "from": [
+        0.55,
+        0.0,
+        0.35
+      ],
+      "to": [
+        15.45,
+        0.75,
+        1.55
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            15.25,
+            15.45,
+            16.0
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            15.25,
+            15.45,
+            16.0
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "west": {
+          "uv": [
+            0.35,
+            15.25,
+            1.55,
+            16.0
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "east": {
+          "uv": [
+            14.45,
+            15.25,
+            15.65,
+            16.0
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            0.35,
+            15.45,
+            1.55
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            14.45,
+            15.45,
+            15.65
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "aro da porta",
+      "from": [
+        0.55,
+        14.25,
+        0.35
+      ],
+      "to": [
+        15.45,
+        15.0,
+        1.55
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            1.0,
+            15.45,
+            1.75
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            1.0,
+            15.45,
+            1.75
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "west": {
+          "uv": [
+            0.35,
+            1.0,
+            1.55,
+            1.75
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "east": {
+          "uv": [
+            14.45,
+            1.0,
+            15.65,
+            1.75
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            0.35,
+            15.45,
+            1.55
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            14.45,
+            15.45,
+            15.65
+          ],
+          "texture": "#cabinet_edge"
+        }
+      }
+    },
+    {
+      "name": "teto",
+      "from": [
+        0.55,
+        14.5,
+        0.35
+      ],
+      "to": [
+        15.45,
+        15.0,
+        15.3
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.55,
+            1.0,
+            15.45,
+            1.5
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "south": {
+          "uv": [
+            0.55,
+            1.0,
+            15.45,
+            1.5
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "west": {
+          "uv": [
+            0.35,
+            1.0,
+            15.3,
+            1.5
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "east": {
+          "uv": [
+            0.7,
+            1.0,
+            15.65,
+            1.5
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "up": {
+          "uv": [
+            0.55,
+            0.35,
+            15.45,
+            15.3
+          ],
+          "texture": "#cabinet_steel_dark"
+        },
+        "down": {
+          "uv": [
+            0.55,
+            0.7,
+            15.45,
+            15.65
+          ],
+          "texture": "#cabinet_steel_dark"
+        }
+      }
+    },
+    {
+      "name": "trilho 19",
+      "from": [
+        2.45,
+        0.6,
+        2.0
+      ],
+      "to": [
+        3.45,
+        14.4,
+        2.8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#rail"
+        },
+        "south": {
+          "uv": [
+            2.45,
+            1.6,
+            3.45,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "west": {
+          "uv": [
+            2.0,
+            1.6,
+            2.8,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "east": {
+          "uv": [
+            13.2,
+            1.6,
+            14.0,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "up": {
+          "uv": [
+            2.45,
+            2.0,
+            3.45,
+            2.8
+          ],
+          "texture": "#rail"
+        },
+        "down": {
+          "uv": [
+            2.45,
+            13.2,
+            3.45,
+            14.0
+          ],
+          "texture": "#rail"
+        }
+      }
+    },
+    {
+      "name": "trilho traseiro",
+      "from": [
+        2.45,
+        0.6,
+        12.2
+      ],
+      "to": [
+        3.45,
+        14.4,
+        13.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#rail"
+        },
+        "south": {
+          "uv": [
+            2.45,
+            1.6,
+            3.45,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "west": {
+          "uv": [
+            12.2,
+            1.6,
+            13.0,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "east": {
+          "uv": [
+            3.0,
+            1.6,
+            3.8,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "up": {
+          "uv": [
+            2.45,
+            12.2,
+            3.45,
+            13.0
+          ],
+          "texture": "#rail"
+        },
+        "down": {
+          "uv": [
+            2.45,
+            3.0,
+            3.45,
+            3.8
+          ],
+          "texture": "#rail"
+        }
+      }
+    },
+    {
+      "name": "trilho 19",
+      "from": [
+        12.55,
+        0.6,
+        2.0
+      ],
+      "to": [
+        13.55,
+        14.4,
+        2.8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#rail"
+        },
+        "south": {
+          "uv": [
+            12.55,
+            1.6,
+            13.55,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "west": {
+          "uv": [
+            2.0,
+            1.6,
+            2.8,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "east": {
+          "uv": [
+            13.2,
+            1.6,
+            14.0,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "up": {
+          "uv": [
+            12.55,
+            2.0,
+            13.55,
+            2.8
+          ],
+          "texture": "#rail"
+        },
+        "down": {
+          "uv": [
+            12.55,
+            13.2,
+            13.55,
+            14.0
+          ],
+          "texture": "#rail"
+        }
+      }
+    },
+    {
+      "name": "trilho traseiro",
+      "from": [
+        12.55,
+        0.6,
+        12.2
+      ],
+      "to": [
+        13.55,
+        14.4,
+        13.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#rail"
+        },
+        "south": {
+          "uv": [
+            12.55,
+            1.6,
+            13.55,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "west": {
+          "uv": [
+            12.2,
+            1.6,
+            13.0,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "east": {
+          "uv": [
+            3.0,
+            1.6,
+            3.8,
+            15.4
+          ],
+          "texture": "#rail"
+        },
+        "up": {
+          "uv": [
+            12.55,
+            12.2,
+            13.55,
+            13.0
+          ],
+          "texture": "#rail"
+        },
+        "down": {
+          "uv": [
+            12.55,
+            3.0,
+            13.55,
+            3.8
+          ],
+          "texture": "#rail"
+        }
+      }
+    },
+    {
+      "name": "tampo",
+      "from": [
+        0.4,
+        15.0,
+        0.25
+      ],
+      "to": [
+        15.6,
+        16.0,
+        15.45
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.4,
+            0.0,
+            15.6,
+            1.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "south": {
+          "uv": [
+            0.4,
+            0.0,
+            15.6,
+            1.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "west": {
+          "uv": [
+            0.25,
+            0.0,
+            15.45,
+            1.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "east": {
+          "uv": [
+            0.55,
+            0.0,
+            15.75,
+            1.0
+          ],
+          "texture": "#cabinet_steel"
+        },
+        "up": {
+          "uv": [
+            0.4,
+            0.25,
+            15.6,
+            15.45
+          ],
+          "texture": "#cabinet_edge"
+        },
+        "down": {
+          "uv": [
+            0.4,
+            0.55,
+            15.6,
+            15.75
+          ],
+          "texture": "#cabinet_steel_dark"
+        }
+      }
+    },
+    {
+      "name": "exaustor",
+      "from": [
+        2.788,
+        15.98,
+        7.72
+      ],
+      "to": [
+        7.012,
+        16.0,
+        9.48
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8.988,
+            0.0,
+            13.212,
+            0.02
+          ],
+          "texture": "#fan"
+        },
+        "south": {
+          "uv": [
+            2.788,
+            0.0,
+            7.012,
+            0.02
+          ],
+          "texture": "#fan"
+        },
+        "west": {
+          "uv": [
+            7.72,
+            0.0,
+            9.48,
+            0.02
+          ],
+          "texture": "#fan"
+        },
+        "east": {
+          "uv": [
+            6.52,
+            0.0,
+            8.28,
+            0.02
+          ],
+          "texture": "#fan"
+        },
+        "up": {
+          "uv": [
+            2.788,
+            7.72,
+            7.012,
+            9.48
+          ],
+          "texture": "#fan"
+        },
+        "down": {
+          "uv": [
+            2.788,
+            6.52,
+            7.012,
+            8.28
+          ],
+          "texture": "#fan"
+        }
+      }
+    },
+    {
+      "name": "exaustor",
+      "from": [
+        2.788,
+        16.0,
+        7.72
+      ],
+      "to": [
+        7.012,
+        16.02,
+        9.48
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8.988,
+            15.98,
+            13.212,
+            16.0
+          ],
+          "texture": "#fan"
+        },
+        "south": {
+          "uv": [
+            2.788,
+            15.98,
+            7.012,
+            16.0
+          ],
+          "texture": "#fan"
+        },
+        "west": {
+          "uv": [
+            7.72,
+            15.98,
+            9.48,
+            16.0
+          ],
+          "texture": "#fan"
+        },
+        "east": {
+          "uv": [
+            6.52,
+            15.98,
+            8.28,
+            16.0
+          ],
+          "texture": "#fan"
+        },
+        "up": {
+          "uv": [
+            2.788,
+            7.72,
+            7.012,
+            9.48
+          ],
+          "texture": "#fan"
+        },
+        "down": {
+          "uv": [
+            2.788,
+            6.52,
+            7.012,
+            8.28
+          ],
+          "texture": "#fan"
+        }
+      }
+    },
+    {
+      "name": "exaustor",
+      "from": [
+        8.988,
+        15.98,
+        7.72
+      ],
+      "to": [
+        13.212,
+        16.0,
+        9.48
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.788,
+            0.0,
+            7.012,
+            0.02
+          ],
+          "texture": "#fan"
+        },
+        "south": {
+          "uv": [
+            8.988,
+            0.0,
+            13.212,
+            0.02
+          ],
+          "texture": "#fan"
+        },
+        "west": {
+          "uv": [
+            7.72,
+            0.0,
+            9.48,
+            0.02
+          ],
+          "texture": "#fan"
+        },
+        "east": {
+          "uv": [
+            6.52,
+            0.0,
+            8.28,
+            0.02
+          ],
+          "texture": "#fan"
+        },
+        "up": {
+          "uv": [
+            8.988,
+            7.72,
+            13.212,
+            9.48
+          ],
+          "texture": "#fan"
+        },
+        "down": {
+          "uv": [
+            8.988,
+            6.52,
+            13.212,
+            8.28
+          ],
+          "texture": "#fan"
+        }
+      }
+    },
+    {
+      "name": "exaustor",
+      "from": [
+        8.988,
+        16.0,
+        7.72
+      ],
+      "to": [
+        13.212,
+        16.02,
+        9.48
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.788,
+            15.98,
+            7.012,
+            16.0
+          ],
+          "texture": "#fan"
+        },
+        "south": {
+          "uv": [
+            8.988,
+            15.98,
+            13.212,
+            16.0
+          ],
+          "texture": "#fan"
+        },
+        "west": {
+          "uv": [
+            7.72,
+            15.98,
+            9.48,
+            16.0
+          ],
+          "texture": "#fan"
+        },
+        "east": {
+          "uv": [
+            6.52,
+            15.98,
+            8.28,
+            16.0
+          ],
+          "texture": "#fan"
+        },
+        "up": {
+          "uv": [
+            8.988,
+            7.72,
+            13.212,
+            9.48
+          ],
+          "texture": "#fan"
+        },
+        "down": {
+          "uv": [
+            8.988,
+            6.52,
+            13.212,
+            8.28
+          ],
+          "texture": "#fan"
+        }
+      }
+    },
+    {
+      "name": "passa cabos",
+      "from": [
+        6.0,
+        15.2,
+        13.9
+      ],
+      "to": [
+        10.0,
+        16.0,
+        15.1
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.0,
+            0.0,
+            10.0,
+            0.8
+          ],
+          "texture": "#interior"
+        },
+        "south": {
+          "uv": [
+            6.0,
+            0.0,
+            10.0,
+            0.8
+          ],
+          "texture": "#interior"
+        },
+        "west": {
+          "uv": [
+            13.9,
+            0.0,
+            15.1,
+            0.8
+          ],
+          "texture": "#interior"
+        },
+        "east": {
+          "uv": [
+            0.9,
+            0.0,
+            2.1,
+            0.8
+          ],
+          "texture": "#interior"
+        },
+        "up": {
+          "uv": [
+            6.0,
+            13.9,
+            10.0,
+            15.1
+          ],
+          "texture": "#interior"
+        },
+        "down": {
+          "uv": [
+            6.0,
+            0.9,
+            10.0,
+            2.1
+          ],
+          "texture": "#interior"
+        }
+      }
+    },
+    {
+      "name": "passa cabos",
+      "from": [
+        6.0,
+        16.0,
+        13.9
+      ],
+      "to": [
+        10.0,
+        16.02,
+        15.1
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.0,
+            15.98,
+            10.0,
+            16.0
+          ],
+          "texture": "#interior"
+        },
+        "south": {
+          "uv": [
+            6.0,
+            15.98,
+            10.0,
+            16.0
+          ],
+          "texture": "#interior"
+        },
+        "west": {
+          "uv": [
+            13.9,
+            15.98,
+            15.1,
+            16.0
+          ],
+          "texture": "#interior"
+        },
+        "east": {
+          "uv": [
+            0.9,
+            15.98,
+            2.1,
+            16.0
+          ],
+          "texture": "#interior"
+        },
+        "up": {
+          "uv": [
+            6.0,
+            13.9,
+            10.0,
+            15.1
+          ],
+          "texture": "#interior"
+        },
+        "down": {
+          "uv": [
+            6.0,
+            0.9,
+            10.0,
+            2.1
+          ],
+          "texture": "#interior"
+        }
+      }
+    },
+    {
+      "name": "etiqueta",
+      "from": [
+        5.2,
+        0.35,
+        1.43
+      ],
+      "to": [
+        10.8,
+        1.45,
+        1.53
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ],
+          "texture": "#badge"
+        },
+        "south": {
+          "uv": [
+            5.2,
+            14.55,
+            10.8,
+            15.65
+          ],
+          "texture": "#badge"
+        },
+        "west": {
+          "uv": [
+            1.43,
+            14.55,
+            1.53,
+            15.65
+          ],
+          "texture": "#badge"
+        },
+        "east": {
+          "uv": [
+            14.47,
+            14.55,
+            14.57,
+            15.65
+          ],
+          "texture": "#badge"
+        },
+        "up": {
+          "uv": [
+            5.2,
+            1.43,
+            10.8,
+            1.53
+          ],
+          "texture": "#badge"
+        },
+        "down": {
+          "uv": [
+            5.2,
+            14.47,
+            10.8,
+            14.57
+          ],
+          "texture": "#badge"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCAT Proxy</title>
+  <style>
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #120f18; color: #efe7f5; }
+    body { display: flex; flex-direction: column; }
+    header { flex: none; display: flex; align-items: center; gap: 10px; min-height: 33px; padding: 5px 10px; border-top: 4px solid #c454bc; border-bottom: 1px solid #402e49; background: #1d1725; }
+    header strong { flex: none; font-size: clamp(10px, 1.8vw, 14px); letter-spacing: .09em; }
+    #address { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #b6a6c2; font: clamp(9px, 1.5vw, 11px) Consolas, monospace; }
+    #pill { flex: none; padding: 2px 7px; border-radius: 9px; background: #3a2a44; color: #e5cff0; font-size: clamp(8px, 1.3vw, 10px); letter-spacing: .06em; }
+    #pill.on { background: #7d2f77; color: #fff; }
+    #pill.hold { background: #9a5410; color: #fff; }
+    .bar { flex: none; display: flex; align-items: center; gap: 5px; padding: 4px 8px; border-bottom: 1px solid #38293f; background: #181320; }
+    .bar select, .bar input { min-width: 0; height: 25px; padding: 2px 6px; border: 1px solid #55425f; border-radius: 3px; color: #f4ecf8; background: #120e18; font-size: clamp(9px, 1.5vw, 11px); }
+    .bar input { flex: 1; }
+    nav { flex: none; display: flex; border-bottom: 1px solid #40304a; background: #181320; }
+    nav button { flex: 1; min-height: 28px; padding: 4px 8px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #b6a6c2; font-weight: 700; font-size: clamp(10px, 1.8vw, 12px); cursor: pointer; }
+    nav button.active { color: #fff; border-color: #cf63c6; background: #261c2e; }
+    nav button .count { display: inline-block; min-width: 15px; margin-left: 4px; padding: 0 4px; border-radius: 8px; background: #8c3385; color: #fff; font-size: 9px; }
+    main { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+    section { flex: 1; min-height: 0; display: none; flex-direction: column; }
+    section.active { display: flex; }
+    #editor { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 4px; padding: 6px 8px; overflow: auto; scrollbar-color: #8c5ea0 #1b1522; }
+    #editor.idle { align-items: center; justify-content: center; color: #9d8daa; text-align: center; font-size: clamp(10px, 1.7vw, 12px); }
+    .line { display: flex; gap: 5px; }
+    .line input[type=text] { min-width: 0; height: 25px; padding: 2px 6px; border: 1px solid #55425f; border-radius: 3px; color: #fff; background: #0f0b14; font: clamp(9px, 1.5vw, 11px) Consolas, monospace; }
+    #method { width: 74px; text-transform: uppercase; }
+    #target { flex: 1; }
+    label { color: #9d8daa; font-size: clamp(8px, 1.3vw, 10px); letter-spacing: .05em; }
+    textarea { width: 100%; padding: 4px 6px; border: 1px solid #55425f; border-radius: 3px; color: #efe7f5; background: #0f0b14; resize: none; font: clamp(9px, 1.5vw, 11px)/1.4 Consolas, monospace; }
+    .actions { flex: none; display: flex; flex-wrap: wrap; gap: 5px; padding: 5px 8px; border-top: 1px solid #40304a; background: #181320; }
+    .actions button { flex: 1 1 78px; min-height: 26px; padding: 3px 8px; border: 1px solid #7a4a8a; border-radius: 3px; background: #43284e; color: #fff; font-size: clamp(9px, 1.5vw, 11px); cursor: pointer; }
+    .actions button.go { border-color: #3f8f62; background: #235c3f; }
+    .actions button.no { border-color: #9c4652; background: #5e2730; }
+    .actions button:disabled { opacity: .4; cursor: default; }
+    #history, #detail { flex: 1; min-height: 0; overflow: auto; scrollbar-color: #8c5ea0 #1b1522; }
+    #detail { display: none; padding: 6px 9px; white-space: pre-wrap; overflow-wrap: anywhere; font: clamp(9px, 1.5vw, 11px)/1.45 Consolas, monospace; color: #d6c8e0; }
+    #detail.shown { display: block; }
+    .row { padding: 5px 9px; border-bottom: 1px solid #2d2336; font: clamp(10px, 1.6vw, 12px)/1.4 Consolas, monospace; overflow-wrap: anywhere; cursor: pointer; }
+    .row:nth-child(even) { background: #171220; }
+    .row .top { display: flex; gap: 8px; align-items: baseline; }
+    .row strong { min-width: 44px; color: #dba6e0; }
+    .row .status { min-width: 26px; color: #9fd8b1; }
+    .row .status.bad { color: #ef9aa6; }
+    .row .size { margin-left: auto; color: #a596b1; white-space: nowrap; }
+    .row .url { color: #e4dbeb; }
+    .tag { display: inline-block; margin-right: 4px; padding: 0 4px; border-radius: 3px; background: #3c2b46; color: #dcc2e6; font-size: 9px; letter-spacing: .04em; }
+    .tag.edit { background: #7a5310; color: #ffe6b4; }
+    .tag.drop { background: #6d2732; color: #ffc9d0; }
+    .tag.live { background: #2f5f45; color: #c6f0d6; }
+    footer { flex: none; display: flex; gap: 8px; padding: 4px 8px; border-top: 1px solid #402e49; background: #1d1725; color: #a998b5; font-size: 10px; }
+    footer span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    @media (max-width: 300px) { header { padding: 4px 5px; } .bar { padding: 3px 5px; } .row { padding: 4px 5px; } #method { width: 58px; } }
+  </style>
+</head>
+<body>
+  <header><strong>NCAT // PROXY</strong><span id="address">Aguardando tela vinculada</span><span id="pill">OFF</span></header>
+  <div class="bar">
+    <select id="mode">
+      <option value="passive">Observar</option>
+      <option value="active">Ativo</option>
+      <option value="intercept">Interceptar</option>
+    </select>
+    <select id="scope">
+      <option value="main">Principais</option>
+      <option value="all">Tudo</option>
+    </select>
+    <input id="filter" type="search" placeholder="Filtrar URL">
+  </div>
+  <nav>
+    <button class="active" type="button" data-tab="intercept">Interceptação<span class="count" id="badge">0</span></button>
+    <button type="button" data-tab="history">Histórico</button>
+  </nav>
+  <main>
+    <section id="interceptPanel" class="active">
+      <div id="editor" class="idle">Vincule uma Tela NCAT Navegador e escolha o modo Interceptar.</div>
+      <div class="actions">
+        <button id="send" class="go" type="button" disabled>Encaminhar</button>
+        <button id="reject" class="no" type="button" disabled>Rejeitar</button>
+        <button id="sendAll" type="button" disabled>Encaminhar tudo</button>
+        <button id="rejectAll" type="button" disabled>Rejeitar tudo</button>
+      </div>
+    </section>
+    <section id="historyPanel">
+      <div id="history"></div>
+      <pre id="detail"></pre>
+      <div class="actions">
+        <button id="back" type="button">Voltar</button>
+        <button id="clear" type="button">Limpar histórico</button>
+      </div>
+    </section>
+  </main>
+  <footer><span id="status">Agache e clique com o botão direito para digitar e rolar.</span><span id="timer"></span></footer>
+  <script>
+    var words = {
+      pt: {
+        waiting: 'Aguardando tela vinculada', idle: 'Vincule uma Tela NCAT Navegador e escolha o modo Interceptar.',
+        armed: 'Nenhuma requisição em espera no momento.', off: 'O proxy está desligado na configuração do cliente.',
+        passiveHint: 'No modo Observar o proxy só registra o tráfego. Use Ativo para capturar corpos de resposta.',
+        intercept: 'Interceptação', history: 'Histórico', filter: 'Filtrar URL',
+        modes: ['Observar', 'Ativo', 'Interceptar'], scopes: ['Principais', 'Tudo'],
+        send: 'Encaminhar', reject: 'Rejeitar', sendAll: 'Encaminhar tudo', rejectAll: 'Rejeitar tudo',
+        back: 'Voltar', clear: 'Limpar histórico', headers: 'Cabeçalhos', body: 'Corpo',
+        status: 'Agache e clique com o botão direito para digitar e rolar.',
+        unavailable: 'Não foi possível falar com o proxy.', empty: 'Nenhuma requisição registrada ainda.',
+        queued: 'em espera', auto: 'encaminha em', binary: 'Corpo binário: editar aqui vai substituí-lo por texto.',
+        tagDropped: 'rejeitada', tagEdited: 'editada', tagProxied: 'pelo proxy',
+        request: 'REQUISIÇÃO', response: 'RESPOSTA', noBody: '(sem corpo)', observed: 'observada'
+      },
+      en: {
+        waiting: 'Waiting for a linked screen', idle: 'Link an NCAT Browser Screen and pick the Intercept mode.',
+        armed: 'No request is waiting right now.', off: 'The proxy is disabled in the client config.',
+        passiveHint: 'Observe mode only records traffic. Use Active to capture response bodies.',
+        intercept: 'Intercept', history: 'History', filter: 'Filter URL',
+        modes: ['Observe', 'Active', 'Intercept'], scopes: ['Primary', 'Everything'],
+        send: 'Forward', reject: 'Drop', sendAll: 'Forward all', rejectAll: 'Drop all',
+        back: 'Back', clear: 'Clear history', headers: 'Headers', body: 'Body',
+        status: 'Crouch and right-click to type and scroll.',
+        unavailable: 'Could not reach the proxy.', empty: 'No request recorded yet.',
+        queued: 'waiting', auto: 'forwards in', binary: 'Binary body: editing here replaces it with text.',
+        tagDropped: 'dropped', tagEdited: 'edited', tagProxied: 'proxied',
+        request: 'REQUEST', response: 'RESPONSE', noBody: '(no body)', observed: 'observed'
+      }
+    };
+    var language = navigator.language.toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en';
+    var cursor = 0, current = null, held = [], holdSeconds = 120, linked = false, enabled = true;
+    var address = document.getElementById('address');
+    var pill = document.getElementById('pill');
+    var editor = document.getElementById('editor');
+    var badge = document.getElementById('badge');
+    var historyList = document.getElementById('history');
+    var detail = document.getElementById('detail');
+    var timer = document.getElementById('timer');
+    var modeSelect = document.getElementById('mode');
+    var scopeSelect = document.getElementById('scope');
+    var filterInput = document.getElementById('filter');
+    var filterDirty = 0;
+
+    function label(key) { return words[language][key]; }
+
+    function locale(code) {
+      language = String(code).toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en';
+      document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en';
+      document.querySelector('[data-tab="intercept"]').firstChild.nodeValue = label('intercept');
+      document.querySelector('[data-tab="history"]').textContent = label('history');
+      for (var i = 0; i < 3; i++) modeSelect.options[i].textContent = label('modes')[i];
+      for (var j = 0; j < 2; j++) scopeSelect.options[j].textContent = label('scopes')[j];
+      filterInput.placeholder = label('filter');
+      document.getElementById('send').textContent = label('send');
+      document.getElementById('reject').textContent = label('reject');
+      document.getElementById('sendAll').textContent = label('sendAll');
+      document.getElementById('rejectAll').textContent = label('rejectAll');
+      document.getElementById('back').textContent = label('back');
+      document.getElementById('clear').textContent = label('clear');
+      document.getElementById('status').textContent = label('status');
+      current = null;
+      render();
+    }
+
+    function query(action, data) {
+      var payload = { action: action };
+      if (data) for (var key in data) payload[key] = data[key];
+      return new Promise(function (resolve, reject) {
+        if (typeof window.cefQuery !== 'function') { reject(new Error('integration')); return; }
+        window.cefQuery({
+          request: 'NcatMinecraft_Proxy' + JSON.stringify(payload),
+          onSuccess: resolve,
+          onFailure: function (code, message) { reject(new Error(message)); }
+        });
+      });
+    }
+
+    function field(name, id, rows) {
+      var wrap = document.createElement('div');
+      wrap.style.display = 'flex';
+      wrap.style.flexDirection = 'column';
+      wrap.style.gap = '2px';
+      var tag = document.createElement('label');
+      tag.textContent = name;
+      var area = document.createElement('textarea');
+      area.id = id;
+      area.rows = rows;
+      area.spellcheck = false;
+      wrap.append(tag, area);
+      return wrap;
+    }
+
+    function render() {
+      var entry = held.length ? held[0] : null;
+      badge.textContent = String(held.length);
+      var ready = !!entry;
+      document.getElementById('send').disabled = !ready;
+      document.getElementById('reject').disabled = !ready;
+      document.getElementById('sendAll').disabled = !ready;
+      document.getElementById('rejectAll').disabled = !ready;
+      if (!ready) {
+        current = null;
+        editor.className = 'idle';
+        editor.textContent = !enabled ? label('off') : (!linked ? label('idle')
+          : (modeSelect.value === 'intercept' ? label('armed') : label('passiveHint')));
+        timer.textContent = '';
+        return;
+      }
+      if (current === entry.id) return;
+      current = entry.id;
+      editor.className = '';
+      editor.replaceChildren();
+      var line = document.createElement('div');
+      line.className = 'line';
+      var method = document.createElement('input');
+      method.type = 'text';
+      method.id = 'method';
+      method.maxLength = 16;
+      method.value = entry.method;
+      var target = document.createElement('input');
+      target.type = 'text';
+      target.id = 'target';
+      target.value = entry.url;
+      line.append(method, target);
+      var meta = document.createElement('label');
+      meta.textContent = entry.resourceType + (entry.binary ? ' · ' + label('binary') : '');
+      var headerBox = field(label('headers'), 'headers', 5);
+      var bodyBox = field(label('body'), 'payload', 8);
+      editor.append(line, meta, headerBox, bodyBox);
+      document.getElementById('headers').value = entry.headers;
+      document.getElementById('payload').value = entry.body;
+    }
+
+    function decide(action) {
+      var entry = held.length ? held[0] : null;
+      if (!entry) return;
+      var data = { id: entry.id };
+      if (action === 'forward') {
+        data.method = (document.getElementById('method') || {}).value || entry.method;
+        data.url = (document.getElementById('target') || {}).value || entry.url;
+        data.headers = (document.getElementById('headers') || {}).value || '';
+        data.body = (document.getElementById('payload') || {}).value || '';
+      }
+      held = held.slice(1);
+      current = null;
+      render();
+      query(action, data).catch(function () {});
+    }
+
+    function tag(text, kind) {
+      var node = document.createElement('span');
+      node.className = 'tag' + (kind ? ' ' + kind : '');
+      node.textContent = text;
+      return node;
+    }
+
+    function addEntry(entry) {
+      var nearBottom = historyList.scrollHeight - historyList.scrollTop - historyList.clientHeight < 60;
+      var row = document.createElement('div');
+      row.className = 'row';
+      row.dataset.id = entry.id;
+      var top = document.createElement('div');
+      top.className = 'top';
+      var method = document.createElement('strong');
+      method.textContent = entry.method;
+      var status = document.createElement('span');
+      status.className = 'status' + (entry.status >= 400 || entry.status === 0 ? ' bad' : '');
+      status.textContent = entry.status || '—';
+      var size = document.createElement('span');
+      size.className = 'size';
+      size.textContent = entry.bytes + ' B';
+      top.append(method, status, size);
+      var url = document.createElement('div');
+      url.className = 'url';
+      url.textContent = entry.url;
+      row.append(top, url);
+      if (entry.dropped) row.append(tag(label('tagDropped'), 'drop'));
+      else if (entry.edited) row.append(tag(label('tagEdited'), 'edit'));
+      else if (entry.handled) row.append(tag(label('tagProxied'), 'live'));
+      else row.append(tag(label('observed')));
+      var hint = document.getElementById('emptyHint');
+      if (hint) hint.remove();
+      historyList.appendChild(row);
+      if (historyList.children.length > 250) historyList.firstElementChild.remove();
+      if (nearBottom) historyList.scrollTop = historyList.scrollHeight;
+    }
+
+    function section(title, headers, body) {
+      var lines = [title];
+      if (headers) for (var key in headers) lines.push(key + ': ' + headers[key]);
+      lines.push('');
+      lines.push(body && body.length ? body : label('noBody'));
+      lines.push('');
+      lines.push('');
+      return lines.join('\n');
+    }
+
+    function show(id) {
+      query('detail', { id: id }).then(function (raw) {
+        var data = JSON.parse(raw);
+        var head = data.method + ' ' + data.url + '\n' + (data.statusText ? data.status + ' ' + data.statusText : data.status) +
+          (data.mimeType ? ' · ' + data.mimeType : '') + (data.note ? '\n' + data.note : '') + '\n\n';
+        detail.textContent = head + section(label('request'), data.requestHeaders, data.requestBody) +
+          section(label('response'), data.responseHeaders, data.responseBody);
+        detail.classList.add('shown');
+        historyList.style.display = 'none';
+      }).catch(function () {});
+    }
+
+    function poll() {
+      query('poll', { after: cursor }).then(function (raw) {
+        var data = JSON.parse(raw);
+        enabled = data.enabled;
+        linked = data.linked;
+        holdSeconds = data.holdSeconds;
+        address.textContent = data.linked ? data.url : label('waiting');
+        pill.textContent = data.mode === 'intercept' ? 'HOLD' : (data.mode === 'active' ? 'ON' : 'OBS');
+        pill.className = data.mode === 'intercept' ? 'hold' : (data.mode === 'active' ? 'on' : '');
+        if (document.activeElement !== modeSelect) modeSelect.value = data.mode;
+        if (document.activeElement !== scopeSelect) scopeSelect.value = data.scope;
+        if (!filterDirty && document.activeElement !== filterInput) filterInput.value = data.filter;
+        held = data.held || [];
+        for (var i = 0; i < data.entries.length; i++) { addEntry(data.entries[i]); cursor = data.entries[i].id; }
+        if (!historyList.children.length) {
+          var hint = document.createElement('div');
+          hint.id = 'emptyHint';
+          hint.className = 'row';
+          hint.style.cursor = 'default';
+          hint.textContent = label('empty');
+          historyList.appendChild(hint);
+        }
+        render();
+        if (held.length) {
+          var left = Math.max(0, holdSeconds - Math.round((Date.now() - held[0].time) / 1000));
+          timer.textContent = held.length + ' ' + label('queued') + ' · ' + label('auto') + ' ' + left + 's';
+        } else timer.textContent = '';
+      }).catch(function () {
+        address.textContent = label('unavailable');
+      }).then(function () { setTimeout(poll, 600); });
+    }
+
+    var tabs = document.querySelectorAll('nav button');
+    for (var t = 0; t < tabs.length; t++) tabs[t].addEventListener('click', function (event) {
+      var picked = event.currentTarget;
+      for (var i = 0; i < tabs.length; i++) tabs[i].classList.toggle('active', tabs[i] === picked);
+      var panels = document.querySelectorAll('main section');
+      for (var j = 0; j < panels.length; j++)
+        panels[j].classList.toggle('active', panels[j].id === picked.dataset.tab + 'Panel');
+    });
+
+    modeSelect.addEventListener('change', function () { query('mode', { value: modeSelect.value }).catch(function () {}); });
+    scopeSelect.addEventListener('change', function () { query('scope', { value: scopeSelect.value }).catch(function () {}); });
+    filterInput.addEventListener('input', function () {
+      filterDirty = 1;
+      clearTimeout(filterInput.pending);
+      filterInput.pending = setTimeout(function () {
+        filterDirty = 0;
+        query('filter', { value: filterInput.value }).catch(function () {});
+      }, 400);
+    });
+    document.getElementById('send').addEventListener('click', function () { decide('forward'); });
+    document.getElementById('reject').addEventListener('click', function () { decide('drop'); });
+    document.getElementById('sendAll').addEventListener('click', function () {
+      held = []; current = null; render(); query('forwardAll').catch(function () {});
+    });
+    document.getElementById('rejectAll').addEventListener('click', function () {
+      held = []; current = null; render(); query('dropAll').catch(function () {});
+    });
+    document.getElementById('back').addEventListener('click', function () {
+      detail.classList.remove('shown');
+      historyList.style.display = '';
+    });
+    document.getElementById('clear').addEventListener('click', function () {
+      detail.classList.remove('shown');
+      historyList.style.display = '';
+      historyList.replaceChildren();
+      cursor = 0;
+      query('clear').catch(function () {});
+    });
+    historyList.addEventListener('click', function (event) {
+      var row = event.target.closest ? event.target.closest('.row') : null;
+      if (row && row.dataset.id) show(Number(row.dataset.id));
+    });
+
+    locale(language);
+    if (typeof window.cefQuery === 'function')
+      window.cefQuery({ request: 'NcatMinecraft_Locale{}', onSuccess: locale, onFailure: function () {} });
+    poll();
+  </script>
+</body>
+</html>

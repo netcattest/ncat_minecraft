@@ -1,0 +1,20 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        build-essential \
+        cmake \
+        ninja-build \
+        patchelf \
+        pkg-config \
+        zip \
+        openjdk-17-jdk \
+        libssl-dev \
+        libicu-dev \
+        libjson-c-dev \
+        libkrb5-dev \
+        libusb-1.0-0-dev \
+        zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/*

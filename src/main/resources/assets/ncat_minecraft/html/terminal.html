@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCAT Terminal</title>
+  <link rel="stylesheet" href="vendor/xterm.css">
+  <style>
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #070b09; color: #e8f2ec; }
+    body { display: flex; flex-direction: column; }
+    header { height: 34px; flex: none; padding: 0 12px; display: flex; align-items: center; justify-content: space-between; border-top: 4px solid #2fae63; border-bottom: 1px solid #27332c; background: #101713; }
+    header strong { color: #eef5f0; font-size: 12px; letter-spacing: .12em; }
+    .tools { display: flex; align-items: center; gap: 4px; }
+    .tools button { min-height: 21px; padding: 2px 6px; font-size: 10px; }
+    #terminal { flex: 1; min-height: 0; padding: 6px; }
+    .xterm { height: 100%; }
+    #status { flex: none; min-height: 21px; padding: 3px 10px; border-top: 1px solid #27332c; color: #9db3a6; font-size: 11px; background: #101713; }
+    .overlay { position: absolute; inset: 34px 0 21px; display: flex; align-items: center; justify-content: center; padding: 8px; background: rgba(4, 7, 5, .95); }
+    .overlay[hidden] { display: none; }
+    .card { width: min(460px, 100%); max-height: 100%; overflow: auto; padding: 12px; border: 1px solid #33453a; border-radius: 6px; background: #121a15; }
+    h1 { margin: 0 0 4px; font-size: 17px; }
+    p { margin: 0 0 9px; color: #9db3a6; font-size: 11px; line-height: 1.35; }
+    .host { margin: 0 0 10px; color: #6fd79a; font-family: monospace; font-size: 11px; overflow-wrap: anywhere; }
+    .shells { display: flex; flex-direction: column; gap: 6px; }
+    .shell { display: flex; align-items: center; gap: 9px; width: 100%; padding: 8px 10px; border: 1px solid #33453a; border-radius: 4px; color: #e8f2ec; background: #0d1410; font: inherit; font-size: 12px; text-align: left; cursor: pointer; }
+    .shell:hover { border-color: #2fae63; background: #14201a; }
+    .badge { flex: none; width: 38px; padding: 2px 0; border-radius: 3px; color: #071009; font-size: 9px; font-weight: 700; text-align: center; letter-spacing: .06em; }
+    .badge.wsl { background: #6fd79a; }
+    .badge.cmd { background: #cdd7d1; }
+    .badge.powershell { background: #7fb4f0; }
+    .badge.unix { background: #e2c169; }
+    .empty { padding: 10px; border: 1px dashed #33453a; border-radius: 4px; color: #9db3a6; font-size: 11px; }
+    button { min-height: 27px; padding: 4px 9px; border: 0; border-radius: 3px; color: #071009; background: #2fae63; font-weight: 700; cursor: pointer; }
+    button.secondary { border: 1px solid #405346; color: #e8f2ec; background: #1a241e; }
+    button:disabled { opacity: .5; cursor: default; }
+    .actions { display: flex; gap: 7px; margin-top: 10px; }
+    #feedback { min-height: 14px; margin-top: 7px; color: #f0a3a3; font-size: 11px; }
+    @media (max-width: 300px) { header { padding: 0 5px; } header strong { font-size: 10px; } .tools button { padding: 2px 4px; font-size: 9px; } }
+    @media (max-height: 290px) { .card { padding: 6px; } h1 { font-size: 14px; } p { display: none; } .shell { padding: 5px 7px; } }
+  </style>
+</head>
+<body>
+  <header><strong>NCAT // TERMINAL</strong><div class="tools"><button id="copy" class="secondary" type="button" disabled data-i18n="copy">Copiar</button><button id="paste" class="secondary" type="button" disabled data-i18n="paste">Colar</button><button id="stop" type="button" disabled data-i18n="stop">Encerrar</button></div></header>
+  <div id="terminal"></div>
+  <div id="status" role="status" data-i18n="idle">Nenhuma sessão</div>
+  <div class="overlay" id="launcher">
+    <div class="card">
+      <h1 data-i18n="title">Terminal local</h1>
+      <p data-i18n="intro">Abre um shell na sua própria máquina, neste cliente. Ninguém mais no servidor tem acesso a ele.</p>
+      <p class="host" id="host">—</p>
+      <div class="shells" id="shells"><div class="empty" data-i18n="scanning">Procurando shells no sistema…</div></div>
+      <div class="actions"><button id="rescan" class="secondary" type="button" data-i18n="rescan">Procurar de novo</button></div>
+      <p id="feedback"></p>
+    </div>
+  </div>
+  <script src="vendor/xterm.js"></script>
+  <script src="vendor/addon-fit.js"></script>
+  <script>
+    const translations = {
+      pt: {
+        copy: 'Copiar', paste: 'Colar', stop: 'Encerrar', idle: 'Nenhuma sessão', rescan: 'Procurar de novo',
+        title: 'Terminal local', scanning: 'Procurando shells no sistema…',
+        intro: 'Abre um shell na sua própria máquina, neste cliente. Ninguém mais no servidor tem acesso a ele.',
+        none: 'Nenhum shell encontrado neste sistema.',
+        disabled: 'O terminal local está desligado na configuração do cliente.',
+        running: 'Sessão ativa · ↑ histórico · Ctrl+Shift+C/V copiar e colar · Esc solta o teclado',
+        starting: 'Abrindo o shell…', exited: 'O shell encerrou (código %s).',
+        failed: 'Não foi possível abrir o shell.', terminalDisabled: 'O terminal local está desligado na configuração.',
+        unknownShell: 'Esse shell não está mais disponível.', notRunning: 'Não há sessão ativa.',
+        invalidData: 'Dados inválidos para o terminal.', denied: 'Esta página não pode abrir um terminal.',
+        unknownCommand: 'Comando de terminal desconhecido.', copied: 'Seleção copiada.',
+        noSelection: 'Selecione um texto no terminal para copiar.',
+        emptyClipboard: 'A área de transferência está vazia.',
+        clipboardTooLarge: 'Texto grande demais para colar (limite de 16 mil caracteres).',
+        clipboardFailed: 'Não foi possível acessar a área de transferência.',
+        integrationMissing: 'A integração com o Minecraft não está disponível.',
+        noTty: 'Sem TTY: programas de tela cheia (vim, htop) não funcionam aqui.'
+      },
+      en: {
+        copy: 'Copy', paste: 'Paste', stop: 'Close', idle: 'No session', rescan: 'Scan again',
+        title: 'Local terminal', scanning: 'Looking for shells on this system…',
+        intro: 'Opens a shell on your own machine, on this client. Nobody else on the server can reach it.',
+        none: 'No shell found on this system.',
+        disabled: 'The local terminal is turned off in the client config.',
+        running: 'Session running · ↑ history · Ctrl+Shift+C/V to copy and paste · Esc releases the keyboard',
+        starting: 'Starting the shell…', exited: 'The shell exited (code %s).',
+        failed: 'Could not start the shell.', terminalDisabled: 'The local terminal is turned off in the config.',
+        unknownShell: 'That shell is no longer available.', notRunning: 'No session is running.',
+        invalidData: 'Invalid terminal data.', denied: 'This page cannot open a terminal.',
+        unknownCommand: 'Unknown terminal command.', copied: 'Selection copied.',
+        noSelection: 'Select terminal text before copying.',
+        emptyClipboard: 'The clipboard is empty.',
+        clipboardTooLarge: 'Too much text to paste (16k character limit).',
+        clipboardFailed: 'Could not reach the clipboard.',
+        integrationMissing: 'The Minecraft integration is not available.',
+        noTty: 'No TTY: full screen programs (vim, htop) will not work here.'
+      }
+    };
+    let lang = 'pt';
+    const dict = () => translations[lang];
+    const text = (key, value) => (dict()[key] || key).replace('%s', value === undefined ? '' : value);
+
+    function query(name, data) {
+      return new Promise((resolve, reject) => {
+        if (typeof window.cefQuery !== 'function') {
+          reject(new Error('integrationMissing'));
+          return;
+        }
+        window.cefQuery({
+          request: 'NcatMinecraft_' + name + JSON.stringify(data || {}),
+          onSuccess: resolve,
+          onFailure: (code, message) => reject(new Error(message))
+        });
+      });
+    }
+
+    const terminal = new Terminal({
+      fontFamily: 'Consolas, monospace', fontSize: 13, lineHeight: 1.1, scrollback: 4000,
+      cursorBlink: true, convertEol: true,
+      theme: { background: '#070b09', foreground: '#e8f2ec', cursor: '#2fae63', selectionBackground: '#2c4a38' }
+    });
+    const fit = new FitAddon.FitAddon();
+    terminal.loadAddon(fit);
+    terminal.open(document.getElementById('terminal'));
+
+    const launcher = document.getElementById('launcher');
+    const shellList = document.getElementById('shells');
+    const statusBar = document.getElementById('status');
+    const feedback = document.getElementById('feedback');
+    const copyButton = document.getElementById('copy');
+    const pasteButton = document.getElementById('paste');
+    const stopButton = document.getElementById('stop');
+    let running = false;
+    let line = '';
+    const history = [];
+    let historyIndex = 0;
+
+    function setStatus(key, value) {
+      statusBar.textContent = text(key, value);
+    }
+
+    function applyLanguage() {
+      document.querySelectorAll('[data-i18n]').forEach(node => {
+        node.textContent = text(node.getAttribute('data-i18n'));
+      });
+    }
+
+    function resize() {
+      try {
+        fit.fit();
+      } catch (error) {
+        return;
+      }
+      if (running) query('TerminalResize', { cols: terminal.cols, rows: terminal.rows }).catch(() => {});
+    }
+
+    function renderShells(shells, enabled) {
+      shellList.textContent = '';
+      if (!enabled) {
+        const node = document.createElement('div');
+        node.className = 'empty';
+        node.textContent = text('disabled');
+        shellList.appendChild(node);
+        return;
+      }
+      if (!shells || !shells.length) {
+        const node = document.createElement('div');
+        node.className = 'empty';
+        node.textContent = text('none');
+        shellList.appendChild(node);
+        return;
+      }
+      shells.forEach(shell => {
+        const button = document.createElement('button');
+        button.className = 'shell';
+        button.type = 'button';
+        const badge = document.createElement('span');
+        badge.className = 'badge ' + shell.kind;
+        badge.textContent = shell.kind === 'wsl' ? 'WSL' : shell.kind === 'cmd' ? 'CMD'
+          : shell.kind === 'powershell' ? 'PS' : 'SH';
+        const label = document.createElement('span');
+        label.textContent = shell.label;
+        button.appendChild(badge);
+        button.appendChild(label);
+        button.addEventListener('click', () => startShell(shell.id));
+        shellList.appendChild(button);
+      });
+    }
+
+    async function startShell(id) {
+      feedback.textContent = '';
+      setStatus('starting');
+      try {
+        resize();
+        await query('TerminalStart', { shell: id, cols: terminal.cols, rows: terminal.rows });
+        launcher.hidden = true;
+        terminal.focus();
+      } catch (error) {
+        feedback.textContent = text(error.message);
+        setStatus('idle');
+      }
+    }
+
+    function prompt() {
+      terminal.write('\r\n');
+    }
+
+    function redraw(next) {
+      terminal.write('\r\u001b[2K' + next);
+      line = next;
+    }
+
+    window.ncatTerminalEvent = function (message) {
+      if (!message || typeof message !== 'object') return;
+      if (message.type === 'catalog') {
+        document.getElementById('host').textContent = message.host || '—';
+        renderShells(message.shells, message.enabled !== false);
+        return;
+      }
+      if (message.type === 'started') {
+        running = true;
+        stopButton.disabled = false;
+        copyButton.disabled = false;
+        pasteButton.disabled = false;
+        terminal.clear();
+        terminal.write('\u001b[32m' + message.value + '\u001b[0m\r\n');
+        terminal.write('\u001b[90m' + text('noTty') + '\u001b[0m\r\n');
+        setStatus('running');
+        return;
+      }
+      if (message.type === 'output') {
+        terminal.write(message.value);
+        return;
+      }
+      if (message.type === 'exit') {
+        running = false;
+        stopButton.disabled = true;
+        setStatus('exited', message.value);
+        launcher.hidden = false;
+        return;
+      }
+      if (message.type === 'failed') {
+        running = false;
+        stopButton.disabled = true;
+        setStatus('failed');
+        launcher.hidden = false;
+      }
+    };
+
+    terminal.onData(data => {
+      if (!running) return;
+      for (const char of data) {
+        if (char === '\r') {
+          terminal.write('\r\n');
+          const command = line;
+          if (command.trim()) {
+            history.push(command);
+            if (history.length > 200) history.shift();
+          }
+          historyIndex = history.length;
+          line = '';
+          query('TerminalInput', { text: command + '\n' }).catch(error => setStatus(error.message));
+        } else if (char === '\u007f') {
+          if (line.length) {
+            line = line.slice(0, -1);
+            terminal.write('\b \b');
+          }
+        } else if (char === '\u0003') {
+          terminal.write('^C\r\n');
+          line = '';
+          query('TerminalInput', { text: '\u0003' }).catch(() => {});
+        } else if (char === '\u0004') {
+          query('TerminalInput', { text: '\u0004' }).catch(() => {});
+        } else if (char >= ' ') {
+          line += char;
+          terminal.write(char);
+        }
+      }
+    });
+
+    terminal.attachCustomKeyEventHandler(event => {
+      if (event.type !== 'keydown' || !running) return true;
+      if (event.key === 'ArrowUp') {
+        if (historyIndex > 0) {
+          historyIndex--;
+          redraw(history[historyIndex]);
+        }
+        return false;
+      }
+      if (event.key === 'ArrowDown') {
+        if (historyIndex < history.length - 1) {
+          historyIndex++;
+          redraw(history[historyIndex]);
+        } else {
+          historyIndex = history.length;
+          redraw('');
+        }
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && (event.key === 'C' || event.key === 'c')) {
+        copySelection();
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && (event.key === 'V' || event.key === 'v')) {
+        pasteClipboard();
+        return false;
+      }
+      return true;
+    });
+
+    async function copySelection() {
+      const selection = terminal.getSelection();
+      if (!selection) { setStatus('noSelection'); return; }
+      try {
+        await query('TerminalClipboard', { mode: 'write', text: selection });
+        setStatus('copied');
+      } catch (error) { setStatus(error.message); }
+    }
+
+    async function pasteClipboard() {
+      try {
+        const clipboard = await query('TerminalClipboard', { mode: 'read' });
+        if (!clipboard) { setStatus('emptyClipboard'); return; }
+        for (const char of clipboard) {
+          if (char === '\n' || char === '\r') continue;
+          line += char;
+          terminal.write(char);
+        }
+      } catch (error) { setStatus(error.message); }
+    }
+
+    copyButton.addEventListener('click', copySelection);
+    pasteButton.addEventListener('click', pasteClipboard);
+    stopButton.addEventListener('click', () => {
+      query('TerminalStop', {}).catch(() => {});
+      running = false;
+      stopButton.disabled = true;
+      launcher.hidden = false;
+      setStatus('idle');
+    });
+    document.getElementById('rescan').addEventListener('click', () => {
+      shellList.textContent = '';
+      const node = document.createElement('div');
+      node.className = 'empty';
+      node.textContent = text('scanning');
+      shellList.appendChild(node);
+      query('TerminalList', { refresh: true }).catch(error => { feedback.textContent = text(error.message); });
+    });
+
+    window.addEventListener('resize', resize);
+    query('Locale', {}).then(value => {
+      lang = String(value || '').toLowerCase().startsWith('pt') ? 'pt' : 'en';
+      applyLanguage();
+      setStatus('idle');
+    }).catch(() => { applyLanguage(); }).finally(() => {
+      resize();
+      query('TerminalList', {}).catch(error => { feedback.textContent = text(error.message); });
+    });
+  </script>
+</body>
+</html>

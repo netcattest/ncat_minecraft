@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ncat_minecraft:block/rack/rack_frame_18u"
+    },
+    "facing=east": {
+      "model": "ncat_minecraft:block/rack/rack_frame_18u",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ncat_minecraft:block/rack/rack_frame_18u",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ncat_minecraft:block/rack/rack_frame_18u",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "body": "ncat_minecraft:block/rack/cabinet_steel",
+    "front": "ncat_minecraft:block/rack/module_log",
+    "particle": "ncat_minecraft:block/rack/module_log"
+  },
+  "elements": [
+    {
+      "name": "module chassis",
+      "from": [
+        0.3,
+        6.8,
+        1
+      ],
+      "to": [
+        15.7,
+        9.2,
+        14.8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "front panel",
+      "from": [
+        0.45,
+        6.95,
+        0.82
+      ],
+      "to": [
+        15.55,
+        9.049999999999999,
+        1.02
+      ],
+      "faces": {
+        "north": {
+          "texture": "#front",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    }
+  ]
+}

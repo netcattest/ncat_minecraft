@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "ncat_minecraft:screen",
+    "ncat_minecraft:kb_left",
+    "ncat_minecraft:kb_right",
+    "ncat_minecraft:rctrl",
+    "ncat_minecraft:redctrl",
+    "ncat_minecraft:server",
+    "ncat_minecraft:ssh_screen",
+    "ncat_minecraft:remote_screen",
+    "ncat_minecraft:ssh_kb_left",
+    "ncat_minecraft:ssh_kb_right",
+    "ncat_minecraft:log_screen",
+    "ncat_minecraft:devtools_screen",
+    "ncat_minecraft:toilet",
+    "ncat_minecraft:water_cooler",
+    "ncat_minecraft:digital_clock",
+    "ncat_minecraft:digital_clock_white",
+    "ncat_minecraft:alta_wifi",
+    "ncat_minecraft:network_switch",
+    "ncat_minecraft:managed_switch",
+    "ncat_minecraft:managed_tablet",
+    "ncat_minecraft:workstation_screen",
+    "ncat_minecraft:workstation_kb_left",
+    "ncat_minecraft:workstation_kb_right"
+  ]
+}

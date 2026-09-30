@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "ncat_minecraft:paper_cup" },
+    { "item": "minecraft:water_bucket" }
+  ],
+  "result": {
+    "item": "ncat_minecraft:paper_cup_water"
+  }
+}

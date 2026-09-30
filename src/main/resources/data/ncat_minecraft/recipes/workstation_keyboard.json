@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["ICI", "PKP", "IRI"],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "C": { "item": "minecraft:copper_ingot" },
+    "P": { "item": "minecraft:stone_pressure_plate" },
+    "K": { "item": "ncat_minecraft:keyboard" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": { "item": "ncat_minecraft:workstation_keyboard", "count": 1 }
+}

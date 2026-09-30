@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCAT SSH</title>
+  <link rel="stylesheet" href="vendor/xterm.css">
+  <style>
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #0b0e12; color: #eff1f4; }
+    body { display: flex; flex-direction: column; }
+    header { height: 34px; flex: none; padding: 0 12px; display: flex; align-items: center; justify-content: space-between; border-top: 4px solid #d01e32; border-bottom: 1px solid #353a42; background: #161a20; }
+    header strong { color: #f1f3f5; font-size: 12px; letter-spacing: .12em; }
+    header span { max-width: 25%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #9ca5af; font-size: 11px; }
+    .tools { display: flex; align-items: center; gap: 4px; }
+    .tools button { min-height: 21px; padding: 2px 6px; font-size: 10px; }
+    #terminal { flex: 1; min-height: 0; padding: 6px; }
+    .xterm { height: 100%; }
+    #status { flex: none; min-height: 21px; padding: 3px 10px; border-top: 1px solid #353a42; color: #aeb6bf; font-size: 11px; background: #161a20; }
+    .overlay { position: absolute; inset: 34px 0 21px; display: flex; align-items: center; justify-content: center; padding: 8px; background: rgba(5, 7, 10, .94); }
+    .overlay[hidden] { display: none; }
+    .card { width: min(400px, 100%); max-height: 100%; overflow: auto; padding: 12px; border: 1px solid #454b54; border-radius: 6px; background: #171b21; }
+    h1 { margin: 0 0 5px; font-size: 17px; }
+    p { margin: 0 0 9px; color: #b0b8c1; font-size: 11px; line-height: 1.35; }
+    label { display: block; margin-bottom: 5px; color: #d7dce2; font-size: 11px; }
+    input { display: block; width: 100%; height: 26px; margin-top: 2px; padding: 3px 7px; border: 1px solid #505862; border-radius: 3px; outline: none; color: #fff; background: #0b0e12; font: inherit; }
+    input:focus { border-color: #e84b58; }
+    .row { display: grid; grid-template-columns: 1fr 72px; gap: 7px; }
+    button { min-height: 27px; padding: 4px 9px; border: 0; border-radius: 3px; color: #fff; background: #bc2434; font-weight: 700; cursor: pointer; }
+    button.secondary { border: 1px solid #626a74; background: #252b32; }
+    button:disabled { opacity: .5; cursor: default; }
+    .actions { display: flex; gap: 7px; }
+    #form-feedback { min-height: 14px; margin: 7px 0 0; color: #f29da7; }
+    #form-feedback[data-state="connecting"] { color: #9bc9ff; }
+    #fingerprint { overflow-wrap: anywhere; color: #fff; font-family: monospace; }
+    @media (max-width: 300px) { header { padding: 0 5px; } header span { display: none; } header strong { font-size: 10px; } .tools button { padding: 2px 4px; font-size: 9px; } }
+    @media (max-height: 290px) { .card { padding: 6px; } h1 { font-size: 14px; } #form h1, #form p { display: none; } label { margin-bottom: 2px; } input { height: 22px; } button { min-height: 23px; } }
+  </style>
+</head>
+<body>
+  <header><strong>NCAT // SSH</strong><div class="tools"><button id="copy" class="secondary" type="button" disabled data-i18n="copy">Copiar</button><button id="paste" class="secondary" type="button" disabled data-i18n="paste">Colar</button><button id="disconnect" type="button" disabled data-i18n="disconnect">Sair</button></div></header>
+  <div id="terminal"></div>
+  <div id="status" role="status" data-i18n="disconnected">Desconectado</div>
+  <div class="overlay" id="login">
+    <form class="card" id="form">
+      <h1 data-i18n="title">Conexão SSH</h1>
+      <p data-i18n="intro">Informe um servidor do seu laboratório. A senha fica somente neste cliente.</p>
+      <div class="row">
+        <label><span data-i18n="host">IP ou domínio</span><input id="host" type="text" maxlength="253" pattern="[A-Za-z0-9._:-]+" autocomplete="off" spellcheck="false" required></label>
+        <label><span data-i18n="port">Porta</span><input id="port" type="text" inputmode="numeric" maxlength="5" pattern="[0-9]{1,5}" value="22" required></label>
+      </div>
+      <label><span data-i18n="user">Usuário</span><input id="user" type="text" maxlength="128" autocomplete="off" spellcheck="false" required></label>
+      <label><span data-i18n="password">Senha</span><input id="password" type="password" maxlength="512" autocomplete="off" required></label>
+      <button id="connect" type="submit" data-i18n="connect">Conectar</button>
+      <p id="form-feedback" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <div class="overlay" id="verify" hidden>
+    <div class="card">
+      <h1 data-i18n="verifyTitle">Confirmar chave SSH</h1>
+      <p data-i18n="verifyIntro">Compare esta impressão digital com a chave do servidor por um canal confiável. Aceite somente se corresponder.</p>
+      <p id="fingerprint"></p>
+      <div class="actions">
+        <button id="accept" type="button" data-i18n="accept">Confiar e conectar</button>
+        <button id="reject" class="secondary" type="button" data-i18n="reject">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <script src="vendor/xterm.js"></script>
+  <script src="vendor/addon-fit.js"></script>
+  <script>
+    const translations = {
+      pt: {
+        copy: 'Copiar', paste: 'Colar', disconnect: 'Sair', disconnected: 'Desconectado',
+        title: 'Conexão SSH', intro: 'Informe um servidor do seu laboratório. A senha fica somente neste cliente.',
+        host: 'IP ou domínio', port: 'Porta', user: 'Usuário', password: 'Senha', connect: 'Conectar',
+        verifyTitle: 'Confirmar chave SSH', verifyIntro: 'Compare esta impressão digital com a chave do servidor por um canal confiável. Aceite somente se corresponder.',
+        accept: 'Confiar e conectar', reject: 'Cancelar', connecting: 'Conectando ao servidor SSH...',
+        connected: 'Conectado · role com o mouse · ↑ para histórico · Ctrl+Shift+C/V para copiar/colar · Esc para sair do teclado',
+        confirmKey: 'Confirme a chave SSH do servidor.', connectionClosed: 'Sessão SSH encerrada pelo servidor.',
+        connectFailed: 'Não foi possível conectar. Confira credenciais, chave SSH e rede.',
+        sendFailed: 'Falha ao enviar dados ao SSH.', hostKeyChanged: 'A chave SSH do servidor mudou. Conexão recusada.',
+        invalidConnection: 'Confira IP ou domínio, porta (1 a 65535), usuário, senha e tamanho da tela.',
+        invalidData: 'Dados inválidos para o terminal SSH.', notConnected: 'A sessão SSH não está conectada.',
+        denied: 'Esta página não pode acessar o terminal SSH.', unknownCommand: 'Comando SSH desconhecido.',
+        clipboardTooLarge: 'Texto grande demais para colar (limite de 16 mil caracteres).',
+        clipboardFailed: 'Não foi possível acessar a área de transferência.', copied: 'Seleção copiada.',
+        noSelection: 'Selecione um texto no terminal para copiar.', emptyClipboard: 'A área de transferência está vazia.',
+        integrationMissing: 'A integração com o Minecraft não está disponível.'
+      },
+      en: {
+        copy: 'Copy', paste: 'Paste', disconnect: 'Close', disconnected: 'Disconnected',
+        title: 'SSH connection', intro: 'Enter a server in your lab. The password remains on this client.',
+        host: 'IP or domain', port: 'Port', user: 'Username', password: 'Password', connect: 'Connect',
+        verifyTitle: 'Confirm SSH host key', verifyIntro: 'Compare this fingerprint with the server key through a trusted channel. Accept only if it matches.',
+        accept: 'Trust and connect', reject: 'Cancel', connecting: 'Connecting to SSH server...',
+        connected: 'Connected · scroll with mouse · ↑ for history · Ctrl+Shift+C/V to copy/paste · Esc to leave keyboard',
+        confirmKey: 'Confirm the SSH server key.', connectionClosed: 'SSH session closed by the server.',
+        connectFailed: 'Could not connect. Check credentials, SSH host key, and network.',
+        sendFailed: 'Failed to send data to SSH.', hostKeyChanged: 'SSH host key changed. Connection refused.',
+        invalidConnection: 'Check IP or domain, port (1 to 65535), username, password, and screen size.',
+        invalidData: 'Invalid SSH terminal data.', notConnected: 'The SSH session is not connected.',
+        denied: 'This page cannot access the SSH terminal.', unknownCommand: 'Unknown SSH command.',
+        clipboardTooLarge: 'Text is too large to paste (16,000 character limit).',
+        clipboardFailed: 'Could not access the clipboard.', copied: 'Selection copied.',
+        noSelection: 'Select terminal text before copying.', emptyClipboard: 'The clipboard is empty.',
+        integrationMissing: 'Minecraft integration is unavailable.'
+      }
+    };
+    let language = navigator.language.toLowerCase().startsWith('pt') ? 'pt' : 'en';
+    let statusKey = 'disconnected';
+    const translate = key => translations[language][key] || key;
+    function setStatus(key) {
+      statusKey = key;
+      document.getElementById('status').textContent = translate(key);
+      const feedback = document.getElementById('form-feedback');
+      feedback.textContent = key === 'disconnected' ? '' : translate(key);
+      feedback.dataset.state = key;
+    }
+    function applyLanguage(code) {
+      language = code.toLowerCase().startsWith('pt') ? 'pt' : 'en';
+      document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en';
+      document.querySelectorAll('[data-i18n]').forEach(element => element.textContent = translate(element.dataset.i18n));
+      setStatus(statusKey);
+    }
+    applyLanguage(language);
+
+    const terminal = new Terminal({ fontFamily: 'Consolas, monospace', fontSize: 13, lineHeight: 1.1, scrollback: 3000, cursorBlink: true, theme: { background: '#0b0e12', foreground: '#edf0f2', cursor: '#ec4052', selectionBackground: '#68404b' } });
+    const fit = new FitAddon.FitAddon();
+    terminal.loadAddon(fit);
+    terminal.open(document.getElementById('terminal'));
+    const status = document.getElementById('status');
+    const login = document.getElementById('login');
+    const verify = document.getElementById('verify');
+    const connectButton = document.getElementById('connect');
+    const tools = ['copy', 'paste', 'disconnect'].map(id => document.getElementById(id));
+    let connected = false;
+
+    function query(name, data) {
+      return new Promise((resolve, reject) => {
+        if (typeof window.cefQuery !== 'function') {
+          reject(new Error('integrationMissing'));
+          return;
+        }
+        window.cefQuery({ request: 'NcatMinecraft_' + name + JSON.stringify(data), onSuccess: resolve, onFailure: (code, message) => reject(new Error(message)) });
+      });
+    }
+
+    function setConnected(value) {
+      connected = value;
+      login.hidden = value;
+      verify.hidden = true;
+      connectButton.disabled = value;
+      tools.forEach(button => button.disabled = !value);
+    }
+
+    async function copySelection() {
+      const selected = terminal.getSelection();
+      if (!selected) { setStatus('noSelection'); return; }
+      try {
+        await query('SshClipboard', { mode: 'write', text: selected });
+        setStatus('copied');
+      } catch (error) { setStatus(error.message); }
+      terminal.focus();
+    }
+
+    async function pasteClipboard() {
+      if (!connected) return;
+      try {
+        const text = await query('SshClipboard', { mode: 'read' });
+        if (text) terminal.paste(text);
+        else setStatus('emptyClipboard');
+      } catch (error) { setStatus(error.message); }
+      terminal.focus();
+    }
+
+    document.getElementById('copy').addEventListener('click', copySelection);
+    document.getElementById('paste').addEventListener('click', pasteClipboard);
+    document.getElementById('disconnect').addEventListener('click', async () => {
+      try { await query('SshDisconnect', {}); }
+      catch (error) { setStatus(error.message); }
+      setConnected(false);
+      setStatus('disconnected');
+    });
+    document.addEventListener('keydown', event => {
+      if (connected && event.ctrlKey && event.shiftKey && event.code === 'KeyC') {
+        event.preventDefault();
+        event.stopPropagation();
+        copySelection();
+      } else if (connected && event.ctrlKey && event.shiftKey && event.code === 'KeyV') {
+        event.preventDefault();
+        event.stopPropagation();
+        pasteClipboard();
+      } else if (connected && event.shiftKey && event.code === 'PageUp') {
+        event.preventDefault();
+        event.stopPropagation();
+        terminal.scrollPages(-1);
+      } else if (connected && event.shiftKey && event.code === 'PageDown') {
+        event.preventDefault();
+        event.stopPropagation();
+        terminal.scrollPages(1);
+      }
+    }, true);
+
+    function resize() {
+      fit.fit();
+      if (connected) query('SshResize', { cols: terminal.cols, rows: terminal.rows }).catch(() => {});
+    }
+
+    new ResizeObserver(resize).observe(document.getElementById('terminal'));
+    window.addEventListener('resize', resize);
+    setTimeout(resize, 50);
+
+    document.getElementById('form').addEventListener('submit', async event => {
+      event.preventDefault();
+      const data = {
+        host: document.getElementById('host').value.trim(),
+        port: document.getElementById('port').value,
+        user: document.getElementById('user').value.trim(),
+        password: document.getElementById('password').value,
+        cols: Math.max(20, terminal.cols),
+        rows: Math.max(5, terminal.rows)
+      };
+      if (!/^[0-9]{1,5}$/.test(data.port) || Number(data.port) < 1 || Number(data.port) > 65535) {
+        setStatus('invalidConnection');
+        return;
+      }
+      document.getElementById('password').value = '';
+      connectButton.disabled = true;
+      setStatus('connecting');
+      try {
+        await query('SshConnect', data);
+      } catch (error) {
+        setStatus(error.message);
+        connectButton.disabled = false;
+      }
+    });
+
+    document.getElementById('accept').addEventListener('click', () => {
+      verify.hidden = true;
+      query('SshTrust', { accepted: true }).catch(() => {});
+    });
+    document.getElementById('reject').addEventListener('click', () => {
+      setConnected(false);
+      setStatus('disconnected');
+      query('SshTrust', { accepted: false }).catch(() => {});
+    });
+
+    terminal.onData(text => {
+      if (connected) query('SshInput', { text }).catch(error => { setStatus(error.message); });
+    });
+
+    window.ncatSshEvent = event => {
+      if (event.type === 'output') {
+        terminal.write(event.value);
+      } else if (event.type === 'connecting') {
+        setStatus(event.value);
+      } else if (event.type === 'hostKey') {
+        document.getElementById('fingerprint').textContent = event.value;
+        login.hidden = true;
+        verify.hidden = false;
+        setStatus('confirmKey');
+      } else if (event.type === 'connected') {
+        setConnected(true);
+        setStatus('connected');
+        resize();
+        terminal.focus();
+      } else if (event.type === 'status') {
+        setStatus(event.value);
+        if (event.value !== 'sendFailed') setConnected(false);
+      }
+    };
+    query('Locale', {}).then(applyLanguage).catch(() => {});
+  </script>
+</body>
+</html>

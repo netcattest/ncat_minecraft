@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["  A", " IR", "I  "],
+  "key": {
+    "A": {"item": "minecraft:amethyst_shard"},
+    "I": {"item": "minecraft:iron_ingot"},
+    "R": {"item": "minecraft:redstone"}
+  },
+  "result": {"item": "ncat_minecraft:log_inspector"}
+}

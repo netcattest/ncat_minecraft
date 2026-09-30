@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:glass_pane"
+    },
+    "title": {
+      "translate": "advancements.ncat_minecraft.root.title"
+    },
+    "description": {
+      "translate": "advancements.ncat_minecraft.root.description"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "has_glass_pane": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:glass_pane"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "ncat_minecraft:screen",
+      "ncat_minecraft:ssh_screen",
+      "ncat_minecraft:keyboard",
+      "ncat_minecraft:ssh_keyboard",
+      "ncat_minecraft:linker",
+      "ncat_minecraft:screencfg",
+      "ncat_minecraft:laserpointer"
+    ]
+  }
+}
+

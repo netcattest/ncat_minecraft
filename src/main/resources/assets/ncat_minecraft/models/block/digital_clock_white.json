@@ -1,0 +1,455 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "case": "ncat_minecraft:block/clock/case_white",
+    "case_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "button": "ncat_minecraft:block/toilet/porcelain_bright",
+    "screen": "ncat_minecraft:block/clock/screen",
+    "led": "ncat_minecraft:block/clock/led",
+    "particle": "ncat_minecraft:block/clock/case_white"
+  },
+  "elements": [
+    {
+      "name": "pe",
+      "from": [
+        2.3,
+        0.0,
+        4.4
+      ],
+      "to": [
+        3.9,
+        1.407,
+        5.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#button"
+        },
+        "south": {
+          "texture": "#button"
+        },
+        "west": {
+          "texture": "#button"
+        },
+        "east": {
+          "texture": "#button"
+        },
+        "up": {
+          "texture": "#button"
+        },
+        "down": {
+          "texture": "#button"
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        12.2,
+        0.0,
+        4.4
+      ],
+      "to": [
+        13.8,
+        1.407,
+        5.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#button"
+        },
+        "south": {
+          "texture": "#button"
+        },
+        "west": {
+          "texture": "#button"
+        },
+        "east": {
+          "texture": "#button"
+        },
+        "up": {
+          "texture": "#button"
+        },
+        "down": {
+          "texture": "#button"
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        2.3,
+        0.0,
+        10.2
+      ],
+      "to": [
+        3.9,
+        1.407,
+        11.7
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#button"
+        },
+        "south": {
+          "texture": "#button"
+        },
+        "west": {
+          "texture": "#button"
+        },
+        "east": {
+          "texture": "#button"
+        },
+        "up": {
+          "texture": "#button"
+        },
+        "down": {
+          "texture": "#button"
+        }
+      }
+    },
+    {
+      "name": "pe",
+      "from": [
+        12.2,
+        0.0,
+        10.2
+      ],
+      "to": [
+        13.8,
+        1.407,
+        11.7
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#button"
+        },
+        "south": {
+          "texture": "#button"
+        },
+        "west": {
+          "texture": "#button"
+        },
+        "east": {
+          "texture": "#button"
+        },
+        "up": {
+          "texture": "#button"
+        },
+        "down": {
+          "texture": "#button"
+        }
+      }
+    },
+    {
+      "name": "corpo",
+      "from": [
+        1.15,
+        1.206,
+        3.7
+      ],
+      "to": [
+        14.85,
+        8.643,
+        12.35
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#case"
+        },
+        "south": {
+          "texture": "#case"
+        },
+        "west": {
+          "texture": "#case"
+        },
+        "east": {
+          "texture": "#case"
+        },
+        "up": {
+          "texture": "#case"
+        },
+        "down": {
+          "texture": "#case_dark"
+        }
+      }
+    },
+    {
+      "name": "moldura e",
+      "from": [
+        1.15,
+        1.541,
+        2.85
+      ],
+      "to": [
+        2.55,
+        8.241,
+        3.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#case"
+        },
+        "south": {
+          "texture": "#case"
+        },
+        "west": {
+          "texture": "#case"
+        },
+        "east": {
+          "texture": "#case"
+        },
+        "up": {
+          "texture": "#case"
+        },
+        "down": {
+          "texture": "#case_dark"
+        }
+      }
+    },
+    {
+      "name": "moldura d",
+      "from": [
+        13.45,
+        1.541,
+        2.85
+      ],
+      "to": [
+        14.85,
+        8.241,
+        3.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#case"
+        },
+        "south": {
+          "texture": "#case"
+        },
+        "west": {
+          "texture": "#case"
+        },
+        "east": {
+          "texture": "#case"
+        },
+        "up": {
+          "texture": "#case"
+        },
+        "down": {
+          "texture": "#case_dark"
+        }
+      }
+    },
+    {
+      "name": "moldura topo",
+      "from": [
+        2.55,
+        7.303,
+        2.85
+      ],
+      "to": [
+        13.45,
+        8.241,
+        3.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#case"
+        },
+        "south": {
+          "texture": "#case"
+        },
+        "west": {
+          "texture": "#case"
+        },
+        "east": {
+          "texture": "#case"
+        },
+        "up": {
+          "texture": "#case"
+        },
+        "down": {
+          "texture": "#case_dark"
+        }
+      }
+    },
+    {
+      "name": "moldura base",
+      "from": [
+        2.55,
+        1.541,
+        2.85
+      ],
+      "to": [
+        13.45,
+        2.948,
+        3.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#case"
+        },
+        "south": {
+          "texture": "#case"
+        },
+        "west": {
+          "texture": "#case"
+        },
+        "east": {
+          "texture": "#case"
+        },
+        "up": {
+          "texture": "#case"
+        },
+        "down": {
+          "texture": "#case_dark"
+        }
+      }
+    },
+    {
+      "name": "tela",
+      "from": [
+        2.4,
+        2.747,
+        3.55
+      ],
+      "to": [
+        13.6,
+        7.504,
+        4.15
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#screen"
+        },
+        "south": {
+          "texture": "#screen"
+        },
+        "west": {
+          "texture": "#screen"
+        },
+        "east": {
+          "texture": "#screen"
+        },
+        "up": {
+          "texture": "#screen"
+        },
+        "down": {
+          "texture": "#screen"
+        }
+      }
+    },
+    {
+      "name": "botao e",
+      "from": [
+        3.7,
+        8.509,
+        6.5
+      ],
+      "to": [
+        5.35,
+        9.849,
+        8.35
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#button"
+        },
+        "south": {
+          "texture": "#button"
+        },
+        "west": {
+          "texture": "#button"
+        },
+        "east": {
+          "texture": "#button"
+        },
+        "up": {
+          "texture": "#button"
+        },
+        "down": {
+          "texture": "#case_dark"
+        }
+      }
+    },
+    {
+      "name": "botao meio",
+      "from": [
+        6.55,
+        8.643,
+        6.15
+      ],
+      "to": [
+        9.45,
+        10.117,
+        8.7
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#button"
+        },
+        "south": {
+          "texture": "#button"
+        },
+        "west": {
+          "texture": "#button"
+        },
+        "east": {
+          "texture": "#button"
+        },
+        "up": {
+          "texture": "#button"
+        },
+        "down": {
+          "texture": "#case_dark"
+        }
+      }
+    },
+    {
+      "name": "botao d",
+      "from": [
+        10.65,
+        8.509,
+        6.5
+      ],
+      "to": [
+        12.3,
+        9.849,
+        8.35
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#button"
+        },
+        "south": {
+          "texture": "#button"
+        },
+        "west": {
+          "texture": "#button"
+        },
+        "east": {
+          "texture": "#button"
+        },
+        "up": {
+          "texture": "#button"
+        },
+        "down": {
+          "texture": "#case_dark"
+        }
+      }
+    }
+  ]
+}

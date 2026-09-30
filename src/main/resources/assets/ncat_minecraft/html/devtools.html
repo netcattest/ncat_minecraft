@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCAT DevTools</title>
+  <style>
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #10131a; color: #e8edf6; }
+    body { display: flex; flex-direction: column; }
+    header { flex: none; display: flex; align-items: center; gap: 10px; min-height: 33px; padding: 5px 10px; border-top: 4px solid #9b59d0; border-bottom: 1px solid #36404e; background: #1b202a; }
+    header strong { flex: none; font-size: clamp(10px, 1.8vw, 14px); letter-spacing: .09em; }
+    #address { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #aebace; font: clamp(9px, 1.5vw, 11px) Consolas, monospace; }
+    nav { flex: none; display: flex; border-bottom: 1px solid #394250; background: #181d26; }
+    nav button { flex: 1; min-height: 29px; padding: 4px 8px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #aebace; font-weight: 700; font-size: clamp(10px, 1.8vw, 12px); cursor: pointer; }
+    nav button.active { color: #fff; border-color: #ad6edd; background: #242a35; }
+    main { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+    section { flex: 1; min-height: 0; display: none; flex-direction: column; }
+    section.active { display: flex; }
+    .toolbar { flex: none; display: flex; align-items: center; gap: 5px; padding: 5px 8px; border-bottom: 1px solid #303947; }
+    .toolbar input { flex: 1; min-width: 0; height: 26px; padding: 2px 7px; border: 1px solid #465367; border-radius: 3px; color: #f1f5fb; background: #131821; }
+    .toolbar button, #run { min-height: 26px; padding: 3px 10px; border: 1px solid #73558e; border-radius: 3px; background: #4b3260; color: #fff; cursor: pointer; }
+    #elements, #console, #network { flex: 1; min-height: 0; overflow: auto; scrollbar-color: #8c68a8 #1c222c; }
+    #elements { margin: 0; padding: 8px 10px; white-space: pre-wrap; overflow-wrap: anywhere; font: clamp(10px, 1.7vw, 12px)/1.45 Consolas, monospace; color: #c6d5e5; }
+    .row { padding: 5px 9px; border-bottom: 1px solid #293342; font: clamp(10px, 1.6vw, 12px)/1.4 Consolas, monospace; overflow-wrap: anywhere; }
+    .row:nth-child(even) { background: #161c25; }
+    .row.error, .row.warning { color: #ff9ca6; }
+    .row.result { color: #9ce2b4; }
+    .row.input { color: #d8b3f4; }
+    .meta { color: #8594a8; font-size: 10px; }
+    .request { display: flex; gap: 9px; }
+    .request strong { min-width: 48px; color: #b99ad5; }
+    .request .status { min-width: 28px; color: #a8d4ad; }
+    .request .size { margin-left: auto; color: #aab7c8; white-space: nowrap; }
+    .url { color: #d9e2ed; }
+    #consoleForm { flex: none; display: flex; gap: 6px; padding: 6px 8px; border-top: 1px solid #394250; }
+    #expression { flex: 1; min-width: 0; padding: 4px 7px; border: 1px solid #465367; border-radius: 3px; color: #fff; background: #0e131a; font: 12px Consolas, monospace; }
+    footer { flex: none; padding: 4px 8px; border-top: 1px solid #36404e; background: #1b202a; color: #9ba9bc; font-size: 10px; }
+    @media (max-width: 300px) { header { padding: 4px 5px; } .toolbar { padding: 3px 5px; } .row { padding: 4px 5px; } }
+  </style>
+</head>
+<body>
+  <header><strong>NCAT // DEVTOOLS</strong><span id="address">Aguardando tela vinculada</span></header>
+  <nav><button class="active" type="button" data-tab="elements">Elementos</button><button type="button" data-tab="console">Console</button><button type="button" data-tab="network">Rede</button></nav>
+  <main>
+    <section id="elementsPanel" class="active"><div class="toolbar"><input id="filter" type="search" placeholder="Filtrar HTML"><button id="refresh" type="button">Atualizar</button></div><pre id="elements">Vincule uma Tela NCAT Navegador com a ferramenta de vínculo.</pre></section>
+    <section id="consolePanel"><div id="console"></div><form id="consoleForm"><input id="expression" type="text" maxlength="4096" autocomplete="off" spellcheck="false" placeholder="Expressão JavaScript"><button id="run" type="submit">Executar</button></form></section>
+    <section id="networkPanel"><div id="network"></div></section>
+  </main>
+  <footer id="status">Agache e clique com o botão direito para digitar e rolar.</footer>
+  <script>
+    const words = {
+      pt: { waiting: 'Aguardando tela vinculada', empty: 'Vincule uma Tela NCAT Navegador com a ferramenta de vínculo.', elements: 'Elementos', console: 'Console', network: 'Rede', filter: 'Filtrar HTML', refresh: 'Atualizar', expression: 'Expressão JavaScript', run: 'Executar', status: 'Agache e clique com o botão direito para digitar e rolar.', unavailable: 'Não foi possível ler as ferramentas de desenvolvedor.', noMatch: 'Nenhum trecho correspondente.', noDom: 'Aguardando o HTML da página.' },
+      en: { waiting: 'Waiting for a linked screen', empty: 'Link an NCAT Browser Screen with the linking tool.', elements: 'Elements', console: 'Console', network: 'Network', filter: 'Filter HTML', refresh: 'Refresh', expression: 'JavaScript expression', run: 'Run', status: 'Crouch and right-click to type and scroll.', unavailable: 'Could not read developer tools.', noMatch: 'No matching lines.', noDom: 'Waiting for page HTML.' }
+    };
+    let language = navigator.language.toLowerCase().startsWith('pt') ? 'pt' : 'en';
+    let source = 0, consoleCursor = 0, networkCursor = 0, revision = 0, html = '';
+    const address = document.getElementById('address');
+    const elements = document.getElementById('elements');
+    const consoleList = document.getElementById('console');
+    const networkList = document.getElementById('network');
+    const filter = document.getElementById('filter');
+    const expression = document.getElementById('expression');
+    function label(key) { return words[language][key]; }
+    function locale(code) {
+      language = code.toLowerCase().startsWith('pt') ? 'pt' : 'en';
+      document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en';
+      for (const key of ['elements', 'console', 'network']) document.querySelector('[data-tab="' + key + '"]').textContent = label(key);
+      filter.placeholder = label('filter'); document.getElementById('refresh').textContent = label('refresh');
+      expression.placeholder = label('expression'); document.getElementById('run').textContent = label('run');
+      document.getElementById('status').textContent = label('status');
+      if (!source) { address.textContent = label('waiting'); elements.textContent = label('empty'); }
+    }
+    function query(action, data = {}) {
+      return new Promise((resolve, reject) => {
+        if (typeof window.cefQuery !== 'function') { reject(new Error('integration')); return; }
+        window.cefQuery({ request: 'NcatMinecraft_DevTools' + JSON.stringify({ action, ...data }), onSuccess: resolve, onFailure: (code, message) => reject(new Error(message)) });
+      });
+    }
+    function renderElements() {
+      if (!source) { elements.textContent = label('empty'); return; }
+      if (!html) { elements.textContent = label('noDom'); return; }
+      const lines = html.replace(/></g, '>\n<').split('\n');
+      const term = filter.value.trim().toLowerCase();
+      const selected = term ? lines.filter(line => line.toLowerCase().includes(term)) : lines;
+      elements.textContent = selected.length ? selected.join('\n') : label('noMatch');
+    }
+    function addRow(parent, entry, isNetwork) {
+      const nearBottom = parent.scrollHeight - parent.scrollTop - parent.clientHeight < 50;
+      const row = document.createElement('div');
+      row.className = 'row' + (isNetwork ? '' : ' ' + entry.level.toLowerCase());
+      if (isNetwork) {
+        const top = document.createElement('div'); top.className = 'request';
+        const method = document.createElement('strong'); method.textContent = entry.method;
+        const status = document.createElement('span'); status.className = 'status'; status.textContent = entry.status || '—';
+        const size = document.createElement('span'); size.className = 'size'; size.textContent = entry.bytes + ' B';
+        top.append(method, status, size);
+        const url = document.createElement('div'); url.className = 'url'; url.textContent = entry.url;
+        row.append(top, url);
+      } else {
+        const message = document.createElement('div'); message.textContent = entry.message;
+        const meta = document.createElement('div'); meta.className = 'meta';
+        meta.textContent = entry.source ? entry.source + (entry.line ? ':' + entry.line : '') : new Date(entry.time).toLocaleTimeString(language === 'pt' ? 'pt-BR' : 'en-US');
+        row.append(message, meta);
+      }
+      parent.appendChild(row);
+      if (parent.children.length > 250) parent.firstElementChild.remove();
+      if (nearBottom) parent.scrollTop = parent.scrollHeight;
+    }
+    async function poll() {
+      try {
+        const data = JSON.parse(await query('poll', { consoleAfter: consoleCursor, networkAfter: networkCursor, revision }));
+        if (source !== data.source) {
+          source = data.source; consoleCursor = 0; networkCursor = 0; revision = 0; html = '';
+          consoleList.replaceChildren(); networkList.replaceChildren(); renderElements();
+          if (source) { setTimeout(poll, 0); return; }
+        }
+        address.textContent = data.linked ? data.url : label('waiting');
+        if (data.html !== undefined) { html = data.html; revision = data.revision; renderElements(); }
+        for (const entry of data.console) { addRow(consoleList, entry, false); consoleCursor = entry.id; }
+        for (const entry of data.network) { addRow(networkList, entry, true); networkCursor = entry.id; }
+      } catch (error) { address.textContent = label('unavailable'); }
+      setTimeout(poll, 700);
+    }
+    for (const tab of document.querySelectorAll('nav button')) tab.addEventListener('click', () => {
+      for (const button of document.querySelectorAll('nav button')) button.classList.toggle('active', button === tab);
+      for (const panel of document.querySelectorAll('main section')) panel.classList.toggle('active', panel.id === tab.dataset.tab + 'Panel');
+    });
+    filter.addEventListener('input', renderElements);
+    document.getElementById('refresh').addEventListener('click', () => query('refresh').catch(() => {}));
+    document.getElementById('consoleForm').addEventListener('submit', event => {
+      event.preventDefault(); const value = expression.value.trim();
+      if (value && source) { query('eval', { expression: value }).then(() => { expression.value = ''; }).catch(() => {}); }
+    });
+    locale(language);
+    if (typeof window.cefQuery === 'function') window.cefQuery({ request: 'NcatMinecraft_Locale{}', onSuccess: locale, onFailure: () => {} });
+    poll();
+  </script>
+</body>
+</html>

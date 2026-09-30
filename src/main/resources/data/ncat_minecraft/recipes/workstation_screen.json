@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["IGI", "GSG", "IRI"],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "G": { "item": "minecraft:glass_pane" },
+    "S": { "item": "ncat_minecraft:screen" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": { "item": "ncat_minecraft:workstation_screen", "count": 1 }
+}

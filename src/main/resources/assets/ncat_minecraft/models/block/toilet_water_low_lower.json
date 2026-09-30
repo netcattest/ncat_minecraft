@@ -1,0 +1,297 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "bowl": "ncat_minecraft:block/toilet/bowl",
+    "bowl_deep": "ncat_minecraft:block/toilet/bowl_deep",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "water": "ncat_minecraft:block/toilet/water",
+    "water_deep": "ncat_minecraft:block/toilet/water_deep",
+    "water_shine": "ncat_minecraft:block/toilet/water_shine",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "agua baixa",
+      "from": [
+        4.466,
+        10.582,
+        2.585
+      ],
+      "to": [
+        11.534,
+        11.174,
+        5.663
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#water",
+          "uv": [
+            4.9,
+            8.45,
+            11.1,
+            8.85
+          ]
+        },
+        "south": {
+          "texture": "#water",
+          "uv": [
+            4.9,
+            8.45,
+            11.1,
+            8.85
+          ]
+        },
+        "west": {
+          "texture": "#water",
+          "uv": [
+            3.25,
+            8.45,
+            5.95,
+            8.85
+          ]
+        },
+        "east": {
+          "texture": "#water",
+          "uv": [
+            3.25,
+            8.45,
+            5.95,
+            8.85
+          ]
+        },
+        "up": {
+          "texture": "#water",
+          "uv": [
+            4.9,
+            3.25,
+            11.1,
+            5.95
+          ]
+        },
+        "down": {
+          "texture": "#water_deep",
+          "uv": [
+            4.9,
+            3.25,
+            11.1,
+            5.95
+          ]
+        }
+      }
+    },
+    {
+      "name": "jato esquerdo",
+      "from": [
+        4.238,
+        11.1,
+        5.663
+      ],
+      "to": [
+        4.808,
+        12.876,
+        6.176
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#water",
+          "uv": [
+            4.7,
+            7.3,
+            5.2,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#water",
+          "uv": [
+            4.7,
+            7.3,
+            5.2,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#water",
+          "uv": [
+            5.95,
+            7.3,
+            6.4,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#water",
+          "uv": [
+            5.95,
+            7.3,
+            6.4,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#water_shine",
+          "uv": [
+            4.7,
+            5.95,
+            5.2,
+            6.4
+          ]
+        },
+        "down": {
+          "texture": "#water_deep",
+          "uv": [
+            4.7,
+            5.95,
+            5.2,
+            6.4
+          ]
+        }
+      }
+    },
+    {
+      "name": "jato meio",
+      "from": [
+        7.487,
+        11.1,
+        5.777
+      ],
+      "to": [
+        8.513,
+        13.098,
+        6.233
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#water",
+          "uv": [
+            7.55,
+            7.15,
+            8.45,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#water",
+          "uv": [
+            7.55,
+            7.15,
+            8.45,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#water",
+          "uv": [
+            6.05,
+            7.15,
+            6.45,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#water",
+          "uv": [
+            6.05,
+            7.15,
+            6.45,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#water_shine",
+          "uv": [
+            7.55,
+            6.05,
+            8.45,
+            6.45
+          ]
+        },
+        "down": {
+          "texture": "#water_deep",
+          "uv": [
+            7.55,
+            6.05,
+            8.45,
+            6.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "jato direito",
+      "from": [
+        11.192,
+        11.1,
+        5.663
+      ],
+      "to": [
+        11.762,
+        12.876,
+        6.176
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#water",
+          "uv": [
+            10.8,
+            7.3,
+            11.3,
+            8.5
+          ]
+        },
+        "south": {
+          "texture": "#water",
+          "uv": [
+            10.8,
+            7.3,
+            11.3,
+            8.5
+          ]
+        },
+        "west": {
+          "texture": "#water",
+          "uv": [
+            5.95,
+            7.3,
+            6.4,
+            8.5
+          ]
+        },
+        "east": {
+          "texture": "#water",
+          "uv": [
+            5.95,
+            7.3,
+            6.4,
+            8.5
+          ]
+        },
+        "up": {
+          "texture": "#water_shine",
+          "uv": [
+            10.8,
+            5.95,
+            11.3,
+            6.4
+          ]
+        },
+        "down": {
+          "texture": "#water_deep",
+          "uv": [
+            10.8,
+            5.95,
+            11.3,
+            6.4
+          ]
+        }
+      }
+    }
+  ]
+}

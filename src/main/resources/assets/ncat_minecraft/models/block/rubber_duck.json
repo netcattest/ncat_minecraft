@@ -1,0 +1,3903 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "yellow": "ncat_minecraft:block/duck/yellow",
+    "yellow_dark": "ncat_minecraft:block/duck/yellow_dark",
+    "yellow_light": "ncat_minecraft:block/duck/yellow_light",
+    "beak": "ncat_minecraft:block/duck/beak",
+    "beak_dark": "ncat_minecraft:block/duck/beak_dark",
+    "white": "ncat_minecraft:block/duck/white",
+    "black": "ncat_minecraft:block/duck/black",
+    "particle": "ncat_minecraft:block/duck/yellow"
+  },
+  "elements": [
+    {
+      "name": "corpo 0",
+      "from": [
+        6.0,
+        0.0,
+        4.6
+      ],
+      "to": [
+        10.0,
+        1.1,
+        11.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_dark"
+        },
+        "south": {
+          "texture": "#yellow_dark"
+        },
+        "west": {
+          "texture": "#yellow_dark"
+        },
+        "east": {
+          "texture": "#yellow_dark"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 0 o",
+      "from": [
+        4.7,
+        0.0,
+        5.9
+      ],
+      "to": [
+        6.01,
+        1.1,
+        10.3
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_dark"
+        },
+        "south": {
+          "texture": "#yellow_dark"
+        },
+        "west": {
+          "texture": "#yellow_dark"
+        },
+        "east": {
+          "texture": "#yellow_dark"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 0 l",
+      "from": [
+        9.99,
+        0.0,
+        5.9
+      ],
+      "to": [
+        11.3,
+        1.1,
+        10.3
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_dark"
+        },
+        "south": {
+          "texture": "#yellow_dark"
+        },
+        "west": {
+          "texture": "#yellow_dark"
+        },
+        "east": {
+          "texture": "#yellow_dark"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 0 canto 0",
+      "from": [
+        5.246,
+        0.0,
+        5.146
+      ],
+      "to": [
+        6.01,
+        1.1,
+        5.91
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_dark"
+        },
+        "south": {
+          "texture": "#yellow_dark"
+        },
+        "west": {
+          "texture": "#yellow_dark"
+        },
+        "east": {
+          "texture": "#yellow_dark"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 0 canto 1",
+      "from": [
+        9.99,
+        0.0,
+        5.146
+      ],
+      "to": [
+        10.754,
+        1.1,
+        5.91
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_dark"
+        },
+        "south": {
+          "texture": "#yellow_dark"
+        },
+        "west": {
+          "texture": "#yellow_dark"
+        },
+        "east": {
+          "texture": "#yellow_dark"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 0 canto 2",
+      "from": [
+        5.246,
+        0.0,
+        10.29
+      ],
+      "to": [
+        6.01,
+        1.1,
+        11.054
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_dark"
+        },
+        "south": {
+          "texture": "#yellow_dark"
+        },
+        "west": {
+          "texture": "#yellow_dark"
+        },
+        "east": {
+          "texture": "#yellow_dark"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 0 canto 3",
+      "from": [
+        9.99,
+        0.0,
+        10.29
+      ],
+      "to": [
+        10.754,
+        1.1,
+        11.054
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_dark"
+        },
+        "south": {
+          "texture": "#yellow_dark"
+        },
+        "west": {
+          "texture": "#yellow_dark"
+        },
+        "east": {
+          "texture": "#yellow_dark"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 1",
+      "from": [
+        5.25,
+        1.1,
+        3.4
+      ],
+      "to": [
+        10.75,
+        2.6,
+        12.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 1 o",
+      "from": [
+        3.55,
+        1.1,
+        5.1
+      ],
+      "to": [
+        5.26,
+        2.6,
+        10.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 1 l",
+      "from": [
+        10.74,
+        1.1,
+        5.1
+      ],
+      "to": [
+        12.45,
+        2.6,
+        10.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 1 canto 0",
+      "from": [
+        4.264,
+        1.1,
+        4.114
+      ],
+      "to": [
+        5.26,
+        2.6,
+        5.11
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 1 canto 1",
+      "from": [
+        10.74,
+        1.1,
+        4.114
+      ],
+      "to": [
+        11.736,
+        2.6,
+        5.11
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 1 canto 2",
+      "from": [
+        4.264,
+        1.1,
+        10.89
+      ],
+      "to": [
+        5.26,
+        2.6,
+        11.886
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 1 canto 3",
+      "from": [
+        10.74,
+        1.1,
+        10.89
+      ],
+      "to": [
+        11.736,
+        2.6,
+        11.886
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 2",
+      "from": [
+        5.0,
+        2.6,
+        2.95
+      ],
+      "to": [
+        11.0,
+        4.6,
+        13.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 2 o",
+      "from": [
+        3.1,
+        2.6,
+        4.85
+      ],
+      "to": [
+        5.01,
+        4.6,
+        11.1
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 2 l",
+      "from": [
+        10.99,
+        2.6,
+        4.85
+      ],
+      "to": [
+        12.9,
+        4.6,
+        11.1
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 2 canto 0",
+      "from": [
+        3.898,
+        2.6,
+        3.748
+      ],
+      "to": [
+        5.01,
+        4.6,
+        4.86
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 2 canto 1",
+      "from": [
+        10.99,
+        2.6,
+        3.748
+      ],
+      "to": [
+        12.102,
+        4.6,
+        4.86
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 2 canto 2",
+      "from": [
+        3.898,
+        2.6,
+        11.09
+      ],
+      "to": [
+        5.01,
+        4.6,
+        12.202
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 2 canto 3",
+      "from": [
+        10.99,
+        2.6,
+        11.09
+      ],
+      "to": [
+        12.102,
+        4.6,
+        12.202
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 3",
+      "from": [
+        5.45,
+        4.6,
+        3.55
+      ],
+      "to": [
+        10.55,
+        6.1,
+        12.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 3 o",
+      "from": [
+        3.75,
+        4.6,
+        5.25
+      ],
+      "to": [
+        5.46,
+        6.1,
+        10.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 3 l",
+      "from": [
+        10.54,
+        4.6,
+        5.25
+      ],
+      "to": [
+        12.25,
+        6.1,
+        10.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 3 canto 0",
+      "from": [
+        4.464,
+        4.6,
+        4.264
+      ],
+      "to": [
+        5.46,
+        6.1,
+        5.26
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 3 canto 1",
+      "from": [
+        10.54,
+        4.6,
+        4.264
+      ],
+      "to": [
+        11.536,
+        6.1,
+        5.26
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 3 canto 2",
+      "from": [
+        4.464,
+        4.6,
+        10.74
+      ],
+      "to": [
+        5.46,
+        6.1,
+        11.736
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 3 canto 3",
+      "from": [
+        10.54,
+        4.6,
+        10.74
+      ],
+      "to": [
+        11.536,
+        6.1,
+        11.736
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 4",
+      "from": [
+        6.3,
+        6.1,
+        4.7
+      ],
+      "to": [
+        9.7,
+        7.2,
+        11.2
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 4 o",
+      "from": [
+        5.0,
+        6.1,
+        6.0
+      ],
+      "to": [
+        6.31,
+        7.2,
+        9.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 4 l",
+      "from": [
+        9.69,
+        6.1,
+        6.0
+      ],
+      "to": [
+        11.0,
+        7.2,
+        9.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 4 canto 0",
+      "from": [
+        5.546,
+        6.1,
+        5.246
+      ],
+      "to": [
+        6.31,
+        7.2,
+        6.01
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 4 canto 1",
+      "from": [
+        9.69,
+        6.1,
+        5.246
+      ],
+      "to": [
+        10.454,
+        7.2,
+        6.01
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 4 canto 2",
+      "from": [
+        5.546,
+        6.1,
+        9.89
+      ],
+      "to": [
+        6.31,
+        7.2,
+        10.654
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "corpo 4 canto 3",
+      "from": [
+        9.69,
+        6.1,
+        9.89
+      ],
+      "to": [
+        10.454,
+        7.2,
+        10.654
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "peito",
+      "from": [
+        5.5,
+        2.2,
+        2.4
+      ],
+      "to": [
+        10.5,
+        5.6,
+        4.4
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "peito o",
+      "from": [
+        4.6,
+        2.2,
+        3.3
+      ],
+      "to": [
+        5.51,
+        5.6,
+        3.5
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "peito l",
+      "from": [
+        10.49,
+        2.2,
+        3.3
+      ],
+      "to": [
+        11.4,
+        5.6,
+        3.5
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "peito canto 0",
+      "from": [
+        4.978,
+        2.2,
+        2.778
+      ],
+      "to": [
+        5.51,
+        5.6,
+        3.31
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "peito canto 1",
+      "from": [
+        10.49,
+        2.2,
+        2.778
+      ],
+      "to": [
+        11.022,
+        5.6,
+        3.31
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "peito canto 2",
+      "from": [
+        4.978,
+        2.2,
+        3.49
+      ],
+      "to": [
+        5.51,
+        5.6,
+        4.022
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "peito canto 3",
+      "from": [
+        10.49,
+        2.2,
+        3.49
+      ],
+      "to": [
+        11.022,
+        5.6,
+        4.022
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "pescoco",
+      "from": [
+        6.7,
+        7.0,
+        3.3
+      ],
+      "to": [
+        9.3,
+        8.3,
+        8.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "pescoco o",
+      "from": [
+        5.6,
+        7.0,
+        4.4
+      ],
+      "to": [
+        6.71,
+        8.3,
+        7.5
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "pescoco l",
+      "from": [
+        9.29,
+        7.0,
+        4.4
+      ],
+      "to": [
+        10.4,
+        8.3,
+        7.5
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "pescoco canto 0",
+      "from": [
+        6.062,
+        7.0,
+        3.762
+      ],
+      "to": [
+        6.71,
+        8.3,
+        4.41
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "pescoco canto 1",
+      "from": [
+        9.29,
+        7.0,
+        3.762
+      ],
+      "to": [
+        9.938,
+        8.3,
+        4.41
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "pescoco canto 2",
+      "from": [
+        6.062,
+        7.0,
+        7.49
+      ],
+      "to": [
+        6.71,
+        8.3,
+        8.138
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "pescoco canto 3",
+      "from": [
+        9.29,
+        7.0,
+        7.49
+      ],
+      "to": [
+        9.938,
+        8.3,
+        8.138
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 0",
+      "from": [
+        6.6,
+        8.3,
+        2.55
+      ],
+      "to": [
+        9.4,
+        9.6,
+        8.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 0 o",
+      "from": [
+        5.05,
+        8.3,
+        4.1
+      ],
+      "to": [
+        6.61,
+        9.6,
+        6.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 0 l",
+      "from": [
+        9.39,
+        8.3,
+        4.1
+      ],
+      "to": [
+        10.95,
+        9.6,
+        6.9
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 0 canto 0",
+      "from": [
+        5.701,
+        8.3,
+        3.201
+      ],
+      "to": [
+        6.61,
+        9.6,
+        4.11
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 0 canto 1",
+      "from": [
+        9.39,
+        8.3,
+        3.201
+      ],
+      "to": [
+        10.299,
+        9.6,
+        4.11
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 0 canto 2",
+      "from": [
+        5.701,
+        8.3,
+        6.89
+      ],
+      "to": [
+        6.61,
+        9.6,
+        7.799
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 0 canto 3",
+      "from": [
+        9.39,
+        8.3,
+        6.89
+      ],
+      "to": [
+        10.299,
+        9.6,
+        7.799
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 1",
+      "from": [
+        6.55,
+        9.6,
+        2.35
+      ],
+      "to": [
+        9.45,
+        11.4,
+        8.65
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 1 o",
+      "from": [
+        4.85,
+        9.6,
+        4.05
+      ],
+      "to": [
+        6.56,
+        11.4,
+        6.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 1 l",
+      "from": [
+        9.44,
+        9.6,
+        4.05
+      ],
+      "to": [
+        11.15,
+        11.4,
+        6.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 1 canto 0",
+      "from": [
+        5.564,
+        9.6,
+        3.064
+      ],
+      "to": [
+        6.56,
+        11.4,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 1 canto 1",
+      "from": [
+        9.44,
+        9.6,
+        3.064
+      ],
+      "to": [
+        10.436,
+        11.4,
+        4.06
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 1 canto 2",
+      "from": [
+        5.564,
+        9.6,
+        6.94
+      ],
+      "to": [
+        6.56,
+        11.4,
+        7.936
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 1 canto 3",
+      "from": [
+        9.44,
+        9.6,
+        6.94
+      ],
+      "to": [
+        10.436,
+        11.4,
+        7.936
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 2",
+      "from": [
+        6.85,
+        11.4,
+        3.05
+      ],
+      "to": [
+        9.15,
+        12.5,
+        7.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 2 o",
+      "from": [
+        5.45,
+        11.4,
+        4.45
+      ],
+      "to": [
+        6.86,
+        12.5,
+        6.55
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 2 l",
+      "from": [
+        9.14,
+        11.4,
+        4.45
+      ],
+      "to": [
+        10.55,
+        12.5,
+        6.55
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 2 canto 0",
+      "from": [
+        6.038,
+        11.4,
+        3.638
+      ],
+      "to": [
+        6.86,
+        12.5,
+        4.46
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 2 canto 1",
+      "from": [
+        9.14,
+        11.4,
+        3.638
+      ],
+      "to": [
+        9.962,
+        12.5,
+        4.46
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 2 canto 2",
+      "from": [
+        6.038,
+        11.4,
+        6.54
+      ],
+      "to": [
+        6.86,
+        12.5,
+        7.362
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 2 canto 3",
+      "from": [
+        9.14,
+        11.4,
+        6.54
+      ],
+      "to": [
+        9.962,
+        12.5,
+        7.362
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 3",
+      "from": [
+        7.3,
+        12.5,
+        4.05
+      ],
+      "to": [
+        8.7,
+        13.1,
+        6.95
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 3 o",
+      "from": [
+        6.4,
+        12.5,
+        4.95
+      ],
+      "to": [
+        7.31,
+        13.1,
+        6.05
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 3 l",
+      "from": [
+        8.69,
+        12.5,
+        4.95
+      ],
+      "to": [
+        9.6,
+        13.1,
+        6.05
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 3 canto 0",
+      "from": [
+        6.778,
+        12.5,
+        4.428
+      ],
+      "to": [
+        7.31,
+        13.1,
+        4.96
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 3 canto 1",
+      "from": [
+        8.69,
+        12.5,
+        4.428
+      ],
+      "to": [
+        9.222,
+        13.1,
+        4.96
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 3 canto 2",
+      "from": [
+        6.778,
+        12.5,
+        6.04
+      ],
+      "to": [
+        7.31,
+        13.1,
+        6.572
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cabeca 3 canto 3",
+      "from": [
+        8.69,
+        12.5,
+        6.04
+      ],
+      "to": [
+        9.222,
+        13.1,
+        6.572
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "bico superior",
+      "from": [
+        6.1,
+        9.55,
+        0.45
+      ],
+      "to": [
+        9.9,
+        10.45,
+        2.85
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#beak"
+        },
+        "south": {
+          "texture": "#beak"
+        },
+        "west": {
+          "texture": "#beak"
+        },
+        "east": {
+          "texture": "#beak"
+        },
+        "up": {
+          "texture": "#beak"
+        },
+        "down": {
+          "texture": "#beak_dark"
+        }
+      }
+    },
+    {
+      "name": "ponta do bico",
+      "from": [
+        6.65,
+        9.62,
+        0.1
+      ],
+      "to": [
+        9.35,
+        10.32,
+        0.55
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#beak"
+        },
+        "south": {
+          "texture": "#beak"
+        },
+        "west": {
+          "texture": "#beak"
+        },
+        "east": {
+          "texture": "#beak"
+        },
+        "up": {
+          "texture": "#beak"
+        },
+        "down": {
+          "texture": "#beak_dark"
+        }
+      }
+    },
+    {
+      "name": "bico inferior",
+      "from": [
+        6.45,
+        8.95,
+        0.7
+      ],
+      "to": [
+        9.55,
+        9.6,
+        2.7
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#beak_dark"
+        },
+        "south": {
+          "texture": "#beak_dark"
+        },
+        "west": {
+          "texture": "#beak_dark"
+        },
+        "east": {
+          "texture": "#beak_dark"
+        },
+        "up": {
+          "texture": "#beak"
+        },
+        "down": {
+          "texture": "#beak_dark"
+        }
+      }
+    },
+    {
+      "name": "narina",
+      "from": [
+        7.05,
+        10.3,
+        1.05
+      ],
+      "to": [
+        8.95,
+        10.44,
+        1.85
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#beak_dark"
+        },
+        "south": {
+          "texture": "#beak_dark"
+        },
+        "west": {
+          "texture": "#beak_dark"
+        },
+        "east": {
+          "texture": "#beak_dark"
+        },
+        "up": {
+          "texture": "#beak_dark"
+        },
+        "down": {
+          "texture": "#beak_dark"
+        }
+      }
+    },
+    {
+      "name": "asa e",
+      "from": [
+        3.173,
+        2.85,
+        5.1
+      ],
+      "to": [
+        3.277,
+        5.25,
+        10.3
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa e o",
+      "from": [
+        2.7,
+        2.85,
+        5.572
+      ],
+      "to": [
+        3.183,
+        5.25,
+        9.828
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa e l",
+      "from": [
+        3.268,
+        2.85,
+        5.572
+      ],
+      "to": [
+        3.75,
+        5.25,
+        9.828
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa e canto 0",
+      "from": [
+        2.898,
+        2.85,
+        5.298
+      ],
+      "to": [
+        3.183,
+        5.25,
+        5.582
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa e canto 1",
+      "from": [
+        3.268,
+        2.85,
+        5.298
+      ],
+      "to": [
+        3.552,
+        5.25,
+        5.582
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa e canto 2",
+      "from": [
+        2.898,
+        2.85,
+        9.818
+      ],
+      "to": [
+        3.183,
+        5.25,
+        10.102
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa e canto 3",
+      "from": [
+        3.268,
+        2.85,
+        9.818
+      ],
+      "to": [
+        3.552,
+        5.25,
+        10.102
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "pena e",
+      "from": [
+        2.8,
+        3.4,
+        5.9
+      ],
+      "to": [
+        3.65,
+        4.05,
+        9.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_light"
+        },
+        "south": {
+          "texture": "#yellow_light"
+        },
+        "west": {
+          "texture": "#yellow_light"
+        },
+        "east": {
+          "texture": "#yellow_light"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "asa d",
+      "from": [
+        12.723,
+        2.85,
+        5.1
+      ],
+      "to": [
+        12.828,
+        5.25,
+        10.3
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa d o",
+      "from": [
+        12.25,
+        2.85,
+        5.572
+      ],
+      "to": [
+        12.732,
+        5.25,
+        9.828
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa d l",
+      "from": [
+        12.818,
+        2.85,
+        5.572
+      ],
+      "to": [
+        13.3,
+        5.25,
+        9.828
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa d canto 0",
+      "from": [
+        12.448,
+        2.85,
+        5.298
+      ],
+      "to": [
+        12.732,
+        5.25,
+        5.582
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa d canto 1",
+      "from": [
+        12.818,
+        2.85,
+        5.298
+      ],
+      "to": [
+        13.102,
+        5.25,
+        5.582
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa d canto 2",
+      "from": [
+        12.448,
+        2.85,
+        9.818
+      ],
+      "to": [
+        12.732,
+        5.25,
+        10.102
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "asa d canto 3",
+      "from": [
+        12.818,
+        2.85,
+        9.818
+      ],
+      "to": [
+        13.102,
+        5.25,
+        10.102
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "pena d",
+      "from": [
+        12.35,
+        3.4,
+        5.9
+      ],
+      "to": [
+        13.2,
+        4.05,
+        9.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_light"
+        },
+        "south": {
+          "texture": "#yellow_light"
+        },
+        "west": {
+          "texture": "#yellow_light"
+        },
+        "east": {
+          "texture": "#yellow_light"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cauda",
+      "from": [
+        7.3,
+        4.05,
+        11.7
+      ],
+      "to": [
+        8.7,
+        6.2,
+        13.6
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "cauda o",
+      "from": [
+        6.45,
+        4.05,
+        12.55
+      ],
+      "to": [
+        7.31,
+        6.2,
+        12.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "cauda l",
+      "from": [
+        8.69,
+        4.05,
+        12.55
+      ],
+      "to": [
+        9.55,
+        6.2,
+        12.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "cauda canto 0",
+      "from": [
+        6.807,
+        4.05,
+        12.057
+      ],
+      "to": [
+        7.31,
+        6.2,
+        12.56
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "cauda canto 1",
+      "from": [
+        8.69,
+        4.05,
+        12.057
+      ],
+      "to": [
+        9.193,
+        6.2,
+        12.56
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "cauda canto 2",
+      "from": [
+        6.807,
+        4.05,
+        12.74
+      ],
+      "to": [
+        7.31,
+        6.2,
+        13.243
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "cauda canto 3",
+      "from": [
+        8.69,
+        4.05,
+        12.74
+      ],
+      "to": [
+        9.193,
+        6.2,
+        13.243
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow"
+        },
+        "south": {
+          "texture": "#yellow"
+        },
+        "west": {
+          "texture": "#yellow"
+        },
+        "east": {
+          "texture": "#yellow"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow_dark"
+        }
+      }
+    },
+    {
+      "name": "cauda ponta",
+      "from": [
+        7.6,
+        5.7,
+        12.6
+      ],
+      "to": [
+        8.4,
+        7.3,
+        14.1
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_light"
+        },
+        "south": {
+          "texture": "#yellow_light"
+        },
+        "west": {
+          "texture": "#yellow_light"
+        },
+        "east": {
+          "texture": "#yellow_light"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cauda ponta o",
+      "from": [
+        6.95,
+        5.7,
+        13.25
+      ],
+      "to": [
+        7.61,
+        7.3,
+        13.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_light"
+        },
+        "south": {
+          "texture": "#yellow_light"
+        },
+        "west": {
+          "texture": "#yellow_light"
+        },
+        "east": {
+          "texture": "#yellow_light"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cauda ponta l",
+      "from": [
+        8.39,
+        5.7,
+        13.25
+      ],
+      "to": [
+        9.05,
+        7.3,
+        13.45
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_light"
+        },
+        "south": {
+          "texture": "#yellow_light"
+        },
+        "west": {
+          "texture": "#yellow_light"
+        },
+        "east": {
+          "texture": "#yellow_light"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cauda ponta canto 0",
+      "from": [
+        7.223,
+        5.7,
+        12.873
+      ],
+      "to": [
+        7.61,
+        7.3,
+        13.26
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_light"
+        },
+        "south": {
+          "texture": "#yellow_light"
+        },
+        "west": {
+          "texture": "#yellow_light"
+        },
+        "east": {
+          "texture": "#yellow_light"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cauda ponta canto 1",
+      "from": [
+        8.39,
+        5.7,
+        12.873
+      ],
+      "to": [
+        8.777,
+        7.3,
+        13.26
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_light"
+        },
+        "south": {
+          "texture": "#yellow_light"
+        },
+        "west": {
+          "texture": "#yellow_light"
+        },
+        "east": {
+          "texture": "#yellow_light"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cauda ponta canto 2",
+      "from": [
+        7.223,
+        5.7,
+        13.44
+      ],
+      "to": [
+        7.61,
+        7.3,
+        13.827
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_light"
+        },
+        "south": {
+          "texture": "#yellow_light"
+        },
+        "west": {
+          "texture": "#yellow_light"
+        },
+        "east": {
+          "texture": "#yellow_light"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "cauda ponta canto 3",
+      "from": [
+        8.39,
+        5.7,
+        13.44
+      ],
+      "to": [
+        8.777,
+        7.3,
+        13.827
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#yellow_light"
+        },
+        "south": {
+          "texture": "#yellow_light"
+        },
+        "west": {
+          "texture": "#yellow_light"
+        },
+        "east": {
+          "texture": "#yellow_light"
+        },
+        "up": {
+          "texture": "#yellow_light"
+        },
+        "down": {
+          "texture": "#yellow"
+        }
+      }
+    },
+    {
+      "name": "olho e",
+      "from": [
+        5.65,
+        10.75,
+        2.45
+      ],
+      "to": [
+        7.05,
+        12.25,
+        2.51
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#white"
+        }
+      }
+    },
+    {
+      "name": "pupila e",
+      "from": [
+        6.0,
+        10.95,
+        2.38
+      ],
+      "to": [
+        6.75,
+        11.8,
+        2.44
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "brilho e",
+      "from": [
+        6.4,
+        11.55,
+        2.32
+      ],
+      "to": [
+        6.7,
+        11.9,
+        2.38
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#white"
+        }
+      }
+    },
+    {
+      "name": "olho d",
+      "from": [
+        8.95,
+        10.75,
+        2.45
+      ],
+      "to": [
+        10.35,
+        12.25,
+        2.51
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#white"
+        }
+      }
+    },
+    {
+      "name": "pupila d",
+      "from": [
+        9.3,
+        10.95,
+        2.38
+      ],
+      "to": [
+        10.05,
+        11.8,
+        2.44
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#black"
+        }
+      }
+    },
+    {
+      "name": "brilho d",
+      "from": [
+        9.7,
+        11.55,
+        2.32
+      ],
+      "to": [
+        10.0,
+        11.9,
+        2.38
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#white"
+        }
+      }
+    }
+  ]
+}

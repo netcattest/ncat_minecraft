@@ -1,0 +1,1137 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "bowl": "ncat_minecraft:block/toilet/bowl",
+    "bowl_deep": "ncat_minecraft:block/toilet/bowl_deep",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "water": "ncat_minecraft:block/toilet/water",
+    "water_deep": "ncat_minecraft:block/toilet/water_deep",
+    "water_shine": "ncat_minecraft:block/toilet/water_shine",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "caixa miolo",
+      "from": [
+        1.901,
+        0,
+        9.539
+      ],
+      "to": [
+        14.099,
+        5.238,
+        16.493
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            1.65,
+            13.35,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            1.65,
+            13.35,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.35,
+            1.65,
+            15.45,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.35,
+            1.65,
+            15.45,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            2.65,
+            9.35,
+            13.35,
+            15.45
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.65,
+            9.35,
+            13.35,
+            15.45
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa oeste",
+      "from": [
+        1.046,
+        0,
+        10.394
+      ],
+      "to": [
+        1.958,
+        5.238,
+        15.638
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            1.65,
+            2.7,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            1.65,
+            2.7,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            10.1,
+            1.65,
+            14.7,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            10.1,
+            1.65,
+            14.7,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            1.9,
+            10.1,
+            2.7,
+            14.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.9,
+            10.1,
+            2.7,
+            14.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa leste",
+      "from": [
+        14.042,
+        0,
+        10.394
+      ],
+      "to": [
+        14.954,
+        5.238,
+        15.638
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            1.65,
+            14.1,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            1.65,
+            14.1,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            10.1,
+            1.65,
+            14.7,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            10.1,
+            1.65,
+            14.7,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            10.1,
+            14.1,
+            14.7
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.3,
+            10.1,
+            14.1,
+            14.7
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa canto 0",
+      "from": [
+        1.405,
+        0,
+        9.898
+      ],
+      "to": [
+        1.958,
+        5.238,
+        10.451
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            1.65,
+            2.7,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            1.65,
+            2.7,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.665,
+            1.65,
+            10.15,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.665,
+            1.65,
+            10.15,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            9.665,
+            2.7,
+            10.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.215,
+            9.665,
+            2.7,
+            10.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa canto 1",
+      "from": [
+        14.042,
+        0,
+        9.898
+      ],
+      "to": [
+        14.595,
+        5.238,
+        10.451
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            1.65,
+            13.785,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            1.65,
+            13.785,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.665,
+            1.65,
+            10.15,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.665,
+            1.65,
+            10.15,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            9.665,
+            13.785,
+            10.15
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.3,
+            9.665,
+            13.785,
+            10.15
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa canto 2",
+      "from": [
+        1.405,
+        0,
+        15.581
+      ],
+      "to": [
+        1.958,
+        5.238,
+        16.134
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            1.65,
+            2.7,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            1.65,
+            2.7,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            14.65,
+            1.65,
+            15.135,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            14.65,
+            1.65,
+            15.135,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            2.215,
+            14.65,
+            2.7,
+            15.135
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.215,
+            14.65,
+            2.7,
+            15.135
+          ]
+        }
+      }
+    },
+    {
+      "name": "caixa canto 3",
+      "from": [
+        14.042,
+        0,
+        15.581
+      ],
+      "to": [
+        14.595,
+        5.238,
+        16.134
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            1.65,
+            13.785,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            1.65,
+            13.785,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            14.65,
+            1.65,
+            15.135,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            14.65,
+            1.65,
+            15.135,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#porcelain",
+          "uv": [
+            13.3,
+            14.65,
+            13.785,
+            15.135
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.3,
+            14.65,
+            13.785,
+            15.135
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa da caixa miolo",
+      "from": [
+        1.559,
+        4.986,
+        9.197
+      ],
+      "to": [
+        14.441,
+        7.118,
+        16.892
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            2.35,
+            0.38,
+            13.65,
+            1.82
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            2.35,
+            0.38,
+            13.65,
+            1.82
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.05,
+            0.38,
+            15.8,
+            1.82
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.05,
+            0.38,
+            15.8,
+            1.82
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            2.35,
+            9.05,
+            13.65,
+            15.8
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.35,
+            9.05,
+            13.65,
+            15.8
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa da caixa oeste",
+      "from": [
+        0.533,
+        4.986,
+        10.223
+      ],
+      "to": [
+        1.616,
+        7.118,
+        15.866
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.45,
+            0.38,
+            2.4,
+            1.82
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.45,
+            0.38,
+            2.4,
+            1.82
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.95,
+            0.38,
+            14.9,
+            1.82
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.95,
+            0.38,
+            14.9,
+            1.82
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.45,
+            9.95,
+            2.4,
+            14.9
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.45,
+            9.95,
+            2.4,
+            14.9
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa da caixa leste",
+      "from": [
+        14.384,
+        4.986,
+        10.223
+      ],
+      "to": [
+        15.467,
+        7.118,
+        15.866
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.6,
+            0.38,
+            14.55,
+            1.82
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.6,
+            0.38,
+            14.55,
+            1.82
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.95,
+            0.38,
+            14.9,
+            1.82
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.95,
+            0.38,
+            14.9,
+            1.82
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.6,
+            9.95,
+            14.55,
+            14.9
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.6,
+            9.95,
+            14.55,
+            14.9
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa da caixa canto 0",
+      "from": [
+        0.964,
+        4.986,
+        9.628
+      ],
+      "to": [
+        1.616,
+        7.118,
+        10.28
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.828,
+            0.38,
+            2.4,
+            1.82
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.828,
+            0.38,
+            2.4,
+            1.82
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.428,
+            0.38,
+            10.0,
+            1.82
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.428,
+            0.38,
+            10.0,
+            1.82
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.828,
+            9.428,
+            2.4,
+            10.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.828,
+            9.428,
+            2.4,
+            10.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa da caixa canto 1",
+      "from": [
+        14.384,
+        4.986,
+        9.628
+      ],
+      "to": [
+        15.036,
+        7.118,
+        10.28
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.6,
+            0.38,
+            14.172,
+            1.82
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.6,
+            0.38,
+            14.172,
+            1.82
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            9.428,
+            0.38,
+            10.0,
+            1.82
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            9.428,
+            0.38,
+            10.0,
+            1.82
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.6,
+            9.428,
+            14.172,
+            10.0
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.6,
+            9.428,
+            14.172,
+            10.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa da caixa canto 2",
+      "from": [
+        0.964,
+        4.986,
+        15.809
+      ],
+      "to": [
+        1.616,
+        7.118,
+        16.461
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            1.828,
+            0.38,
+            2.4,
+            1.82
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            1.828,
+            0.38,
+            2.4,
+            1.82
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            14.85,
+            0.38,
+            15.422,
+            1.82
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            14.85,
+            0.38,
+            15.422,
+            1.82
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            1.828,
+            14.85,
+            2.4,
+            15.422
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            1.828,
+            14.85,
+            2.4,
+            15.422
+          ]
+        }
+      }
+    },
+    {
+      "name": "tampa da caixa canto 3",
+      "from": [
+        14.384,
+        4.986,
+        15.809
+      ],
+      "to": [
+        15.036,
+        7.118,
+        16.461
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain",
+          "uv": [
+            13.6,
+            0.38,
+            14.172,
+            1.82
+          ]
+        },
+        "south": {
+          "texture": "#porcelain",
+          "uv": [
+            13.6,
+            0.38,
+            14.172,
+            1.82
+          ]
+        },
+        "west": {
+          "texture": "#porcelain",
+          "uv": [
+            14.85,
+            0.38,
+            15.422,
+            1.82
+          ]
+        },
+        "east": {
+          "texture": "#porcelain",
+          "uv": [
+            14.85,
+            0.38,
+            15.422,
+            1.82
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_bright",
+          "uv": [
+            13.6,
+            14.85,
+            14.172,
+            15.422
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            13.6,
+            14.85,
+            14.172,
+            15.422
+          ]
+        }
+      }
+    },
+    {
+      "name": "friso da caixa",
+      "from": [
+        1.217,
+        4.72,
+        9.368
+      ],
+      "to": [
+        14.783,
+        5.134,
+        16.379
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.05,
+            1.72,
+            13.95,
+            2.0
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.05,
+            1.72,
+            13.95,
+            2.0
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.2,
+            1.72,
+            15.35,
+            2.0
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            9.2,
+            1.72,
+            15.35,
+            2.0
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.05,
+            9.2,
+            13.95,
+            15.35
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            2.05,
+            9.2,
+            13.95,
+            15.35
+          ]
+        }
+      }
+    },
+    {
+      "name": "base da alavanca",
+      "from": [
+        -0.151,
+        0,
+        12.047
+      ],
+      "to": [
+        1.331,
+        1.982,
+        14.213
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            0.85,
+            3.85,
+            2.15,
+            5.189
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            0.85,
+            3.85,
+            2.15,
+            5.189
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            11.55,
+            3.85,
+            13.45,
+            5.189
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            11.55,
+            3.85,
+            13.45,
+            5.189
+          ]
+        },
+        "up": {
+          "texture": "#metal",
+          "uv": [
+            0.85,
+            11.55,
+            2.15,
+            13.45
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            0.85,
+            11.55,
+            2.15,
+            13.45
+          ]
+        }
+      }
+    }
+  ]
+}

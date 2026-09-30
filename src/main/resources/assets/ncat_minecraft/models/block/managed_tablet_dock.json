@@ -1,0 +1,543 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "casing": "ncat_minecraft:block/managed_tablet/casing",
+    "rim": "ncat_minecraft:block/managed_tablet/rim",
+    "edge": "ncat_minecraft:block/managed_tablet/edge",
+    "rubber": "ncat_minecraft:block/managed_tablet/rubber",
+    "screen": "ncat_minecraft:block/managed_tablet/screen",
+    "serial": "ncat_minecraft:block/managed_switch/serial",
+    "pin": "ncat_minecraft:block/network_switch/pin",
+    "particle": "ncat_minecraft:block/managed_tablet/casing"
+  },
+  "elements": [
+    {
+      "name": "weighted dock",
+      "from": [
+        1.2,
+        0.23,
+        2.0
+      ],
+      "to": [
+        14.8,
+        1.15,
+        14.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#casing"
+        },
+        "south": {
+          "texture": "#casing"
+        },
+        "east": {
+          "texture": "#casing"
+        },
+        "west": {
+          "texture": "#casing"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "name": "dock front lip",
+      "from": [
+        1.4,
+        1.1,
+        2.0
+      ],
+      "to": [
+        14.6,
+        1.42,
+        3.3
+      ],
+      "faces": {
+        "north": {
+          "texture": "#edge"
+        },
+        "south": {
+          "texture": "#edge"
+        },
+        "east": {
+          "texture": "#edge"
+        },
+        "west": {
+          "texture": "#edge"
+        },
+        "up": {
+          "texture": "#edge"
+        },
+        "down": {
+          "texture": "#edge"
+        }
+      }
+    },
+    {
+      "name": "left support",
+      "from": [
+        3.1,
+        1.0,
+        9.6
+      ],
+      "to": [
+        4.25,
+        4.35,
+        10.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#edge"
+        },
+        "south": {
+          "texture": "#edge"
+        },
+        "east": {
+          "texture": "#edge"
+        },
+        "west": {
+          "texture": "#edge"
+        },
+        "up": {
+          "texture": "#edge"
+        },
+        "down": {
+          "texture": "#edge"
+        }
+      }
+    },
+    {
+      "name": "right support",
+      "from": [
+        11.75,
+        1.0,
+        9.6
+      ],
+      "to": [
+        12.9,
+        4.35,
+        10.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#edge"
+        },
+        "south": {
+          "texture": "#edge"
+        },
+        "east": {
+          "texture": "#edge"
+        },
+        "west": {
+          "texture": "#edge"
+        },
+        "up": {
+          "texture": "#edge"
+        },
+        "down": {
+          "texture": "#edge"
+        }
+      }
+    },
+    {
+      "name": "rear hinge",
+      "from": [
+        2.7,
+        1.0,
+        11.45
+      ],
+      "to": [
+        13.3,
+        2.0,
+        12.55
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "console boss",
+      "from": [
+        13.35,
+        1.1,
+        5.9
+      ],
+      "to": [
+        14.95,
+        3.05,
+        10.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#casing"
+        },
+        "south": {
+          "texture": "#casing"
+        },
+        "east": {
+          "texture": "#casing"
+        },
+        "west": {
+          "texture": "#casing"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "name": "console bevel",
+      "from": [
+        13.55,
+        2.95,
+        6.1
+      ],
+      "to": [
+        14.95,
+        3.16,
+        9.9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#edge"
+        },
+        "south": {
+          "texture": "#edge"
+        },
+        "east": {
+          "texture": "#edge"
+        },
+        "west": {
+          "texture": "#edge"
+        },
+        "up": {
+          "texture": "#edge"
+        },
+        "down": {
+          "texture": "#edge"
+        }
+      }
+    },
+    {
+      "name": "serial jack rim",
+      "from": [
+        14.9,
+        1.35,
+        6.4
+      ],
+      "to": [
+        15.35,
+        2.85,
+        9.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rim"
+        },
+        "south": {
+          "texture": "#rim"
+        },
+        "east": {
+          "texture": "#rim"
+        },
+        "west": {
+          "texture": "#rim"
+        },
+        "up": {
+          "texture": "#rim"
+        },
+        "down": {
+          "texture": "#rim"
+        }
+      }
+    },
+    {
+      "name": "serial receptacle",
+      "from": [
+        15.3,
+        1.55,
+        6.7
+      ],
+      "to": [
+        15.52,
+        2.62,
+        9.3
+      ],
+      "faces": {
+        "north": {
+          "texture": "#serial"
+        },
+        "south": {
+          "texture": "#serial"
+        },
+        "east": {
+          "texture": "#serial"
+        },
+        "west": {
+          "texture": "#serial"
+        },
+        "up": {
+          "texture": "#serial"
+        },
+        "down": {
+          "texture": "#serial"
+        }
+      }
+    },
+    {
+      "name": "serial jack tab",
+      "from": [
+        15.48,
+        1.62,
+        7.45
+      ],
+      "to": [
+        15.6,
+        1.92,
+        8.55
+      ],
+      "faces": {
+        "north": {
+          "texture": "#edge"
+        },
+        "south": {
+          "texture": "#edge"
+        },
+        "east": {
+          "texture": "#edge"
+        },
+        "west": {
+          "texture": "#edge"
+        },
+        "up": {
+          "texture": "#edge"
+        },
+        "down": {
+          "texture": "#edge"
+        }
+      }
+    },
+    {
+      "name": "serial contacts",
+      "from": [
+        15.46,
+        2.25,
+        7.1
+      ],
+      "to": [
+        15.56,
+        2.48,
+        8.9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "name": "console label",
+      "from": [
+        13.6,
+        3.1,
+        6.6
+      ],
+      "to": [
+        14.85,
+        3.18,
+        9.4
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rubber"
+        },
+        "south": {
+          "texture": "#rubber"
+        },
+        "east": {
+          "texture": "#rubber"
+        },
+        "west": {
+          "texture": "#rubber"
+        },
+        "up": {
+          "texture": "#rubber"
+        },
+        "down": {
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "rubber foot",
+      "from": [
+        1.55,
+        0,
+        2.0
+      ],
+      "to": [
+        2.35,
+        0.28,
+        3.15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rubber"
+        },
+        "south": {
+          "texture": "#rubber"
+        },
+        "east": {
+          "texture": "#rubber"
+        },
+        "west": {
+          "texture": "#rubber"
+        },
+        "up": {
+          "texture": "#rubber"
+        },
+        "down": {
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "rubber foot",
+      "from": [
+        1.55,
+        0,
+        12.8
+      ],
+      "to": [
+        2.35,
+        0.28,
+        13.950000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rubber"
+        },
+        "south": {
+          "texture": "#rubber"
+        },
+        "east": {
+          "texture": "#rubber"
+        },
+        "west": {
+          "texture": "#rubber"
+        },
+        "up": {
+          "texture": "#rubber"
+        },
+        "down": {
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "rubber foot",
+      "from": [
+        13.65,
+        0,
+        2.0
+      ],
+      "to": [
+        14.450000000000001,
+        0.28,
+        3.15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rubber"
+        },
+        "south": {
+          "texture": "#rubber"
+        },
+        "east": {
+          "texture": "#rubber"
+        },
+        "west": {
+          "texture": "#rubber"
+        },
+        "up": {
+          "texture": "#rubber"
+        },
+        "down": {
+          "texture": "#rubber"
+        }
+      }
+    },
+    {
+      "name": "rubber foot",
+      "from": [
+        13.65,
+        0,
+        12.8
+      ],
+      "to": [
+        14.450000000000001,
+        0.28,
+        13.950000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rubber"
+        },
+        "south": {
+          "texture": "#rubber"
+        },
+        "east": {
+          "texture": "#rubber"
+        },
+        "west": {
+          "texture": "#rubber"
+        },
+        "up": {
+          "texture": "#rubber"
+        },
+        "down": {
+          "texture": "#rubber"
+        }
+      }
+    }
+  ]
+}

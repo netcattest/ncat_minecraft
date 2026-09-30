@@ -1,0 +1,177 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "porcelain": "ncat_minecraft:block/toilet/porcelain",
+    "porcelain_dark": "ncat_minecraft:block/toilet/porcelain_dark",
+    "porcelain_bright": "ncat_minecraft:block/toilet/porcelain_bright",
+    "bowl": "ncat_minecraft:block/toilet/bowl",
+    "bowl_deep": "ncat_minecraft:block/toilet/bowl_deep",
+    "metal": "ncat_minecraft:block/toilet/metal",
+    "water": "ncat_minecraft:block/toilet/water",
+    "water_deep": "ncat_minecraft:block/toilet/water_deep",
+    "water_shine": "ncat_minecraft:block/toilet/water_shine",
+    "particle": "ncat_minecraft:block/toilet/porcelain"
+  },
+  "elements": [
+    {
+      "name": "alavanca",
+      "from": [
+        -1.063,
+        0.206,
+        12.275
+      ],
+      "to": [
+        0.476,
+        1.494,
+        13.928
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#metal",
+          "uv": [
+            0.05,
+            4.18,
+            1.4,
+            5.05
+          ]
+        },
+        "south": {
+          "texture": "#metal",
+          "uv": [
+            0.05,
+            4.18,
+            1.4,
+            5.05
+          ]
+        },
+        "west": {
+          "texture": "#metal",
+          "uv": [
+            11.75,
+            4.18,
+            13.2,
+            5.05
+          ]
+        },
+        "east": {
+          "texture": "#metal",
+          "uv": [
+            11.75,
+            4.18,
+            13.2,
+            5.05
+          ]
+        },
+        "up": {
+          "texture": "#metal",
+          "uv": [
+            0.05,
+            11.75,
+            1.4,
+            13.2
+          ]
+        },
+        "down": {
+          "texture": "#metal",
+          "uv": [
+            0.05,
+            11.75,
+            1.4,
+            13.2
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          0.419,
+          0.872,
+          13.13
+        ],
+        "axis": "z",
+        "angle": 22.5,
+        "rescale": true
+      }
+    },
+    {
+      "name": "ponta da alavanca",
+      "from": [
+        -1.063,
+        0.058,
+        12.446
+      ],
+      "to": [
+        -0.573,
+        1.642,
+        13.757
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            0.05,
+            4.08,
+            0.48,
+            5.15
+          ]
+        },
+        "south": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            0.05,
+            4.08,
+            0.48,
+            5.15
+          ]
+        },
+        "west": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.9,
+            4.08,
+            13.05,
+            5.15
+          ]
+        },
+        "east": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            11.9,
+            4.08,
+            13.05,
+            5.15
+          ]
+        },
+        "up": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            0.05,
+            11.9,
+            0.48,
+            13.05
+          ]
+        },
+        "down": {
+          "texture": "#porcelain_dark",
+          "uv": [
+            0.05,
+            11.9,
+            0.48,
+            13.05
+          ]
+        }
+      },
+      "rotation": {
+        "origin": [
+          0.419,
+          0.872,
+          13.13
+        ],
+        "axis": "z",
+        "angle": 22.5,
+        "rescale": true
+      }
+    }
+  ]
+}

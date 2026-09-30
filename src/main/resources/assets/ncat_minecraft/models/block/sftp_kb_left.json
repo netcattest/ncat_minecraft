@@ -1,0 +1,3281 @@
+{
+  "ambientocclusion": true,
+  "textures": {
+    "body": "minecraft:block/black_concrete",
+    "deck": "minecraft:block/cyan_terracotta",
+    "key": "minecraft:block/white_concrete",
+    "dark": "minecraft:block/black_concrete",
+    "accent": "minecraft:block/cyan_concrete",
+    "led": "minecraft:block/cyan_concrete",
+    "particle": "minecraft:block/black_concrete"
+  },
+  "elements": [
+    {
+      "name": "carcaça",
+      "from": [
+        0,
+        0,
+        3
+      ],
+      "to": [
+        16,
+        0.7,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "superfície",
+      "from": [
+        0.3,
+        0.7,
+        3.3
+      ],
+      "to": [
+        15.7,
+        0.95,
+        15.7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#deck"
+        },
+        "south": {
+          "texture": "#deck"
+        },
+        "east": {
+          "texture": "#deck"
+        },
+        "west": {
+          "texture": "#deck"
+        },
+        "up": {
+          "texture": "#deck"
+        },
+        "down": {
+          "texture": "#deck"
+        }
+      }
+    },
+    {
+      "name": "linha_frontal",
+      "from": [
+        0.3,
+        0.95,
+        3.3
+      ],
+      "to": [
+        15.7,
+        1.18,
+        3.58
+      ],
+      "faces": {
+        "north": {
+          "texture": "#accent"
+        },
+        "south": {
+          "texture": "#accent"
+        },
+        "east": {
+          "texture": "#accent"
+        },
+        "west": {
+          "texture": "#accent"
+        },
+        "up": {
+          "texture": "#accent"
+        },
+        "down": {
+          "texture": "#accent"
+        }
+      }
+    },
+    {
+      "name": "linha_traseira",
+      "from": [
+        0.3,
+        0.95,
+        15.4
+      ],
+      "to": [
+        15.7,
+        1.14,
+        15.7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#accent"
+        },
+        "south": {
+          "texture": "#accent"
+        },
+        "east": {
+          "texture": "#accent"
+        },
+        "west": {
+          "texture": "#accent"
+        },
+        "up": {
+          "texture": "#accent"
+        },
+        "down": {
+          "texture": "#accent"
+        }
+      }
+    },
+    {
+      "name": "base_0_0",
+      "from": [
+        0.48,
+        0.95,
+        4.2
+      ],
+      "to": [
+        1.73,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_0",
+      "from": [
+        0.55,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        1.66,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#accent"
+        },
+        "south": {
+          "texture": "#accent"
+        },
+        "east": {
+          "texture": "#accent"
+        },
+        "west": {
+          "texture": "#accent"
+        },
+        "up": {
+          "texture": "#accent"
+        },
+        "down": {
+          "texture": "#accent"
+        }
+      }
+    },
+    {
+      "name": "base_0_1",
+      "from": [
+        2.0,
+        0.95,
+        4.2
+      ],
+      "to": [
+        3.25,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_1",
+      "from": [
+        2.07,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        3.1799999999999997,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dark"
+        },
+        "south": {
+          "texture": "#dark"
+        },
+        "east": {
+          "texture": "#dark"
+        },
+        "west": {
+          "texture": "#dark"
+        },
+        "up": {
+          "texture": "#dark"
+        },
+        "down": {
+          "texture": "#dark"
+        }
+      }
+    },
+    {
+      "name": "base_0_2",
+      "from": [
+        3.52,
+        0.95,
+        4.2
+      ],
+      "to": [
+        4.77,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_2",
+      "from": [
+        3.59,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        4.7,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dark"
+        },
+        "south": {
+          "texture": "#dark"
+        },
+        "east": {
+          "texture": "#dark"
+        },
+        "west": {
+          "texture": "#dark"
+        },
+        "up": {
+          "texture": "#dark"
+        },
+        "down": {
+          "texture": "#dark"
+        }
+      }
+    },
+    {
+      "name": "base_0_3",
+      "from": [
+        5.040000000000001,
+        0.95,
+        4.2
+      ],
+      "to": [
+        6.290000000000001,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_3",
+      "from": [
+        5.110000000000001,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        6.220000000000001,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dark"
+        },
+        "south": {
+          "texture": "#dark"
+        },
+        "east": {
+          "texture": "#dark"
+        },
+        "west": {
+          "texture": "#dark"
+        },
+        "up": {
+          "texture": "#dark"
+        },
+        "down": {
+          "texture": "#dark"
+        }
+      }
+    },
+    {
+      "name": "base_0_4",
+      "from": [
+        6.5600000000000005,
+        0.95,
+        4.2
+      ],
+      "to": [
+        7.8100000000000005,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_4",
+      "from": [
+        6.630000000000001,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        7.74,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dark"
+        },
+        "south": {
+          "texture": "#dark"
+        },
+        "east": {
+          "texture": "#dark"
+        },
+        "west": {
+          "texture": "#dark"
+        },
+        "up": {
+          "texture": "#dark"
+        },
+        "down": {
+          "texture": "#dark"
+        }
+      }
+    },
+    {
+      "name": "base_0_5",
+      "from": [
+        8.08,
+        0.95,
+        4.2
+      ],
+      "to": [
+        9.33,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_5",
+      "from": [
+        8.15,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        9.26,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dark"
+        },
+        "south": {
+          "texture": "#dark"
+        },
+        "east": {
+          "texture": "#dark"
+        },
+        "west": {
+          "texture": "#dark"
+        },
+        "up": {
+          "texture": "#dark"
+        },
+        "down": {
+          "texture": "#dark"
+        }
+      }
+    },
+    {
+      "name": "base_0_6",
+      "from": [
+        9.600000000000001,
+        0.95,
+        4.2
+      ],
+      "to": [
+        10.850000000000001,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_6",
+      "from": [
+        9.670000000000002,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        10.780000000000001,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dark"
+        },
+        "south": {
+          "texture": "#dark"
+        },
+        "east": {
+          "texture": "#dark"
+        },
+        "west": {
+          "texture": "#dark"
+        },
+        "up": {
+          "texture": "#dark"
+        },
+        "down": {
+          "texture": "#dark"
+        }
+      }
+    },
+    {
+      "name": "base_0_7",
+      "from": [
+        11.120000000000001,
+        0.95,
+        4.2
+      ],
+      "to": [
+        12.370000000000001,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_7",
+      "from": [
+        11.190000000000001,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        12.3,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dark"
+        },
+        "south": {
+          "texture": "#dark"
+        },
+        "east": {
+          "texture": "#dark"
+        },
+        "west": {
+          "texture": "#dark"
+        },
+        "up": {
+          "texture": "#dark"
+        },
+        "down": {
+          "texture": "#dark"
+        }
+      }
+    },
+    {
+      "name": "base_0_8",
+      "from": [
+        12.64,
+        0.95,
+        4.2
+      ],
+      "to": [
+        13.89,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_8",
+      "from": [
+        12.71,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        13.82,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dark"
+        },
+        "south": {
+          "texture": "#dark"
+        },
+        "east": {
+          "texture": "#dark"
+        },
+        "west": {
+          "texture": "#dark"
+        },
+        "up": {
+          "texture": "#dark"
+        },
+        "down": {
+          "texture": "#dark"
+        }
+      }
+    },
+    {
+      "name": "base_0_9",
+      "from": [
+        14.16,
+        0.95,
+        4.2
+      ],
+      "to": [
+        15.41,
+        1.26,
+        5.73
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_0_9",
+      "from": [
+        14.23,
+        1.26,
+        4.2700000000000005
+      ],
+      "to": [
+        15.34,
+        1.62,
+        5.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#dark"
+        },
+        "south": {
+          "texture": "#dark"
+        },
+        "east": {
+          "texture": "#dark"
+        },
+        "west": {
+          "texture": "#dark"
+        },
+        "up": {
+          "texture": "#dark"
+        },
+        "down": {
+          "texture": "#dark"
+        }
+      }
+    },
+    {
+      "name": "base_1_0",
+      "from": [
+        0.48,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        1.73,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_0",
+      "from": [
+        0.55,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        1.66,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_1_1",
+      "from": [
+        2.0,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        3.25,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_1",
+      "from": [
+        2.07,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        3.1799999999999997,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_1_2",
+      "from": [
+        3.52,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        4.77,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_2",
+      "from": [
+        3.59,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        4.7,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_1_3",
+      "from": [
+        5.040000000000001,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        6.290000000000001,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_3",
+      "from": [
+        5.110000000000001,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        6.220000000000001,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_1_4",
+      "from": [
+        6.5600000000000005,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        7.8100000000000005,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_4",
+      "from": [
+        6.630000000000001,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        7.74,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_1_5",
+      "from": [
+        8.08,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        9.33,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_5",
+      "from": [
+        8.15,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        9.26,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_1_6",
+      "from": [
+        9.600000000000001,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        10.850000000000001,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_6",
+      "from": [
+        9.670000000000002,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        10.780000000000001,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_1_7",
+      "from": [
+        11.120000000000001,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        12.370000000000001,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_7",
+      "from": [
+        11.190000000000001,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        12.3,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_1_8",
+      "from": [
+        12.64,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        13.89,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_8",
+      "from": [
+        12.71,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        13.82,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_1_9",
+      "from": [
+        14.16,
+        0.95,
+        6.550000000000001
+      ],
+      "to": [
+        15.41,
+        1.26,
+        8.08
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_1_9",
+      "from": [
+        14.23,
+        1.26,
+        6.620000000000001
+      ],
+      "to": [
+        15.34,
+        1.62,
+        7.970000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_0",
+      "from": [
+        0.48,
+        0.95,
+        8.9
+      ],
+      "to": [
+        1.73,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_0",
+      "from": [
+        0.55,
+        1.26,
+        8.97
+      ],
+      "to": [
+        1.66,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_1",
+      "from": [
+        2.0,
+        0.95,
+        8.9
+      ],
+      "to": [
+        3.25,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_1",
+      "from": [
+        2.07,
+        1.26,
+        8.97
+      ],
+      "to": [
+        3.1799999999999997,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_2",
+      "from": [
+        3.52,
+        0.95,
+        8.9
+      ],
+      "to": [
+        4.77,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_2",
+      "from": [
+        3.59,
+        1.26,
+        8.97
+      ],
+      "to": [
+        4.7,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_3",
+      "from": [
+        5.040000000000001,
+        0.95,
+        8.9
+      ],
+      "to": [
+        6.290000000000001,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_3",
+      "from": [
+        5.110000000000001,
+        1.26,
+        8.97
+      ],
+      "to": [
+        6.220000000000001,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_4",
+      "from": [
+        6.5600000000000005,
+        0.95,
+        8.9
+      ],
+      "to": [
+        7.8100000000000005,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_4",
+      "from": [
+        6.630000000000001,
+        1.26,
+        8.97
+      ],
+      "to": [
+        7.74,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_5",
+      "from": [
+        8.08,
+        0.95,
+        8.9
+      ],
+      "to": [
+        9.33,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_5",
+      "from": [
+        8.15,
+        1.26,
+        8.97
+      ],
+      "to": [
+        9.26,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_6",
+      "from": [
+        9.600000000000001,
+        0.95,
+        8.9
+      ],
+      "to": [
+        10.850000000000001,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_6",
+      "from": [
+        9.670000000000002,
+        1.26,
+        8.97
+      ],
+      "to": [
+        10.780000000000001,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_7",
+      "from": [
+        11.120000000000001,
+        0.95,
+        8.9
+      ],
+      "to": [
+        12.370000000000001,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_7",
+      "from": [
+        11.190000000000001,
+        1.26,
+        8.97
+      ],
+      "to": [
+        12.3,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_8",
+      "from": [
+        12.64,
+        0.95,
+        8.9
+      ],
+      "to": [
+        13.89,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_8",
+      "from": [
+        12.71,
+        1.26,
+        8.97
+      ],
+      "to": [
+        13.82,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_2_9",
+      "from": [
+        14.16,
+        0.95,
+        8.9
+      ],
+      "to": [
+        15.41,
+        1.26,
+        10.43
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_2_9",
+      "from": [
+        14.23,
+        1.26,
+        8.97
+      ],
+      "to": [
+        15.34,
+        1.62,
+        10.32
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_0",
+      "from": [
+        0.48,
+        0.95,
+        11.25
+      ],
+      "to": [
+        1.73,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_0",
+      "from": [
+        0.55,
+        1.26,
+        11.32
+      ],
+      "to": [
+        1.66,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_1",
+      "from": [
+        2.0,
+        0.95,
+        11.25
+      ],
+      "to": [
+        3.25,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_1",
+      "from": [
+        2.07,
+        1.26,
+        11.32
+      ],
+      "to": [
+        3.1799999999999997,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_2",
+      "from": [
+        3.52,
+        0.95,
+        11.25
+      ],
+      "to": [
+        4.77,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_2",
+      "from": [
+        3.59,
+        1.26,
+        11.32
+      ],
+      "to": [
+        4.7,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_3",
+      "from": [
+        5.040000000000001,
+        0.95,
+        11.25
+      ],
+      "to": [
+        6.290000000000001,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_3",
+      "from": [
+        5.110000000000001,
+        1.26,
+        11.32
+      ],
+      "to": [
+        6.220000000000001,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_4",
+      "from": [
+        6.5600000000000005,
+        0.95,
+        11.25
+      ],
+      "to": [
+        7.8100000000000005,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_4",
+      "from": [
+        6.630000000000001,
+        1.26,
+        11.32
+      ],
+      "to": [
+        7.74,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_5",
+      "from": [
+        8.08,
+        0.95,
+        11.25
+      ],
+      "to": [
+        9.33,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_5",
+      "from": [
+        8.15,
+        1.26,
+        11.32
+      ],
+      "to": [
+        9.26,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_6",
+      "from": [
+        9.600000000000001,
+        0.95,
+        11.25
+      ],
+      "to": [
+        10.850000000000001,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_6",
+      "from": [
+        9.670000000000002,
+        1.26,
+        11.32
+      ],
+      "to": [
+        10.780000000000001,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_7",
+      "from": [
+        11.120000000000001,
+        0.95,
+        11.25
+      ],
+      "to": [
+        12.370000000000001,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_7",
+      "from": [
+        11.190000000000001,
+        1.26,
+        11.32
+      ],
+      "to": [
+        12.3,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_8",
+      "from": [
+        12.64,
+        0.95,
+        11.25
+      ],
+      "to": [
+        13.89,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_8",
+      "from": [
+        12.71,
+        1.26,
+        11.32
+      ],
+      "to": [
+        13.82,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_3_9",
+      "from": [
+        14.16,
+        0.95,
+        11.25
+      ],
+      "to": [
+        15.41,
+        1.26,
+        12.78
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_3_9",
+      "from": [
+        14.23,
+        1.26,
+        11.32
+      ],
+      "to": [
+        15.34,
+        1.62,
+        12.67
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_inferior_0",
+      "from": [
+        0.48,
+        0.95,
+        13.65
+      ],
+      "to": [
+        2.68,
+        1.26,
+        15.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_inferior_0",
+      "from": [
+        0.55,
+        1.26,
+        13.72
+      ],
+      "to": [
+        2.6100000000000003,
+        1.58,
+        15.03
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_inferior_1",
+      "from": [
+        2.95,
+        0.95,
+        13.65
+      ],
+      "to": [
+        4.45,
+        1.26,
+        15.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_inferior_1",
+      "from": [
+        3.02,
+        1.26,
+        13.72
+      ],
+      "to": [
+        4.38,
+        1.58,
+        15.03
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_inferior_2",
+      "from": [
+        4.72,
+        0.95,
+        13.65
+      ],
+      "to": [
+        6.22,
+        1.26,
+        15.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_inferior_2",
+      "from": [
+        4.79,
+        1.26,
+        13.72
+      ],
+      "to": [
+        6.1499999999999995,
+        1.58,
+        15.03
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_inferior_3",
+      "from": [
+        6.49,
+        0.95,
+        13.65
+      ],
+      "to": [
+        12.34,
+        1.26,
+        15.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_inferior_3",
+      "from": [
+        6.5600000000000005,
+        1.26,
+        13.72
+      ],
+      "to": [
+        12.27,
+        1.58,
+        15.03
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_inferior_4",
+      "from": [
+        12.62,
+        0.95,
+        13.65
+      ],
+      "to": [
+        13.719999999999999,
+        1.26,
+        15.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_inferior_4",
+      "from": [
+        12.69,
+        1.26,
+        13.72
+      ],
+      "to": [
+        13.649999999999999,
+        1.58,
+        15.03
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "base_inferior_5",
+      "from": [
+        14.05,
+        0.95,
+        13.65
+      ],
+      "to": [
+        15.15,
+        1.26,
+        15.1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#body"
+        },
+        "south": {
+          "texture": "#body"
+        },
+        "east": {
+          "texture": "#body"
+        },
+        "west": {
+          "texture": "#body"
+        },
+        "up": {
+          "texture": "#body"
+        },
+        "down": {
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "name": "tecla_inferior_5",
+      "from": [
+        14.120000000000001,
+        1.26,
+        13.72
+      ],
+      "to": [
+        15.08,
+        1.58,
+        15.03
+      ],
+      "faces": {
+        "north": {
+          "texture": "#key"
+        },
+        "south": {
+          "texture": "#key"
+        },
+        "east": {
+          "texture": "#key"
+        },
+        "west": {
+          "texture": "#key"
+        },
+        "up": {
+          "texture": "#key"
+        },
+        "down": {
+          "texture": "#key"
+        }
+      }
+    },
+    {
+      "name": "led_0",
+      "from": [
+        13.3,
+        1.0,
+        15.42
+      ],
+      "to": [
+        13.600000000000001,
+        1.1,
+        15.64
+      ],
+      "faces": {
+        "north": {
+          "texture": "#led"
+        },
+        "south": {
+          "texture": "#led"
+        },
+        "east": {
+          "texture": "#led"
+        },
+        "west": {
+          "texture": "#led"
+        },
+        "up": {
+          "texture": "#led"
+        },
+        "down": {
+          "texture": "#led"
+        }
+      }
+    },
+    {
+      "name": "led_1",
+      "from": [
+        13.9,
+        1.0,
+        15.42
+      ],
+      "to": [
+        14.200000000000001,
+        1.1,
+        15.64
+      ],
+      "faces": {
+        "north": {
+          "texture": "#accent"
+        },
+        "south": {
+          "texture": "#accent"
+        },
+        "east": {
+          "texture": "#accent"
+        },
+        "west": {
+          "texture": "#accent"
+        },
+        "up": {
+          "texture": "#accent"
+        },
+        "down": {
+          "texture": "#accent"
+        }
+      }
+    },
+    {
+      "name": "led_2",
+      "from": [
+        14.5,
+        1.0,
+        15.42
+      ],
+      "to": [
+        14.8,
+        1.1,
+        15.64
+      ],
+      "faces": {
+        "north": {
+          "texture": "#accent"
+        },
+        "south": {
+          "texture": "#accent"
+        },
+        "east": {
+          "texture": "#accent"
+        },
+        "west": {
+          "texture": "#accent"
+        },
+        "up": {
+          "texture": "#accent"
+        },
+        "down": {
+          "texture": "#accent"
+        }
+      }
+    }
+  ]
+}

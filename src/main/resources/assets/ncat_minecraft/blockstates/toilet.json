@@ -1,0 +1,612 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north",
+        "half": "lower"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_body_lower",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "lower",
+        "open": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_closed_lower",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "lower",
+        "open": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_open_lower",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "lower",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_full_lower",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "lower",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_low_lower",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "lower",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_rest_lower",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "lower",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_flush_lower",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_body_upper",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "open": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_closed_upper",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "open": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_open_upper",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_full_upper",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_low_upper",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_rest_upper",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_flush_upper",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "lower"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_body_lower",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "lower",
+        "open": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_closed_lower",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "lower",
+        "open": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_open_lower",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "lower",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_full_lower",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "lower",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_low_lower",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "lower",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_rest_lower",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "lower",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_flush_lower",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_body_upper",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
+        "open": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_closed_upper",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
+        "open": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_open_upper",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_full_upper",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_low_upper",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_rest_upper",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_flush_upper",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "lower"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_body_lower",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "lower",
+        "open": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_closed_lower",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "lower",
+        "open": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_open_lower",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "lower",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_full_lower",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "lower",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_low_lower",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "lower",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_rest_lower",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "lower",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_flush_lower",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_body_upper",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper",
+        "open": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_closed_upper",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper",
+        "open": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_open_upper",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_full_upper",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_low_upper",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_rest_upper",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_flush_upper",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "lower"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_body_lower",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "lower",
+        "open": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_closed_lower",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "lower",
+        "open": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_open_lower",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "lower",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_full_lower",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "lower",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_low_lower",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "lower",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_rest_lower",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "lower",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_flush_lower",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_body_upper",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "open": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_closed_upper",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "open": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_lid_open_upper",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_full_upper",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_water_low_upper",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "flushing": "false"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_rest_upper",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "flushing": "true"
+      },
+      "apply": {
+        "model": "ncat_minecraft:block/toilet_handle_flush_upper",
+        "y": 270
+      }
+    }
+  ]
+}

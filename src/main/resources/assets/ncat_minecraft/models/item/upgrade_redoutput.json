@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ncat_minecraft:item/upgrade",
+    "layer1": "ncat_minecraft:item/output"
+  }
+}
